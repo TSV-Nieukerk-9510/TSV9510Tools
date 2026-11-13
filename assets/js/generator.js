@@ -1,4 +1,4 @@
-/* Seite "Textbausteine": Spiel über Auswahllisten wählen, Text erzeugen.
+/* Seite "Textvorlagen": Spiel über Auswahllisten wählen, Text erzeugen.
  *
  * Die eigentliche Arbeit macht textgenerator.js - hier wird nur das
  * Spiel ausgesucht und an dessen Fenster übergeben.

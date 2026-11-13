@@ -345,6 +345,8 @@ main h2 {
 .detail-links .zeilen-knopf { margin-left: 0; }
 
 @media (max-width: 34rem) {
+  .hauptnav .unternav a { padding: .5rem .5rem; font-size: .72rem; letter-spacing: .03em; }
+
   .sp-details td { padding-left: .7rem; }
   .sp-details dl { grid-template-columns: 1fr; gap: 0; }
   .sp-details dt { margin-top: .4rem; }
@@ -465,6 +467,27 @@ main h2 {
 }
 
 .hauptnav a:hover { color: #fff; }
+
+/* Zweite Zeile: die Seiten des geoeffneten Bereichs */
+
+.unternav {
+  background: var(--navy);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.unternav-leiste {
+  display: flex;
+  gap: .3rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.hauptnav .unternav a {
+  padding: .5rem .8rem;
+  font-size: .82rem;
+  letter-spacing: .06em;
+  border-bottom-width: 2px;
+}
 
 .hauptnav a.hier {
   color: #fff;
@@ -616,6 +639,70 @@ main h2 {
 .spielvorschau dt { color: var(--leise); font-weight: 600; }
 .spielvorschau dd { margin: 0; overflow-wrap: anywhere; }
 
+/* Platzbelegung */
+
+.segment { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .5rem; }
+
+.chip[data-leer="1"] { color: var(--leise); border-style: dashed; }
+.chip[data-leer="1"][aria-pressed="true"] { color: #fff; }
+
+.platz-hinweis { margin: .8rem 0 0; font-size: .85rem; }
+
+.platz-raster {
+  display: grid;
+  gap: .8rem;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+}
+
+.platz-karte {
+  background: var(--flaeche);
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  padding: .7rem .8rem .8rem;
+}
+
+.platz-karte h3 {
+  margin: 0 0 .5rem;
+  font-family: var(--schrift-eng);
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+}
+
+.platz-bild { display: block; width: 100%; height: auto; }
+
+.platz-liste {
+  list-style: none;
+  margin: .6rem 0 0;
+  padding: 0;
+  font-size: .88rem;
+  columns: 2;
+  column-gap: 1rem;
+}
+
+.platz-liste li { break-inside: avoid; margin-bottom: .2rem; }
+
+.punkt {
+  display: inline-block;
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  margin-right: .35rem;
+}
+
+.platz-konflikt {
+  margin: .6rem 0 0;
+  padding: .35rem .5rem;
+  border-radius: 6px;
+  background: #fde8e6;
+  color: #9b1c12;
+  font-size: .84rem;
+}
+
+table.platz-spiele td.leise { overflow-wrap: anywhere; }
+table.platz-spiele th,
+table.platz-spiele td:nth-child(2),
+table.platz-spiele td:nth-child(3) { white-space: nowrap; }
+
 /* Trainingsseite */
 
 .mannschaft-raster {
@@ -665,6 +752,7 @@ table.training th {
 }
 
 table.training td { padding: .2rem .5rem .2rem 0; }
+table.training:not(.platz-spiele) td:nth-child(2) { white-space: nowrap; }
 
 .trainingshinweis {
   margin: .5rem 0 0;
@@ -689,6 +777,8 @@ table.training td { padding: .2rem .5rem .2rem 0; }
 }
 
 .kontakte a { color: var(--navy); }
+
+.kontakte.orte li { margin-bottom: .45rem; }
 
 .mannschaft-links {
   margin: .8rem 0 0;
@@ -894,3 +984,103 @@ body.eingebettet main { padding-top: .9rem; }
 }
 
 .tg-knopf:hover { border-color: var(--navy-hell); }
+
+/* Platzbelegung: zwei Plaetze, Wochenplan */
+
+.schalter { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; }
+
+.platz-paar { display: grid; gap: .6rem; }
+.platz-paar-2 { grid-template-columns: 1fr 1fr; }
+.platz-eins { margin: 0; }
+.platz-eins figcaption {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--leise);
+  margin-bottom: .2rem;
+}
+.platz-frei { margin: .1rem 0 0; font-size: .8rem; text-align: center; }
+
+.platz-raster:has(.platz-paar-2) {
+  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+}
+
+.platz-wochenkarte {
+  background: var(--flaeche);
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  padding: .7rem .8rem .8rem;
+  margin-bottom: .8rem;
+}
+.platz-wochenkarte h3 {
+  margin: 0 0 .5rem;
+  font-family: var(--schrift-eng);
+  font-size: 1.15rem;
+  letter-spacing: .03em;
+}
+.platz-scroll { overflow-x: auto; padding-bottom: .8rem; }
+.platz-woche { display: flex; min-width: 34rem; }
+.platz-achse { flex: 0 0 2.6rem; }
+.platz-tag { flex: 1 1 0; min-width: 0; border-left: 1px solid var(--linie); }
+.platz-tagkopf {
+  text-align: center;
+  font-weight: 700;
+  font-size: .85rem;
+  padding: .25rem 0;
+  border-bottom: 1px solid var(--linie);
+}
+.platz-tagkopf.heute { color: var(--navy-hell); }
+.platz-tagfeld {
+  position: relative;
+  background-image: repeating-linear-gradient(to bottom,
+    transparent 0, transparent calc(63px - 1px), var(--linie) 63px);
+}
+.platz-achse .platz-tagfeld { background: none; }
+.platz-achse span {
+  position: absolute;
+  right: .3rem;
+  transform: translateY(-50%);
+  font-size: .7rem;
+  color: var(--leise);
+}
+.platz-block {
+  position: absolute;
+  box-sizing: border-box;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: .1rem .25rem;
+  overflow: hidden;
+  font-size: .72rem;
+  line-height: 1.15;
+}
+.platz-block b { display: block; }
+.platz-block span { opacity: .85; }
+
+@media (max-width: 34rem) {
+  .platz-paar-2 { grid-template-columns: 1fr; }
+}
+
+/* FAQ */
+
+.faq-suche { display: block; max-width: 26rem; margin-bottom: .6rem; }
+.faq-suche input { width: 100%; box-sizing: border-box; }
+.faq-sprung { margin-bottom: 1rem; }
+.faq-sprung .chip { text-decoration: none; }
+.faq-gruppe { margin-bottom: 1.2rem; scroll-margin-top: 1rem; }
+.faq-zur-seite { margin: -.3rem 0 .5rem; font-size: .88rem; }
+.faq-liste {
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  background: var(--flaeche);
+  overflow: hidden;
+}
+.faq-frage + .faq-frage { border-top: 1px solid var(--linie); }
+.faq-frage summary {
+  cursor: pointer;
+  padding: .65rem .9rem;
+  font-weight: 600;
+}
+.faq-frage summary:hover { background: var(--zeile); }
+.faq-frage[open] { background: var(--zeile); }
+.faq-antwort { padding: 0 .9rem .7rem; }
+.faq-antwort p { margin: .3rem 0; }

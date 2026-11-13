@@ -1,6 +1,6 @@
 # Textvorlagen
 
-Auf der Website gibt es dafür die Seite **Textbausteine** mit Auswahl von Mannschaft und Spiel; in der aufgeklappten Spielzeile der Spielübersicht führt außerdem der Knopf **E-Mail-Text erzeugen** dorthin. Er öffnet ein
+Auf der Website gibt es dafür die Seite **Textvorlagen** mit Auswahl von Mannschaft und Spiel; in der aufgeklappten Spielzeile der Spielübersicht führt außerdem der Knopf **E-Mail-Text erzeugen** dorthin. Er öffnet ein
 Fenster, in dem aus einer Vorlage und den Spieldaten ein fertiger
 E-Mail-Text entsteht — zum Prüfen, Anpassen und Kopieren. Verschickt
 wird von Hand, aus dem eigenen Mailprogramm.

@@ -1,4 +1,7 @@
-/* Seite "Training": Trainingszeiten und Ansprechpartner je Mannschaft.
+/* Seiten "Trainingszeiten Sommer" und "Trainingszeiten Winter":
+ * Trainingszeiten und Ansprechpartner je Mannschaft. Dieselbe Datei
+ * bedient beide Seiten; welche Jahreszeit gilt, steht im Attribut
+ * data-saison am body-Element der jeweiligen HTML-Seite.
  *
  * Die Angaben stammen aus config/mannschaften.json und werden von Hand
  * gepflegt - FUSSBALL.DE kennt sie nicht. Fehlt etwas, sagt die Seite
@@ -15,6 +18,50 @@
   var S = window.Seite;
   var text = S.text;
 
+  var SAISON = document.body.getAttribute("data-saison") === "winter"
+    ? "winter" : "sommer";
+  var SAISON_NAME = SAISON === "winter" ? "Winter" : "Sommer";
+
+  /* Eine Mannschaft kann Zeiten je Jahreszeit haben. Aeltere Eintraege
+   * (eine einfache Liste) gelten als Sommerzeiten. */
+  function einheitenFuer(eintrag) {
+    var t = eintrag && eintrag.training;
+
+    if (Array.isArray(t)) {
+      return SAISON === "sommer" ? t : [];
+    }
+    return (t && t[SAISON]) || [];
+  }
+
+  /* Ort als Zeile mit Anschrift und Kartenlink. */
+  function ortZeile(titel, ort) {
+    var anschrift = S.adresse(ort);
+    var karte = S.kartenLink(ort);
+
+    return "<li><b>" + titel + ":</b> " + text(ort.name)
+      + (karte ? ' <a href="' + text(karte)
+        + '" target="_blank" rel="noopener">Karte</a>' : "")
+      + (anschrift ? '<span class="kontaktweg">' + text(anschrift)
+        + "</span>" : "")
+      + "</li>";
+  }
+
+  /* Haupt- und Nebenort der Mannschaft mit Kartenlink. */
+  function orteHtml(eintrag) {
+    var orte = S.orte();
+    var zeilen = [];
+
+    [["Hauptort", eintrag.hauptort], ["Nebenort", eintrag.nebenort]]
+      .forEach(function (paar) {
+        if (orte[paar[1]]) {
+          zeilen.push(ortZeile(paar[0], orte[paar[1]]));
+        }
+      });
+
+    return zeilen.length
+      ? '<ul class="kontakte orte">' + zeilen.join("") + "</ul>" : "";
+  }
+
   function sortiereEinheiten(einheiten) {
     return einheiten.slice().sort(function (a, b) {
       var tagA = WOCHENTAGE.indexOf(a.tag);
@@ -27,18 +74,33 @@
     });
   }
 
-  function trainingHtml(einheiten) {
+  function trainingHtml(einheiten, eintrag) {
     if (!einheiten || !einheiten.length) {
-      return '<p class="leise">Trainingszeiten noch nicht hinterlegt.</p>';
+      return '<p class="leise">Trainingszeiten ' + SAISON_NAME
+        + " noch nicht hinterlegt.</p>";
     }
 
     var zeilen = sortiereEinheiten(einheiten).map(function (e) {
       var zeit = e.von && e.bis ? e.von + " – " + e.bis + " Uhr"
         : (e.von ? "ab " + e.von + " Uhr" : "");
 
+      // Wo? Eigener Platz mit Feldteil, sonst der Ort. Was dem Hauptort
+      // entspricht und keinen Feldteil hat, braucht keine Angabe.
+      var r = S.aufloesen(e, eintrag);
+      var wo = "";
+
+      if (r.fehler) {
+        wo = "? " + r.fehler;
+      } else if (r.kuerzel) {
+        wo = r.ort.name.replace(/ Nieukerk$/, "")
+          + (r.feld && r.feld !== "G" ? ", " + S.felder[r.feld].name : "");
+      } else if (r.ortKey !== eintrag.hauptort) {
+        wo = r.ort.name;
+      }
+
       return "<tr><th>" + text(e.tag || "") + "</th>"
         + "<td>" + text(zeit) + "</td>"
-        + '<td class="leise">' + text(e.ort || "") + "</td></tr>";
+        + '<td class="leise">' + text(wo) + "</td></tr>";
     });
 
     return '<table class="training">' + zeilen.join("") + "</table>";
@@ -81,7 +143,8 @@
     return '<article class="mannschaft" id="' + text(team.slug) + '">'
       + "<h3>" + text(team.short) + "</h3>"
       + '<p class="leise voller-name">' + text(team.name) + "</p>"
-      + trainingHtml(eintrag.training)
+      + orteHtml(eintrag)
+      + trainingHtml(einheitenFuer(eintrag), eintrag)
       + (eintrag.hinweis
         ? '<p class="trainingshinweis">' + text(eintrag.hinweis) + "</p>"
         : "")
@@ -96,21 +159,18 @@
   }
 
   S.start({
-    seite: "training",
-    braucht: ["teams", "mannschaften"],
+    seite: "training-" + SAISON,
+    braucht: ["teams", "spiele", "mannschaften"],
     fertig: function (daten) {
       var ziel = document.getElementById("trainingbereich");
       var gruppen = daten.teams.groups || {};
       var pflege = (daten.mannschaften && daten.mannschaften.mannschaften)
         || {};
-      var html = [];
+      var html = [S.beispielHinweis()];
 
       var gepflegt = Object.keys(pflege).filter(function (slug) {
         var e = pflege[slug];
-        return e && ((e.training && e.training.length)
-          || (e.kontakt || []).some(function (k) {
-            return k.name || k.email || k.telefon;
-          }));
+        return e && einheitenFuer(e).length;
       }).length;
 
       if (!daten.mannschaften) {

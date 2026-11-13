@@ -39,15 +39,24 @@ beschrieben. Es ist der Vertrag für alles, was später darauf aufsetzt.
 
 ## Die Seiten
 
-Vier Seiten mit gemeinsamer Navigation. Alle lassen sich per `?embed=1`
-ohne Kopf- und Fußzeile einbetten.
+Das Menü hat zwei Ebenen: oben die Bereiche, darunter die Seiten des
+geöffneten Bereichs. Alle Seiten lassen sich per `?embed=1` ohne Kopf-
+und Fußzeile einbetten.
 
-| Seite | Inhalt |
-|---|---|
-| `index.html` | Spielübersicht |
-| `kalender.html` | Kalender-Abos mit Adresse und QR-Code |
-| `training.html` | Trainingszeiten und Ansprechpartner |
-| `textgenerator.html` | Textbausteine für E-Mails |
+| Bereich | Seite | Datei |
+|---|---|---|
+| Spielübersicht | Spielübersicht | `index.html` |
+| Trainingsplan | Trainingszeiten Sommer | `training-sommer.html` |
+| | Trainingszeiten Winter | `training-winter.html` |
+| | Platzbelegung | `platzbelegung.html` |
+| Tools | Kalender | `kalender.html` |
+| | Textvorlagen | `textgenerator.html` |
+| FAQ | FAQ | `faq.html` (Inhalt: `config/faq.json`) |
+
+Die Menüeinträge stehen an **einer** Stelle: `NAVIGATION` oben in
+`assets/js/seite.js`. Dort wird auch eine neue Seite eingetragen.
+`training.html` leitet nur noch auf die Sommerseite weiter und kann bei
+Gelegenheit gelöscht werden.
 
 ### Spielübersicht
 
@@ -108,15 +117,58 @@ Ein Abo aktualisiert sich von selbst (Aktualisierungsintervall
 6 Stunden, soweit das Kalenderprogramm es beachtet). Wer die Datei nur
 herunterlädt, importiert einen Stand, der sich nicht mehr ändert.
 
-### Training
+### Trainingszeiten Sommer und Winter
 
 Trainingszeiten und Ansprechpartner je Mannschaft, gepflegt von Hand in
-`config/mannschaften.json`. **Datenschutz:** das Repository ist
-öffentlich — dort nur Funktionsadressen des Vereins eintragen, keine
-privaten Nummern oder Adressen. Leere Felder zeigt die Seite als „noch
-nicht hinterlegt“.
+`config/mannschaften.json`. Die Datei ist oben selbst erklärt; in Kürze:
 
-### Textbausteine
+* **`stand_trainingszeiten`** — Datum der letzten Änderung der Zeiten
+  (JJJJ-MM-TT); erscheint im Kopf der Trainingsseiten.
+* **`saisons`** — `sommer` (Kunstrasen KR und Naturrasen NR, Felder G/H/V)
+  und `winter` (nur KR, zusätzlich Drittel D). `ab` ist der erste Tag der
+  Jahreszeit; die Platzbelegung öffnet die gerade gültige.
+* **`orte`** — jede Trainingsstätte einmal als vollständiges Datenpaket:
+  `name`, `strasse`, `plz`, `ort`, optional `karte` (eigener Kartenlink,
+  sonst wird er aus der Anschrift gebaut), bei eigenen Plätzen `kuerzel`
+  (`KR`/`NR`) und `rasen`.
+* **`hauptort`** bei jeder Mannschaft, **`nebenort`** optional (etwa die
+  JSG-Jugend, die auch in Aldekerk trainiert). Beide zeigen Adresse und
+  Kartenlink.
+* **`training`** getrennt nach `sommer` und `winter`. Eine Einheit hat
+  `tag`, `von`, `bis` und entweder `platz` (Code `PLATZ-TEIL`, z. B.
+  `NR-H1` = Naturrasen Hälfte 1, `KR-H2` = Kunstrasen Hälfte 2, `KR-D2` =
+  Kunstrasen Drittel 2, `KR-V3` = Viertel 3, `KR-G` = ganzes Feld) oder
+  `ort` (`neben`, `haupt` oder ein Schlüssel aus `orte`).
+* Die Ansprechpartner gelten für beide Jahreszeiten.
+* **`beispieldaten: true`** blendet auf den Seiten einen Hinweis ein,
+  dass die Zeiten nur Beispiele sind. Vor dem Veröffentlichen echter
+  Zeiten auf `false` setzen.
+
+**Datenschutz:** das Repository ist öffentlich — dort nur
+Funktionsadressen des Vereins eintragen, keine privaten Nummern oder
+Adressen. Leere Felder zeigt die Seite als „noch nicht hinterlegt“.
+
+### Platzbelegung
+
+Im Sommer werden Kunstrasen und Naturrasen als zwei getrennte Felder
+gezeichnet, im Winter nur der Kunstrasen. Ansicht **Tag**: je Zeitspanne
+eine Zeichnung; Ansicht **Woche**: Wochenplan je Platz. Der Teil des
+Platzes kommt aus dem Code im Feld `platz` jeder Einheit (G ganz, H1/H2
+Hälften, D1–D3 Drittel nur im Winter, V1–V4 Viertel; V1 links oben, V2
+links unten, V3 rechts oben, V4 rechts unten). Überschneiden sich zwei
+Mannschaften auf demselben Teil, wird das rot markiert; Angaben, die nicht
+zur Jahreszeit passen (z. B. Drittel im Sommer), meldet die Seite.
+Darunter stehen die kommenden Spiele auf der eigenen Anlage (von
+FUSSBALL.DE). Geöffnet wird die Jahreszeit, die laut `saisons.*.ab` gerade
+gilt.
+
+### FAQ
+
+`faq.html` zeigt häufige Fragen, nach Seiten gegliedert, mit Suche. Der
+Inhalt steht in `config/faq.json` (Gruppen mit Fragen und Antworten;
+`**fett**` und `[Text](seite.html)` sind erlaubt).
+
+### Textvorlagen
 
 Auswahl von Mannschaft und Spiel, daraus entsteht ein fertiger Text zum
 Absagen, Verlegen oder Weitergeben eines Spiels — mit Spielnummer,

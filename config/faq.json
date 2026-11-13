@@ -1,0 +1,244 @@
+{
+  "_hinweis": [
+    "Inhalt der Seite FAQ. Von Hand pflegbar.",
+    "Aufbau: 'gruppen' mit 'titel', optional 'seite' (Verweis auf die Seite) und 'fragen'.",
+    "Jede Frage hat 'frage' und 'antwort' (Liste von Absaetzen).",
+    "In Absaetzen sind **fett** und [Text](link.html) erlaubt."
+  ],
+  "gruppen": [
+    {
+      "id": "spiele",
+      "titel": "Spielübersicht",
+      "seite": "index.html",
+      "fragen": [
+        {
+          "frage": "Woher kommen die Spieldaten?",
+          "antwort": [
+            "Die Spiele stammen von FUSSBALL.DE und werden automatisch alle sechs Stunden abgerufen. Der Zeitpunkt des letzten Abrufs steht oben auf der Seite als „Stand“.",
+            "Ändert sich dort etwas, erscheint es nach dem nächsten Abruf auch hier und in den Kalendern."
+          ]
+        },
+        {
+          "frage": "Wie sehe ich nur eine Mannschaft?",
+          "antwort": [
+            "Oben auf „Alle Mannschaften“ oder eine Gruppe tippen und dann die Mannschaft wählen. Mit **Heim** und **Auswärts** lässt sich zusätzlich die Spielseite einschränken."
+          ]
+        },
+        {
+          "frage": "Was bedeutet „Anstoßzeit offen“?",
+          "antwort": [
+            "FUSSBALL.DE hat für das Spiel noch keine Uhrzeit. Die Seite zeigt dann „offen“; im Kalender steht die übliche Zeit der Mannschaft, gekennzeichnet mit einem **?**."
+          ]
+        },
+        {
+          "frage": "Was zeigt die aufgeklappte Spielzeile?",
+          "antwort": [
+            "Ein Klick auf die Paarung öffnet alle Angaben: Spielnummer, Staffel, Spielstätte mit Adresse und Anfahrt, Platzart, Schiedsrichter und Ergebnis. Fehlt eine Angabe, steht dort „k. A.“."
+          ]
+        },
+        {
+          "frage": "Warum steht bei manchen Spielen ein Hinweis zum Heimrecht?",
+          "antwort": [
+            "Manchmal weicht das Heimrecht laut FUSSBALL.DE vom Spielort ab, zum Beispiel bei getauschtem Heimrecht. Der Hinweis macht das sichtbar, damit niemand zum falschen Platz fährt."
+          ]
+        },
+        {
+          "frage": "Warum sind vergangene Spiele noch da?",
+          "antwort": [
+            "FUSSBALL.DE liefert nur kommende Spiele. Bereits gespielte Spiele behält die Seite selbst. Vergangene Spieltage liegen oben hinter dem Knopf „Frühere Spieltage“."
+          ]
+        },
+        {
+          "frage": "Kann ich die Übersicht auf einer anderen Seite einbetten?",
+          "antwort": [
+            "Ja. Mit dem Zusatz `?embed=1` blendet die Seite Kopf und Menü aus. Mit `?team=tsv-h1` oder `?gruppe=jugend` ist die Auswahl schon voreingestellt."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kalender",
+      "titel": "Kalender",
+      "seite": "kalender.html",
+      "fragen": [
+        {
+          "frage": "Wie bekomme ich die Spiele in meinen Handykalender?",
+          "antwort": [
+            "Auf der Seite [Kalender](kalender.html) die Mannschaft aufklappen, **Adresse kopieren** tippen und im Kalenderprogramm als Abo eintragen. Oder den QR-Code mit dem Handy abscannen."
+          ]
+        },
+        {
+          "frage": "Was ist der Unterschied zwischen Abo und Download?",
+          "antwort": [
+            "Ein **Abo** aktualisiert sich selbst: neue Termine, Verlegungen und geänderte Anstoßzeiten kommen automatisch an. Ein **Download** ist nur ein Schnappschuss und bleibt auf dem Stand des Downloads."
+          ]
+        },
+        {
+          "frage": "Wie schnell kommen Änderungen im Kalender an?",
+          "antwort": [
+            "Die Seite holt alle sechs Stunden neue Daten. Danach hängt es vom Kalenderprogramm ab: manche aktualisieren Abos mehrmals täglich, andere nur alle paar Stunden bis einmal am Tag."
+          ]
+        },
+        {
+          "frage": "Entstehen doppelte Einträge, wenn ein Spiel verlegt wird?",
+          "antwort": [
+            "Nein. Jedes Spiel hat eine feste Kennung. Wird es verlegt, ändert sich derselbe Termin; er wird nicht noch einmal angelegt. Bereits gespielte Termine bleiben im Kalender erhalten."
+          ]
+        },
+        {
+          "frage": "Was bedeutet das Fragezeichen im Betreff?",
+          "antwort": [
+            "Die Anstoßzeit steht noch nicht fest. Eingetragen ist die übliche Zeit der Mannschaft als Platzhalter."
+          ]
+        },
+        {
+          "frage": "Wie lang ist ein Termin?",
+          "antwort": [
+            "Er beginnt beim Anstoß und dauert Regelspielzeit plus Halbzeitpause, je nach Altersklasse zwischen 40 und 105 Minuten."
+          ]
+        },
+        {
+          "frage": "Welcher Kalender passt zu mir?",
+          "antwort": [
+            "Für eine Mannschaft den einzelnen Kalender. Für Heimspiele auf einem bestimmten Platz die Kalender „Heim Kunstrasen“ und „Heim Naturrasen“. Für Trainer mehrerer Teams die Sammelkalender nach Gruppe."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "training",
+      "titel": "Trainingsplan",
+      "seite": "training-sommer.html",
+      "fragen": [
+        {
+          "frage": "Wann gilt „Sommer“, wann „Winter“?",
+          "antwort": [
+            "**Sommer** gilt, solange beide Plätze nutzbar sind, also Kunstrasen und Naturrasen. **Winter** gilt, sobald der Naturrasen gesperrt ist; dann bleibt nur der Kunstrasen."
+          ]
+        },
+        {
+          "frage": "Woher stammen die Trainingszeiten?",
+          "antwort": [
+            "Sie werden vom Verein von Hand gepflegt, FUSSBALL.DE kennt sie nicht. Oben auf der Seite steht, wann sie zuletzt geändert wurden."
+          ]
+        },
+        {
+          "frage": "Was bedeutet „Hauptort“ und „Nebenort“?",
+          "antwort": [
+            "Der **Hauptort** ist der Normalfall. Manche Mannschaften, etwa Jugend der JSG, trainieren zusätzlich an einem **Nebenort**. Beide haben einen Kartenlink für die Anfahrt. Weicht eine Einheit vom Hauptort ab, steht der Ort in der Zeile."
+          ]
+        },
+        {
+          "frage": "Wie lese ich die Angabe „Kunstrasen, Hälfte 1“?",
+          "antwort": [
+            "Das Training läuft auf diesem Teil des Platzes. Es gibt ganze Felder, Hälften und Viertel, im Winter zusätzlich Drittel. Wie das aussieht, zeigt die [Platzbelegung](platzbelegung.html)."
+          ]
+        },
+        {
+          "frage": "Warum fehlen bei manchen Mannschaften Zeiten oder Ansprechpartner?",
+          "antwort": [
+            "Dort sind sie noch nicht hinterlegt. Die Seite sagt das offen, statt etwas Falsches zu zeigen."
+          ]
+        },
+        {
+          "frage": "Stimmen die Zeiten schon?",
+          "antwort": [
+            "Solange oben der gelbe Hinweis „Beispieldaten“ steht, sind die Zeiten nur Beispiele."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "platz",
+      "titel": "Platzbelegung",
+      "seite": "platzbelegung.html",
+      "fragen": [
+        {
+          "frage": "Was zeigt die Platzbelegung?",
+          "antwort": [
+            "Wie die Plätze zu welcher Zeit aufgeteilt sind. Im Sommer sind es zwei getrennte Plätze, Kunstrasen und Naturrasen, im Winter nur der Kunstrasen."
+          ]
+        },
+        {
+          "frage": "Was ist der Unterschied zwischen Tag und Woche?",
+          "antwort": [
+            "**Tag**: für jede Zeitspanne eine Zeichnung des Platzes mit den Mannschaften. **Woche**: ein Wochenplan je Platz, Tage nebeneinander, Uhrzeit nach unten."
+          ]
+        },
+        {
+          "frage": "Was bedeuten Codes wie KR-H1 oder NR-G?",
+          "antwort": [
+            "Der erste Teil ist der Platz, **KR** für Kunstrasen und **NR** für Naturrasen. Der zweite ist der Teil davon: **G** ganzes Feld, **H1/H2** Hälften, **D1–D3** Drittel (nur Winter), **V1–V4** Viertel."
+          ]
+        },
+        {
+          "frage": "Was bedeutet die rote Markierung?",
+          "antwort": [
+            "Zwei Mannschaften sind zur gleichen Zeit auf demselben Teil des Platzes eingetragen. Beide Namen stehen in der roten Fläche. Das ist ein Hinweis, dass die Planung geklärt werden muss."
+          ]
+        },
+        {
+          "frage": "Warum stehen unter der Zeichnung auch Spiele?",
+          "antwort": [
+            "Spiele belegen den Platz ebenfalls. Die Liste zeigt kommende Spiele auf unseren Plätzen. Ein Stern bedeutet: Die Platzart ist angenommen, FUSSBALL.DE nennt keine."
+          ]
+        },
+        {
+          "frage": "Warum ist die falsche Jahreszeit voreingestellt?",
+          "antwort": [
+            "Die Seite öffnet die gerade gültige Jahreszeit. Beide lassen sich oben umschalten, zum Beispiel um den Plan für das nächste Halbjahr anzusehen."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "texte",
+      "titel": "Textvorlagen",
+      "seite": "textgenerator.html",
+      "fragen": [
+        {
+          "frage": "Wofür sind die Textvorlagen?",
+          "antwort": [
+            "Aus Spieldaten und einer Vorlage entsteht ein fertiger E-Mail-Text, zum Beispiel für Spielabsagen oder Verlegungen. Er wird kopiert und von Hand aus dem eigenen Mailprogramm verschickt, so liest noch einmal jemand darüber."
+          ]
+        },
+        {
+          "frage": "Wie gehe ich vor?",
+          "antwort": [
+            "Mannschaft und Spiel wählen, Vorlage wählen, fehlende Angaben wie Grund oder Wunschtermin ausfüllen und den Text kopieren."
+          ]
+        },
+        {
+          "frage": "Kann ich die Vorlagen ändern?",
+          "antwort": [
+            "Ja. Es sind einfache Textdateien im Ordner `templates/`. Mehr dazu steht in der Datei `docs/textvorlagen.md`."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "allgemein",
+      "titel": "Allgemein",
+      "fragen": [
+        {
+          "frage": "Wie oft werden die Daten aktualisiert?",
+          "antwort": [
+            "Spiele und Kalender alle sechs Stunden automatisch. Trainingszeiten nur, wenn der Verein sie ändert."
+          ]
+        },
+        {
+          "frage": "Ein Spiel stimmt nicht. Wen informiere ich?",
+          "antwort": [
+            "Die Spielangaben kommen von FUSSBALL.DE und müssen dort korrigiert werden, meist durch die Mannschaftsverantwortlichen. Danach erscheint die Korrektur hier automatisch."
+          ]
+        },
+        {
+          "frage": "Werden persönliche Daten gespeichert?",
+          "antwort": [
+            "Die Seite ist öffentlich und enthält keine Konten. Die Trainer-Kontakte sind Funktionsadressen des Vereins."
+          ]
+        }
+      ]
+    }
+  ]
+}

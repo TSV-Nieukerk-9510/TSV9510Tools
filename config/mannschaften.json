@@ -1,6 +1,6 @@
 {
     "_hinweis": [
-        "Von Hand gepflegt: Trainingszeiten und Ansprechpartner je Mannschaft.",
+        "Von Hand gepflegt: Orte, Trainingszeiten und Ansprechpartner je Mannschaft.",
         "",
         "Der Schluessel ist der dauerhafte slug aus config/teams.map.json.",
         "Er bleibt ueber Saisonwechsel hinweg gleich - diese Datei muss",
@@ -10,6 +10,11 @@
         "Leere Eintraege sind in Ordnung: die Seite zeigt dann 'noch nicht",
         "hinterlegt' statt einer falschen Angabe.",
         "",
+        "BEISPIELDATEN: Solange 'beispieldaten' auf true steht, zeigen die Seiten",
+        "einen deutlichen Hinweis, dass die Zeiten nur Beispiele sind. Zeiten",
+        "eintragen oder ersetzen und den Schalter auf false setzen (oder die",
+        "Zeile loeschen).",
+        "",
         "DATENSCHUTZ: Diese Datei liegt in einem oeffentlichen Repository",
         "und ist damit fuer jeden lesbar - auch fuer Adresssammler.",
         "Bitte nur Funktionsadressen des Vereins eintragen (etwa",
@@ -17,26 +22,141 @@
         "privaten Mailadressen ohne ausdrueckliches Einverstaendnis der",
         "betroffenen Person. Bei Jugendmannschaften besonders zurueckhaltend.",
         "",
-        "Felder je Trainingseinheit: tag, von, bis, ort",
+        "STAND ('stand_trainingszeiten'): Datum, an dem die Trainingszeiten zuletzt",
+        "geaendert wurden (JJJJ-MM-TT). Erscheint im Kopf der Trainingsseiten.",
+        "Nur bei einer inhaltlichen Aenderung der Zeiten anpassen.",
+        "",
+        "SAISONS ('saisons'): 'sommer' gilt, solange beide Plaetze nutzbar sind",
+        "(Kunstrasen KR und Naturrasen NR). 'winter' gilt, sobald der Naturrasen",
+        "gesperrt ist: dann gibt es nur den Kunstrasen KR. 'ab' ist der erste Tag",
+        "der Jahreszeit; die Platzbelegung oeffnet automatisch die gerade",
+        "gueltige. Im Winter sind zusaetzlich Drittel (D) moeglich.",
+        "",
+        "ORTE ('orte'): Jede Trainingsstaette steht einmal hier, als",
+        "vollstaendiges Datenpaket:",
+        "  name      Anzeigename",
+        "  strasse, plz, ort   Anschrift (daraus wird der Kartenlink gebaut)",
+        "  karte     optional: eigener Kartenlink, ersetzt den erzeugten",
+        "  kuerzel   nur eigene Plaetze: KR (Kunstrasen) oder NR (Naturrasen);",
+        "            diese Plaetze erscheinen auf der Seite Platzbelegung",
+        "  rasen     'Kunstrasen' oder 'Naturrasen' (Zuordnung der Spiele)",
+        "",
+        "ORT JE MANNSCHAFT: 'hauptort' ist der Normalfall und steht bei jeder",
+        "Mannschaft. 'nebenort' ist optional (z. B. die Jugend der JSG, die auch",
+        "in Aldekerk trainiert). Beides sind Schluessel aus 'orte'.",
+        "",
+        "TRAININGSEINHEIT ('training' -> 'sommer' / 'winter'):",
+        "  tag, von, bis   Wochentag und Uhrzeit",
+        "  platz           eigener Platz und Teil davon als Code PLATZ-TEIL:",
+        "                  KR-G = Kunstrasen ganzes Feld, NR-H1 = Naturrasen Haelfte 1,",
+        "                  KR-D2 = Kunstrasen Drittel 2 (nur Winter), KR-V3 = Viertel 3.",
+        "                  Haelfte: H1 links, H2 rechts. Drittel: D1-D3 von links.",
+        "                  Viertel: V1 links oben, V2 links unten, V3 rechts oben,",
+        "                  V4 rechts unten. Ohne Teil (nur 'KR') = ganzes Feld.",
+        "  ort             statt 'platz' fuer Training an anderen Orten:",
+        "                  'neben' = Nebenort, 'haupt' = Hauptort oder ein Schluessel",
+        "                  aus 'orte' (z. B. 'halle')",
+        "",
         "Felder je Ansprechpartner: rolle, name, email, telefon"
     ],
+    "beispieldaten": true,
+    "stand_trainingszeiten": "2026-11-13",
+    "saisons": {
+        "sommer": {
+            "name": "Sommer",
+            "ab": "2026-08-01",
+            "plaetze": [
+                "KR",
+                "NR"
+            ],
+            "felder": [
+                "G",
+                "H",
+                "V"
+            ]
+        },
+        "winter": {
+            "name": "Winter",
+            "ab": "2026-11-02",
+            "plaetze": [
+                "KR"
+            ],
+            "felder": [
+                "G",
+                "H",
+                "D",
+                "V"
+            ]
+        }
+    },
+    "orte": {
+        "nieukerk-kunstrasen": {
+            "name": "Kunstrasen Nieukerk",
+            "strasse": "Am Aermen Düwel 16",
+            "plz": "47647",
+            "ort": "Kerken",
+            "karte": "",
+            "kuerzel": "KR",
+            "rasen": "Kunstrasen"
+        },
+        "nieukerk-naturrasen": {
+            "name": "Naturrasen Nieukerk",
+            "strasse": "Am Aermen Düwel 16",
+            "plz": "47647",
+            "ort": "Kerken",
+            "karte": "",
+            "kuerzel": "NR",
+            "rasen": "Naturrasen"
+        },
+        "aldekerk": {
+            "name": "Sportanlage FC Aldekerk",
+            "strasse": "Kempener Landstr.",
+            "plz": "47647",
+            "ort": "Kerken",
+            "karte": ""
+        },
+        "halle": {
+            "name": "Sporthalle (Beispiel)",
+            "strasse": "",
+            "plz": "",
+            "ort": "",
+            "karte": ""
+        }
+    },
     "mannschaften": {
         "tsv-h1": {
-            "training": [
-                {
-                    "tag": "Dienstag",
-                    "von": "19:30",
-                    "bis": "21:00",
-                    "ort": "Kunstrasen"
-                },
-                {
-                    "tag": "Donnerstag",
-                    "von": "19:30",
-                    "bis": "21:00",
-                    "ort": "Kunstrasen"
-                }
-            ],
-            "hinweis": "BEISPIEL – bitte durch die echten Zeiten ersetzen oder leeren.",
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "NR-G"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H1"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-G"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H1"
+                    }
+                ]
+            },
+            "hinweis": "",
             "kontakt": [
                 {
                     "rolle": "Trainer",
@@ -47,72 +167,496 @@
             ]
         },
         "tsv-h2": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Montag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H1"
+                    },
+                    {
+                        "tag": "Mittwoch",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H2"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Montag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H1"
+                    },
+                    {
+                        "tag": "Mittwoch",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H1"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "jsg-a1": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "nebenort": "aldekerk",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Montag",
+                        "von": "19:00",
+                        "bis": "20:30",
+                        "platz": "NR-H1"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "NR-H2"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Montag",
+                        "von": "19:00",
+                        "bis": "20:30",
+                        "ort": "neben"
+                    },
+                    {
+                        "tag": "Mittwoch",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H2"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H2"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "jsg-b1": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "nebenort": "aldekerk",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "platz": "KR-H1"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "platz": "NR-G"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "platz": "KR-H1"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "platz": "KR-H2"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "jsg-c1": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "nebenort": "aldekerk",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Montag",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "platz": "NR-H2"
+                    },
+                    {
+                        "tag": "Mittwoch",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "ort": "neben"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Mittwoch",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "ort": "neben"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "ort": "neben"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "jsg-c2": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "nebenort": "aldekerk",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "platz": "KR-H2"
+                    },
+                    {
+                        "tag": "Mittwoch",
+                        "von": "17:30",
+                        "bis": "19:00",
+                        "platz": "KR-H1"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "platz": "KR-H2"
+                    },
+                    {
+                        "tag": "Mittwoch",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-H1"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "tsv-d1": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Mittwoch",
+                        "von": "17:30",
+                        "bis": "19:00",
+                        "platz": "KR-H2"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "17:30",
+                        "bis": "19:00",
+                        "platz": "KR-G"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Mittwoch",
+                        "von": "18:30",
+                        "bis": "19:30",
+                        "platz": "KR-G"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-G"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "tsv-e1": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "16:45",
+                        "bis": "18:00",
+                        "platz": "NR-H1"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "17:00",
+                        "bis": "18:15",
+                        "platz": "KR-H1"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "16:30",
+                        "bis": "18:00",
+                        "platz": "KR-H1"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "17:45",
+                        "bis": "19:00",
+                        "platz": "KR-D1"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "tsv-e2": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "16:45",
+                        "bis": "18:00",
+                        "platz": "NR-H2"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "17:00",
+                        "bis": "18:15",
+                        "platz": "KR-H2"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "16:30",
+                        "bis": "18:00",
+                        "platz": "KR-H2"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "17:45",
+                        "bis": "19:00",
+                        "ort": "halle"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "tsv-f1": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Montag",
+                        "von": "16:30",
+                        "bis": "17:45",
+                        "platz": "KR-V1"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "16:30",
+                        "bis": "17:45",
+                        "platz": "NR-H1"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Montag",
+                        "von": "17:00",
+                        "bis": "18:15",
+                        "platz": "KR-D1"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "16:30",
+                        "bis": "17:45",
+                        "platz": "KR-D1"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "tsv-f2": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Montag",
+                        "von": "16:30",
+                        "bis": "17:45",
+                        "platz": "KR-V2"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "16:30",
+                        "bis": "17:45",
+                        "platz": "NR-H2"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Montag",
+                        "von": "17:00",
+                        "bis": "18:15",
+                        "platz": "KR-D2"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "16:30",
+                        "bis": "17:45",
+                        "platz": "KR-D2"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "tsv-g1": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Montag",
+                        "von": "16:30",
+                        "bis": "17:30",
+                        "platz": "KR-V3"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "16:00",
+                        "bis": "17:00",
+                        "platz": "NR-V3"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Montag",
+                        "von": "17:00",
+                        "bis": "18:00",
+                        "platz": "KR-D3"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "16:30",
+                        "bis": "17:30",
+                        "platz": "KR-D3"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "tsv-g2": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Montag",
+                        "von": "16:30",
+                        "bis": "17:30",
+                        "platz": "KR-V4"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "16:00",
+                        "bis": "17:00",
+                        "platz": "NR-V4"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Montag",
+                        "von": "17:00",
+                        "bis": "18:00",
+                        "ort": "halle"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "16:00",
+                        "bis": "17:00",
+                        "ort": "halle"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "tsv-dm": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "16:30",
+                        "bis": "18:00",
+                        "platz": "KR-H1"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "16:30",
+                        "bis": "17:30",
+                        "platz": "NR-H1"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Freitag",
+                        "von": "18:30",
+                        "bis": "20:00",
+                        "ort": "halle"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         },
         "tsv-em": {
-            "training": [],
+            "hauptort": "nieukerk-kunstrasen",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Mittwoch",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "platz": "KR-H1"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "17:00",
+                        "bis": "18:00",
+                        "platz": "NR-H2"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Mittwoch",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-H2"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "16:30",
+                        "bis": "17:30",
+                        "ort": "halle"
+                    }
+                ]
+            },
             "hinweis": "",
             "kontakt": []
         }
