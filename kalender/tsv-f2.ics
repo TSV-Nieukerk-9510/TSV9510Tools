@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+PRODID:-//TSV 95/10 Nieukerk e.V.//TSV9510Tools//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:F-Junioren - TSV Nieukerk II (2627)
@@ -18,10 +18,10 @@ SUMMARY:A JSG GW Vernum / RW Geldern III - Kinderfestival
 DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nBegegnung: JSG GW Ver
  num / RW Geldern III - Kinderfestival – TSV Nieukerk II\nArt: Auswärtss
  piel\nAnstoß: Samstag\, 14. November 2026\, 09:45 Uhr\nWettbewerb: Kinder
- fußball\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-ni
- eukerk-ii/-/staffel/032ICACLSO00000CVS5489BUVSGKI48U-G\nSpielübersicht de
- r Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?te
- am=tsv-f2
+ fußball\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fuss
+ ball.de/spieltag/tsv-nieukerk-ii/-/staffel/032ICACLSO00000CVS5489BUVSGKI48
+ U-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV
+ 9510Tools/index.html?team=tsv-f2
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032ICACLSO00
  000CVS5489BUVSGKI48U-G
 STATUS:CONFIRMED
@@ -35,10 +35,11 @@ DTEND:20261121T093500Z
 SUMMARY:A SV Union Wetten II - Kinderfestival
 DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nBegegnung: SV Union W
  etten II - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnsto
- ß: Samstag\, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\n\
- nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-
- /staffel/032ICACLSO00000GVS5489BUVSGKI48U-G\nSpielübersicht der Webseite:
-  https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-f2
+ ß: Samstag\, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nS
+ chiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spi
+ eltag/tsv-nieukerk-ii/-/staffel/032ICACLSO00000GVS5489BUVSGKI48U-G\nSpiel
+ übersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/
+ index.html?team=tsv-f2
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032ICACLSO00
  000GVS5489BUVSGKI48U-G
 STATUS:CONFIRMED
@@ -52,10 +53,11 @@ DTEND:20261128T093500Z
 SUMMARY:A SV 19 Sevelen II - Kinderfestival
 DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nBegegnung: SV 19 Seve
  len II - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß:
-  Samstag\, 28. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\n\nSp
- iel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/st
- affel/032ICACLSS000002VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: ht
- tps://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-f2
+  Samstag\, 28. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nSchi
+ edsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spielt
+ ag/tsv-nieukerk-ii/-/staffel/032ICACLSS000002VS5489BUVSGKI48U-G\nSpielübe
+ rsicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/inde
+ x.html?team=tsv-f2
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032ICACLSS00
  0002VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
@@ -70,10 +72,11 @@ SUMMARY:H TSV Nieukerk II
 DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nBegegnung: TSV Nieuke
  rk II - Kinderfestival – TSV Nieukerk II\nArt: Heimspiel\nAnstoß: Samst
  ag\, 5. Dezember 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nPlatzart: K
- unstrasen * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf F
- USSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032
- ICACLSS000005VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv
- -nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-f2
+ unstrasen * (angenommen\, FUSSBALL.DE nennt keine Platzart)\nSchiedsrichte
+ r: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-ni
+ eukerk-ii/-/staffel/032ICACLSS000005VS5489BUVSGKI48U-G\nSpielübersicht de
+ r Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?te
+ am=tsv-f2
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032ICACLSS00
  0005VS5489BUVSGKI48U-G
 STATUS:CONFIRMED

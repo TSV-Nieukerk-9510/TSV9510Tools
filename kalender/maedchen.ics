@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+PRODID:-//TSV 95/10 Nieukerk e.V.//TSV9510Tools//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:TSV Nieukerk Juniorinnen (2627)
@@ -17,10 +17,10 @@ SUMMARY:E-Juniorinnen: A DJK Twisteden II - Kinderfestival
 DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nBegegnung: DJ
  K Twisteden II - Kinderfestival – TSV Nieukerk (W-U11)\nArt: Auswärtssp
  iel\nAnstoß: Samstag\, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderf
- ußball\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nie
- ukerk-w-u11/-/staffel/032ICACLSO00000FVS5489BUVSGKI48U-G\nSpielübersicht 
- der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?
- team=tsv-em
+ ußball\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussb
+ all.de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLSO00000FVS5489BUVSGKI
+ 48U-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/T
+ SV9510Tools/index.html?team=tsv-em
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLS
  O00000FVS5489BUVSGKI48U-G
 STATUS:CONFIRMED
@@ -39,14 +39,15 @@ DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nBegegnung: Alemannia
   November 2026\, 11:30 Uhr\nWettbewerb: Kreisliga A\, 9. Spieltag\nSpielnu
  mmer: 221659052\nStaffel-ID: 221659\nSpielstätte: Kunstrasenplatz\, Herib
  ert-Ramrath-Stadion\, Stadionstr. 1\, 47574 Goch\nAnschrift: Stadionstr. 1
- \, 47574 Goch\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.
- fussball.de/spiel/alemannia-pfalzdorf-ii-tsv-nieukerk/-/spiel/031Q0SC9PO00
- 0000VS5489BTVT8K11BC\nSportanlage in Google Maps: https://www.google.de/ma
- ps?q=Stadionstr.+1%2C+47574+Goch\nStaffel und Tabelle: https://www.fussbal
- l.de/spieltag/d-juniorinnen-gruppe-8-kreis-kleve-geldern-d-juniorinnen-kre
- isliga-a-d-juniorinnen-saison2627-niederrhein/-/spieldatum/2026-11-21/staf
- fel/031N5MRUKC000004VS5489BTVV1LNS7C-G\nSpielübersicht der Webseite: http
- s://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-dm
+ \, 47574 Goch\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf FU
+ SSBALL.DE: https://www.fussball.de/spiel/alemannia-pfalzdorf-ii-tsv-nieuke
+ rk/-/spiel/031Q0SC9PO000000VS5489BTVT8K11BC\nSportanlage in Google Maps: h
+ ttps://www.google.de/maps?q=Stadionstr.+1%2C+47574+Goch\nStaffel und Tabel
+ le: https://www.fussball.de/spieltag/d-juniorinnen-gruppe-8-kreis-kleve-ge
+ ldern-d-juniorinnen-kreisliga-a-d-juniorinnen-saison2627-niederrhein/-/spi
+ eldatum/2026-11-21/staffel/031N5MRUKC000004VS5489BTVV1LNS7C-G\nSpielübers
+ icht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.
+ html?team=tsv-dm
 URL:https://www.fussball.de/spiel/alemannia-pfalzdorf-ii-tsv-nieukerk/-/spi
  el/031Q0SC9PO000000VS5489BTVT8K11BC
 STATUS:CONFIRMED
@@ -62,10 +63,10 @@ DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nBegegnung: TS
  V Nieukerk (W-U11) - Kinderfestival – TSV Nieukerk (W-U11)\nArt: Heimspi
  el\nAnstoß: Samstag\, 28. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfu
  ßball\nPlatzart: Kunstrasen * (angenommen\, FUSSBALL.DE nennt keine Platz
- art)\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieuke
- rk-w-u11/-/staffel/032ICACLSS000000VS5489BUVSGKI48U-G\nSpielübersicht der
-  Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?tea
- m=tsv-em
+ art)\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball
+ .de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLSS000000VS5489BUVSGKI48U
+ -G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9
+ 510Tools/index.html?team=tsv-em
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLS
  S000000VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
@@ -84,14 +85,15 @@ DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nBegegnung: TSV Nieuke
  26\, 14:45 Uhr\nWettbewerb: Kreisliga A\, 10. Spieltag\nSpielnummer: 22165
  9059\nStaffel-ID: 221659\nSpielstätte: Rasenplatz\, Sportanlage TSV Nieuk
  erk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\,
-  47647 Kerken\nPlatzart: Naturrasen\n\nSpiel auf FUSSBALL.DE: https://www.
- fussball.de/spiel/tsv-nieukerk-vfr-sw-warbeyen/-/spiel/031Q0SC9KO000000VS5
- 489BTVT8K11BC\nSportanlage in Google Maps: https://www.google.de/maps?q=Am
- +Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fu
- ssball.de/spieltag/d-juniorinnen-gruppe-8-kreis-kleve-geldern-d-juniorinne
- n-kreisliga-a-d-juniorinnen-saison2627-niederrhein/-/spieldatum/2026-11-28
- /staffel/031N5MRUKC000004VS5489BTVV1LNS7C-G\nSpielübersicht der Webseite:
-  https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-dm
+  47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter: k. A.\n\nSpiel auf FU
+ SSBALL.DE: https://www.fussball.de/spiel/tsv-nieukerk-vfr-sw-warbeyen/-/sp
+ iel/031Q0SC9KO000000VS5489BTVT8K11BC\nSportanlage in Google Maps: https://
+ www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und 
+ Tabelle: https://www.fussball.de/spieltag/d-juniorinnen-gruppe-8-kreis-kle
+ ve-geldern-d-juniorinnen-kreisliga-a-d-juniorinnen-saison2627-niederrhein/
+ -/spieldatum/2026-11-28/staffel/031N5MRUKC000004VS5489BTVV1LNS7C-G\nSpiel
+ übersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/
+ index.html?team=tsv-dm
 URL:https://www.fussball.de/spiel/tsv-nieukerk-vfr-sw-warbeyen/-/spiel/031Q
  0SC9KO000000VS5489BTVT8K11BC
 STATUS:CONFIRMED
@@ -106,13 +108,13 @@ SUMMARY:D-Juniorinnen: A SV Budberg
 DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nBegegnung: SV Budberg
   – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag\, 5. Dezember 202
  6\, 09:30 Uhr\nWettbewerb: Kreisliga A\, 11. Spieltag\nSpielnummer: 221659
- 062\nStaffel-ID: 221659\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/
- spiel/sv-budberg-tsv-nieukerk/-/spiel/031Q0SC9CO000000VS5489BTVT8K11BC\nSt
- affel und Tabelle: https://www.fussball.de/spieltag/d-juniorinnen-gruppe-8
- -kreis-kleve-geldern-d-juniorinnen-kreisliga-a-d-juniorinnen-saison2627-ni
- ederrhein/-/spieldatum/2026-12-05/staffel/031N5MRUKC000004VS5489BTVV1LNS7C
- -G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9
- 510Tools/index.html?team=tsv-dm
+ 062\nStaffel-ID: 221659\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: h
+ ttps://www.fussball.de/spiel/sv-budberg-tsv-nieukerk/-/spiel/031Q0SC9CO000
+ 000VS5489BTVT8K11BC\nStaffel und Tabelle: https://www.fussball.de/spieltag
+ /d-juniorinnen-gruppe-8-kreis-kleve-geldern-d-juniorinnen-kreisliga-a-d-ju
+ niorinnen-saison2627-niederrhein/-/spieldatum/2026-12-05/staffel/031N5MRUK
+ C000004VS5489BTVV1LNS7C-G\nSpielübersicht der Webseite: https://tsv-nieuk
+ erk-9510.github.io/TSV9510Tools/index.html?team=tsv-dm
 URL:https://www.fussball.de/spiel/sv-budberg-tsv-nieukerk/-/spiel/031Q0SC9C
  O000000VS5489BTVT8K11BC
 STATUS:CONFIRMED
@@ -127,10 +129,10 @@ SUMMARY:E-Juniorinnen: A Kevelaerer SV II - Kinderfestival
 DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nBegegnung: Ke
  velaerer SV II - Kinderfestival – TSV Nieukerk (W-U11)\nArt: Auswärtssp
  iel\nAnstoß: Samstag\, 5. Dezember 2026\, 09:45 Uhr\nWettbewerb: Kinderfu
- ßball\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieu
- kerk-w-u11/-/staffel/032ICACLSS000003VS5489BUVSGKI48U-G\nSpielübersicht d
- er Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?t
- eam=tsv-em
+ ßball\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussba
+ ll.de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLSS000003VS5489BUVSGKI4
+ 8U-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TS
+ V9510Tools/index.html?team=tsv-em
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLS
  S000003VS5489BUVSGKI48U-G
 STATUS:CONFIRMED

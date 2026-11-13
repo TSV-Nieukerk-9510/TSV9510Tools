@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+PRODID:-//TSV 95/10 Nieukerk e.V.//TSV9510Tools//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Herren - TSV Nieukerk (2627)
@@ -21,15 +21,14 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: SV 1934 Veert –
   15:30 Uhr\nWettbewerb: Kreisliga A\, 13. Spieltag\nSpielnummer: 220545098
  \nStaffel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Sportanlage SV Veert
   Kunstrasen\, Hülspaßweg 6\, 47608 Geldern\nAnschrift: Hülspaßweg 6\, 
- 47608 Geldern\nPlatzart: Kunstrasen\nSchiedsrichter:  
- \n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/sv
- -1934-veert-tsv-nieukerk/-/spiel/031JH220TO000000VS5489BUVVKNMR0J\nSportan
- lage in Google Maps: https://www.google.de/maps?q=H%C3%BClspa%C3%9Fweg+6%2
- C+47608+Geldern\nStaffel und Tabelle: https://www.fussball.de/spieltag/kre
- isliga-a-kreis-kleve-geldern-kreisliga-a-herren-saison2627-niederrhein/-/s
- pieldatum/2026-11-15/staffel/031B925F1400000AVS5489BUVV628VP4-G\nSpielübe
- rsicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/inde
- x.html?team=tsv-h1
+ 47608 Geldern\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf FU
+ SSBALL.DE: https://www.fussball.de/spiel/sv-1934-veert-tsv-nieukerk/-/spie
+ l/031JH220TO000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://ww
+ w.google.de/maps?q=H%C3%BClspa%C3%9Fweg+6%2C+47608+Geldern\nStaffel und Ta
+ belle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kr
+ eisliga-a-herren-saison2627-niederrhein/-/spieldatum/2026-11-15/staffel/03
+ 1B925F1400000AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: https://ts
+ v-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/sv-1934-veert-tsv-nieukerk/-/spiel/031JH2
  20TO000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
@@ -48,14 +47,14 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: BV Sturm Wissel
  6\, 14:30 Uhr\nWettbewerb: Kreisliga A\, 14. Spieltag\nSpielnummer: 220545
  105\nStaffel-ID: 220545\nSpielstätte: Rasenplatz\, Sportanlage BV Sturm W
  issel\, Anton-Heuken-Str. 10\, 47546 Kalkar\nAnschrift: Anton-Heuken-Str. 
- 10\, 47546 Kalkar\nPlatzart: Naturrasen\n\nSpiel auf FUSSBALL.DE: https://
- www.fussball.de/spiel/bv-sturm-wissel-tsv-nieukerk/-/spiel/031JH220GO00000
- 0VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps?
- q=Anton-Heuken-Str.+10%2C+47546+Kalkar\nStaffel und Tabelle: https://www.f
- ussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren-sai
- son2627-niederrhein/-/spieldatum/2026-11-29/staffel/031B925F1400000AVS5489
- BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.gith
- ub.io/TSV9510Tools/index.html?team=tsv-h1
+ 10\, 47546 Kalkar\nPlatzart: Naturrasen\nSchiedsrichter: k. A.\n\nSpiel au
+ f FUSSBALL.DE: https://www.fussball.de/spiel/bv-sturm-wissel-tsv-nieukerk/
+ -/spiel/031JH220GO000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: http
+ s://www.google.de/maps?q=Anton-Heuken-Str.+10%2C+47546+Kalkar\nStaffel und
+  Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern
+ -kreisliga-a-herren-saison2627-niederrhein/-/spieldatum/2026-11-29/staffel
+ /031B925F1400000AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: https:/
+ /tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/bv-sturm-wissel-tsv-nieukerk/-/spiel/031J
  H220GO000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
@@ -74,14 +73,14 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk –
  r\nWettbewerb: Kreisliga A\, 15. Spieltag\nSpielnummer: 220545113\nStaffel
  -ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am 
  Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647 Ke
- rken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.fussball.
- de/spiel/tsv-nieukerk-sv-walbeck/-/spiel/031JH22060000000VS5489BUVVKNMR0J\
- nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%B
- Cwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spie
- ltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren-saison2627-niederr
- hein/-/spieldatum/2026-12-06/staffel/031B925F1400000AVS5489BUVV628VP4-G\nS
- pielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510To
- ols/index.html?team=tsv-h1
+ rken\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE
+ : https://www.fussball.de/spiel/tsv-nieukerk-sv-walbeck/-/spiel/031JH22060
+ 000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/
+ maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https
+ ://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-he
+ rren-saison2627-niederrhein/-/spieldatum/2026-12-06/staffel/031B925F140000
+ 0AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9
+ 510.github.io/TSV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/tsv-nieukerk-sv-walbeck/-/spiel/031JH2206
  0000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
@@ -100,14 +99,14 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk –
  , 15:30 Uhr\nWettbewerb: Kreisliga A\, 16. Spieltag\nSpielnummer: 22054512
  7\nStaffel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieu
  kerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\
- , 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www
- .fussball.de/spiel/tsv-nieukerk-sv-viktoria-goch-ii/-/spiel/031JH22HN00000
- 00VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps
- ?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://w
- ww.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren
- -saison2627-niederrhein/-/spieldatum/2026-12-13/staffel/031B925F1400000AVS
- 5489BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.
- github.io/TSV9510Tools/index.html?team=tsv-h1
+ , 47647 Kerken\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf F
+ USSBALL.DE: https://www.fussball.de/spiel/tsv-nieukerk-sv-viktoria-goch-ii
+ /-/spiel/031JH22HN0000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: htt
+ ps://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel
+  und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-gel
+ dern-kreisliga-a-herren-saison2627-niederrhein/-/spieldatum/2026-12-13/sta
+ ffel/031B925F1400000AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: htt
+ ps://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/tsv-nieukerk-sv-viktoria-goch-ii/-/spiel/
  031JH22HN0000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
@@ -126,14 +125,14 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: SF Broekhuysen II
  7\, 15:00 Uhr\nWettbewerb: Kreisliga A\, 17. Spieltag\nSpielnummer: 220545
  129\nStaffel-ID: 220545\nSpielstätte: Rasenplatz\, Sportanlage SF Broekhu
  ysen\, Op den Bökel\, 47638 Straelen\nAnschrift: Op den Bökel\, 47638 St
- raelen\nPlatzart: Naturrasen\n\nSpiel auf FUSSBALL.DE: https://www.fussbal
- l.de/spiel/sf-broekhuysen-ii-tsv-nieukerk/-/spiel/031JH22G8G000000VS5489BU
- VVKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps?q=Op+den+
- B%C3%B6kel%2C+47638+Straelen\nStaffel und Tabelle: https://www.fussball.de
- /spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren-saison2627-ni
- ederrhein/-/spieldatum/2027-02-28/staffel/031B925F1400000AVS5489BUVV628VP4
- -G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9
- 510Tools/index.html?team=tsv-h1
+ raelen\nPlatzart: Naturrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.
+ DE: https://www.fussball.de/spiel/sf-broekhuysen-ii-tsv-nieukerk/-/spiel/0
+ 31JH22G8G000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.g
+ oogle.de/maps?q=Op+den+B%C3%B6kel%2C+47638+Straelen\nStaffel und Tabelle: 
+ https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga
+ -a-herren-saison2627-niederrhein/-/spieldatum/2027-02-28/staffel/031B925F1
+ 400000AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieuk
+ erk-9510.github.io/TSV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/sf-broekhuysen-ii-tsv-nieukerk/-/spiel/03
  1JH22G8G000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
@@ -152,14 +151,14 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk –
  5:30 Uhr\nWettbewerb: Kreisliga A\, 18. Spieltag\nSpielnummer: 220545141\n
  Staffel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieuker
  k\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\, 4
- 7647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.fu
- ssball.de/spiel/tsv-nieukerk-1-fc-kleve-63-03-ii/-/spiel/031JH22FOS000000V
- S5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps?q=
- Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.
- fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren-sa
- ison2627-niederrhein/-/spieldatum/2027-03-07/staffel/031B925F1400000AVS548
- 9BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.git
- hub.io/TSV9510Tools/index.html?team=tsv-h1
+ 7647 Kerken\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSS
+ BALL.DE: https://www.fussball.de/spiel/tsv-nieukerk-1-fc-kleve-63-03-ii/-/
+ spiel/031JH22FOS000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https:
+ //www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel un
+ d Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-gelder
+ n-kreisliga-a-herren-saison2627-niederrhein/-/spieldatum/2027-03-07/staffe
+ l/031B925F1400000AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: https:
+ //tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/tsv-nieukerk-1-fc-kleve-63-03-ii/-/spiel/
  031JH22FOS000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
@@ -178,14 +177,15 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: Viktoria Winneken
  027\, 15:00 Uhr\nWettbewerb: Kreisliga A\, 19. Spieltag\nSpielnummer: 2205
  45145\nStaffel-ID: 220545\nSpielstätte: Rasenplatz\, Vik. Winnekendonk - 
  Sportpark Hauptplatz\, Sonsbecker Str.\, 47626 Kevelaer\nAnschrift: Sonsbe
- cker Str.\, 47626 Kevelaer\nPlatzart: Naturrasen\n\nSpiel auf FUSSBALL.DE:
-  https://www.fussball.de/spiel/viktoria-winnekendonk-tsv-nieukerk/-/spiel/
- 031JH22EIC000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.
- google.de/maps?q=Sonsbecker+Str.%2C+47626+Kevelaer\nStaffel und Tabelle: h
- ttps://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-
- a-herren-saison2627-niederrhein/-/spieldatum/2027-03-14/staffel/031B925F14
- 00000AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieuke
- rk-9510.github.io/TSV9510Tools/index.html?team=tsv-h1
+ cker Str.\, 47626 Kevelaer\nPlatzart: Naturrasen\nSchiedsrichter: k. A.\n\
+ nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/viktoria-winnekendon
+ k-tsv-nieukerk/-/spiel/031JH22EIC000000VS5489BUVVKNMR0J\nSportanlage in Go
+ ogle Maps: https://www.google.de/maps?q=Sonsbecker+Str.%2C+47626+Kevelaer\
+ nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-k
+ leve-geldern-kreisliga-a-herren-saison2627-niederrhein/-/spieldatum/2027-0
+ 3-14/staffel/031B925F1400000AVS5489BUVV628VP4-G\nSpielübersicht der Webse
+ ite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-
+ h1
 URL:https://www.fussball.de/spiel/viktoria-winnekendonk-tsv-nieukerk/-/spie
  l/031JH22EIC000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
@@ -204,14 +204,14 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk –
   Uhr\nWettbewerb: Kreisliga A\, 20. Spieltag\nSpielnummer: 220545155\nStaf
  fel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, 
  Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647
-  Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.fussba
- ll.de/spiel/tsv-nieukerk-sg-kessel-ho-ha/-/spiel/031JH22E04000000VS5489BUV
- VKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aerme
- n+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball
- .de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren-saison2627
- -niederrhein/-/spieldatum/2027-03-21/staffel/031B925F1400000AVS5489BUVV628
- VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/T
- SV9510Tools/index.html?team=tsv-h1
+  Kerken\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL
+ .DE: https://www.fussball.de/spiel/tsv-nieukerk-sg-kessel-ho-ha/-/spiel/03
+ 1JH22E04000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.go
+ ogle.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabell
+ e: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisl
+ iga-a-herren-saison2627-niederrhein/-/spieldatum/2027-03-21/staffel/031B92
+ 5F1400000AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-ni
+ eukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/tsv-nieukerk-sg-kessel-ho-ha/-/spiel/031J
  H22E04000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
@@ -230,14 +230,14 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: SV Siegfried Mate
  027\, 15:30 Uhr\nWettbewerb: Kreisliga A\, 21. Spieltag\nSpielnummer: 2205
  45161\nStaffel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Sportzentrum Ob
  erstadt Platz 1\, Materborner Allee\, 47533 Kleve\nAnschrift: Materborner 
- Allee\, 47533 Kleve\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https:
- //www.fussball.de/spiel/sv-siegfried-materborn-tsv-nieukerk/-/spiel/031JH2
- 2D28000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google
- .de/maps?q=Materborner+Allee%2C+47533+Kleve\nStaffel und Tabelle: https://
- www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herre
- n-saison2627-niederrhein/-/spieldatum/2027-04-04/staffel/031B925F1400000AV
- S5489BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510
- .github.io/TSV9510Tools/index.html?team=tsv-h1
+ Allee\, 47533 Kleve\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel 
+ auf FUSSBALL.DE: https://www.fussball.de/spiel/sv-siegfried-materborn-tsv-
+ nieukerk/-/spiel/031JH22D28000000VS5489BUVVKNMR0J\nSportanlage in Google M
+ aps: https://www.google.de/maps?q=Materborner+Allee%2C+47533+Kleve\nStaffe
+ l und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-ge
+ ldern-kreisliga-a-herren-saison2627-niederrhein/-/spieldatum/2027-04-04/st
+ affel/031B925F1400000AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: ht
+ tps://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/sv-siegfried-materborn-tsv-nieukerk/-/spi
  el/031JH22D28000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
@@ -256,14 +256,14 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk –
  , 15:30 Uhr\nWettbewerb: Kreisliga A\, 22. Spieltag\nSpielnummer: 22054517
  6\nStaffel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieu
  kerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\
- , 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www
- .fussball.de/spiel/tsv-nieukerk-alemannia-pfalzdorf-ii/-/spiel/031JH22CV80
- 00000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/m
- aps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https:
- //www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-her
- ren-saison2627-niederrhein/-/spieldatum/2027-04-11/staffel/031B925F1400000
- AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-95
- 10.github.io/TSV9510Tools/index.html?team=tsv-h1
+ , 47647 Kerken\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf F
+ USSBALL.DE: https://www.fussball.de/spiel/tsv-nieukerk-alemannia-pfalzdorf
+ -ii/-/spiel/031JH22CV8000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: 
+ https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaf
+ fel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-
+ geldern-kreisliga-a-herren-saison2627-niederrhein/-/spieldatum/2027-04-11/
+ staffel/031B925F1400000AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: 
+ https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/tsv-nieukerk-alemannia-pfalzdorf-ii/-/spi
  el/031JH22CV8000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED

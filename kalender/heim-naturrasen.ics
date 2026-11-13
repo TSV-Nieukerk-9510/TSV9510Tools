@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+PRODID:-//TSV 95/10 Nieukerk e.V.//TSV9510Tools//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:TSV Nieukerk Heimspiele Naturrasen (2627)
@@ -22,14 +22,14 @@ DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nBegegnung: JS
  ag\nSpielnummer: 221785032\nStaffel-ID: 221785\nSpielstätte: Rasenplatz\,
   Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift:
   Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter:
-   \n\nSpiel auf FUSSBALL.DE: https://w
- ww.fussball.de/spiel/jsg-aldekerk-nieukerk-alemannia-pfalzdorf/-/spiel/031
- SBDRVGC000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.goo
- gle.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle
- : https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-c-junio
- ren-kreisliga-a-c-junioren-saison2627-niederrhein/-/spieldatum/2026-11-14/
- staffel/031SBC1K8K000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: 
- https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-c1
+  k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldeker
+ k-nieukerk-alemannia-pfalzdorf/-/spiel/031SBDRVGC000000VS5489BTVTPHHFPR\nS
+ portanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCw
+ el+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spielt
+ ag/kreisliga-a-kreis-kleve-geldern-c-junioren-kreisliga-a-c-junioren-saiso
+ n2627-niederrhein/-/spieldatum/2026-11-14/staffel/031SBC1K8K000004VS5489BT
+ VTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github
+ .io/TSV9510Tools/index.html?team=jsg-c1
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-alemannia-pfalzdorf
  /-/spiel/031SBDRVGC000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
@@ -49,14 +49,14 @@ DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
  reisliga A\, 9. Spieltag\nSpielnummer: 221773054\nStaffel-ID: 221773\nSpie
  lstätte: Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47
  647 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Natur
- rasen\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldekerk
- -nieukerk-jsg-1fc-kleve-rindern-ii/-/spiel/031SBS7J90000000VS5489BTVTPHHFP
- R\nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3
- %BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/sp
- ieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-kreisliga-a-a-junioren-s
- aison2627-niederrhein/-/spieldatum/2026-11-24/staffel/031RV8ICJS000004VS54
- 89BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.gi
- thub.io/TSV9510Tools/index.html?team=jsg-a1
+ rasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussbal
+ l.de/spiel/jsg-aldekerk-nieukerk-jsg-1fc-kleve-rindern-ii/-/spiel/031SBS7J
+ 90000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.google.d
+ e/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: htt
+ ps://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-k
+ reisliga-a-a-junioren-saison2627-niederrhein/-/spieldatum/2026-11-24/staff
+ el/031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https
+ ://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-a1
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-jsg-1fc-kleve-rinde
  rn-ii/-/spiel/031SBS7J90000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
@@ -76,14 +76,14 @@ DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
  Kreisliga A\, 9. Spieltag\nSpielnummer: 221773054\nStaffel-ID: 221773\nSpi
  elstätte: Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4
  7647 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Natu
- rrasen\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldeker
- k-nieukerk-jsg-1fc-kleve-rindern-ii/-/spiel/031SBS7J90000000VS5489BTVTPHHF
- PR\nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C
- 3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/s
- pieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-kreisliga-a-a-junioren-
- saison2627-niederrhein/-/spieldatum/2026-11-24/staffel/031RV8ICJS000004VS5
- 489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.g
- ithub.io/TSV9510Tools/index.html?team=jsg-a1
+ rrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussba
+ ll.de/spiel/jsg-aldekerk-nieukerk-jsg-1fc-kleve-rindern-ii/-/spiel/031SBS7
+ J90000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.google.
+ de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: ht
+ tps://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-
+ kreisliga-a-a-junioren-saison2627-niederrhein/-/spieldatum/2026-11-24/staf
+ fel/031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: http
+ s://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-a1
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-jsg-1fc-kleve-rinde
  rn-ii/-/spiel/031SBS7J90000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
@@ -102,14 +102,15 @@ DESCRIPTION:Mannschaft: D-Juniorinnen - TSV Nieukerk\nBegegnung: TSV Nieuke
  26\, 14:45 Uhr\nWettbewerb: Kreisliga A\, 10. Spieltag\nSpielnummer: 22165
  9059\nStaffel-ID: 221659\nSpielstätte: Rasenplatz\, Sportanlage TSV Nieuk
  erk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\,
-  47647 Kerken\nPlatzart: Naturrasen\n\nSpiel auf FUSSBALL.DE: https://www.
- fussball.de/spiel/tsv-nieukerk-vfr-sw-warbeyen/-/spiel/031Q0SC9KO000000VS5
- 489BTVT8K11BC\nSportanlage in Google Maps: https://www.google.de/maps?q=Am
- +Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fu
- ssball.de/spieltag/d-juniorinnen-gruppe-8-kreis-kleve-geldern-d-juniorinne
- n-kreisliga-a-d-juniorinnen-saison2627-niederrhein/-/spieldatum/2026-11-28
- /staffel/031N5MRUKC000004VS5489BTVV1LNS7C-G\nSpielübersicht der Webseite:
-  https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-dm
+  47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter: k. A.\n\nSpiel auf FU
+ SSBALL.DE: https://www.fussball.de/spiel/tsv-nieukerk-vfr-sw-warbeyen/-/sp
+ iel/031Q0SC9KO000000VS5489BTVT8K11BC\nSportanlage in Google Maps: https://
+ www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und 
+ Tabelle: https://www.fussball.de/spieltag/d-juniorinnen-gruppe-8-kreis-kle
+ ve-geldern-d-juniorinnen-kreisliga-a-d-juniorinnen-saison2627-niederrhein/
+ -/spieldatum/2026-11-28/staffel/031N5MRUKC000004VS5489BTVV1LNS7C-G\nSpiel
+ übersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/
+ index.html?team=tsv-dm
 URL:https://www.fussball.de/spiel/tsv-nieukerk-vfr-sw-warbeyen/-/spiel/031Q
  0SC9KO000000VS5489BTVT8K11BC
 STATUS:CONFIRMED
@@ -128,15 +129,15 @@ DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
  tag\, 29. November 2026\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 10. Spielta
  g\nSpielnummer: 221770060\nStaffel-ID: 221770\nSpielstätte: Rasenplatz\, 
  Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: 
- Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\n\nSpiel auf FUSS
- BALL.DE: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-sv-19-straele
- n-ii/-/spiel/031SBMNT40000000VS5489BTVTPHHFPR\nSportanlage in Google Maps:
-  https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nSta
- ffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve
- -geldern-b-junioren-kreisliga-a-b-junioren-saison2627-niederrhein/-/spield
- atum/2026-11-29/staffel/031RV62OCO000004VS5489BTVTPHHFPR-G\nSpielübersich
- t der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.htm
- l?team=jsg-b1
+ Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter: 
+ k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-nieukerk
+ -aldekerk-sv-19-straelen-ii/-/spiel/031SBMNT40000000VS5489BTVTPHHFPR\nSpor
+ tanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+
+ 16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/
+ kreisliga-a-kreis-kleve-geldern-b-junioren-kreisliga-a-b-junioren-saison26
+ 27-niederrhein/-/spieldatum/2026-11-29/staffel/031RV62OCO000004VS5489BTVTP
+ HHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io
+ /TSV9510Tools/index.html?team=jsg-b1
 URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-sv-19-straelen-ii/-
  /spiel/031SBMNT40000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
@@ -155,15 +156,15 @@ DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nBegegnung: JS
  amstag\, 5. Dezember 2026\, 14:15 Uhr\nWettbewerb: Kreisliga A\, 9. Spielt
  ag\nSpielnummer: 221785042\nStaffel-ID: 221785\nSpielstätte: Rasenplatz\,
   Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift:
-  Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\n\nSpiel auf FUS
- SBALL.DE: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ssv-1953-rei
- chswalde/-/spiel/031SBDRV78000000VS5489BTVTPHHFPR\nSportanlage in Google M
- aps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\
- nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-k
- leve-geldern-c-junioren-kreisliga-a-c-junioren-saison2627-niederrhein/-/sp
- ieldatum/2026-12-05/staffel/031SBC1K8K000004VS5489BTVTPHHFPR-G\nSpielüber
- sicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index
- .html?team=jsg-c1
+  Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter:
+  k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldeker
+ k-nieukerk-ssv-1953-reichswalde/-/spiel/031SBDRV78000000VS5489BTVTPHHFPR\n
+ Sportanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BC
+ wel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spiel
+ tag/kreisliga-a-kreis-kleve-geldern-c-junioren-kreisliga-a-c-junioren-sais
+ on2627-niederrhein/-/spieldatum/2026-12-05/staffel/031SBC1K8K000004VS5489B
+ TVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.githu
+ b.io/TSV9510Tools/index.html?team=jsg-c1
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ssv-1953-reichswald
  e/-/spiel/031SBDRV78000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
@@ -182,15 +183,15 @@ DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
  toß: Sonntag\, 6. Dezember 2026\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 11
  . Spieltag\nSpielnummer: 221773066\nStaffel-ID: 221773\nSpielstätte: Rase
  nplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAn
- schrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\n\nSpiel
-  auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-keve
- laerer-sv/-/spiel/031SBS7ITG000000VS5489BTVTPHHFPR\nSportanlage in Google 
- Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken
- \nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-
- kleve-geldern-a-junioren-kreisliga-a-a-junioren-saison2627-niederrhein/-/s
- pieldatum/2026-12-06/staffel/031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpielübe
- rsicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/inde
- x.html?team=jsg-a1
+ schrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\nSchieds
+ richter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg
+ -aldekerk-nieukerk-kevelaerer-sv/-/spiel/031SBS7ITG000000VS5489BTVTPHHFPR\
+ nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%B
+ Cwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spie
+ ltag/kreisliga-a-kreis-kleve-geldern-a-junioren-kreisliga-a-a-junioren-sai
+ son2627-niederrhein/-/spieldatum/2026-12-06/staffel/031RV8ICJS000004VS5489
+ BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.gith
+ ub.io/TSV9510Tools/index.html?team=jsg-a1
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-kevelaerer-sv/-/spi
  el/031SBS7ITG000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
@@ -210,14 +211,14 @@ DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
  iga A\, 13. Spieltag\nSpielnummer: 221773076\nStaffel-ID: 221773\nSpielst
  ätte: Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647
   Kerken\nAnschrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturras
- en\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldekerk-ni
- eukerk-alemannia-pfalzdorf/-/spiel/031SBS7O3O000000VS5489BTVTPHHFPR\nSport
- anlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+1
- 6%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/k
- reisliga-a-kreis-kleve-geldern-a-junioren-kreisliga-a-a-junioren-saison262
- 7-niederrhein/-/spieldatum/2027-02-28/staffel/031RV8ICJS000004VS5489BTVTPH
- HFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/
- TSV9510Tools/index.html?team=jsg-a1
+ en\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.d
+ e/spiel/jsg-aldekerk-nieukerk-alemannia-pfalzdorf/-/spiel/031SBS7O3O000000
+ VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.google.de/maps?q
+ =Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www
+ .fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-kreisliga
+ -a-a-junioren-saison2627-niederrhein/-/spieldatum/2027-02-28/staffel/031RV
+ 8ICJS000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-n
+ ieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-a1
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-alemannia-pfalzdorf
  /-/spiel/031SBS7O3O000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
@@ -237,14 +238,14 @@ DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
   A\, 15. Spieltag\nSpielnummer: 221773086\nStaffel-ID: 221773\nSpielstätt
  e: Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Ker
  ken\nAnschrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\n
- \nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldekerk-nieuke
- rk-sv-siegfried-materborn/-/spiel/031SBS7N9S000000VS5489BTVTPHHFPR\nSporta
- nlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16
- %2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/kr
- eisliga-a-kreis-kleve-geldern-a-junioren-kreisliga-a-a-junioren-saison2627
- -niederrhein/-/spieldatum/2027-03-14/staffel/031RV8ICJS000004VS5489BTVTPHH
- FPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/T
- SV9510Tools/index.html?team=jsg-a1
+ Schiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/sp
+ iel/jsg-aldekerk-nieukerk-sv-siegfried-materborn/-/spiel/031SBS7N9S000000V
+ S5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.google.de/maps?q=
+ Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.
+ fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-kreisliga-
+ a-a-junioren-saison2627-niederrhein/-/spieldatum/2027-03-14/staffel/031RV8
+ ICJS000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-ni
+ eukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-a1
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-sv-siegfried-materb
  orn/-/spiel/031SBS7N9S000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
