@@ -1,0 +1,51 @@
+{
+  "_hinweis": [
+    "SEITE SPORTANLAGE (sportanlage.html). Alle Texte und Fotos werden hier gepflegt.",
+    "Fotos: Datei in assets/img/ ablegen und unter 'datei' eintragen. Fehlt die Datei,",
+    "zeigt die Seite 'Foto folgt'. 'alt' beschreibt das Bild (Barrierefreiheit),",
+    "'quelle' ist der optionale Bildnachweis.",
+    "plaetze: 'ort' ist der Schluessel aus 'orte' in mannschaften.json.",
+    "'text' ist die Beschreibung und darf leer bleiben (dann wird nichts angezeigt).",
+    "ausstattung und hinweise: beliebig viele Eintraege mit 'titel', 'text' und",
+    "optional 'foto'. Leere Listen blenden den Abschnitt aus."
+  ],
+  "foto": {
+    "datei": "assets/img/sportanlage.jpg",
+    "alt": "Luftaufnahme der Sportanlage des TSV 95/10 Nieukerk e.V.",
+    "quelle": ""
+  },
+  "plaetze": [
+    {
+      "ort": "nieukerk-naturrasen",
+      "titel": "Naturrasen",
+      "text": "",
+      "foto": {
+        "datei": "assets/img/naturrasen.jpg",
+        "alt": "Naturrasenplatz",
+        "quelle": ""
+      }
+    },
+    {
+      "ort": "nieukerk-kunstrasen",
+      "titel": "Kunstrasen",
+      "text": "",
+      "foto": {
+        "datei": "assets/img/kunstrasen.jpg",
+        "alt": "Kunstrasenplatz",
+        "quelle": ""
+      }
+    }
+  ],
+  "ausstattung": [
+    {
+      "titel": "Vereinsheim",
+      "text": "",
+      "foto": {
+        "datei": "assets/img/vereinsheim.jpg",
+        "alt": "Vereinsheim",
+        "quelle": ""
+      }
+    }
+  ],
+  "hinweise": []
+}

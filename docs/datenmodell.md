@@ -40,7 +40,7 @@ Das ist die Adresse, die die Android-App später abfragt.
 {
   "generated": "2026-11-12T20:15:00+00:00",
   "season": "2627",
-  "club": { "id": "00ES…", "name": "TSV Nieukerk 95/10", "short_name": "TSV Nieukerk" },
+  "club": { "id": "00ES…", "name": "TSV 95/10 Nieukerk e.V.", "short_name": "TSV Nieukerk" },
   "groups": { "senioren": "Senioren", "jugend": "Junioren", "maedchen": "Juniorinnen" },
   "teams": [
     {

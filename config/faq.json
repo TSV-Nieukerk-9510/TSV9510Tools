@@ -107,43 +107,55 @@
     },
     {
       "id": "training",
-      "titel": "Trainingsplan",
-      "seite": "training-sommer.html",
+      "titel": "Trainingszeiten",
+      "seite": "training.html",
       "fragen": [
         {
-          "frage": "Wann gilt „Sommer“, wann „Winter“?",
+          "frage": "Wo finde ich Sommer- und Winterzeiten?",
           "antwort": [
-            "**Sommer** gilt, solange beide Plätze nutzbar sind, also Kunstrasen und Naturrasen. **Winter** gilt, sobald der Naturrasen gesperrt ist; dann bleibt nur der Kunstrasen."
+            "Beides steht in der Karte der Mannschaft, die gerade geltende Jahreszeit zuerst und mit dem Vermerk „aktuell“. **Sommer** gilt, solange Kunstrasen und Naturrasen nutzbar sind. **Winter** gilt, sobald der Naturrasen gesperrt ist. Das Datum, ab dem eine Jahreszeit gilt, steht dahinter."
           ]
         },
         {
           "frage": "Woher stammen die Trainingszeiten?",
           "antwort": [
-            "Sie werden vom Verein von Hand gepflegt, FUSSBALL.DE kennt sie nicht. Oben auf der Seite steht, wann sie zuletzt geändert wurden."
+            "Sie werden vom Verein von Hand gepflegt, FUSSBALL.DE kennt sie nicht. Oben auf der Seite steht, wann sie zuletzt geändert wurden. Ein gelbes „Beispiel“ bei einer Jahreszeit heißt: Diese Zeiten sind noch nicht die echten."
+          ]
+        },
+        {
+          "frage": "Was bedeuten TSV und FCA hinter dem Wochentag?",
+          "antwort": [
+            "Das ist die Abkürzung des Ortes: **TSV** für unsere Sportanlage in Nieukerk (Kunst- und Naturrasen), **FCA** für die Anlage des FC Aldekerk. Anschrift und Kartenlink stehen oben in der Karte beim Haupt- und Nebenort."
           ]
         },
         {
           "frage": "Was bedeutet „Hauptort“ und „Nebenort“?",
           "antwort": [
-            "Der **Hauptort** ist der Normalfall. Manche Mannschaften, etwa Jugend der JSG, trainieren zusätzlich an einem **Nebenort**. Beide haben einen Kartenlink für die Anfahrt. Weicht eine Einheit vom Hauptort ab, steht der Ort in der Zeile."
+            "Der **Hauptort** ist der Normalfall. Manche Mannschaften, etwa die JSG-Jugend, trainieren zusätzlich an einem **Nebenort**."
+          ]
+        },
+        {
+          "frage": "Wie sind die Mannschaften gegliedert?",
+          "antwort": [
+            "Senioren, **Leistungsbereich** (D bis A, wobei A bis C als JSG mit dem FC Aldekerk spielen), **Entwicklungsbereich** (G bis E) und die Mädchen."
           ]
         },
         {
           "frage": "Wie lese ich die Angabe „Kunstrasen, Hälfte 1“?",
           "antwort": [
-            "Das Training läuft auf diesem Teil des Platzes. Es gibt ganze Felder, Hälften und Viertel, im Winter zusätzlich Drittel. Wie das aussieht, zeigt die [Platzbelegung](platzbelegung.html)."
+            "Das Training läuft auf diesem Teil des Platzes. Es gibt Hälften und Viertel, im Winter zusätzlich Drittel. Wie das aussieht, zeigt die [Platzbelegung](platzbelegung.html)."
           ]
         },
         {
-          "frage": "Warum fehlen bei manchen Mannschaften Zeiten oder Ansprechpartner?",
+          "frage": "Was zeigen „Nächste Spiele“ in der Karte?",
+          "antwort": [
+            "Die drei nächsten Spiele der Mannschaft von FUSSBALL.DE. Ein Klick auf die Paarung zeigt alle Angaben, genau wie in der Spielübersicht."
+          ]
+        },
+        {
+          "frage": "Warum fehlen bei manchen Mannschaften Ansprechpartner?",
           "antwort": [
             "Dort sind sie noch nicht hinterlegt. Die Seite sagt das offen, statt etwas Falsches zu zeigen."
-          ]
-        },
-        {
-          "frage": "Stimmen die Zeiten schon?",
-          "antwort": [
-            "Solange oben der gelbe Hinweis „Beispieldaten“ steht, sind die Zeiten nur Beispiele."
           ]
         }
       ]
@@ -157,6 +169,24 @@
           "frage": "Was zeigt die Platzbelegung?",
           "antwort": [
             "Wie die Plätze zu welcher Zeit aufgeteilt sind. Im Sommer sind es zwei getrennte Plätze, Kunstrasen und Naturrasen, im Winter nur der Kunstrasen."
+          ]
+        },
+        {
+          "frage": "Wie sehe ich nur eine Mannschaft?",
+          "antwort": [
+            "Oben die Mannschaft oder „Alle“ eines Bereichs wählen, genau wie in der Spielübersicht. Dann zeigt „Einzeln“ nur die Zeiten dieser Mannschaft, die anderen erscheinen blass. Mit „Woche“ sieht man den Wochenplan im Vergleich zu allen anderen. Unter „Weitere“ stehen Gruppen wie Alte Herren, Damen und Gastvereine."
+          ]
+        },
+        {
+          "frage": "Warum sehe ich immer Kunst- und Naturrasen?",
+          "antwort": [
+            "Beide Plätze werden immer gezeigt. Ist ein Platz in der Jahreszeit gesperrt, zum Beispiel der Naturrasen im Winter, erscheint er grau mit dem Vermerk „gesperrt“. Training in Aldekerk steht als eigene Zeile beziehungsweise eigener Plan."
+          ]
+        },
+        {
+          "frage": "Warum steht höchstens eine Hälfte im Plan?",
+          "antwort": [
+            "Auch wenn ein ganzer Platz frei wäre, wird pro Training höchstens eine Hälfte eingetragen. Das ganze Feld meldet die Seite als Unstimmigkeit."
           ]
         },
         {

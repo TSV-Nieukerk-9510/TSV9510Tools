@@ -18,7 +18,7 @@ from datetime import datetime, timedelta, timezone
 
 from scripts.common.text import lesbar
 
-PRODID = "-//TSV Nieukerk 95/10//TSV9510Tools//DE"
+PRODID = "-//TSV 95/10 Nieukerk e.V.//TSV9510Tools//DE"
 
 # Sagt dem Kalenderprogramm, wie oft es neu laden soll. Ohne diese Angabe
 # fragen manche Clients nur einmal taeglich nach.

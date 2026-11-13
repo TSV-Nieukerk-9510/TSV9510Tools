@@ -26,13 +26,13 @@ window.Seite = (function () {
   var NAVIGATION = [
     { schluessel: "uebersicht", titel: "Spielübersicht", datei: "index.html" },
     { schluessel: "trainingsplan", titel: "Trainingsplan",
-      datei: "training-sommer.html", kinder: [
-        { schluessel: "training-sommer", titel: "Trainingszeiten Sommer",
-          datei: "training-sommer.html" },
-        { schluessel: "training-winter", titel: "Trainingszeiten Winter",
-          datei: "training-winter.html" },
+      datei: "training.html", kinder: [
+        { schluessel: "training", titel: "Trainingszeiten",
+          datei: "training.html" },
         { schluessel: "platzbelegung", titel: "Platzbelegung",
-          datei: "platzbelegung.html" }
+          datei: "platzbelegung.html" },
+        { schluessel: "sportanlage", titel: "Sportanlage",
+          datei: "sportanlage.html" }
       ] },
     { schluessel: "tools", titel: "Tools", datei: "kalender.html", kinder: [
       { schluessel: "kalender", titel: "Kalender", datei: "kalender.html" },
@@ -67,8 +67,12 @@ window.Seite = (function () {
     teams: "data/teams.json",
     spiele: "data/matches.json",
     mannschaften: "config/mannschaften.json",
-    faq: "config/faq.json"
+    faq: "config/faq.json",
+    sportanlage: "config/sportanlage.json"
   };
+
+  // Offizieller Vereinsname (Kopfzeile, Titel, Anschrift)
+  var VEREINSNAME = "TSV 95/10 Nieukerk e.V.";
 
   var daten = {};
 
@@ -140,11 +144,113 @@ window.Seite = (function () {
     });
   }
 
-  /* Hinweis, solange config/mannschaften.json Beispielzeiten enthaelt. */
-  function beispielHinweis() {
+  /* --- Jahreszeiten, Bereiche, Namen ------------------------------- */
+
+  function saisonListe() {
     var m = daten.mannschaften;
 
-    if (m && m.beispieldaten) {
+    return (m && m.saisons) || {
+      sommer: { name: "Sommer" }, winter: { name: "Winter" }
+    };
+  }
+
+  /* Welche Jahreszeit gerade gilt: die mit dem juengsten Beginn ("ab"),
+   * der nicht in der Zukunft liegt. Ohne Datum: nach Monat. */
+  function aktuelleSaison() {
+    var liste = saisonListe();
+    var heuteIso = new Date().toISOString().slice(0, 10);
+    var beste = null;
+
+    Object.keys(liste).forEach(function (k) {
+      var ab = liste[k].ab;
+
+      if (ab && ab <= heuteIso && (!beste || ab > liste[beste].ab)) {
+        beste = k;
+      }
+    });
+
+    if (!beste) {
+      Object.keys(liste).forEach(function (k) {
+        if (liste[k].ab && (!beste || liste[k].ab > liste[beste].ab)) {
+          beste = k;
+        }
+      });
+    }
+
+    if (beste) {
+      return beste;
+    }
+
+    var monat = new Date().getMonth() + 1;
+    return (monat >= 11 || monat <= 3) ? "winter" : "sommer";
+  }
+
+  /* Sind die Zeiten dieser Jahreszeit nur Beispiele? */
+  function istBeispiel(saison) {
+    var m = daten.mannschaften;
+    var b = m && m.beispieldaten;
+
+    return b && typeof b === "object" ? !!b[saison] : !!b;
+  }
+
+  /* Bereiche der Mannschaften fuer Trainingsseiten: aus der Config
+   * ("bereiche"), sonst die Gruppen aus data/teams.json. Mannschaften,
+   * die in keinem Bereich stehen, kommen unten dazu. */
+  function bereiche() {
+    var m = daten.mannschaften;
+    var aktive = aktiveTeams();
+    var gruppen = (daten.teams && daten.teams.groups) || {};
+    var ergebnis = [];
+    var vergeben = {};
+
+    if (m && m.bereiche && m.bereiche.length) {
+      m.bereiche.forEach(function (b) {
+        var teams = (b.teams || []).map(team).filter(function (t) {
+          return t && t.active !== false;
+        });
+
+        teams.forEach(function (t) { vergeben[t.slug] = true; });
+        ergebnis.push({ schluessel: b.schluessel, titel: b.titel,
+          hinweis: b.hinweis || "", teams: teams });
+      });
+
+      var rest = aktive.filter(function (t) { return !vergeben[t.slug]; });
+
+      if (rest.length) {
+        ergebnis.push({ schluessel: "weitere", titel: "Weitere",
+          hinweis: "", teams: rest });
+      }
+      return ergebnis.filter(function (b) { return b.teams.length; });
+    }
+
+    ["senioren", "jugend", "maedchen"].forEach(function (k) {
+      var teams = aktive.filter(function (t) { return t.group === k; });
+
+      if (teams.length) {
+        ergebnis.push({ schluessel: k, titel: gruppen[k] || k, hinweis: "",
+          teams: teams });
+      }
+    });
+    return ergebnis;
+  }
+
+  /* Vollstaendiger Mannschaftsname ohne den Vereinsnamen: die Seite
+   * gehoert dem TSV Nieukerk, das muss nicht ueberall stehen.
+   * "Herren - TSV Nieukerk II" -> "Herren II". */
+  function ohneVerein(name) {
+    return String(name || "").replace(/\s*-\s*TSV Nieukerk( II)?$/,
+      function (alles, zwei) { return zwei || ""; });
+  }
+
+  /* Hinweis, solange config/mannschaften.json fuer die Jahreszeit
+   * Beispielzeiten enthaelt. "beispieldaten" ist true/false oder je
+   * Jahreszeit {"sommer": false, "winter": true}. */
+  function beispielHinweis(saison) {
+    var m = daten.mannschaften;
+    var b = m && m.beispieldaten;
+    var an = b && typeof b === "object" ? !!b[saison] : !!b;
+
+    if (an) {
       return '<p class="warnung"><b>Beispieldaten.</b> Die Zeiten auf '
         + "dieser Seite sind nur Beispiele und noch nicht die echten "
         + "Trainingszeiten.</p>";
@@ -264,18 +370,6 @@ window.Seite = (function () {
     return ergebnis;
   }
 
-  /* Hinweis, solange config/mannschaften.json Beispielzeiten enthaelt. */
-  function beispielHinweis() {
-    var m = daten.mannschaften;
-
-    if (m && m.beispieldaten) {
-      return '<p class="warnung"><b>Beispieldaten.</b> Die Zeiten auf '
-        + "dieser Seite sind nur Beispiele und noch nicht die echten "
-        + "Trainingszeiten.</p>";
-    }
-    return "";
-  }
-
   /* --- Gerüst --------------------------------------------------- */
 
   function zeichneKopf(aktiv, untertitel) {
@@ -283,8 +377,7 @@ window.Seite = (function () {
     var nav = document.getElementById("hauptnav");
     var fuss = document.getElementById("fuss");
 
-    var verein = (daten.teams && daten.teams.club && daten.teams.club.name)
-      || "TSV Nieukerk 95/10";
+    var verein = VEREINSNAME;
 
     var fundort = suchePunkt(aktiv);
     var punkt = fundort.seite;
@@ -374,7 +467,7 @@ window.Seite = (function () {
 
     // Trainingsplan: massgeblich ist der Stand der von Hand gepflegten
     // Zeiten, nicht der des letzten Datenabrufs.
-    if (/^training-|^platzbelegung$/.test(aktiv)) {
+    if (/^training$|^platzbelegung$/.test(aktiv)) {
       var stand = daten.mannschaften
         && daten.mannschaften.stand_trainingszeiten;
 
@@ -446,6 +539,11 @@ window.Seite = (function () {
     team: team,
     aktiveTeams: aktiveTeams,
     beispielHinweis: beispielHinweis,
+    saisonListe: saisonListe,
+    aktuelleSaison: aktuelleSaison,
+    istBeispiel: istBeispiel,
+    bereiche: bereiche,
+    ohneVerein: ohneVerein,
     felder: FELDER,
     aufloesen: aufloesen,
     adresse: adresse,

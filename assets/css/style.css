@@ -668,7 +668,7 @@ main h2 {
   letter-spacing: .03em;
 }
 
-.platz-bild { display: block; width: 100%; height: auto; }
+.platz-bild { display: block; width: 100%; max-width: 11rem; height: auto; margin-inline: auto; }
 
 .platz-liste {
   list-style: none;
@@ -1084,3 +1084,174 @@ body.eingebettet main { padding-top: .9rem; }
 .faq-frage[open] { background: var(--zeile); }
 .faq-antwort { padding: 0 .9rem .7rem; }
 .faq-antwort p { margin: .3rem 0; }
+
+/* Platzbelegung: Auswahl, andere Orte, ausgeblendete Eintraege */
+.platz-liste li.fern { opacity: .55; }
+.platz-block.fern { opacity: .5; }
+.platz-extern { margin-top: 1rem; }
+.platz-wochenkarte .platz-scroll + p, .platz-wochenkarte > p { margin: .2rem 0 0; }
+.platz-ende { margin-top: .8rem; }
+.platz-ende .platz-woche { min-width: 0; max-width: 18rem; }
+
+/* Trainingszeiten: Bereiche, Jahreszeiten, naechste Spiele */
+.bereich-hinweis { margin: -.4rem 0 .7rem; font-size: .88rem; }
+.mannschaft h4.saison-kopf { margin-top: .9rem; }
+.abk { font-weight: 400; color: var(--leise); font-size: .85em; }
+.marke-aktuell,
+.marke-beispiel,
+.marke-jsg {
+  display: inline-block;
+  font-family: var(--schrift);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: .05rem .35rem;
+  vertical-align: middle;
+}
+.marke-aktuell { background: var(--navy); color: #fff; }
+.marke-beispiel { background: #fff3cd; color: #7a5b00; }
+.marke-jsg { background: var(--zeile); color: var(--navy); border: 1px solid var(--linie); }
+.spieltage.kompakt { font-size: .9rem; }
+.spieltage.kompakt th,
+.spieltage.kompakt td { padding: .4rem .5rem; }
+.spieltage.kompakt .sp-team {
+  width: 1%;
+  font-family: var(--schrift);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: .85rem;
+}
+.spieltage.kompakt .sp-paarung .ort { display: none; }
+.spieltage.kompakt .sp-details td { padding-left: .5rem; }
+.spieltage.kompakt .sp-details dl { grid-template-columns: 1fr; gap: 0; font-size: .85rem; }
+.spieltage.kompakt .sp-details dt { margin-top: .35rem; }
+.spieltage.kompakt .sp-team { max-width: none; overflow: visible; }
+.anlage { margin: 0 0 .8rem; font-size: .85rem; }
+.mannschaft h4.saison-kopf { color: var(--leise); }
+.mannschaft h4.saison-kopf.aktuell { color: var(--navy); }
+
+.neben-info { margin: .35rem 0 0; font-size: .82rem; }
+
+.mannschaft h4 + p.leise { margin: .2rem 0 .6rem; font-size: .85rem; }
+
+table.training tr.einheit th, table.training tr.einheit td { padding-bottom: 0; }
+table.training tr.platzzeile td { padding: 0 0 .45rem; font-size: .85rem; white-space: normal !important; }
+table.training tr.platzzeile td:first-child { padding-left: 0; }
+
+.spieltage.kompakt th, .spieltage.kompakt td { padding: .25rem .4rem; }
+.spieltage.kompakt { font-size: .85rem; }
+
+/* Kinderfestival-Marke (Ball mit Funken) */
+.marke.festival { padding: .1rem .25rem; line-height: 0; }
+.marke.festival svg { width: 1.05rem; height: 1.05rem; vertical-align: middle; }
+
+/* Kompakte Listen: Spielname nie umbrechen, sondern kuerzen */
+.spieltage.kompakt .sp-paarung { max-width: 0; width: 100%; }
+.spieltage.kompakt .sp-paarung .partie {
+  display: flex; align-items: center; overflow: hidden; overflow-wrap: normal;
+}
+.spieltage.kompakt .sp-name {
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;
+}
+.spieltage.kompakt .marke { flex: none; }
+.spieltage.kompakt .pfeil-auf { flex: none; }
+
+.marke.festival svg { width: 1.3rem; height: 1.2rem; }
+
+/* Jahreszeiten als abgesetzte Boxen */
+.saison-box {
+  margin: .8rem 0 0;
+  padding: .2rem .8rem .7rem;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  background: var(--zeile);
+}
+.saison-box.aktuell { background: #e8eef7; border-color: #c5d2e6; }
+.saison-box .saison-kopf { margin-top: .6rem; }
+
+/* Seite Sportanlage */
+.anlage-foto { margin: 0 0 1rem; }
+.anlage-foto img { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--linie); }
+.anlage-foto figcaption { margin-top: .3rem; font-size: .78rem; color: var(--leise); }
+.anlage-platzhalter {
+  padding: 2.5rem 1rem; text-align: center; color: var(--leise);
+  border: 2px dashed var(--linie); border-radius: 8px; background: var(--zeile);
+}
+.anlage-adresse .anschrift { line-height: 1.5; }
+.anlage-liste { list-style: none; padding: 0; margin: 0 0 1rem; }
+.anlage-liste li { padding: .5rem 0; border-top: 1px solid var(--linie); }
+.anlage-liste li span { display: block; color: var(--leise); font-size: .9rem; }
+.einleitung { font-size: 1.05rem; }
+.anlage-foto img[hidden] { display: none; }
+.anlage-foto.klein { margin: .3rem 0 .6rem; }
+.anlage-foto.klein .anlage-platzhalter { padding: 1.6rem 1rem; font-size: .9rem; }
+
+/* Wochenuebersicht der Platzbelegung */
+.wt-saison h3 { margin: 1rem 0 .4rem; }
+.wt-rahmen { overflow-x: auto; margin: 0 0 1rem; border: 1px solid var(--linie); border-radius: 8px; }
+.wochentabelle { width: 100%; border-collapse: collapse; font-size: .85rem; min-width: 28rem; }
+.wochentabelle th, .wochentabelle td { padding: .45rem .6rem; text-align: left; vertical-align: top; border-top: 1px solid var(--linie); }
+.wochentabelle thead th { border-top: 0; background: var(--zeile); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--leise); }
+.wochentabelle tbody th { white-space: nowrap; font-weight: 600; background: var(--zeile); width: 1%; }
+.wochentabelle td.leer { color: var(--linie); }
+.wt-eintrag + .wt-eintrag { margin-top: .3rem; }
+.wt-zeit { font-variant-numeric: tabular-nums; color: var(--navy); }
+.wt-eintrag.streit { color: #b3261e; }
+
+.wt-eintrag .wt-zeit { font-weight: 600; }
+.wt-eintrag .wt-wer { margin-top: .05rem; }
+.legende-reihe { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: .5rem 0 1rem; }
+.legende-teil { margin: 0; text-align: center; }
+.legende-bild { width: 5.5rem; height: auto; display: block; margin: 0 auto .3rem; }
+.legende-teil figcaption { font-size: .85rem; }
+.wt-eintrag .wt-zeit { white-space: nowrap; }
+
+/* Tagesplan: Zeitleiste */
+.tg-wahl { margin: .3rem 0 .5rem; }
+.tg-saison h3 { margin: 1rem 0 .4rem; }
+.tg-rahmen { overflow-x: auto; border: 1px solid var(--linie); border-radius: 8px; margin-bottom: 1rem; }
+.tg { font-size: .78rem; }
+.tg-zeile { display: flex; border-top: 1px solid rgba(0,0,0,.15); }
+.tg-label {
+  position: sticky; left: 0; z-index: 3; flex: none; width: 96px;
+  display: flex; flex-direction: column; justify-content: space-around;
+  padding: 0 .5rem; font-weight: 600; box-sizing: border-box;
+  border-right: 1px solid rgba(0,0,0,.2);
+}
+.tg-label span { display: flex; align-items: center; flex: 1; }
+.tg-label span + span { border-top: 1px dashed rgba(0,0,0,.25); }
+.tg-flaeche { position: relative; flex: none; }
+.tg-achse { border-top: 0; height: 26px; background: var(--zeile); }
+.tg-achse .tg-label { justify-content: center; background: var(--zeile); }
+.tg-achse .tg-flaeche span { position: absolute; top: 5px; transform: translateX(-50%); color: var(--leise); font-variant-numeric: tabular-nums; }
+.tg-achse .tg-flaeche span:first-child { transform: none; margin-left: 3px; }
+.tg-kopf { padding: .2rem .5rem; font-weight: 700; font-size: .72rem; letter-spacing: .05em; text-transform: uppercase; background: var(--navy); color: #fff; position: sticky; left: 0; }
+.tg-balken {
+  position: absolute; box-sizing: border-box; padding: 2px 5px; overflow: hidden;
+  color: #fff; border: 1px solid #fff; border-radius: 3px; line-height: 1.25;
+  text-align: center; display: flex; flex-direction: column; justify-content: center;
+}
+.tg-balken.klein { flex-direction: row; align-items: center; justify-content: center; gap: .3rem; padding: 0 4px; white-space: nowrap; }
+.tg-balken span { opacity: .92; font-size: .72rem; }
+.tg-balken i { font-size: .7rem; opacity: .9; }
+.tg-balken.streit { outline: 2px dashed #b3261e; outline-offset: -2px; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #b3261e; z-index: 2; }
+
+/* Tagesplan ohne Scrollleisten: die Zeitachse richtet sich nach der Breite */
+.pb-nav { margin: .8rem 0 .4rem; }
+.tg-rahmen { overflow: hidden; }
+.tg { width: 100%; }
+.tg-label { width: 96px; }
+.tg-flaeche { flex: 1 1 auto; min-width: 0; }
+.tg-achse .tg-flaeche span.halb { color: #8a95a3; }
+.tg-balken b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.tg-balken span { white-space: nowrap; }
+@media (max-width: 640px) {
+  .tg-label { width: 58px; padding: 0 .3rem; font-size: .68rem; }
+  .tg-achse .tg-flaeche span.halb { display: none; }
+  .tg { font-size: .7rem; }
+  .tg-balken { padding: 2px 2px; }
+  .tg-balken span { font-size: .6rem; }
+  .tg-balken i { display: none; }
+}

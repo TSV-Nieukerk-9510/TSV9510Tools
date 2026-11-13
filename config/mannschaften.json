@@ -10,11 +10,11 @@
         "Leere Eintraege sind in Ordnung: die Seite zeigt dann 'noch nicht",
         "hinterlegt' statt einer falschen Angabe.",
         "",
-        "BEISPIELDATEN: Solange 'beispieldaten' auf true steht, zeigen die Seiten",
-        "einen deutlichen Hinweis, dass die Zeiten nur Beispiele sind. Zeiten",
-        "eintragen oder ersetzen und den Schalter auf false setzen (oder die",
-        "Zeile loeschen).",
-        "",
+        "BEISPIELDATEN: 'beispieldaten' ist je Jahreszeit schaltbar, z. B.",
+        "{\"sommer\": false, \"winter\": true}. Bei true zeigen die Seiten dieser Jahreszeit",
+        "einen Hinweis, dass die Zeiten nur Beispiele sind. Ein einfaches true gilt",
+        "fuer beide. Quelle der Sommerzeiten: Entwurf Trainingsplan 26/27, Stand",
+        "20.09.2026. Die Winterzeiten sind noch erfunden.",
         "DATENSCHUTZ: Diese Datei liegt in einem oeffentlichen Repository",
         "und ist damit fuer jeden lesbar - auch fuer Adresssammler.",
         "Bitte nur Funktionsadressen des Vereins eintragen (etwa",
@@ -37,6 +37,9 @@
         "  name      Anzeigename",
         "  strasse, plz, ort   Anschrift (daraus wird der Kartenlink gebaut)",
         "  karte     optional: eigener Kartenlink, ersetzt den erzeugten",
+        "  abk       Abkuerzung, die auf der Trainingsseite in Klammern hinter dem",
+        "            Tag steht (z. B. TSV fuer beide Plaetze in Nieukerk, FCA fuer",
+        "            Aldekerk). Ohne Abkuerzung steht der Name.",
         "  kuerzel   nur eigene Plaetze: KR (Kunstrasen) oder NR (Naturrasen);",
         "            diese Plaetze erscheinen auf der Seite Platzbelegung",
         "  rasen     'Kunstrasen' oder 'Naturrasen' (Zuordnung der Spiele)",
@@ -57,9 +60,44 @@
         "                  'neben' = Nebenort, 'haupt' = Hauptort oder ein Schluessel",
         "                  aus 'orte' (z. B. 'halle')",
         "",
-        "Felder je Ansprechpartner: rolle, name, email, telefon"
+        "Felder je Ansprechpartner: rolle, name, email, telefon",
+        "",
+        "PLATZ-REGEL: Auch wenn der ganze Platz frei waere, wird hoechstens eine",
+        "Haelfte (H1/H2) eingetragen - 'felder' in 'saisons' legt fest, was erlaubt",
+        "ist; ein ganzes Feld (G) meldet die Platzbelegung als Unstimmigkeit.",
+        "",
+        "ZUSAMMEN TRAINIEREN: Trainieren zwei Mannschaften gemeinsam (z. B. G1 + G2),",
+        "traegt die zweite bei der Einheit 'zusammen': '<slug der ersten>' ein. In der",
+        "Zeichnung erscheint dann ein gemeinsamer Block ohne Doppelbelegung.",
+        "",
+        "WEITERE GRUPPEN ('weitere'): Gruppen ohne eigene Mannschaftsseite, die unsere",
+        "Plaetze nutzen (Alte Herren, Damen, Ballgruppe, Gastvereine). Nur die",
+        "Platzbelegung zeigt sie. 'art': 'verein' oder 'gast'.",
+        "",
+        "HINWEIS JE EINHEIT: optionales Feld 'hinweis', z. B. 'nach Bedarf'.",
+        "Platzsperren o. ae. werden nicht eingetragen, das entscheidet der Platzwart.",
+        "",
+        "PLATZANSICHT ('platzansicht'): Die Plaetze werden hochkant gezeichnet, links",
+        "Naturrasen (mit angedeuteter Laufbahn), rechts Kunstrasen. 'drehung' legt",
+        "fest, wie die Felder gedreht sind, damit die Haelften zur Lage des",
+        "Vereinsheims passen: 'rechts' (Standard: Haelfte 1 oben) oder 'links'",
+        "(Haelfte 1 unten). Bei Bedarf einfach umstellen.",
+        "",
+        "GAESTE: Gastvereine stehen unter 'weitere' mit 'art': 'gast' und werden",
+        "dort bei Bedarf eingetragen oder entfernt (z. B. SV Sevelen waehrend der",
+        "Platzsperre). Sie erscheinen in der Platzbelegung als eigene Auswahl.",
+        "",
+        "BEREICHE ('bereiche'): Gliederung der Trainingszeiten. Jeder Bereich hat",
+        "'schluessel', 'titel', optional 'hinweis' und die Liste 'teams' (slugs).",
+        "Mannschaften ohne Bereich erscheinen unten unter 'Weitere'.",
+        "",
+        "NAMEN: Die Seite gehoert dem TSV Nieukerk, deshalb steht der Ortsname nicht",
+        "zusaetzlich in Namen wie 'Kunstrasen'."
     ],
-    "beispieldaten": true,
+    "beispieldaten": {
+        "sommer": false,
+        "winter": false
+    },
     "stand_trainingszeiten": "2026-11-13",
     "saisons": {
         "sommer": {
@@ -70,8 +108,8 @@
                 "NR"
             ],
             "felder": [
-                "G",
                 "H",
+                "D",
                 "V"
             ]
         },
@@ -82,7 +120,6 @@
                 "KR"
             ],
             "felder": [
-                "G",
                 "H",
                 "D",
                 "V"
@@ -91,7 +128,8 @@
     },
     "orte": {
         "nieukerk-kunstrasen": {
-            "name": "Kunstrasen Nieukerk",
+            "name": "Kunstrasen",
+            "abk": "TSV",
             "strasse": "Am Aermen Düwel 16",
             "plz": "47647",
             "ort": "Kerken",
@@ -100,7 +138,8 @@
             "rasen": "Kunstrasen"
         },
         "nieukerk-naturrasen": {
-            "name": "Naturrasen Nieukerk",
+            "name": "Naturrasen",
+            "abk": "TSV",
             "strasse": "Am Aermen Düwel 16",
             "plz": "47647",
             "ort": "Kerken",
@@ -110,19 +149,63 @@
         },
         "aldekerk": {
             "name": "Sportanlage FC Aldekerk",
+            "abk": "FCA",
             "strasse": "Kempener Landstr.",
             "plz": "47647",
             "ort": "Kerken",
-            "karte": ""
+            "karte": "",
+            "anzeige": "Aldekerk"
         },
         "halle": {
             "name": "Sporthalle (Beispiel)",
+            "abk": "Halle",
             "strasse": "",
             "plz": "",
             "ort": "",
             "karte": ""
         }
     },
+    "bereiche": [
+        {
+            "schluessel": "senioren",
+            "titel": "Senioren",
+            "teams": [
+                "tsv-h1",
+                "tsv-h2"
+            ]
+        },
+        {
+            "schluessel": "leistung",
+            "titel": "Leistungsbereich (D–A)",
+            "teams": [
+                "jsg-a1",
+                "jsg-b1",
+                "jsg-c1",
+                "jsg-c2",
+                "tsv-d1"
+            ]
+        },
+        {
+            "schluessel": "entwicklung",
+            "titel": "Entwicklungsbereich (G–E)",
+            "teams": [
+                "tsv-e1",
+                "tsv-e2",
+                "tsv-f1",
+                "tsv-f2",
+                "tsv-g1",
+                "tsv-g2"
+            ]
+        },
+        {
+            "schluessel": "maedchen",
+            "titel": "Mädchen",
+            "teams": [
+                "tsv-dm",
+                "tsv-em"
+            ]
+        }
+    ],
     "mannschaften": {
         "tsv-h1": {
             "hauptort": "nieukerk-kunstrasen",
@@ -132,10 +215,10 @@
                         "tag": "Dienstag",
                         "von": "19:30",
                         "bis": "21:00",
-                        "platz": "NR-G"
+                        "platz": "KR-H2"
                     },
                     {
-                        "tag": "Donnerstag",
+                        "tag": "Freitag",
                         "von": "19:30",
                         "bis": "21:00",
                         "platz": "KR-H1"
@@ -143,13 +226,13 @@
                 ],
                 "winter": [
                     {
-                        "tag": "Dienstag",
+                        "tag": "Mittwoch",
                         "von": "19:30",
                         "bis": "21:00",
-                        "platz": "KR-G"
+                        "platz": "KR-D3"
                     },
                     {
-                        "tag": "Donnerstag",
+                        "tag": "Freitag",
                         "von": "19:30",
                         "bis": "21:00",
                         "platz": "KR-H1"
@@ -171,13 +254,13 @@
             "training": {
                 "sommer": [
                     {
-                        "tag": "Montag",
+                        "tag": "Dienstag",
                         "von": "19:30",
                         "bis": "21:00",
-                        "platz": "KR-H1"
+                        "platz": "NR-H1"
                     },
                     {
-                        "tag": "Mittwoch",
+                        "tag": "Freitag",
                         "von": "19:30",
                         "bis": "21:00",
                         "platz": "KR-H2"
@@ -185,16 +268,16 @@
                 ],
                 "winter": [
                     {
-                        "tag": "Montag",
+                        "tag": "Dienstag",
                         "von": "19:30",
                         "bis": "21:00",
-                        "platz": "KR-H1"
+                        "platz": "KR-H2"
                     },
                     {
-                        "tag": "Mittwoch",
+                        "tag": "Freitag",
                         "von": "19:30",
                         "bis": "21:00",
-                        "platz": "KR-H1"
+                        "platz": "KR-H2"
                     }
                 ]
             },
@@ -208,35 +291,35 @@
                 "sommer": [
                     {
                         "tag": "Montag",
-                        "von": "19:00",
-                        "bis": "20:30",
+                        "von": "18:30",
+                        "bis": "20:00",
                         "platz": "NR-H1"
                     },
                     {
-                        "tag": "Donnerstag",
-                        "von": "19:30",
-                        "bis": "21:00",
-                        "platz": "NR-H2"
+                        "tag": "Dienstag",
+                        "von": "18:30",
+                        "bis": "20:00",
+                        "ort": "neben"
+                    },
+                    {
+                        "tag": "Freitag",
+                        "von": "18:30",
+                        "bis": "20:00",
+                        "platz": "NR-H1"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Montag",
-                        "von": "19:00",
-                        "bis": "20:30",
+                        "tag": "Dienstag",
+                        "von": "18:30",
+                        "bis": "20:00",
                         "ort": "neben"
                     },
                     {
-                        "tag": "Mittwoch",
-                        "von": "19:30",
-                        "bis": "21:00",
-                        "platz": "KR-H2"
-                    },
-                    {
                         "tag": "Donnerstag",
-                        "von": "19:30",
-                        "bis": "21:00",
-                        "platz": "KR-H2"
+                        "von": "18:30",
+                        "bis": "20:00",
+                        "platz": "KR-H1"
                     }
                 ]
             },
@@ -249,30 +332,30 @@
             "training": {
                 "sommer": [
                     {
-                        "tag": "Dienstag",
+                        "tag": "Mittwoch",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "ort": "neben"
+                    },
+                    {
+                        "tag": "Freitag",
                         "von": "18:00",
                         "bis": "19:30",
                         "platz": "KR-H1"
-                    },
-                    {
-                        "tag": "Donnerstag",
-                        "von": "18:00",
-                        "bis": "19:30",
-                        "platz": "NR-G"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Dienstag",
+                        "tag": "Mittwoch",
+                        "von": "18:00",
+                        "bis": "19:30",
+                        "ort": "neben"
+                    },
+                    {
+                        "tag": "Freitag",
                         "von": "18:00",
                         "bis": "19:30",
                         "platz": "KR-H1"
-                    },
-                    {
-                        "tag": "Donnerstag",
-                        "von": "18:00",
-                        "bis": "19:30",
-                        "platz": "KR-H2"
                     }
                 ]
             },
@@ -285,29 +368,36 @@
             "training": {
                 "sommer": [
                     {
-                        "tag": "Montag",
+                        "tag": "Dienstag",
                         "von": "18:00",
                         "bis": "19:30",
-                        "platz": "NR-H2"
+                        "platz": "KR-H2"
                     },
                     {
-                        "tag": "Mittwoch",
-                        "von": "18:00",
-                        "bis": "19:30",
+                        "tag": "Donnerstag",
+                        "von": "18:30",
+                        "bis": "20:00",
                         "ort": "neben"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Mittwoch",
+                        "tag": "Dienstag",
                         "von": "18:00",
                         "bis": "19:30",
-                        "ort": "neben"
+                        "platz": "KR-D2"
                     },
                     {
-                        "tag": "Freitag",
-                        "von": "17:00",
-                        "bis": "18:30",
+                        "tag": "Dienstag",
+                        "von": "18:30",
+                        "bis": "19:30",
+                        "platz": "KR-D1",
+                        "hinweis": "Zusatz"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "18:30",
+                        "bis": "20:00",
                         "ort": "neben"
                     }
                 ]
@@ -321,30 +411,30 @@
             "training": {
                 "sommer": [
                     {
-                        "tag": "Dienstag",
-                        "von": "18:00",
-                        "bis": "19:30",
-                        "platz": "KR-H2"
+                        "tag": "Montag",
+                        "von": "18:30",
+                        "bis": "20:00",
+                        "platz": "KR-H1"
                     },
                     {
                         "tag": "Mittwoch",
-                        "von": "17:30",
-                        "bis": "19:00",
-                        "platz": "KR-H1"
+                        "von": "18:30",
+                        "bis": "20:00",
+                        "ort": "neben"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Dienstag",
-                        "von": "18:00",
-                        "bis": "19:30",
-                        "platz": "KR-H2"
+                        "tag": "Montag",
+                        "von": "18:30",
+                        "bis": "20:00",
+                        "platz": "KR-H1"
                     },
                     {
                         "tag": "Mittwoch",
-                        "von": "17:00",
-                        "bis": "18:30",
-                        "platz": "KR-H1"
+                        "von": "18:30",
+                        "bis": "20:00",
+                        "ort": "neben"
                     }
                 ]
             },
@@ -356,30 +446,30 @@
             "training": {
                 "sommer": [
                     {
-                        "tag": "Mittwoch",
+                        "tag": "Montag",
                         "von": "17:30",
                         "bis": "19:00",
-                        "platz": "KR-H2"
+                        "platz": "NR-H2"
                     },
                     {
-                        "tag": "Freitag",
+                        "tag": "Donnerstag",
                         "von": "17:30",
                         "bis": "19:00",
-                        "platz": "KR-G"
+                        "platz": "KR-H1"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Mittwoch",
-                        "von": "18:30",
-                        "bis": "19:30",
-                        "platz": "KR-G"
+                        "tag": "Dienstag",
+                        "von": "17:30",
+                        "bis": "19:00",
+                        "platz": "KR-D3"
                     },
                     {
-                        "tag": "Freitag",
-                        "von": "17:00",
-                        "bis": "18:30",
-                        "platz": "KR-G"
+                        "tag": "Donnerstag",
+                        "von": "17:30",
+                        "bis": "19:00",
+                        "platz": "KR-H2"
                     }
                 ]
             },
@@ -392,15 +482,15 @@
                 "sommer": [
                     {
                         "tag": "Dienstag",
-                        "von": "16:45",
+                        "von": "16:30",
                         "bis": "18:00",
-                        "platz": "NR-H1"
+                        "platz": "KR-H2"
                     },
                     {
                         "tag": "Donnerstag",
-                        "von": "17:00",
-                        "bis": "18:15",
-                        "platz": "KR-H1"
+                        "von": "16:30",
+                        "bis": "18:00",
+                        "platz": "KR-H2"
                     }
                 ],
                 "winter": [
@@ -408,13 +498,13 @@
                         "tag": "Dienstag",
                         "von": "16:30",
                         "bis": "18:00",
-                        "platz": "KR-H1"
+                        "platz": "KR-D2"
                     },
                     {
                         "tag": "Donnerstag",
-                        "von": "17:45",
-                        "bis": "19:00",
-                        "platz": "KR-D1"
+                        "von": "16:30",
+                        "bis": "18:00",
+                        "platz": "KR-H1"
                     }
                 ]
             },
@@ -426,30 +516,30 @@
             "training": {
                 "sommer": [
                     {
-                        "tag": "Dienstag",
-                        "von": "16:45",
-                        "bis": "18:00",
-                        "platz": "NR-H2"
+                        "tag": "Montag",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "NR-H1"
                     },
                     {
-                        "tag": "Donnerstag",
+                        "tag": "Freitag",
                         "von": "17:00",
-                        "bis": "18:15",
+                        "bis": "18:30",
                         "platz": "KR-H2"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Dienstag",
-                        "von": "16:30",
-                        "bis": "18:00",
+                        "tag": "Montag",
+                        "von": "17:00",
+                        "bis": "18:30",
                         "platz": "KR-H2"
                     },
                     {
-                        "tag": "Donnerstag",
-                        "von": "17:45",
-                        "bis": "19:00",
-                        "ort": "halle"
+                        "tag": "Freitag",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-H2"
                     }
                 ]
             },
@@ -462,29 +552,36 @@
                 "sommer": [
                     {
                         "tag": "Montag",
-                        "von": "16:30",
-                        "bis": "17:45",
-                        "platz": "KR-V1"
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-H1"
                     },
                     {
-                        "tag": "Donnerstag",
+                        "tag": "Mittwoch",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "NR-H2"
+                    },
+                    {
+                        "tag": "Freitag",
                         "von": "16:30",
-                        "bis": "17:45",
-                        "platz": "NR-H1"
+                        "bis": "17:30",
+                        "platz": "KR-H1",
+                        "hinweis": "nach Bedarf"
                     }
                 ],
                 "winter": [
                     {
                         "tag": "Montag",
                         "von": "17:00",
-                        "bis": "18:15",
-                        "platz": "KR-D1"
+                        "bis": "18:30",
+                        "platz": "KR-V1"
                     },
                     {
-                        "tag": "Donnerstag",
-                        "von": "16:30",
-                        "bis": "17:45",
-                        "platz": "KR-D1"
+                        "tag": "Mittwoch",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-H2"
                     }
                 ]
             },
@@ -497,29 +594,29 @@
                 "sommer": [
                     {
                         "tag": "Montag",
-                        "von": "16:30",
-                        "bis": "17:45",
-                        "platz": "KR-V2"
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-H2"
                     },
                     {
-                        "tag": "Donnerstag",
-                        "von": "16:30",
-                        "bis": "17:45",
-                        "platz": "NR-H2"
+                        "tag": "Mittwoch",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "NR-H1"
                     }
                 ],
                 "winter": [
                     {
                         "tag": "Montag",
                         "von": "17:00",
-                        "bis": "18:15",
-                        "platz": "KR-D2"
+                        "bis": "18:30",
+                        "platz": "KR-V2"
                     },
                     {
-                        "tag": "Donnerstag",
-                        "von": "16:30",
-                        "bis": "17:45",
-                        "platz": "KR-D2"
+                        "tag": "Mittwoch",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-H1"
                     }
                 ]
             },
@@ -531,30 +628,19 @@
             "training": {
                 "sommer": [
                     {
-                        "tag": "Montag",
-                        "von": "16:30",
+                        "tag": "Donnerstag",
+                        "von": "16:15",
                         "bis": "17:30",
-                        "platz": "KR-V3"
-                    },
-                    {
-                        "tag": "Freitag",
-                        "von": "16:00",
-                        "bis": "17:00",
-                        "platz": "NR-V3"
+                        "platz": "KR-H1",
+                        "hinweis": "gemeinsam mit G2"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Montag",
-                        "von": "17:00",
-                        "bis": "18:00",
-                        "platz": "KR-D3"
-                    },
-                    {
                         "tag": "Donnerstag",
-                        "von": "16:30",
+                        "von": "16:15",
                         "bis": "17:30",
-                        "platz": "KR-D3"
+                        "platz": "KR-H2"
                     }
                 ]
             },
@@ -566,30 +652,21 @@
             "training": {
                 "sommer": [
                     {
-                        "tag": "Montag",
-                        "von": "16:30",
+                        "tag": "Donnerstag",
+                        "von": "16:15",
                         "bis": "17:30",
-                        "platz": "KR-V4"
-                    },
-                    {
-                        "tag": "Freitag",
-                        "von": "16:00",
-                        "bis": "17:00",
-                        "platz": "NR-V4"
+                        "platz": "KR-H1",
+                        "hinweis": "gemeinsam mit G1",
+                        "zusammen": "tsv-g1"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Montag",
-                        "von": "17:00",
-                        "bis": "18:00",
-                        "ort": "halle"
-                    },
-                    {
-                        "tag": "Freitag",
-                        "von": "16:00",
-                        "bis": "17:00",
-                        "ort": "halle"
+                        "tag": "Donnerstag",
+                        "von": "16:15",
+                        "bis": "17:30",
+                        "platz": "KR-H2",
+                        "zusammen": "tsv-g1"
                     }
                 ]
             },
@@ -602,23 +679,18 @@
                 "sommer": [
                     {
                         "tag": "Dienstag",
-                        "von": "16:30",
-                        "bis": "18:00",
-                        "platz": "KR-H1"
-                    },
-                    {
-                        "tag": "Freitag",
-                        "von": "16:30",
-                        "bis": "17:30",
-                        "platz": "NR-H1"
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-H1",
+                        "hinweis": "gemeinsam mit E-Juniorinnen"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Freitag",
-                        "von": "18:30",
-                        "bis": "20:00",
-                        "ort": "halle"
+                        "tag": "Dienstag",
+                        "von": "17:00",
+                        "bis": "18:30",
+                        "platz": "KR-D1"
                     }
                 ]
             },
@@ -630,35 +702,129 @@
             "training": {
                 "sommer": [
                     {
-                        "tag": "Mittwoch",
-                        "von": "18:00",
-                        "bis": "19:30",
-                        "platz": "KR-H1"
-                    },
-                    {
-                        "tag": "Freitag",
+                        "tag": "Dienstag",
                         "von": "17:00",
-                        "bis": "18:00",
-                        "platz": "NR-H2"
+                        "bis": "18:30",
+                        "platz": "KR-H1",
+                        "hinweis": "gemeinsam mit D-Juniorinnen (U13)",
+                        "zusammen": "tsv-dm"
                     }
                 ],
                 "winter": [
                     {
-                        "tag": "Mittwoch",
+                        "tag": "Dienstag",
                         "von": "17:00",
                         "bis": "18:30",
-                        "platz": "KR-H2"
-                    },
-                    {
-                        "tag": "Freitag",
-                        "von": "16:30",
-                        "bis": "17:30",
-                        "ort": "halle"
+                        "platz": "KR-D1",
+                        "zusammen": "tsv-dm"
                     }
                 ]
             },
             "hinweis": "",
             "kontakt": []
         }
+    },
+    "weitere": [
+        {
+            "name": "Damen 1",
+            "art": "verein",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Montag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H2"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Dienstag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H1"
+                    }
+                ]
+            },
+            "bereich": "senioren",
+            "kontakt": []
+        },
+        {
+            "name": "Alte Herren",
+            "art": "verein",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Montag",
+                        "von": "20:00",
+                        "bis": "21:30",
+                        "platz": "KR-H1"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "20:00",
+                        "bis": "21:30",
+                        "platz": "KR-H1"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Montag",
+                        "von": "20:00",
+                        "bis": "21:30",
+                        "platz": "KR-H1"
+                    },
+                    {
+                        "tag": "Donnerstag",
+                        "von": "20:00",
+                        "bis": "21:30",
+                        "platz": "KR-H1"
+                    }
+                ]
+            },
+            "bereich": "senioren",
+            "kontakt": []
+        },
+        {
+            "name": "Ballgruppe 9–10",
+            "art": "verein",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Samstag",
+                        "von": "09:00",
+                        "bis": "10:00",
+                        "platz": "NR-H1"
+                    }
+                ],
+                "winter": []
+            }
+        },
+        {
+            "name": "Sevelen",
+            "art": "gast",
+            "training": {
+                "sommer": [
+                    {
+                        "tag": "Donnerstag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H2",
+                        "hinweis": "Platzsperre in Sevelen"
+                    }
+                ],
+                "winter": [
+                    {
+                        "tag": "Donnerstag",
+                        "von": "19:30",
+                        "bis": "21:00",
+                        "platz": "KR-H2"
+                    }
+                ]
+            }
+        }
+    ],
+    "platzansicht": {
+        "drehung": "rechts"
     }
 }

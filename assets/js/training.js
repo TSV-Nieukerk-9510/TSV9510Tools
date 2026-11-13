@@ -1,66 +1,48 @@
-/* Seiten "Trainingszeiten Sommer" und "Trainingszeiten Winter":
- * Trainingszeiten und Ansprechpartner je Mannschaft. Dieselbe Datei
- * bedient beide Seiten; welche Jahreszeit gilt, steht im Attribut
- * data-saison am body-Element der jeweiligen HTML-Seite.
+/* Seite "Trainingszeiten": je Mannschaft eine Karte mit Orten,
+ * Trainingszeiten fuer Sommer und Winter, den naechsten drei Spielen
+ * und den Ansprechpartnern.
  *
- * Die Angaben stammen aus config/mannschaften.json und werden von Hand
- * gepflegt - FUSSBALL.DE kennt sie nicht. Fehlt etwas, sagt die Seite
- * das offen, statt eine Luecke zu kaschieren.
+ * Die Zeiten stammen aus config/mannschaften.json und werden von Hand
+ * gepflegt - FUSSBALL.DE kennt sie nicht. Die Spiele kommen von
+ * FUSSBALL.DE (data/matches.json) und klappen wie in der Spielübersicht
+ * auf. Fehlt etwas, sagt die Seite das offen, statt eine Luecke zu
+ * kaschieren.
  */
 
 (function () {
   "use strict";
 
-  var ZEILEN = ["senioren", "jugend", "maedchen"];
   var WOCHENTAGE = ["Montag", "Dienstag", "Mittwoch", "Donnerstag",
     "Freitag", "Samstag", "Sonntag"];
+  var ANZAHL_SPIELE = 3;
 
   var S = window.Seite;
   var text = S.text;
-
-  var SAISON = document.body.getAttribute("data-saison") === "winter"
-    ? "winter" : "sommer";
-  var SAISON_NAME = SAISON === "winter" ? "Winter" : "Sommer";
+  var offen = {};
 
   /* Eine Mannschaft kann Zeiten je Jahreszeit haben. Aeltere Eintraege
    * (eine einfache Liste) gelten als Sommerzeiten. */
-  function einheitenFuer(eintrag) {
+  function einheitenFuer(eintrag, saison) {
     var t = eintrag && eintrag.training;
 
     if (Array.isArray(t)) {
-      return SAISON === "sommer" ? t : [];
+      return saison === "sommer" ? t : [];
     }
-    return (t && t[SAISON]) || [];
+    return (t && t[saison]) || [];
   }
 
-  /* Ort als Zeile mit Anschrift und Kartenlink. */
-  function ortZeile(titel, ort) {
-    var anschrift = S.adresse(ort);
-    var karte = S.kartenLink(ort);
-
-    return "<li><b>" + titel + ":</b> " + text(ort.name)
-      + (karte ? ' <a href="' + text(karte)
-        + '" target="_blank" rel="noopener">Karte</a>' : "")
-      + (anschrift ? '<span class="kontaktweg">' + text(anschrift)
-        + "</span>" : "")
-      + "</li>";
+  function datumDe(iso) {
+    var t = String(iso || "").split("-");
+    return t.length === 3 ? t[2] + "." + t[1] + "." + t[0] : "";
   }
 
-  /* Haupt- und Nebenort der Mannschaft mit Kartenlink. */
-  function orteHtml(eintrag) {
-    var orte = S.orte();
-    var zeilen = [];
+  /* --- Orte --------------------------------------------------------- */
 
-    [["Hauptort", eintrag.hauptort], ["Nebenort", eintrag.nebenort]]
-      .forEach(function (paar) {
-        if (orte[paar[1]]) {
-          zeilen.push(ortZeile(paar[0], orte[paar[1]]));
-        }
-      });
-
-    return zeilen.length
-      ? '<ul class="kontakte orte">' + zeilen.join("") + "</ul>" : "";
+  function ortKurz(ort) {
+    return ort.abk || ort.name;
   }
+
+  /* --- Trainingszeiten ---------------------------------------------- */
 
   function sortiereEinheiten(einheiten) {
     return einheiten.slice().sort(function (a, b) {
@@ -74,37 +56,138 @@
     });
   }
 
-  function trainingHtml(einheiten, eintrag) {
-    if (!einheiten || !einheiten.length) {
-      return '<p class="leise">Trainingszeiten ' + SAISON_NAME
-        + " noch nicht hinterlegt.</p>";
+  /* Liegt die Einheit an einem anderen Ort als dem Hauptort (z. B. FCA)? */
+  function nebenOrt(e, eintrag) {
+    var r = S.aufloesen(e, eintrag);
+    var haupt = S.orte()[eintrag.hauptort];
+
+    if (r.fehler || !r.ort || !haupt || ortKurz(haupt) === ortKurz(r.ort)) {
+      return null;
+    }
+    return r.ort;
+  }
+
+  function zeitText(e) {
+    return e.von && e.bis ? e.von + " – " + e.bis + " Uhr"
+      : (e.von ? "ab " + e.von + " Uhr" : "");
+  }
+
+  /* Zwei Zeilen je Einheit: Tag und Zeit, darunter Platz und Platzteil. */
+  function zeileTraining(e, eintrag) {
+    var r = S.aufloesen(e, eintrag);
+    var wo = "";
+
+    if (r.fehler) {
+      wo = "? " + r.fehler;
+    } else if (r.kuerzel) {
+      wo = r.ort.name + (r.feld && r.feld !== "G"
+        ? " · " + S.felder[r.feld].name : "");
     }
 
-    var zeilen = sortiereEinheiten(einheiten).map(function (e) {
-      var zeit = e.von && e.bis ? e.von + " – " + e.bis + " Uhr"
-        : (e.von ? "ab " + e.von + " Uhr" : "");
+    var unten = wo + (e.hinweis ? (wo ? " · " : "") + e.hinweis : "");
 
-      // Wo? Eigener Platz mit Feldteil, sonst der Ort. Was dem Hauptort
-      // entspricht und keinen Feldteil hat, braucht keine Angabe.
-      var r = S.aufloesen(e, eintrag);
-      var wo = "";
+    return '<tr class="einheit"><th>' + text(e.tag || "") + "</th><td>"
+      + text(zeitText(e)) + "</td></tr>"
+      + (unten ? '<tr class="platzzeile"><td colspan="2" class="leise">'
+        + text(unten) + "</td></tr>" : "");
+  }
 
-      if (r.fehler) {
-        wo = "? " + r.fehler;
-      } else if (r.kuerzel) {
-        wo = r.ort.name.replace(/ Nieukerk$/, "")
-          + (r.feld && r.feld !== "G" ? ", " + S.felder[r.feld].name : "");
-      } else if (r.ortKey !== eintrag.hauptort) {
-        wo = r.ort.name;
+  var KURZTAG = { Montag: "Mo", Dienstag: "Di", Mittwoch: "Mi",
+    Donnerstag: "Do", Freitag: "Fr", Samstag: "Sa", Sonntag: "So" };
+
+  /* Kleine Info unter der Tabelle: Einheiten an anderen Orten. */
+  function nebenInfo(einheiten, eintrag) {
+    var gruppen = {};
+    var reihe = [];
+
+    sortiereEinheiten(einheiten).forEach(function (e) {
+      var ort = nebenOrt(e, eintrag);
+
+      if (!ort) {
+        return;
       }
 
-      return "<tr><th>" + text(e.tag || "") + "</th>"
-        + "<td>" + text(zeit) + "</td>"
-        + '<td class="leise">' + text(wo) + "</td></tr>";
+      var k = ortKurz(ort);
+
+      if (!gruppen[k]) {
+        gruppen[k] = { ort: ort, teile: [] };
+        reihe.push(k);
+      }
+      gruppen[k].teile.push((KURZTAG[e.tag] || e.tag) + " "
+        + zeitText(e).replace(" Uhr", "")
+        + (e.hinweis ? " (" + e.hinweis + ")" : ""));
     });
 
-    return '<table class="training">' + zeilen.join("") + "</table>";
+    return reihe.map(function (k) {
+      var g = gruppen[k];
+      return '<p class="leise neben-info"><b>'
+        + text(g.ort.anzeige || ortKurz(g.ort)) + "</b>: "
+        + text(g.teile.join(" · ")) + " Uhr</p>";
+    }).join("");
   }
+
+  function saisonHtml(saison, eintrag, aktuell) {
+    var def = S.saisonListe()[saison] || {};
+    var einheiten = einheitenFuer(eintrag, saison);
+    var kopf = '<h4 class="saison-kopf' + (saison === aktuell ? " aktuell"
+      : "") + '">' + text(def.name || saison) + "</h4>";
+
+    if (!einheiten.length) {
+      return '<section class="saison-box">' + kopf
+        + '<p class="leise">Noch nicht hinterlegt.</p></section>';
+    }
+
+    var haupt = einheiten.filter(function (e) {
+      return !nebenOrt(e, eintrag);
+    });
+
+    return '<section class="saison-box' + (saison === aktuell ? " aktuell" : "")
+      + '">' + kopf + (haupt.length
+      ? '<table class="training">' + sortiereEinheiten(haupt)
+        .map(function (e) { return zeileTraining(e, eintrag); }).join("")
+        + "</table>"
+      : "") + nebenInfo(einheiten, eintrag) + "</section>";
+  }
+
+  /* --- Naechste Spiele ---------------------------------------------- */
+
+  function naechsteSpiele(slug) {
+    var heute = S.heute();
+
+    return ((S.daten().spiele && S.daten().spiele.matches) || [])
+      .filter(function (spiel) {
+        return spiel.teamSlug === slug && new Date(spiel.start) >= heute;
+      })
+      .sort(function (a, b) {
+        return new Date(a.start) - new Date(b.start);
+      })
+      .slice(0, ANZAHL_SPIELE);
+  }
+
+  function kurzesDatum(iso) {
+    return new Date(iso + "T12:00:00").toLocaleDateString("de-DE", {
+      weekday: "short", day: "2-digit", month: "2-digit"
+    });
+  }
+
+  function spieleZeilen(slug) {
+    return naechsteSpiele(slug).map(function (spiel) {
+      return Spielzeile.zeile(spiel, offen[spiel.id], {
+        datum: kurzesDatum(spiel.date), gegner: true, ohneZeit: true
+      });
+    }).join("");
+  }
+
+  function spieleHtml(slug) {
+    var zeilen = spieleZeilen(slug);
+
+    return "<h4>Nächste Spiele</h4>" + (zeilen
+      ? '<table class="spieltage kompakt" data-team="' + text(slug)
+        + '"><tbody>' + zeilen + "</tbody></table>"
+      : '<p class="leise">Derzeit kein Spiel angesetzt.</p>');
+  }
+
+  /* --- Ansprechpartner ---------------------------------------------- */
 
   function kontaktHtml(kontakte) {
     var gepflegt = (kontakte || []).filter(function (k) {
@@ -137,73 +220,111 @@
     return '<ul class="kontakte">' + zeilen.join("") + "</ul>";
   }
 
-  function karte(team, eintrag) {
+  /* --- Karte -------------------------------------------------------- */
+
+  function karte(team, eintrag, aktuell) {
     eintrag = eintrag || {};
 
-    return '<article class="mannschaft" id="' + text(team.slug) + '">'
-      + "<h3>" + text(team.short) + "</h3>"
-      + '<p class="leise voller-name">' + text(team.name) + "</p>"
-      + orteHtml(eintrag)
-      + trainingHtml(einheitenFuer(eintrag), eintrag)
+    var voll = S.ohneVerein(team.name);
+    var jsg = /JSG/.test(team.name);
+    var reihenfolge = ["sommer", "winter"];
+
+    return '<article class="mannschaft" id="'
+      + text(team.slug.replace(/\W+/g, "-")) + '">'
+      + "<h3>" + text(team.short)
+      + (jsg ? ' <span class="marke-jsg" title="Spielgemeinschaft">JSG</span>'
+        : "") + "</h3>"
+      + (jsg ? '<p class="leise voller-name">' + text(voll) + "</p>" : "")
+      + "<h4>Ansprechpartner</h4>"
+      + kontaktHtml(eintrag.kontakt)
+      + reihenfolge.map(function (saison) {
+        return saisonHtml(saison, eintrag, aktuell);
+      }).join("")
       + (eintrag.hinweis
         ? '<p class="trainingshinweis">' + text(eintrag.hinweis) + "</p>"
         : "")
-      + "<h4>Ansprechpartner</h4>"
-      + kontaktHtml(eintrag.kontakt)
-      + '<p class="mannschaft-links">'
-      + '<a class="zeilen-knopf" href="index.html?team='
-      + text(team.slug) + '">Spiele</a>'
-      + '<a class="zeilen-knopf" href="kalender/' + text(team.slug)
-      + '.ics">Kalender</a>'
-      + "</p></article>";
+      + (eintrag.ohneSpiele ? "" : spieleHtml(team.slug))
+      + (eintrag.ohneSpiele ? "" : '<p class="mannschaft-links">'
+        + '<a class="zeilen-knopf" href="index.html?team='
+        + text(team.slug) + '">Alle Spiele</a>'
+        + '<a class="zeilen-knopf" href="kalender/' + text(team.slug)
+        + '.ics">Kalender</a>' + "</p>")
+      + "</article>";
   }
 
   S.start({
-    seite: "training-" + SAISON,
+    seite: "training",
     braucht: ["teams", "spiele", "mannschaften"],
     fertig: function (daten) {
       var ziel = document.getElementById("trainingbereich");
-      var gruppen = daten.teams.groups || {};
       var pflege = (daten.mannschaften && daten.mannschaften.mannschaften)
         || {};
-      var html = [S.beispielHinweis()];
-
-      var gepflegt = Object.keys(pflege).filter(function (slug) {
-        var e = pflege[slug];
-        return e && einheitenFuer(e).length;
-      }).length;
+      var aktuell = S.aktuelleSaison();
+      var html = [];
 
       if (!daten.mannschaften) {
         html.push('<p class="warnung">Die Datei '
           + "<code>config/mannschaften.json</code> fehlt. Ohne sie kann "
           + "diese Seite nichts anzeigen.</p>");
-      } else if (!gepflegt) {
-        html.push('<p class="warnung">Für noch keine Mannschaft sind '
-          + "Trainingszeiten hinterlegt. Die Angaben werden in "
-          + "<code>config/mannschaften.json</code> gepflegt.</p>");
       }
 
-      ZEILEN.forEach(function (schluessel) {
-        var mannschaften = S.aktiveTeams().filter(function (team) {
-          return team.group === schluessel;
-        });
+      var beispiel = Object.keys(S.saisonListe()).filter(S.istBeispiel)
+        .map(function (k) { return S.saisonListe()[k].name || k; });
 
-        if (!mannschaften.length) {
-          return;
+      if (beispiel.length) {
+        html.push('<p class="warnung"><b>Beispieldaten.</b> Die Zeiten für '
+          + text(beispiel.join(" und ")) + " sind nur Beispiele und noch "
+          + "nicht die echten Trainingszeiten.</p>");
+      }
+
+      S.bereiche().forEach(function (bereich) {
+        html.push("<h2>" + text(bereich.titel) + "</h2>");
+
+        if (bereich.hinweis) {
+          html.push('<p class="leise bereich-hinweis">'
+            + text(bereich.hinweis) + "</p>");
         }
 
-        html.push("<h2>" + text(gruppen[schluessel] || schluessel)
-          + "</h2>");
         html.push('<div class="mannschaft-raster">');
-
-        mannschaften.forEach(function (team) {
-          html.push(karte(team, pflege[team.slug]));
+        bereich.teams.forEach(function (team) {
+          html.push(karte(team, pflege[team.slug], aktuell));
         });
 
+        // Gruppen ohne Spiele bei FUSSBALL.DE (z. B. Damen, Alte Herren)
+        ((daten.mannschaften && daten.mannschaften.weitere) || [])
+          .filter(function (g) { return g.bereich === bereich.schluessel; })
+          .forEach(function (g) {
+            var eintrag = Object.assign({ ohneSpiele: true,
+              hauptort: "nieukerk-kunstrasen" }, g);
+
+            html.push(karte({ slug: "w:" + g.name, name: g.name,
+              short: g.name }, eintrag, aktuell));
+          });
         html.push("</div>");
       });
 
       ziel.innerHTML = html.join("");
+
+      // Spiele klappen wie in der Spielübersicht auf.
+      ziel.addEventListener("click", function (ereignis) {
+        var knopf = ereignis.target.closest(".partie");
+
+        if (!knopf) {
+          return;
+        }
+
+        var tabelle = knopf.closest("table[data-team]");
+        var id = knopf.dataset.auf;
+
+        if (offen[id]) {
+          delete offen[id];
+        } else {
+          offen[id] = true;
+        }
+
+        tabelle.querySelector("tbody").innerHTML =
+          spieleZeilen(tabelle.dataset.team);
+      });
     }
   });
 }());

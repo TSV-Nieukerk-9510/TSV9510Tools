@@ -1,6 +1,6 @@
 # TSV9510Tools
 
-Spielpläne, Termine und Kalender-Abos des **TSV Nieukerk 95/10**.
+Spielpläne, Termine und Kalender-Abos des **TSV 95/10 Nieukerk e.V.**.
 
 Die Daten stammen von FUSSBALL.DE, werden automatisch abgerufen und als
 JSON, als Webseite und als abonnierbare Kalenderdateien bereitgestellt.
@@ -46,9 +46,9 @@ und Fußzeile einbetten.
 | Bereich | Seite | Datei |
 |---|---|---|
 | Spielübersicht | Spielübersicht | `index.html` |
-| Trainingsplan | Trainingszeiten Sommer | `training-sommer.html` |
-| | Trainingszeiten Winter | `training-winter.html` |
+| Trainingsplan | Trainingszeiten | `training.html` |
 | | Platzbelegung | `platzbelegung.html` |
+| | Sportanlage | `sportanlage.html` (Texte und Fotos in `config/sportanlage.json`, Bilder in `assets/img/`) |
 | Tools | Kalender | `kalender.html` |
 | | Textvorlagen | `textgenerator.html` |
 | FAQ | FAQ | `faq.html` (Inhalt: `config/faq.json`) |
@@ -117,18 +117,21 @@ Ein Abo aktualisiert sich von selbst (Aktualisierungsintervall
 6 Stunden, soweit das Kalenderprogramm es beachtet). Wer die Datei nur
 herunterlädt, importiert einen Stand, der sich nicht mehr ändert.
 
-### Trainingszeiten Sommer und Winter
+### Trainingszeiten
 
 Trainingszeiten und Ansprechpartner je Mannschaft, gepflegt von Hand in
 `config/mannschaften.json`. Die Datei ist oben selbst erklärt; in Kürze:
 
+* **`bereiche`** — Gliederung der Seite (Senioren, Leistungsbereich,
+  Entwicklungsbereich, Mädchen) mit den Mannschaften je Bereich.
 * **`stand_trainingszeiten`** — Datum der letzten Änderung der Zeiten
   (JJJJ-MM-TT); erscheint im Kopf der Trainingsseiten.
 * **`saisons`** — `sommer` (Kunstrasen KR und Naturrasen NR, Felder G/H/V)
   und `winter` (nur KR, zusätzlich Drittel D). `ab` ist der erste Tag der
   Jahreszeit; die Platzbelegung öffnet die gerade gültige.
 * **`orte`** — jede Trainingsstätte einmal als vollständiges Datenpaket:
-  `name`, `strasse`, `plz`, `ort`, optional `karte` (eigener Kartenlink,
+  `name`, `abk` (Abkürzung, die in Klammern hinter dem Tag steht, z. B. `TSV`,
+  `FCA`), `strasse`, `plz`, `ort`, optional `karte` (eigener Kartenlink,
   sonst wird er aus der Anschrift gebaut), bei eigenen Plätzen `kuerzel`
   (`KR`/`NR`) und `rasen`.
 * **`hauptort`** bei jeder Mannschaft, **`nebenort`** optional (etwa die
@@ -150,17 +153,41 @@ Adressen. Leere Felder zeigt die Seite als „noch nicht hinterlegt“.
 
 ### Platzbelegung
 
-Im Sommer werden Kunstrasen und Naturrasen als zwei getrennte Felder
-gezeichnet, im Winter nur der Kunstrasen. Ansicht **Tag**: je Zeitspanne
-eine Zeichnung; Ansicht **Woche**: Wochenplan je Platz. Der Teil des
-Platzes kommt aus dem Code im Feld `platz` jeder Einheit (G ganz, H1/H2
-Hälften, D1–D3 Drittel nur im Winter, V1–V4 Viertel; V1 links oben, V2
-links unten, V3 rechts oben, V4 rechts unten). Überschneiden sich zwei
-Mannschaften auf demselben Teil, wird das rot markiert; Angaben, die nicht
-zur Jahreszeit passen (z. B. Drittel im Sommer), meldet die Seite.
-Darunter stehen die kommenden Spiele auf der eigenen Anlage (von
-FUSSBALL.DE). Geöffnet wird die Jahreszeit, die laut `saisons.*.ab` gerade
-gilt.
+Ganz oben der **Tagesplan**: Auswahl Mo–So, darunter für Sommer und Winter
+eine Zeitleiste (je Platz zwei Zeilen Hälfte 1/2, Balken über die Uhrzeit;
+Überschneidungen rot, Lücken sichtbar). Darunter je Jahreszeit eine Tabelle: eine Zeile je Wochentag,
+je Platz und je Fremdanlage eine Spalte, jeder Eintrag zweizeilig (Uhrzeit,
+darunter Mannschaft und Platzteil). Darunter eine Grafik der Platzteile
+(Hälften, Drittel, Viertel) und die kommenden Spiele auf den eigenen Plätzen.
+Sommer und Winter sind getrennte Daten; welche Platzteile erlaubt sind,
+steht je Jahreszeit unter `saisons` (`felder`: `H`, `D`, `V`).
+
+Die Auswahlleiste und die Platzansicht mit den gezeichneten Plätzen sind
+im Code fertig, aber vorerst abgeschaltet (`MIT_PLATZANSICHT` in
+`assets/js/platzbelegung.js`).
+
+Der Teil des Platzes kommt aus dem Code im Feld `platz` jeder Einheit
+(H1/H2 Hälften, D1–D3 Drittel nur im Winter, V1–V4 Viertel; V1 links oben,
+V2 links unten, V3 rechts oben, V4 rechts unten). Es wird höchstens eine
+Hälfte eingetragen; ein ganzes Feld (G) meldet die Seite als
+Unstimmigkeit. Weitere Felder in der Config:
+
+* `bereich` bei einer Gruppe unter `weitere` (z. B. `"senioren"`): die Gruppe erscheint dann als eigene Karte ohne Spiele in diesem Bereich der Trainingszeiten und in der Platzbelegung (z. B. Damen 1, Alte Herren). `kontakt` wie bei den Mannschaften.
+* `hinweis` je Einheit (z. B. „nach Bedarf“),
+* `zusammen: "<slug>"` bei gemeinsamem Training zweier Mannschaften
+  (G1+G2: ein gemeinsamer Block ohne Doppelbelegung),
+* `weitere`: Gruppen ohne Mannschaftsseite (Alte Herren, Damen,
+  Ballgruppe, Gastverein), die nur in der Platzbelegung erscheinen,
+* `platzansicht.drehung` (`rechts`/`links`): Drehung der hochkant gezeichneten
+  Plätze (links Naturrasen mit Laufbahn, rechts Kunstrasen), damit die
+  Hälften zur Lage des Vereinsheims passen,
+* Gäste (`art: gast`) wie der SV Sevelen werden bei Bedarf ergänzt oder entfernt,
+* `beispieldaten` je Jahreszeit: `{"sommer": false, "winter": true}`.
+
+Überschneiden sich zwei Mannschaften auf demselben Teil, wird das rot
+markiert. Darunter stehen die kommenden Spiele auf der eigenen Anlage
+(von FUSSBALL.DE). Geöffnet wird die Jahreszeit, die laut `saisons.*.ab`
+gerade gilt.
 
 ### FAQ
 
