@@ -15,7 +15,7 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
-from scripts.common.text import clean_text, detect_pitch
+from scripts.common.text import clean_text, detect_pitch, lesbar
 
 BASE = "https://www.fussball.de"
 
@@ -208,7 +208,7 @@ def fetch_match_details(match_url):
         details["matchDay"] = tag.group(1) if tag else ""
 
     links = _meta_rows(soup, "stage-meta-left")
-    details["referee"] = links.get("Schiedsrichter", "")
+    details["referee"] = lesbar(links.get("Schiedsrichter", ""))
 
     # Wettbewerb und Staffel-Seite
     competition = soup.select_one("a.competition")

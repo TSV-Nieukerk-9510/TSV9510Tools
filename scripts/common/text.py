@@ -13,6 +13,23 @@ def clean_text(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
+def lesbar(text):
+    """Gibt den Text zurueck - oder "", wenn fussball.de ihn verschleiert.
+
+    Der Name des Schiedsrichters kommt wie das Ergebnis als Zeichen aus
+    dem privaten Unicode-Bereich (U+E000-U+F8FF), die erst eine
+    mitgelieferte Schrift lesbar macht. Ausgelesen entstehen nur
+    Kaestchen. Solche Texte gelten als nicht vorhanden.
+    """
+    if not text:
+        return ""
+
+    if any("\ue000" <= zeichen <= "\uf8ff" for zeichen in text):
+        return ""
+
+    return text
+
+
 def slugify(text):
     """Erzeugt ein URL-taugliches Kuerzel aus einem Mannschaftsnamen.
 

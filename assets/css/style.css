@@ -403,13 +403,7 @@ main h2 {
   box-shadow: inset 0 0 0 1px var(--navy);
 }
 
-/* Knoepfe in der Spielzeile */
-
-.sp-aktion {
-  width: 1%;
-  white-space: nowrap;
-  text-align: right;
-}
+/* Knoepfe in den aufgeklappten Details */
 
 .zeilen-knopf {
   display: inline-flex;
@@ -755,12 +749,6 @@ body.eingebettet main { padding-top: .9rem; }
   .zeilen-knopf { padding: .22rem .45rem; font-size: .72rem; }
   .zeilen-titel { width: 5.1rem; font-size: .72rem; letter-spacing: .04em; }
   .filter-zeile { gap: .28rem; }
-
-  /* Auf dem Handy ist fuer eine eigene Knopfspalte kein Platz - sie
-     wuerde die Paarung auf wenige Zeichen pro Zeile druecken. Die
-     Knoepfe stecken dort in der aufklappbaren Beschreibung, die ein
-     Tippen auf die Paarung oeffnet. */
-  .sp-aktion { display: none; }
 
   /* Spielort nur angedeutet; vollstaendig steht er beim Aufklappen. */
   .sp-paarung .ort {

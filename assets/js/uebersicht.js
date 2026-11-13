@@ -162,6 +162,17 @@
         + 'nennt keine Platzart">*</span>');
   }
 
+  /* fussball.de liefert den Namen verschleiert (Zeichen aus dem privaten
+   * Unicode-Bereich, ausgelesen nur Kaestchen) oder gar nicht. */
+  function schiedsrichter(spiel) {
+    var name = spiel.referee || "";
+
+    if (!name || /[\uE000-\uF8FF]/.test(name)) {
+      return "k. A.";
+    }
+    return text(name);
+  }
+
   function zeileDetails(spiel) {
     var reihen = [];
 
@@ -182,6 +193,10 @@
     reihe("Mannschaft", text(spiel.teamName));
     reihe("Begegnung", text(spiel.home) + " – " + text(spiel.away));
     reihe("Art", spiel.isHome ? "Heimspiel" : "Auswärtsspiel");
+    if (spiel.isHome === false && spiel.ownVenue) {
+      reihe("Hinweis", "Laut FUSSBALL.DE hat der Gegner Heimrecht, der "
+        + "Spielort ist aber unsere eigene Anlage.");
+    }
     reihe("Anstoß", text(S.datumLang(spiel.date))
       + (spiel.time ? ", " + text(spiel.time) + " Uhr"
         : ' <span class="leise">– Zeit steht noch nicht fest</span>'));
@@ -191,7 +206,7 @@
     reihe("Spielstätte", text(spiel.venue));
     reihe("Anschrift", text(spiel.address));
     reihe("Platzart", platzart(spiel, true));
-    reihe("Schiedsrichter", text(spiel.referee));
+    reihe("Schiedsrichter", schiedsrichter(spiel));
 
     var links = [];
 
@@ -211,7 +226,7 @@
     links.push('<button type="button" class="zeilen-knopf tg-start"'
       + ' data-match="' + text(spiel.id) + '">E-Mail-Text erzeugen</button>');
 
-    return '<tr class="sp-details"><td colspan="4"><dl>'
+    return '<tr class="sp-details"><td colspan="3"><dl>'
       + reihen.join("") + "</dl>"
       + '<p class="detail-links">' + links.join("") + "</p></td></tr>";
   }
@@ -237,17 +252,6 @@
       : '<td class="sp-zeit">' + text(spiel.time) + "</td>";
 
     var auf = Boolean(zustand.offen[spiel.id]);
-    var knoepfe = "";
-
-    if (spiel.mapsUrl) {
-      knoepfe += '<a class="zeilen-knopf" href="' + text(spiel.mapsUrl)
-        + '" target="_blank" rel="noopener"'
-        + ' title="Sportanlage in Google Maps öffnen">Karte</a>';
-    }
-
-    knoepfe += '<button type="button" class="zeilen-knopf tg-start"'
-      + ' data-match="' + text(spiel.id) + '"'
-      + ' title="E-Mail-Text zu diesem Spiel erzeugen">Text</button>';
 
     return '<tr class="spiel' + (auf ? " auf" : "") + '">'
       + zeit
@@ -265,7 +269,6 @@
       + (unten.length ? '<span class="ort">' + unten.join(" · ")
         + "</span>" : "")
       + "</td>"
-      + '<td class="sp-aktion">' + knoepfe + "</td>"
       + "</tr>"
       + (auf ? zeileDetails(spiel) : "");
   }
@@ -324,7 +327,7 @@
       var marke = tag.datum === ersterKommender ? ' id="aktuell"' : "";
 
       html.push('<tbody data-tag="' + text(tag.datum) + '"' + marke + ">");
-      html.push('<tr class="tag"><th colspan="4" scope="colgroup">'
+      html.push('<tr class="tag"><th colspan="3" scope="colgroup">'
         + text(S.datumLang(tag.datum))
         + '<span class="anzahl">' + anzahl + "</span></th></tr>");
 

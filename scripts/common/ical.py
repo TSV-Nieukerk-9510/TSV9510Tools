@@ -16,6 +16,8 @@ der jeweils richtigen Ortszeit.
 
 from datetime import datetime, timedelta, timezone
 
+from scripts.common.text import lesbar
+
 PRODID = "-//TSV Nieukerk 95/10//TSV9510Tools//DE"
 
 # Sagt dem Kalenderprogramm, wie oft es neu laden soll. Ohne diese Angabe
@@ -162,6 +164,10 @@ def describe(match, website=None):
     if match.get("isHome") is not None:
         zeile("Art", "Heimspiel" if match["isHome"] else "Auswärtsspiel")
 
+    if match.get("isHome") is False and match.get("ownVenue"):
+        zeile("Hinweis", "Laut FUSSBALL.DE hat der Gegner Heimrecht, "
+              "der Spielort ist aber unsere eigene Anlage.")
+
     if match.get("date"):
         if match.get("timeAssumed"):
             zeile("Anstoß", f"{datum_lang(match['date'])} – Zeit steht "
@@ -186,7 +192,7 @@ def describe(match, website=None):
             if match.get("pitchAssumed") else ""
         zeile("Platzart", match["pitch"] + hinweis)
 
-    zeile("Schiedsrichter", match.get("referee"))
+    zeile("Schiedsrichter", lesbar(match.get("referee")) or "k. A.")
 
     if zeilen and zeilen[-1] != "":
         zeilen.append("")

@@ -69,7 +69,7 @@ window.Textgenerator = (function () {
       anlage: spiel.venueName || "",
       adresse: spiel.address || "",
       anfahrt: spiel.mapsUrl || "",
-      schiedsrichter: spiel.referee || "",
+      schiedsrichter: /[\uE000-\uF8FF]/.test(spiel.referee || "") ? "" : (spiel.referee || ""),
       spielseite: spiel.url || "",
       staffelseite: spiel.divisionUrl || "",
       verein: verein || ""
