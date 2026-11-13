@@ -104,11 +104,16 @@ def main():
         inhalt = svg(url)
         ziel = paths.QR_DIR / f"{slug}.svg"
 
-        if ziel.exists() and ziel.read_text(encoding="utf-8") == inhalt:
-            unveraendert += 1
-            continue
+        # Zeilenenden unveraendert lassen, damit Windows und der Linux-
+        # Runner dieselben Bytes schreiben und vergleichen.
+        if ziel.exists():
+            with ziel.open("r", encoding="utf-8", newline="") as handle:
+                if handle.read() == inhalt:
+                    unveraendert += 1
+                    continue
 
-        ziel.write_text(inhalt, encoding="utf-8")
+        with ziel.open("w", encoding="utf-8", newline="") as handle:
+            handle.write(inhalt)
         geschrieben += 1
 
     # Nicht mehr benoetigte Codes entfernen, damit keine Leichen bleiben

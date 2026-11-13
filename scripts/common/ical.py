@@ -266,7 +266,10 @@ def write_calendar(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
 
     if path.exists():
-        current = path.read_text(encoding="utf-8", newline="")
+        # open() statt Path.read_text(newline=...): der Parameter kennt
+        # erst Python 3.13, der Workflow laeuft mit 3.12.
+        with path.open("r", encoding="utf-8", newline="") as handle:
+            current = handle.read()
 
         if current == text:
             return False
