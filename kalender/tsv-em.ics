@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:E-Juniorinnen - TSV Nieukerk (W-U11) (2627)
+X-WR-CALDESC:Spielplan E-Juniorinnen - TSV Nieukerk (W-U11) - automatisch v
+ on fussball.de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:032ICACLSO00000FVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261121T084500Z
+DTSTART:20261121T084500Z
+DTEND:20261121T094500Z
+SUMMARY:A DJK Twisteden II - Kinderfestival
+DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nBegegnung: DJ
+ K Twisteden II - Kinderfestival – TSV Nieukerk (W-U11)\nArt: Auswärtssp
+ iel\nAnstoß: Samstag\, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderf
+ ußball\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nie
+ ukerk-w-u11/-/staffel/032ICACLSO00000FVS5489BUVSGKI48U-G\nSpielübersicht 
+ der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?
+ team=tsv-em
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLS
+ O00000FVS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032ICACLSS000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T084500Z
+DTSTART:20261128T084500Z
+DTEND:20261128T094500Z
+SUMMARY:H TSV Nieukerk (W-U11)
+DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nBegegnung: TS
+ V Nieukerk (W-U11) - Kinderfestival – TSV Nieukerk (W-U11)\nArt: Heimspi
+ el\nAnstoß: Samstag\, 28. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfu
+ ßball\nPlatzart: Kunstrasen * (angenommen\, FUSSBALL.DE nennt keine Platz
+ art)\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieuke
+ rk-w-u11/-/staffel/032ICACLSS000000VS5489BUVSGKI48U-G\nSpielübersicht der
+  Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?tea
+ m=tsv-em
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLS
+ S000000VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032ICACLSS000003VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T084500Z
+DTSTART:20261205T084500Z
+DTEND:20261205T094500Z
+SUMMARY:A Kevelaerer SV II - Kinderfestival
+DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nBegegnung: Ke
+ velaerer SV II - Kinderfestival – TSV Nieukerk (W-U11)\nArt: Auswärtssp
+ iel\nAnstoß: Samstag\, 5. Dezember 2026\, 09:45 Uhr\nWettbewerb: Kinderfu
+ ßball\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieu
+ kerk-w-u11/-/staffel/032ICACLSS000003VS5489BUVSGKI48U-G\nSpielübersicht d
+ er Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?t
+ eam=tsv-em
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLS
+ S000003VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

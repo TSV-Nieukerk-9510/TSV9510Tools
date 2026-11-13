@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:E-Junioren - TSV Nieukerk II (2627)
+X-WR-CALDESC:Spielplan E-Junioren - TSV Nieukerk II - automatisch von fussb
+ all.de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:032GI4RTSG000003VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261114T101500Z
+DTSTART:20261114T101500Z
+DTEND:20261114T111500Z
+SUMMARY:A FC Aldekerk II - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: FC Aldeker
+ k II - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß: S
+ amstag\, 14. November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\n\nSpie
+ l auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staf
+ fel/032GI4RTSG000003VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: http
+ s://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-e2
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSG00
+ 0003VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI4RTSG000008VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261121T101500Z
+DTSTART:20261121T101500Z
+DTEND:20261121T111500Z
+SUMMARY:H TSV Nieukerk II
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: TSV Nieuke
+ rk II - Kinderfestival – TSV Nieukerk II\nArt: Heimspiel\nAnstoß: Samst
+ ag\, 21. November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nPlatzart: 
+ Kunstrasen * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf 
+ FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/03
+ 2GI4RTSG000008VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://ts
+ v-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-e2
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSG00
+ 0008VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI4RTSK000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T101500Z
+DTSTART:20261128T101500Z
+DTEND:20261128T111500Z
+SUMMARY:A SV Issum II - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: SV Issum I
+ I - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß: Sams
+ tag\, 28. November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\n\nSpiel a
+ uf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel
+ /032GI4RTSK000000VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https:/
+ /tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-e2
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSK00
+ 0000VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI4RTSK000005VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T101500Z
+DTSTART:20261205T101500Z
+DTEND:20261205T111500Z
+SUMMARY:A JSG Herongen / Broekhuysen - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: JSG Herong
+ en / Broekhuysen - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel
+ \nAnstoß: Samstag\, 5. Dezember 2026\, 11:15 Uhr\nWettbewerb: Kinderfußb
+ all\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieuker
+ k-ii/-/staffel/032GI4RTSK000005VS5489BUVSGKI48U-G\nSpielübersicht der Web
+ seite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=ts
+ v-e2
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSK00
+ 0005VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,46 @@
+{
+    "_hinweis": [
+        "Hier stehen die Textvorlagen fuer die E-Mail-Vorschlaege.",
+        "",
+        "Neue Vorlage anlegen:",
+        "  1. Textdatei in diesem Ordner anlegen, z. B. platzsperre.txt",
+        "  2. Unten unter 'vorlagen' eintragen",
+        "",
+        "In den Textdateien stehen Platzhalter in doppelten geschweiften",
+        "Klammern, z. B. {{spielnummer}}. Bekannte Platzhalter werden aus",
+        "den Spieldaten gefuellt. Jeder unbekannte Platzhalter wird auf der",
+        "Seite automatisch zu einem Eingabefeld - die Beschriftung dafuer",
+        "steht unter 'felder'. Fehlt sie, wird der Name selbst angezeigt.",
+        "",
+        "Welche Platzhalter aus den Spieldaten kommen, steht in",
+        "docs/datenmodell.md."
+    ],
+
+    "felder": {
+        "grund": "Grund",
+        "wunschtermin": "Neuer Wunschtermin",
+        "treffpunkt": "Treffpunkt (Ort und Uhrzeit)",
+        "absender": "Dein Name",
+        "funktion": "Deine Funktion im Verein",
+        "kontakt": "Telefon oder E-Mail für Rückfragen"
+    },
+
+    "vorlagen": [
+        {
+            "datei": "absage.txt",
+            "titel": "Spielabsage"
+        },
+        {
+            "datei": "verlegung-anfrage.txt",
+            "titel": "Verlegung anfragen"
+        },
+        {
+            "datei": "verlegung-bestaetigung.txt",
+            "titel": "Verlegung bestätigen"
+        },
+        {
+            "datei": "spielinfo.txt",
+            "titel": "Spielinfo weitergeben"
+        }
+    ]
+}

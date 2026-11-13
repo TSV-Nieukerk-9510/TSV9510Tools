@@ -1,0 +1,120 @@
+{
+    "_hinweis": [
+        "Von Hand gepflegt: Trainingszeiten und Ansprechpartner je Mannschaft.",
+        "",
+        "Der Schluessel ist der dauerhafte slug aus config/teams.map.json.",
+        "Er bleibt ueber Saisonwechsel hinweg gleich - diese Datei muss",
+        "also nicht jedes Jahr neu zugeordnet werden, nur inhaltlich",
+        "aktualisiert.",
+        "",
+        "Leere Eintraege sind in Ordnung: die Seite zeigt dann 'noch nicht",
+        "hinterlegt' statt einer falschen Angabe.",
+        "",
+        "DATENSCHUTZ: Diese Datei liegt in einem oeffentlichen Repository",
+        "und ist damit fuer jeden lesbar - auch fuer Adresssammler.",
+        "Bitte nur Funktionsadressen des Vereins eintragen (etwa",
+        "h1@tsv-nieukerk.de), keine privaten Mobilnummern und keine",
+        "privaten Mailadressen ohne ausdrueckliches Einverstaendnis der",
+        "betroffenen Person. Bei Jugendmannschaften besonders zurueckhaltend.",
+        "",
+        "Felder je Trainingseinheit: tag, von, bis, ort",
+        "Felder je Ansprechpartner: rolle, name, email, telefon"
+    ],
+    "mannschaften": {
+        "tsv-h1": {
+            "training": [
+                {
+                    "tag": "Dienstag",
+                    "von": "19:30",
+                    "bis": "21:00",
+                    "ort": "Kunstrasen"
+                },
+                {
+                    "tag": "Donnerstag",
+                    "von": "19:30",
+                    "bis": "21:00",
+                    "ort": "Kunstrasen"
+                }
+            ],
+            "hinweis": "BEISPIEL – bitte durch die echten Zeiten ersetzen oder leeren.",
+            "kontakt": [
+                {
+                    "rolle": "Trainer",
+                    "name": "",
+                    "email": "",
+                    "telefon": ""
+                }
+            ]
+        },
+        "tsv-h2": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "jsg-a1": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "jsg-b1": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "jsg-c1": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "jsg-c2": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "tsv-d1": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "tsv-e1": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "tsv-e2": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "tsv-f1": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "tsv-f2": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "tsv-g1": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "tsv-g2": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "tsv-dm": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        },
+        "tsv-em": {
+            "training": [],
+            "hinweis": "",
+            "kontakt": []
+        }
+    }
+}

@@ -1,0 +1,22 @@
+Betreff: Verlegung bestätigt – Spiel {{spielnummer}} – {{heim}} gegen {{gast}}
+
+Sehr geehrte Damen und Herren,
+
+der Verlegung der folgenden Begegnung stimmen wir zu:
+
+Spielnummer:  {{spielnummer}}
+Spieltag:     {{spieltag}}
+Staffel:      {{wettbewerb}} (Staffel-ID {{staffelid}})
+Begegnung:    {{heim}} – {{gast}}
+Bisheriger Termin: {{datum}}, {{uhrzeit}} Uhr
+
+Neuer Termin: {{wunschtermin}}
+Spielstätte:  {{spielort}}
+
+Wir bitten darum, die Änderung im DFBnet einzutragen.
+
+Mit freundlichen Grüßen
+{{absender}}
+{{funktion}}
+{{verein}}
+{{kontakt}}

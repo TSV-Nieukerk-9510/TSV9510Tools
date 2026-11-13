@@ -1,0 +1,81 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:G-Junioren - TSV Nieukerk (2627)
+X-WR-CALDESC:Spielplan G-Junioren - TSV Nieukerk - automatisch von fussball
+ .de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:032IF0R7E8000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261114T084500Z
+DTSTART:20261114T084500Z
+DTEND:20261114T092500Z
+SUMMARY:A TSV Wachtendonk-Wankum - Kinderfestival
+DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: TSV Wachtendo
+ nk-Wankum - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß:
+  Samstag\, 14. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\n\nSp
+ iel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staff
+ el/032IF0R7E8000000VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https
+ ://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-g1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
+ 0VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032IF0R7E8000002VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261121T084500Z
+DTSTART:20261121T084500Z
+DTEND:20261121T092500Z
+SUMMARY:A SV 19 Straelen - Kinderfestival
+DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: SV 19 Straele
+ n - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag
+ \, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\n\nSpiel auf 
+ FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF
+ 0R7E8000002VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv-n
+ ieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-g1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
+ 2VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032IF0R7E8000006VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T084500Z
+DTSTART:20261128T084500Z
+DTEND:20261128T092500Z
+SUMMARY:H TSV Nieukerk
+DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ - Kinderfestival – TSV Nieukerk\nArt: Heimspiel\nAnstoß: Samstag\, 28. 
+ November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nPlatzart: Kunstrase
+ n * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf FUSSBALL.
+ DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E80000
+ 06VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9
+ 510.github.io/TSV9510Tools/index.html?team=tsv-g1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
+ 6VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032IF0R7E800000BVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T084500Z
+DTSTART:20261205T084500Z
+DTEND:20261205T092500Z
+SUMMARY:A Kevelaerer SV - Kinderfestival
+DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: Kevelaerer SV
+  - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag\
+ , 5. Dezember 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\n\nSpiel auf FU
+ SSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R
+ 7E800000BVS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv-nie
+ ukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-g1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
+ BVS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

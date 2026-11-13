@@ -1,0 +1,153 @@
+{
+    "_hinweis": [
+        "Dies ist die einzige von Hand gepflegte Mannschaftsliste.",
+        "Der Schluessel ist die team-id von fussball.de. Sie bleibt auch dann gleich,",
+        "wenn der Verein die Mannschaft auf fussball.de umbenennt.",
+        "",
+        "WICHTIG: 'slug' bestimmt Dateinamen und oeffentliche URLs (Kalender, QR-Codes,",
+        "Mannschaftsseiten). Ein einmal veroeffentlichter slug darf NIE geaendert werden -",
+        "sonst laufen alle bestehenden Kalender-Abos ins Leere, ohne dass es jemand merkt.",
+        "",
+        "Neue Mannschaft? fetch_teams.py meldet jede unbekannte team-id und legt",
+        "vorlaeufig einen Slug aus dem Namen an. Dann hier eintragen und festschreiben.",
+        "",
+        "spielzeit: Regelspielzeit in Minuten EINSCHLIESSLICH Halbzeitpause.",
+        "  Daraus ergibt sich die Dauer des Kalendereintrags. Die Werte folgen",
+        "  den ueblichen Altersklassen (Herren 2x45+15, B 2x40+15, C 2x35+15,",
+        "  D 2x30+10, E 2x25+10, F 2x20+10, G 2x15+10). Weichen die Vorgaben",
+        "  des Verbands davon ab, hier anpassen.",
+        "",
+        "anstoss: uebliche Anstosszeit dieser Mannschaft. Wird nur benutzt,",
+        "  wenn fussball.de noch keine Zeit nennt. Der Kalendereintrag weist",
+        "  dann ausdruecklich darauf hin, dass die Zeit noch offen ist."
+    ],
+
+    "teams": {
+        "011MIE0NA8000000VTVG0001VTR8C1K7": {
+            "slug": "tsv-h1",
+            "spielzeit": 105,
+            "anstoss": "15:00",
+            "short": "Herren 1",
+            "group": "senioren",
+            "order": 10
+        },
+        "011MIDJU5C000000VTVG0001VTR8C1K7": {
+            "slug": "tsv-h2",
+            "spielzeit": 105,
+            "anstoss": "13:00",
+            "short": "Herren 2",
+            "group": "senioren",
+            "order": 20
+        },
+        "011MIDHQDK000000VTVG0001VTR8C1K7": {
+            "slug": "jsg-a1",
+            "spielzeit": 105,
+            "anstoss": "15:00",
+            "short": "A1",
+            "group": "jugend",
+            "order": 110
+        },
+        "011MI97ATG000000VTVG0001VTR8C1K7": {
+            "slug": "jsg-b1",
+            "spielzeit": 95,
+            "anstoss": "14:00",
+            "short": "B1",
+            "group": "jugend",
+            "order": 120
+        },
+        "011MICLMI0000000VTVG0001VTR8C1K7": {
+            "slug": "jsg-c1",
+            "spielzeit": 85,
+            "anstoss": "13:00",
+            "short": "C1",
+            "group": "jugend",
+            "order": 130
+        },
+        "0241K94L5S000000VS548984VS0FQV4H": {
+            "slug": "jsg-c2",
+            "spielzeit": 85,
+            "anstoss": "13:00",
+            "short": "C2",
+            "group": "jugend",
+            "order": 140
+        },
+        "011MIDHQJ0000000VTVG0001VTR8C1K7": {
+            "slug": "tsv-d1",
+            "spielzeit": 70,
+            "anstoss": "11:00",
+            "short": "D1",
+            "group": "jugend",
+            "order": 150
+        },
+        "011MI9ICMK000000VTVG0001VTR8C1K7": {
+            "slug": "tsv-e1",
+            "spielzeit": 60,
+            "anstoss": "10:30",
+            "short": "E1",
+            "group": "jugend",
+            "order": 160
+        },
+        "031CHKTU0S000000VS5489BSVU7CJV8J": {
+            "slug": "tsv-e2",
+            "spielzeit": 60,
+            "anstoss": "10:30",
+            "short": "E2",
+            "group": "jugend",
+            "order": 170
+        },
+        "011MIE2UNG000000VTVG0001VTR8C1K7": {
+            "slug": "tsv-f1",
+            "spielzeit": 50,
+            "anstoss": "10:00",
+            "short": "F1",
+            "group": "jugend",
+            "order": 180
+        },
+        "011MIF8R08000000VTVG0001VTR8C1K7": {
+            "slug": "tsv-f2",
+            "spielzeit": 50,
+            "anstoss": "10:00",
+            "short": "F2",
+            "group": "jugend",
+            "order": 190
+        },
+        "02T9OB7IB8000000VS5489BRVTHNGU03": {
+            "slug": "tsv-g1",
+            "spielzeit": 40,
+            "anstoss": "10:00",
+            "short": "G1",
+            "group": "jugend",
+            "order": 200
+        },
+        "02TJROIV9O000000VS5489BSVUALD4UK": {
+            "slug": "tsv-g2",
+            "spielzeit": 40,
+            "anstoss": "10:00",
+            "short": "G2",
+            "group": "jugend",
+            "order": 210
+        },
+        "02TJRJT8D4000000VS5489BSVUALD4UK": {
+            "slug": "tsv-dm",
+            "spielzeit": 70,
+            "anstoss": "11:00",
+            "short": "D-Juniorinnen",
+            "group": "maedchen",
+            "order": 310
+        },
+        "02T9OPVD8O000000VS5489BRVTHNGU03": {
+            "slug": "tsv-em",
+            "spielzeit": 60,
+            "anstoss": "10:30",
+            "short": "E-Juniorinnen",
+            "group": "maedchen",
+            "order": 320
+        }
+    },
+
+    "groups": {
+        "senioren": "Senioren",
+        "jugend": "Junioren",
+        "maedchen": "Juniorinnen"
+    }
+}

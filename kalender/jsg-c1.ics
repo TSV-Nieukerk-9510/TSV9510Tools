@@ -1,0 +1,93 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:C-Junioren - JSG Aldekerk / Nieukerk (2627)
+X-WR-CALDESC:Spielplan C-Junioren - JSG Aldekerk / Nieukerk - automatisch v
+ on fussball.de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:031SBDRVGC000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261114T131500Z
+DTSTART:20261114T131500Z
+DTEND:20261114T144000Z
+SUMMARY:H Alemannia Pfalzdorf
+LOCATION:Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4764
+ 7 Kerken
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nBegegnung: JS
+ G Aldekerk / Nieukerk – Alemannia Pfalzdorf\nArt: Heimspiel\nAnstoß: Sa
+ mstag\, 14. November 2026\, 14:15 Uhr\nWettbewerb: Kreisliga A\, 7. Spielt
+ ag\nSpielnummer: 221785032\nStaffel-ID: 221785\nSpielstätte: Rasenplatz\,
+  Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift:
+  Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter:
+   \n\nSpiel auf FUSSBALL.DE: https://w
+ ww.fussball.de/spiel/jsg-aldekerk-nieukerk-alemannia-pfalzdorf/-/spiel/031
+ SBDRVGC000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.goo
+ gle.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle
+ : https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-c-junio
+ ren-kreisliga-a-c-junioren-saison2627-niederrhein/-/spieldatum/2026-11-14/
+ staffel/031SBC1K8K000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: 
+ https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-c1
+URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-alemannia-pfalzdorf
+ /-/spiel/031SBDRVGC000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBDRVDS000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T120000Z
+DTSTART:20261128T120000Z
+DTEND:20261128T132500Z
+SUMMARY:A BV Sturm Wissel
+LOCATION:Rasenplatz\, Sportanlage BV Sturm Wissel\, Anton-Heuken-Str. 10\, 
+ 47546 Kalkar
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nBegegnung: BV
+  Sturm Wissel – JSG Aldekerk / Nieukerk\nArt: Auswärtsspiel\nAnstoß: S
+ amstag\, 28. November 2026\, 13:00 Uhr\nWettbewerb: Kreisliga A\, 8. Spiel
+ tag\nSpielnummer: 221785040\nStaffel-ID: 221785\nSpielstätte: Rasenplatz\
+ , Sportanlage BV Sturm Wissel\, Anton-Heuken-Str. 10\, 47546 Kalkar\nAnsch
+ rift: Anton-Heuken-Str. 10\, 47546 Kalkar\nPlatzart: Naturrasen\n\nSpiel a
+ uf FUSSBALL.DE: https://www.fussball.de/spiel/bv-sturm-wissel-jsg-aldekerk
+ -nieukerk/-/spiel/031SBDRVDS000000VS5489BTVTPHHFPR\nSportanlage in Google 
+ Maps: https://www.google.de/maps?q=Anton-Heuken-Str.+10%2C+47546+Kalkar\nS
+ taffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kle
+ ve-geldern-c-junioren-kreisliga-a-c-junioren-saison2627-niederrhein/-/spie
+ ldatum/2026-11-28/staffel/031SBC1K8K000004VS5489BTVTPHHFPR-G\nSpielübersi
+ cht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.h
+ tml?team=jsg-c1
+URL:https://www.fussball.de/spiel/bv-sturm-wissel-jsg-aldekerk-nieukerk/-/s
+ piel/031SBDRVDS000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBDRV78000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T131500Z
+DTSTART:20261205T131500Z
+DTEND:20261205T144000Z
+SUMMARY:H SSV 1953 Reichswalde
+LOCATION:Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4764
+ 7 Kerken
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nBegegnung: JS
+ G Aldekerk / Nieukerk – SSV 1953 Reichswalde\nArt: Heimspiel\nAnstoß: S
+ amstag\, 5. Dezember 2026\, 14:15 Uhr\nWettbewerb: Kreisliga A\, 9. Spielt
+ ag\nSpielnummer: 221785042\nStaffel-ID: 221785\nSpielstätte: Rasenplatz\,
+  Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift:
+  Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\n\nSpiel auf FUS
+ SBALL.DE: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ssv-1953-rei
+ chswalde/-/spiel/031SBDRV78000000VS5489BTVTPHHFPR\nSportanlage in Google M
+ aps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\
+ nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-k
+ leve-geldern-c-junioren-kreisliga-a-c-junioren-saison2627-niederrhein/-/sp
+ ieldatum/2026-12-05/staffel/031SBC1K8K000004VS5489BTVTPHHFPR-G\nSpielüber
+ sicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index
+ .html?team=jsg-c1
+URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ssv-1953-reichswald
+ e/-/spiel/031SBDRV78000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

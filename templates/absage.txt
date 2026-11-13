@@ -1,0 +1,25 @@
+Betreff: Spielabsage – Spiel {{spielnummer}} – {{heim}} gegen {{gast}}
+
+Sehr geehrte Damen und Herren,
+
+hiermit sagen wir die folgende Begegnung ab:
+
+Spielnummer:  {{spielnummer}}
+Spieltag:     {{spieltag}}
+Staffel:      {{wettbewerb}} (Staffel-ID {{staffelid}})
+Begegnung:    {{heim}} – {{gast}}
+Termin:       {{datum}}, {{uhrzeit}} Uhr
+Spielstätte:  {{spielort}}
+
+Grund der Absage: {{grund}}
+
+Wir bitten um Kenntnisnahme und um Mitteilung, wie mit der Neuansetzung
+verfahren werden soll.
+
+Für Rückfragen stehe ich gerne zur Verfügung.
+
+Mit freundlichen Grüßen
+{{absender}}
+{{funktion}}
+{{verein}}
+{{kontakt}}

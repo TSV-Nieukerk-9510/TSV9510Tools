@@ -1,0 +1,25 @@
+{
+    "club_id": "00ES8GN8UK0000ALVV0AG08LVUPGND5I",
+    "name": "TSV Nieukerk 95/10",
+    "short_name": "TSV Nieukerk",
+    "season": "2627",
+    "timezone": "Europe/Berlin",
+    "base_url": "https://tsv-nieukerk-9510.github.io/TSV9510Tools",
+    "match_duration_minutes": 120,
+
+    "_hinweis_aliases": "Namensbestandteile, an denen eine eigene Mannschaft in einer Spielpaarung erkannt wird. Spielgemeinschaften mit aufnehmen.",
+    "club_aliases": [
+        "TSV Nieukerk",
+        "JSG Nieukerk",
+        "JSG Aldekerk / Nieukerk",
+        "JSG FC Aldekerk / TSV Nieukerk"
+    ],
+
+    "_hinweis_heimspielstaetten": "Wird genutzt, um Spiele auf eigener Anlage zu erkennen (Feld ownVenue) - die Grundlage fuer den Platzbelegungsplan.",
+    "home_venues": [
+        "Nieukerk"
+    ],
+
+    "_hinweis_platzart": "Viele Jugendspiele nennen keine Platzart. Fuer Heimspiele wird dann dieser Wert angenommen und im Datensatz als pitchAssumed markiert; auf der Seite erscheint ein Stern.",
+    "default_home_pitch": "Kunstrasen"
+}

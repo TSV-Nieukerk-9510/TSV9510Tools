@@ -1,0 +1,92 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:C-Junioren - JSG Aldekerk / Nieukerk II (2627)
+X-WR-CALDESC:Spielplan C-Junioren - JSG Aldekerk / Nieukerk II - automatisc
+ h von fussball.de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:031SBJJN8S000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261114T110000Z
+DTSTART:20261114T110000Z
+DTEND:20261114T122500Z
+SUMMARY:A JSG Wetten / Kapellen
+LOCATION:Rasenplatz\, Arm. Kapellen Hamb Neu\, Vorsumer Weg\, 47608 Geldern
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nBegegnung:
+  JSG Wetten / Kapellen – JSG Aldekerk / Nieukerk II\nArt: Auswärtsspiel
+ \nAnstoß: Samstag\, 14. November 2026\, 12:00 Uhr\nWettbewerb: Kreisliga 
+ B\, 7. Spieltag\nSpielnummer: 221792031\nStaffel-ID: 221792\nSpielstätte:
+  Rasenplatz\, Arm. Kapellen Hamb Neu\, Vorsumer Weg\, 47608 Geldern\nAnsch
+ rift: Vorsumer Weg\, 47608 Geldern\nPlatzart: Naturrasen\n\nSpiel auf FUSS
+ BALL.DE: https://www.fussball.de/spiel/jsg-wetten-kapellen-jsg-aldekerk-ni
+ eukerk-ii/-/spiel/031SBJJN8S000000VS5489BTVTPHHFPR\nSportanlage in Google 
+ Maps: https://www.google.de/maps?q=Vorsumer+Weg%2C+47608+Geldern\nStaffel 
+ und Tabelle: https://www.fussball.de/spieltag/kreisliga-b--vorrunde-gr-3-k
+ reis-kleve-geldern-c-junioren-kreisliga-b-c-junioren-saison2627-niederrhei
+ n/-/spieldatum/2026-11-14/staffel/031SBD22NG000004VS5489BTVTPHHFPR-G\nSpie
+ lübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools
+ /index.html?team=jsg-c2
+URL:https://www.fussball.de/spiel/jsg-wetten-kapellen-jsg-aldekerk-nieukerk
+ -ii/-/spiel/031SBJJN8S000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBJJN58000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T131500Z
+DTSTART:20261128T131500Z
+DTEND:20261128T144000Z
+SUMMARY:H Kevelaerer SV III
+LOCATION:Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 K
+ erken
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nBegegnung:
+  JSG Aldekerk / Nieukerk II – Kevelaerer SV III\nArt: Heimspiel\nAnstoß
+ : Samstag\, 28. November 2026\, 14:15 Uhr\nWettbewerb: Kreisliga B\, 8. Sp
+ ieltag\nSpielnummer: 221792037\nStaffel-ID: 221792\nSpielstätte: Rasenpla
+ tz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 Kerken\nAnschrift
+ : Kempener Landstr.\, 47647 Kerken\nPlatzart: Naturrasen\n\nSpiel auf FUSS
+ BALL.DE: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-kevelaerer
+ -sv-iii/-/spiel/031SBJJN58000000VS5489BTVTPHHFPR\nSportanlage in Google Ma
+ ps: https://www.google.de/maps?q=Kempener+Landstr.%2C+47647+Kerken\nStaffe
+ l und Tabelle: https://www.fussball.de/spieltag/kreisliga-b--vorrunde-gr-3
+ -kreis-kleve-geldern-c-junioren-kreisliga-b-c-junioren-saison2627-niederrh
+ ein/-/spieldatum/2026-11-28/staffel/031SBD22NG000004VS5489BTVTPHHFPR-G\nSp
+ ielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Too
+ ls/index.html?team=jsg-c2
+URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-kevelaerer-sv-ii
+ i/-/spiel/031SBJJN58000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBJJN2O000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T131500Z
+DTSTART:20261205T131500Z
+DTEND:20261205T144000Z
+SUMMARY:A JSG GW Vernum / RW Geldern
+LOCATION:Kunstrasenplatz\, Gelderlandstadion Kunstrasen\, Am Holländer See
+  25\, 47608 Geldern
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nBegegnung:
+  JSG GW Vernum / RW Geldern – JSG Aldekerk / Nieukerk II\nArt: Auswärts
+ spiel\nAnstoß: Samstag\, 5. Dezember 2026\, 14:15 Uhr\nWettbewerb: Kreisl
+ iga B\, 9. Spieltag\nSpielnummer: 221792044\nStaffel-ID: 221792\nSpielstä
+ tte: Kunstrasenplatz\, Gelderlandstadion Kunstrasen\, Am Holländer See 25
+ \, 47608 Geldern\nAnschrift: Am Holländer See 25\, 47608 Geldern\nPlatzar
+ t: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-
+ gw-vernum-rw-geldern-jsg-aldekerk-nieukerk-ii/-/spiel/031SBJJN2O000000VS54
+ 89BTVTPHHFPR\nSportanlage in Google Maps: https://www.google.de/maps?q=Am+
+ Holl%C3%A4nder+See+25%2C+47608+Geldern\nStaffel und Tabelle: https://www.f
+ ussball.de/spieltag/kreisliga-b--vorrunde-gr-3-kreis-kleve-geldern-c-junio
+ ren-kreisliga-b-c-junioren-saison2627-niederrhein/-/spieldatum/2026-12-05/
+ staffel/031SBD22NG000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: 
+ https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-c2
+URL:https://www.fussball.de/spiel/jsg-gw-vernum-rw-geldern-jsg-aldekerk-nie
+ ukerk-ii/-/spiel/031SBJJN2O000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+Betreff: {{mannschaft}} – {{heim}} gegen {{gast}} am {{datum}}
+
+Hallo zusammen,
+
+hier die Angaben zum nächsten Spiel:
+
+{{heim}} – {{gast}}
+{{datum}} um {{uhrzeit}} Uhr
+{{spielort}}
+{{wettbewerb}}, {{spieltag}}
+
+Treffpunkt: {{treffpunkt}}
+
+Spielseite auf FUSSBALL.DE:
+{{spielseite}}
+
+Anfahrt:
+{{anfahrt}}
+
+Viele Grüße
+{{absender}}

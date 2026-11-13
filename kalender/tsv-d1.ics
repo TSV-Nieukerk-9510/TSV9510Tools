@@ -1,0 +1,119 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:D-Junioren - TSV Nieukerk (2627)
+X-WR-CALDESC:Spielplan D-Junioren - TSV Nieukerk - automatisch von fussball
+ .de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:031SB9QP48000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261114T123000Z
+DTSTART:20261114T123000Z
+DTEND:20261114T134000Z
+SUMMARY:A SV Union Wetten
+LOCATION:Kunstrasenplatz\, Union Wetten Kunstrasen\, Kapellener Str.\, 4762
+ 5 Kevelaer
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nBegegnung: SV Union Wett
+ en – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag\, 14. November 
+ 2026\, 13:30 Uhr\nWettbewerb: Kreisliga B\, 7. Spieltag\nSpielnummer: 2217
+ 81035\nStaffel-ID: 221781\nSpielstätte: Kunstrasenplatz\, Union Wetten Ku
+ nstrasen\, Kapellener Str.\, 47625 Kevelaer\nAnschrift: Kapellener Str.\, 
+ 47625 Kevelaer\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www
+ .fussball.de/spiel/sv-union-wetten-tsv-nieukerk/-/spiel/031SB9QP48000000VS
+ 5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.google.de/maps?q=K
+ apellener+Str.%2C+47625+Kevelaer\nStaffel und Tabelle: https://www.fussbal
+ l.de/spieltag/kreisliga-b--aufstiegsrunde-gr-2-kreis-kleve-geldern-d-junio
+ ren-kreisliga-b-d-junioren-saison2627-niederrhein/-/spieldatum/2026-11-14/
+ staffel/031SAV8VJ4000003VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: 
+ https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-d1
+URL:https://www.fussball.de/spiel/sv-union-wetten-tsv-nieukerk/-/spiel/031S
+ B9QP48000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032JDA9V6S000000VS5489BUVSGKI48U@tsv-nieukerk-9510.github.io
+DTSTAMP:20261121T121500Z
+DTSTART:20261121T121500Z
+DTEND:20261121T132500Z
+SUMMARY:H SpVgg Rheurdt-Schaephuysen
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ – SpVgg Rheurdt-Schaephuysen\nArt: Heimspiel\nAnstoß: Samstag\, 21. Nov
+ ember 2026\, 13:15 Uhr\nWettbewerb: Kreisfreundschaftsspiele\nSpielnummer:
+  250080108\nStaffel-ID: 250080\nSpielstätte: Kunstrasenplatz\, Kunstrasen
+  TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen D
+ üwel 16\, 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: ht
+ tps://www.fussball.de/spiel/tsv-nieukerk-spvgg-rheurdt-schaephuysen/-/spie
+ l/032JDA9V6S000000VS5489BUVSGKI48U\nSportanlage in Google Maps: https://ww
+ w.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Ta
+ belle: https://www.fussball.de/spieltag/fs-dj-k-fs-kle-1-kreis-kleve-gelde
+ rn-d-junioren-kreis-fs-d-junioren-saison2627-niederrhein/-/spieldatum/2026
+ -11-21/staffel/0316IQGDKG000000VS5489BUVSBBVPEU-D\nSpielübersicht der Web
+ seite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=ts
+ v-d1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-spvgg-rheurdt-schaephuysen/-
+ /spiel/032JDA9V6S000000VS5489BUVSGKI48U
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SB9QOU0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T110000Z
+DTSTART:20261128T110000Z
+DTEND:20261128T121000Z
+SUMMARY:H JSG GW Vernum / RW Geldern
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ – JSG GW Vernum / RW Geldern\nArt: Heimspiel\nAnstoß: Samstag\, 28. Nov
+ ember 2026\, 12:00 Uhr\nWettbewerb: Kreisliga B\, 8. Spieltag\nSpielnummer
+ : 221781038\nStaffel-ID: 221781\nSpielstätte: Kunstrasenplatz\, Kunstrase
+ n TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen 
+ Düwel 16\, 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: h
+ ttps://www.fussball.de/spiel/tsv-nieukerk-jsg-gw-vernum-rw-geldern/-/spiel
+ /031SB9QOU0000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www
+ .google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tab
+ elle: https://www.fussball.de/spieltag/kreisliga-b--aufstiegsrunde-gr-2-kr
+ eis-kleve-geldern-d-junioren-kreisliga-b-d-junioren-saison2627-niederrhein
+ /-/spieldatum/2026-11-28/staffel/031SAV8VJ4000003VS5489BTVTPHHFPR-G\nSpiel
+ übersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/
+ index.html?team=tsv-d1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-jsg-gw-vernum-rw-geldern/-/s
+ piel/031SB9QOU0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SB9QOPO000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T114500Z
+DTSTART:20261205T114500Z
+DTEND:20261205T125500Z
+SUMMARY:A JSG Herongen / Broekhuysen
+LOCATION:Kunstrasenplatz\, SF Broekhuysen Kunstrasen\, Op den Bökel\, 4763
+ 8 Straelen
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nBegegnung: JSG Herongen 
+ / Broekhuysen – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag\, 5.
+  Dezember 2026\, 12:45 Uhr\nWettbewerb: Kreisliga B\, 9. Spieltag\nSpielnu
+ mmer: 221781043\nStaffel-ID: 221781\nSpielstätte: Kunstrasenplatz\, SF Br
+ oekhuysen Kunstrasen\, Op den Bökel\, 47638 Straelen\nAnschrift: Op den B
+ ökel\, 47638 Straelen\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: htt
+ ps://www.fussball.de/spiel/jsg-herongen-broekhuysen-tsv-nieukerk/-/spiel/0
+ 31SB9QOPO000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.g
+ oogle.de/maps?q=Op+den+B%C3%B6kel%2C+47638+Straelen\nStaffel und Tabelle: 
+ https://www.fussball.de/spieltag/kreisliga-b--aufstiegsrunde-gr-2-kreis-kl
+ eve-geldern-d-junioren-kreisliga-b-d-junioren-saison2627-niederrhein/-/spi
+ eldatum/2026-12-05/staffel/031SAV8VJ4000003VS5489BTVTPHHFPR-G\nSpielübers
+ icht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.
+ html?team=tsv-d1
+URL:https://www.fussball.de/spiel/jsg-herongen-broekhuysen-tsv-nieukerk/-/s
+ piel/031SB9QOPO000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

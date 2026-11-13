@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TSV Nieukerk 95/10 – Textbausteine</title>
+<meta name="description" content="Fertige E-Mail-Texte zum Absagen, Verlegen oder Weitergeben eines Spiels – mit Spielnummer und Staffel bereits eingesetzt.">
+<meta name="theme-color" content="#11244e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="kopf" id="kopf"></header>
+<nav class="hauptnav" id="hauptnav" aria-label="Bereiche"></nav>
+
+<main class="inhalt">
+
+  <p class="erklaerung">
+    Spiel auswählen, Vorlage wählen, fehlende Angaben ergänzen – fertig
+    ist der Text zum Kopieren. Verschickt wird von Hand aus dem eigenen
+    Mailprogramm; so liest noch einmal jemand drüber, bevor eine Absage
+    rausgeht.
+  </p>
+
+  <div class="auswahlblock">
+    <label class="tg-feld">
+      <span>Mannschaft</span>
+      <select id="mannschaftswahl"></select>
+    </label>
+
+    <label class="tg-feld">
+      <span>Spiel</span>
+      <select id="spielauswahl"></select>
+    </label>
+  </div>
+
+  <div id="spielvorschau" class="spielvorschau"></div>
+
+  <p>
+    <button type="button" id="text-erzeugen" class="tg-knopf tg-haupt"
+            disabled>Text erzeugen</button>
+  </p>
+
+  <h2>Woher die Angaben kommen</h2>
+  <p class="erklaerung">
+    Spielnummer, Staffel-ID, Anstoß und Spielstätte stammen direkt von
+    FUSSBALL.DE und werden in den Text eingesetzt. Was dort nicht steht –
+    der Grund einer Absage, ein Wunschtermin, der Absender – wird im
+    Fenster abgefragt. Name, Funktion und Telefonnummer merkt sich dein
+    Browser für das nächste Mal.
+  </p>
+  <p class="erklaerung">
+    Die Vorlagen liegen im Repository unter <code>templates/</code> und
+    lassen sich dort als einfache Textdateien ändern.
+  </p>
+
+</main>
+
+<footer class="fuss" id="fuss"></footer>
+
+<script src="assets/js/seite.js"></script>
+<script src="assets/js/textgenerator.js"></script>
+<script src="assets/js/generator.js"></script>
+</body>
+</html>

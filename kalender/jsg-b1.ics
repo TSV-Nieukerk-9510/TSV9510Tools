@@ -1,0 +1,278 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:B-Junioren - JSG Nieukerk / Aldekerk (2627)
+X-WR-CALDESC:Spielplan B-Junioren - JSG Nieukerk / Aldekerk - automatisch v
+ on fussball.de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:031SBMNTH0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261114T150000Z
+DTSTART:20261114T150000Z
+DTEND:20261114T163500Z
+SUMMARY:H JSG Broekhuysen / Herongen / Wa-Wa
+LOCATION:Kunstrasenplatz\, FC Aldekerk (Kunstrasen)\, Kempener Landstr.\, 4
+ 7647 Kerken
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Nieukerk / Aldekerk – JSG Broekhuysen / Herongen / Wa-Wa\nArt: Heimspi
+ el\nAnstoß: Samstag\, 14. November 2026\, 16:00 Uhr\nWettbewerb: Kreislig
+ a A\, 8. Spieltag\nSpielnummer: 221770048\nStaffel-ID: 221770\nSpielstätt
+ e: Kunstrasenplatz\, FC Aldekerk (Kunstrasen)\, Kempener Landstr.\, 47647 
+ Kerken\nAnschrift: Kempener Landstr.\, 47647 Kerken\nPlatzart: Kunstrasen\
+ nSchiedsrichter:  \n\nSpiel auf FUSSBALL.
+ DE: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-broekhuysen-he
+ rongen-wa-wa/-/spiel/031SBMNTH0000000VS5489BTVTPHHFPR\nSportanlage in Goog
+ le Maps: https://www.google.de/maps?q=Kempener+Landstr.%2C+47647+Kerken\nS
+ taffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kle
+ ve-geldern-b-junioren-kreisliga-a-b-junioren-saison2627-niederrhein/-/spie
+ ldatum/2026-11-14/staffel/031RV62OCO000004VS5489BTVTPHHFPR-G\nSpielübersi
+ cht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.h
+ tml?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-broekhuysen-her
+ ongen-wa-wa/-/spiel/031SBMNTH0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMNT78000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261121T123000Z
+DTSTART:20261121T123000Z
+DTEND:20261121T140500Z
+SUMMARY:A SV 1926 Rindern
+LOCATION:Kunstrasenplatz\, SV Rindern Nebenplatz\, Wasserburgallee 112\, 47
+ 533 Kleve
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: SV
+  1926 Rindern – JSG Nieukerk / Aldekerk\nArt: Auswärtsspiel\nAnstoß: S
+ amstag\, 21. November 2026\, 13:30 Uhr\nWettbewerb: Kreisliga A\, 9. Spiel
+ tag\nSpielnummer: 221770051\nStaffel-ID: 221770\nSpielstätte: Kunstrasenp
+ latz\, SV Rindern Nebenplatz\, Wasserburgallee 112\, 47533 Kleve\nAnschrif
+ t: Wasserburgallee 112\, 47533 Kleve\nPlatzart: Kunstrasen\nSchiedsrichter
+ :  \n\nSpiel auf FUSSBALL.
+ DE: https://www.fussball.de/spiel/sv-1926-rindern-jsg-nieukerk-aldekerk/-/
+ spiel/031SBMNT78000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https:
+ //www.google.de/maps?q=Wasserburgallee+112%2C+47533+Kleve\nStaffel und Tab
+ elle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-b-j
+ unioren-kreisliga-a-b-junioren-saison2627-niederrhein/-/spieldatum/2026-11
+ -21/staffel/031RV62OCO000004VS5489BTVTPHHFPR-G\nSpielübersicht der Websei
+ te: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-b
+ 1
+URL:https://www.fussball.de/spiel/sv-1926-rindern-jsg-nieukerk-aldekerk/-/s
+ piel/031SBMNT78000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMNT40000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261129T100000Z
+DTSTART:20261129T100000Z
+DTEND:20261129T113500Z
+SUMMARY:H SV 19 Straelen II
+LOCATION:Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4764
+ 7 Kerken
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Nieukerk / Aldekerk – SV 19 Straelen II\nArt: Heimspiel\nAnstoß: Sonn
+ tag\, 29. November 2026\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 10. Spielta
+ g\nSpielnummer: 221770060\nStaffel-ID: 221770\nSpielstätte: Rasenplatz\, 
+ Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: 
+ Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\n\nSpiel auf FUSS
+ BALL.DE: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-sv-19-straele
+ n-ii/-/spiel/031SBMNT40000000VS5489BTVTPHHFPR\nSportanlage in Google Maps:
+  https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nSta
+ ffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve
+ -geldern-b-junioren-kreisliga-a-b-junioren-saison2627-niederrhein/-/spield
+ atum/2026-11-29/staffel/031RV62OCO000004VS5489BTVTPHHFPR-G\nSpielübersich
+ t der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.htm
+ l?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-sv-19-straelen-ii/-
+ /spiel/031SBMNT40000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMNSJO000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261206T100000Z
+DTSTART:20261206T100000Z
+DTEND:20261206T113500Z
+SUMMARY:A Kevelaerer SV
+LOCATION:Kunstrasenplatz\, Sportplatz bei Scholten Kunstrasen\, Twistedener
+  Str. 285\, 47623 Kevelaer
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: Ke
+ velaerer SV – JSG Nieukerk / Aldekerk\nArt: Auswärtsspiel\nAnstoß: Son
+ ntag\, 6. Dezember 2026\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 11. Spielta
+ g\nSpielnummer: 221770061\nStaffel-ID: 221770\nSpielstätte: Kunstrasenpla
+ tz\, Sportplatz bei Scholten Kunstrasen\, Twistedener Str. 285\, 47623 Kev
+ elaer\nAnschrift: Twistedener Str. 285\, 47623 Kevelaer\nPlatzart: Kunstra
+ sen\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/kevelaerer-sv-
+ jsg-nieukerk-aldekerk/-/spiel/031SBMNSJO000000VS5489BTVTPHHFPR\nSportanlag
+ e in Google Maps: https://www.google.de/maps?q=Twistedener+Str.+285%2C+476
+ 23+Kevelaer\nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisli
+ ga-a-kreis-kleve-geldern-b-junioren-kreisliga-a-b-junioren-saison2627-nied
+ errhein/-/spieldatum/2026-12-06/staffel/031RV62OCO000004VS5489BTVTPHHFPR-G
+ \nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV951
+ 0Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/kevelaerer-sv-jsg-nieukerk-aldekerk/-/spi
+ el/031SBMNSJO000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMO3B0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270221T100000Z
+DTSTART:20270221T100000Z
+DTEND:20270221T113500Z
+SUMMARY:H JSG Uedem / Keppeln / Louisendorf
+LOCATION:Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 K
+ erken
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Nieukerk / Aldekerk – JSG Uedem / Keppeln / Louisendorf\nArt: Heimspie
+ l\nAnstoß: Sonntag\, 21. Februar 2027\, 11:00 Uhr\nWettbewerb: Kreisliga 
+ A\, 12. Spieltag\nSpielnummer: 221770067\nStaffel-ID: 221770\nSpielstätte
+ : Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 Kerken\
+ nAnschrift: Kempener Landstr.\, 47647 Kerken\nPlatzart: Naturrasen\n\nSpie
+ l auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg
+ -uedem-keppeln-louisendorf/-/spiel/031SBMO3B0000000VS5489BTVTPHHFPR\nSport
+ anlage in Google Maps: https://www.google.de/maps?q=Kempener+Landstr.%2C+4
+ 7647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisli
+ ga-a-kreis-kleve-geldern-b-junioren-kreisliga-a-b-junioren-saison2627-nied
+ errhein/-/spieldatum/2027-02-21/staffel/031RV62OCO000004VS5489BTVTPHHFPR-G
+ \nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV951
+ 0Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-uedem-keppeln-l
+ ouisendorf/-/spiel/031SBMO3B0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMO38O000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270227T150000Z
+DTSTART:20270227T150000Z
+DTEND:20270227T163500Z
+SUMMARY:A TSV Weeze 10/19
+LOCATION:Kunstrasenplatz\, August-Janssen-Sportzentrum Nebenplatz 1\, Uedem
+ er Str. 1\, 47652 Weeze
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: TS
+ V Weeze 10/19 – JSG Nieukerk / Aldekerk\nArt: Auswärtsspiel\nAnstoß: S
+ amstag\, 27. Februar 2027\, 16:00 Uhr\nWettbewerb: Kreisliga A\, 13. Spiel
+ tag\nSpielnummer: 221770078\nStaffel-ID: 221770\nSpielstätte: Kunstrasenp
+ latz\, August-Janssen-Sportzentrum Nebenplatz 1\, Uedemer Str. 1\, 47652 W
+ eeze\nAnschrift: Uedemer Str. 1\, 47652 Weeze\nPlatzart: Kunstrasen\n\nSpi
+ el auf FUSSBALL.DE: https://www.fussball.de/spiel/tsv-weeze-10-19-jsg-nieu
+ kerk-aldekerk/-/spiel/031SBMO38O000000VS5489BTVTPHHFPR\nSportanlage in Goo
+ gle Maps: https://www.google.de/maps?q=Uedemer+Str.+1%2C+47652+Weeze\nStaf
+ fel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-
+ geldern-b-junioren-kreisliga-a-b-junioren-saison2627-niederrhein/-/spielda
+ tum/2027-02-27/staffel/031RV62OCO000004VS5489BTVTPHHFPR-G\nSpielübersicht
+  der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html
+ ?team=jsg-b1
+URL:https://www.fussball.de/spiel/tsv-weeze-10-19-jsg-nieukerk-aldekerk/-/s
+ piel/031SBMO38O000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMO2NC000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270307T100000Z
+DTSTART:20270307T100000Z
+DTEND:20270307T113500Z
+SUMMARY:H SV 1934 Veert
+LOCATION:Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 K
+ erken
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Nieukerk / Aldekerk – SV 1934 Veert\nArt: Heimspiel\nAnstoß: Sonntag\
+ , 7. März 2027\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 14. Spieltag\nSpiel
+ nummer: 221770082\nStaffel-ID: 221770\nSpielstätte: Rasenplatz\, Sportanl
+ age FC Aldekerk\, Kempener Landstr.\, 47647 Kerken\nAnschrift: Kempener La
+ ndstr.\, 47647 Kerken\nPlatzart: Naturrasen\n\nSpiel auf FUSSBALL.DE: http
+ s://www.fussball.de/spiel/jsg-nieukerk-aldekerk-sv-1934-veert/-/spiel/031S
+ BMO2NC000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.goog
+ le.de/maps?q=Kempener+Landstr.%2C+47647+Kerken\nStaffel und Tabelle: https
+ ://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-b-junioren-kre
+ isliga-a-b-junioren-saison2627-niederrhein/-/spieldatum/2027-03-07/staffel
+ /031RV62OCO000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https:/
+ /tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-sv-1934-veert/-/spi
+ el/031SBMO2NC000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMO2ES000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270314T100000Z
+DTSTART:20270314T100000Z
+DTEND:20270314T113500Z
+SUMMARY:A SV 1913 Walbeck
+LOCATION:Rasenplatz\, Sportanlage SV Walbeck\, Bergsteg 92\, 47608 Geldern
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: SV
+  1913 Walbeck – JSG Nieukerk / Aldekerk\nArt: Auswärtsspiel\nAnstoß: S
+ onntag\, 14. März 2027\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 15. Spielta
+ g\nSpielnummer: 221770090\nStaffel-ID: 221770\nSpielstätte: Rasenplatz\, 
+ Sportanlage SV Walbeck\, Bergsteg 92\, 47608 Geldern\nAnschrift: Bergsteg 
+ 92\, 47608 Geldern\nPlatzart: Naturrasen\n\nSpiel auf FUSSBALL.DE: https:/
+ /www.fussball.de/spiel/sv-1913-walbeck-jsg-nieukerk-aldekerk/-/spiel/031SB
+ MO2ES000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.googl
+ e.de/maps?q=Bergsteg+92%2C+47608+Geldern\nStaffel und Tabelle: https://www
+ .fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-b-junioren-kreisliga
+ -a-b-junioren-saison2627-niederrhein/-/spieldatum/2027-03-14/staffel/031RV
+ 62OCO000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-n
+ ieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/sv-1913-walbeck-jsg-nieukerk-aldekerk/-/s
+ piel/031SBMO2ES000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMO1Q4000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270411T090000Z
+DTSTART:20270411T090000Z
+DTEND:20270411T103500Z
+SUMMARY:H BV Sturm Wissel
+LOCATION:Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 K
+ erken
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Nieukerk / Aldekerk – BV Sturm Wissel\nArt: Heimspiel\nAnstoß: Sonnta
+ g\, 11. April 2027\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 16. Spieltag\nSp
+ ielnummer: 221770092\nStaffel-ID: 221770\nSpielstätte: Rasenplatz\, Sport
+ anlage FC Aldekerk\, Kempener Landstr.\, 47647 Kerken\nAnschrift: Kempener
+  Landstr.\, 47647 Kerken\nPlatzart: Naturrasen\n\nSpiel auf FUSSBALL.DE: h
+ ttps://www.fussball.de/spiel/jsg-nieukerk-aldekerk-bv-sturm-wissel/-/spiel
+ /031SBMO1Q4000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www
+ .google.de/maps?q=Kempener+Landstr.%2C+47647+Kerken\nStaffel und Tabelle: 
+ https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-b-juniore
+ n-kreisliga-a-b-junioren-saison2627-niederrhein/-/spieldatum/2027-04-11/st
+ affel/031RV62OCO000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: ht
+ tps://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-bv-sturm-wissel/-/s
+ piel/031SBMO1Q4000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMO1M0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270418T090000Z
+DTSTART:20270418T090000Z
+DTEND:20270418T103500Z
+SUMMARY:A JSG Issum / Sevelen
+LOCATION:Rasenplatz\, Sportanlage SV Issum\, Am Sportplatz 15\, 47661 Issum
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Issum / Sevelen – JSG Nieukerk / Aldekerk\nArt: Auswärtsspiel\nAnsto
+ ß: Sonntag\, 18. April 2027\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 17. Sp
+ ieltag\nSpielnummer: 221770102\nStaffel-ID: 221770\nSpielstätte: Rasenpla
+ tz\, Sportanlage SV Issum\, Am Sportplatz 15\, 47661 Issum\nAnschrift: Am 
+ Sportplatz 15\, 47661 Issum\nPlatzart: Naturrasen\n\nSpiel auf FUSSBALL.DE
+ : https://www.fussball.de/spiel/jsg-issum-sevelen-jsg-nieukerk-aldekerk/-/
+ spiel/031SBMO1M0000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https:
+ //www.google.de/maps?q=Am+Sportplatz+15%2C+47661+Issum\nStaffel und Tabell
+ e: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-b-juni
+ oren-kreisliga-a-b-junioren-saison2627-niederrhein/-/spieldatum/2027-04-18
+ /staffel/031RV62OCO000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite:
+  https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-issum-sevelen-jsg-nieukerk-aldekerk/-
+ /spiel/031SBMO1M0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

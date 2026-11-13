@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:E-Junioren - TSV Nieukerk (2627)
+X-WR-CALDESC:Spielplan E-Junioren - TSV Nieukerk - automatisch von fussball
+ .de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:032GI5UG9C00000DVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261114T101500Z
+DTSTART:20261114T101500Z
+DTEND:20261114T111500Z
+SUMMARY:A DJK Twisteden - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nBegegnung: DJK Twisteden
+  - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag\
+ , 14. November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\n\nSpiel auf F
+ USSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5
+ UG9C00000DVS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv-ni
+ eukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-e1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9C00000
+ DVS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI5UG9G000005VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261121T103000Z
+DTSTART:20261121T103000Z
+DTEND:20261121T113000Z
+SUMMARY:A Alemannia Pfalzdorf III - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nBegegnung: Alemannia Pfa
+ lzdorf III - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß
+ : Samstag\, 21. November 2026\, 11:30 Uhr\nWettbewerb: Kinderfußball\n\nS
+ piel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staf
+ fel/032GI5UG9G000005VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: http
+ s://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-e1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9G00000
+ 5VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI5UG9K000004VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T101500Z
+DTSTART:20261128T101500Z
+DTEND:20261128T111500Z
+SUMMARY:H TSV Nieukerk
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ - Kinderfestival – TSV Nieukerk\nArt: Heimspiel\nAnstoß: Samstag\, 28. 
+ November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nPlatzart: Kunstrase
+ n * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf FUSSBALL.
+ DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9K0000
+ 04VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9
+ 510.github.io/TSV9510Tools/index.html?team=tsv-e1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9K00000
+ 4VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI5UG9O000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T101500Z
+DTSTART:20261205T101500Z
+DTEND:20261205T111500Z
+SUMMARY:A JSG Uedem / Keppeln / Louisendorf - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nBegegnung: JSG Uedem / K
+ eppeln / Louisendorf - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspie
+ l\nAnstoß: Samstag\, 5. Dezember 2026\, 11:15 Uhr\nWettbewerb: Kinderfuß
+ ball\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieuke
+ rk/-/staffel/032GI5UG9O000000VS5489BUVSGKI48U-G\nSpielübersicht der Webse
+ ite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-
+ e1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9O00000
+ 0VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

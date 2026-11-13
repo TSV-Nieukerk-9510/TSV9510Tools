@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TSV Nieukerk 95/10 – Spielübersicht</title>
+<meta name="description" content="Alle angesetzten Spiele der Fußballmannschaften des TSV Nieukerk 95/10, nach Spieltagen sortiert.">
+<meta name="theme-color" content="#11244e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="kopf" id="kopf"></header>
+<nav class="hauptnav" id="hauptnav" aria-label="Bereiche"></nav>
+
+<nav class="filter" aria-label="Anzeige einschränken">
+  <div class="inhalt" id="filterbereich">
+    <p class="hinweis" style="padding-block:.6rem">Einen Moment …</p>
+  </div>
+  <div class="inhalt">
+    <div class="sprungleiste" id="sprungleiste">
+      <a href="#aktuell" data-ziel="aktuell">Aktueller Spieltag</a>
+      <a href="#frueher" data-ziel="frueher">Frühere Spiele</a>
+      <a href="#oben" data-ziel="oben">Nach oben</a>
+    </div>
+  </div>
+</nav>
+
+<main class="inhalt">
+  <h2 class="sr-only">Spieltage</h2>
+  <div id="warnbereich"></div>
+  <div id="spiele" aria-live="polite">
+    <p class="hinweis">Einen Moment …</p>
+  </div>
+  <p class="legende" id="legende" hidden>
+    <b>*</b> Platzart nicht von FUSSBALL.DE angegeben – für Heimspiele
+    wird Kunstrasen angenommen.
+  </p>
+</main>
+
+<footer class="fuss" id="fuss"></footer>
+
+<script src="assets/js/seite.js"></script>
+<script src="assets/js/textgenerator.js"></script>
+<script src="assets/js/uebersicht.js"></script>
+</body>
+</html>

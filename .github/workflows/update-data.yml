@@ -1,0 +1,68 @@
+name: Daten von fussball.de aktualisieren
+
+on:
+  schedule:
+    # alle sechs Stunden
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+# Schreibt direkt auf den Branch - dafuer reicht der eingebaute Token,
+# ein persoenlicher Zugriffstoken ist nicht noetig.
+permissions:
+  contents: write
+
+# Zwei gleichzeitige Laeufe wuerden sich gegenseitig ueberschreiben.
+concurrency:
+  group: daten-update
+  cancel-in-progress: false
+
+jobs:
+  aktualisieren:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Abhaengigkeiten installieren
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: Mannschaften abrufen
+        run: python -u scripts/fetch_teams.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Spielplaene abrufen
+        run: python -u scripts/fetch_matches.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Kalender erzeugen
+        run: python -u scripts/build_calendars.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: QR-Codes erzeugen
+        run: python -u scripts/build_qr.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Aenderungen uebernehmen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data kalender qr
+
+          if git diff --cached --quiet; then
+            echo "Keine Aenderungen - nichts zu committen."
+            exit 0
+          fi
+
+          git commit -m "Daten aktualisiert ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+          git push

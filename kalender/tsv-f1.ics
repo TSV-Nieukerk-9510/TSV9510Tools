@@ -1,0 +1,81 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:F-Junioren - TSV Nieukerk (2627)
+X-WR-CALDESC:Spielplan F-Junioren - TSV Nieukerk - automatisch von fussball
+ .de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:032I4CJEOS000003VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261114T084500Z
+DTSTART:20261114T084500Z
+DTEND:20261114T093500Z
+SUMMARY:A SV Arminia Kapellen-Hamb - Kinderfestival
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: SV Arminia Ka
+ pellen-Hamb - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnsto
+ ß: Samstag\, 14. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\n\
+ nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/st
+ affel/032I4CJEOS000003VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: ht
+ tps://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-f1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
+ 3VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032I4CJEOS000007VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261121T084500Z
+DTSTART:20261121T084500Z
+DTEND:20261121T093500Z
+SUMMARY:A JSG GW Vernum / RW Geldern II - Kinderfestival
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: JSG GW Vernum
+  / RW Geldern II - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nA
+ nstoß: Samstag\, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußbal
+ l\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/
+ -/staffel/032I4CJEOS000007VS5489BUVSGKI48U-G\nSpielübersicht der Webseite
+ : https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-f1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
+ 7VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032I4CJEOS00000BVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T084500Z
+DTSTART:20261128T084500Z
+DTEND:20261128T093500Z
+SUMMARY:A JSG GW Vernum / RW Geldern II - Kinderfestival
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: JSG GW Vernum
+  / RW Geldern II - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nA
+ nstoß: Samstag\, 28. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußbal
+ l\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/
+ -/staffel/032I4CJEOS00000BVS5489BUVSGKI48U-G\nSpielübersicht der Webseite
+ : https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-f1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
+ BVS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032I4CJEOS00000CVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T084500Z
+DTSTART:20261205T084500Z
+DTEND:20261205T093500Z
+SUMMARY:H TSV Nieukerk
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ - Kinderfestival – TSV Nieukerk\nArt: Heimspiel\nAnstoß: Samstag\, 5. D
+ ezember 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nPlatzart: Kunstrasen
+  * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf FUSSBALL.D
+ E: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
+ CVS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv-nieukerk-95
+ 10.github.io/TSV9510Tools/index.html?team=tsv-f1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
+ CVS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

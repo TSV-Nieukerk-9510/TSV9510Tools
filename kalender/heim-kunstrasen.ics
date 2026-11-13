@@ -1,0 +1,464 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TSV Nieukerk 95/10//TSV9510Tools//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TSV Nieukerk Heimspiele Kunstrasen (2627)
+X-WR-CALDESC:Heimspiele Kunstrasen - automatisch von fussball.de
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:031SBS7JD0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261114T163000Z
+DTSTART:20261114T163000Z
+DTEND:20261114T181500Z
+SUMMARY:A1: A SV Viktoria Goch
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
+ ung: SV Viktoria Goch – JSG FC Aldekerk / TSV Nieukerk\nArt: Auswärtssp
+ iel\nAnstoß: Samstag\, 14. November 2026\, 17:30 Uhr\nWettbewerb: Kreisli
+ ga A\, 8. Spieltag\nSpielnummer: 221773046\nStaffel-ID: 221773\nSpielstät
+ te: Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 4764
+ 7 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Kunstra
+ sen\nSchiedsrichter:  \n\nSpi
+ el auf FUSSBALL.DE: https://www.fussball.de/spiel/sv-viktoria-goch-jsg-ald
+ ekerk-nieukerk/-/spiel/031SBS7JD0000000VS5489BTVTPHHFPR\nSportanlage in Go
+ ogle Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+K
+ erken\nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-k
+ reis-kleve-geldern-a-junioren-kreisliga-a-a-junioren-saison2627-niederrhei
+ n/-/spieldatum/2026-11-18/staffel/031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpie
+ lübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools
+ /index.html?team=jsg-a1
+URL:https://www.fussball.de/spiel/sv-viktoria-goch-jsg-aldekerk-nieukerk/-/
+ spiel/031SBS7JD0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBS7JD0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261118T183000Z
+DTSTART:20261118T183000Z
+DTEND:20261118T201500Z
+SUMMARY:A1: H SV Viktoria Goch
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
+ ung: JSG FC Aldekerk / TSV Nieukerk – SV Viktoria Goch\nArt: Heimspiel\n
+ Anstoß: Mittwoch\, 18. November 2026\, 19:30 Uhr\nWettbewerb: Kreisliga A
+ \, 8. Spieltag\nSpielnummer: 221773046\nStaffel-ID: 221773\nSpielstätte: 
+ Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Ke
+ rken\nAnschrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Kunstrasen\
+ nSchiedsrichter:  \n\nSpiel a
+ uf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-sv-vik
+ toria-goch/-/spiel/031SBS7JD0000000VS5489BTVTPHHFPR\nSportanlage in Google
+  Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerke
+ n\nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis
+ -kleve-geldern-a-junioren-kreisliga-a-a-junioren-saison2627-niederrhein/-/
+ spieldatum/2026-11-18/staffel/031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpielüb
+ ersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/ind
+ ex.html?team=jsg-a1
+URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-sv-viktoria-goch/-/
+ spiel/031SBS7JD0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI4RTSG000008VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261121T101500Z
+DTSTART:20261121T101500Z
+DTEND:20261121T111500Z
+SUMMARY:E2: H TSV Nieukerk II
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: TSV Nieuke
+ rk II - Kinderfestival – TSV Nieukerk II\nArt: Heimspiel\nAnstoß: Samst
+ ag\, 21. November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nPlatzart: 
+ Kunstrasen * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf 
+ FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/03
+ 2GI4RTSG000008VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://ts
+ v-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-e2
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSG00
+ 0008VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032JDA9V6S000000VS5489BUVSGKI48U@tsv-nieukerk-9510.github.io
+DTSTAMP:20261121T121500Z
+DTSTART:20261121T121500Z
+DTEND:20261121T132500Z
+SUMMARY:D1: H SpVgg Rheurdt-Schaephuysen
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ – SpVgg Rheurdt-Schaephuysen\nArt: Heimspiel\nAnstoß: Samstag\, 21. Nov
+ ember 2026\, 13:15 Uhr\nWettbewerb: Kreisfreundschaftsspiele\nSpielnummer:
+  250080108\nStaffel-ID: 250080\nSpielstätte: Kunstrasenplatz\, Kunstrasen
+  TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen D
+ üwel 16\, 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: ht
+ tps://www.fussball.de/spiel/tsv-nieukerk-spvgg-rheurdt-schaephuysen/-/spie
+ l/032JDA9V6S000000VS5489BUVSGKI48U\nSportanlage in Google Maps: https://ww
+ w.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Ta
+ belle: https://www.fussball.de/spieltag/fs-dj-k-fs-kle-1-kreis-kleve-gelde
+ rn-d-junioren-kreis-fs-d-junioren-saison2627-niederrhein/-/spieldatum/2026
+ -11-21/staffel/0316IQGDKG000000VS5489BUVSBBVPEU-D\nSpielübersicht der Web
+ seite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=ts
+ v-d1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-spvgg-rheurdt-schaephuysen/-
+ /spiel/032JDA9V6S000000VS5489BUVSGKI48U
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032ICACLSS000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T084500Z
+DTSTART:20261128T084500Z
+DTEND:20261128T094500Z
+SUMMARY:E-Juniorinnen: H TSV Nieukerk (W-U11)
+DESCRIPTION:Mannschaft: E-Juniorinnen - TSV Nieukerk (W-U11)\nBegegnung: TS
+ V Nieukerk (W-U11) - Kinderfestival – TSV Nieukerk (W-U11)\nArt: Heimspi
+ el\nAnstoß: Samstag\, 28. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfu
+ ßball\nPlatzart: Kunstrasen * (angenommen\, FUSSBALL.DE nennt keine Platz
+ art)\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieuke
+ rk-w-u11/-/staffel/032ICACLSS000000VS5489BUVSGKI48U-G\nSpielübersicht der
+  Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?tea
+ m=tsv-em
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-w-u11/-/staffel/032ICACLS
+ S000000VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032IF0R7E8000006VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T084500Z
+DTSTART:20261128T084500Z
+DTEND:20261128T092500Z
+SUMMARY:G1: H TSV Nieukerk
+DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ - Kinderfestival – TSV Nieukerk\nArt: Heimspiel\nAnstoß: Samstag\, 28. 
+ November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nPlatzart: Kunstrase
+ n * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf FUSSBALL.
+ DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E80000
+ 06VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9
+ 510.github.io/TSV9510Tools/index.html?team=tsv-g1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
+ 6VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI5UG9K000004VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T101500Z
+DTSTART:20261128T101500Z
+DTEND:20261128T111500Z
+SUMMARY:E1: H TSV Nieukerk
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ - Kinderfestival – TSV Nieukerk\nArt: Heimspiel\nAnstoß: Samstag\, 28. 
+ November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nPlatzart: Kunstrase
+ n * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf FUSSBALL.
+ DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9K0000
+ 04VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9
+ 510.github.io/TSV9510Tools/index.html?team=tsv-e1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9K00000
+ 4VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SB9QOU0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T110000Z
+DTSTART:20261128T110000Z
+DTEND:20261128T121000Z
+SUMMARY:D1: H JSG GW Vernum / RW Geldern
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ – JSG GW Vernum / RW Geldern\nArt: Heimspiel\nAnstoß: Samstag\, 28. Nov
+ ember 2026\, 12:00 Uhr\nWettbewerb: Kreisliga B\, 8. Spieltag\nSpielnummer
+ : 221781038\nStaffel-ID: 221781\nSpielstätte: Kunstrasenplatz\, Kunstrase
+ n TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen 
+ Düwel 16\, 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: h
+ ttps://www.fussball.de/spiel/tsv-nieukerk-jsg-gw-vernum-rw-geldern/-/spiel
+ /031SB9QOU0000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www
+ .google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tab
+ elle: https://www.fussball.de/spieltag/kreisliga-b--aufstiegsrunde-gr-2-kr
+ eis-kleve-geldern-d-junioren-kreisliga-b-d-junioren-saison2627-niederrhein
+ /-/spieldatum/2026-11-28/staffel/031SAV8VJ4000003VS5489BTVTPHHFPR-G\nSpiel
+ übersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/
+ index.html?team=tsv-d1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-jsg-gw-vernum-rw-geldern/-/s
+ piel/031SB9QOU0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032I4CJEOS00000CVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T084500Z
+DTSTART:20261205T084500Z
+DTEND:20261205T093500Z
+SUMMARY:F1: H TSV Nieukerk
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ - Kinderfestival – TSV Nieukerk\nArt: Heimspiel\nAnstoß: Samstag\, 5. D
+ ezember 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nPlatzart: Kunstrasen
+  * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf FUSSBALL.D
+ E: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
+ CVS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv-nieukerk-95
+ 10.github.io/TSV9510Tools/index.html?team=tsv-f1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
+ CVS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032ICACLSS000005VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261205T084500Z
+DTSTART:20261205T084500Z
+DTEND:20261205T093500Z
+SUMMARY:F2: H TSV Nieukerk II
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nBegegnung: TSV Nieuke
+ rk II - Kinderfestival – TSV Nieukerk II\nArt: Heimspiel\nAnstoß: Samst
+ ag\, 5. Dezember 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nPlatzart: K
+ unstrasen * (angenommen\, FUSSBALL.DE nennt keine Platzart)\n\nSpiel auf F
+ USSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032
+ ICACLSS000005VS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https://tsv
+ -nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-f2
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032ICACLSS00
+ 0005VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH99T7O000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20261206T120000Z
+DTSTART:20261206T120000Z
+DTEND:20261206T134500Z
+SUMMARY:Herren 2: H FC Aldekerk 1928/52 III
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: TSV Nieukerk I
+ I – FC Aldekerk 1928/52 III\nArt: Heimspiel\nAnstoß: Sonntag\, 6. Dezem
+ ber 2026\, 13:00 Uhr\nWettbewerb: Kreisliga B\, 15. Spieltag\nSpielnummer:
+  220602113\nStaffel-ID: 220602\nSpielstätte: Kunstrasenplatz\, Kunstrasen
+  TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen D
+ üwel 16\, 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: ht
+ tps://www.fussball.de/spiel/tsv-nieukerk-ii-fc-aldekerk-1928-52-iii/-/spie
+ l/031JH99T7O000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://ww
+ w.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Ta
+ belle: https://www.fussball.de/spieltag/kreisliga-b-gruppe-2-kreis-kleve-g
+ eldern-kreisliga-b-herren-saison2627-niederrhein/-/spieldatum/2026-12-06/s
+ taffel/031JAMD8UG000009VS5489BUVVKNMR0J-G\nSpielübersicht der Webseite: h
+ ttps://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h2
+URL:https://www.fussball.de/spiel/tsv-nieukerk-ii-fc-aldekerk-1928-52-iii/-
+ /spiel/031JH99T7O000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH22060000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20261206T143000Z
+DTSTART:20261206T143000Z
+DTEND:20261206T161500Z
+SUMMARY:Herren 1: H SV Walbeck
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk – 
+ SV Walbeck\nArt: Heimspiel\nAnstoß: Sonntag\, 6. Dezember 2026\, 15:30 Uh
+ r\nWettbewerb: Kreisliga A\, 15. Spieltag\nSpielnummer: 220545113\nStaffel
+ -ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am 
+ Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647 Ke
+ rken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.fussball.
+ de/spiel/tsv-nieukerk-sv-walbeck/-/spiel/031JH22060000000VS5489BUVVKNMR0J\
+ nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%B
+ Cwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spie
+ ltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren-saison2627-niederr
+ hein/-/spieldatum/2026-12-06/staffel/031B925F1400000AVS5489BUVV628VP4-G\nS
+ pielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510To
+ ols/index.html?team=tsv-h1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-sv-walbeck/-/spiel/031JH2206
+ 0000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH9AGI0000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20261213T120000Z
+DTSTART:20261213T120000Z
+DTEND:20261213T134500Z
+SUMMARY:Herren 2: H SV 1913 Walbeck II
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: TSV Nieukerk I
+ I – SV 1913 Walbeck II\nArt: Heimspiel\nAnstoß: Sonntag\, 13. Dezember 
+ 2026\, 13:00 Uhr\nWettbewerb: Kreisliga B\, 16. Spieltag\nSpielnummer: 220
+ 602127\nStaffel-ID: 220602\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV
+  Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwe
+ l 16\, 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https:
+ //www.fussball.de/spiel/tsv-nieukerk-ii-sv-1913-walbeck-ii/-/spiel/031JH9A
+ GI0000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.
+ de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: ht
+ tps://www.fussball.de/spieltag/kreisliga-b-gruppe-2-kreis-kleve-geldern-kr
+ eisliga-b-herren-saison2627-niederrhein/-/spieldatum/2026-12-13/staffel/03
+ 1JAMD8UG000009VS5489BUVVKNMR0J-G\nSpielübersicht der Webseite: https://ts
+ v-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h2
+URL:https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-1913-walbeck-ii/-/spie
+ l/031JH9AGI0000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH22HN0000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20261213T143000Z
+DTSTART:20261213T143000Z
+DTEND:20261213T161500Z
+SUMMARY:Herren 1: H SV Viktoria Goch II
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk – 
+ SV Viktoria Goch II\nArt: Heimspiel\nAnstoß: Sonntag\, 13. Dezember 2026\
+ , 15:30 Uhr\nWettbewerb: Kreisliga A\, 16. Spieltag\nSpielnummer: 22054512
+ 7\nStaffel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieu
+ kerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\
+ , 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www
+ .fussball.de/spiel/tsv-nieukerk-sv-viktoria-goch-ii/-/spiel/031JH22HN00000
+ 00VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps
+ ?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://w
+ ww.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren
+ -saison2627-niederrhein/-/spieldatum/2026-12-13/staffel/031B925F1400000AVS
+ 5489BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.
+ github.io/TSV9510Tools/index.html?team=tsv-h1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-sv-viktoria-goch-ii/-/spiel/
+ 031JH22HN0000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH9AEG8000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20270307T120000Z
+DTSTART:20270307T120000Z
+DTEND:20270307T134500Z
+SUMMARY:Herren 2: H SV Germania Wemb
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: TSV Nieukerk I
+ I – SV Germania Wemb\nArt: Heimspiel\nAnstoß: Sonntag\, 7. März 2027\,
+  13:00 Uhr\nWettbewerb: Kreisliga B\, 18. Spieltag\nSpielnummer: 220602141
+ \nStaffel-ID: 220602\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieuk
+ erk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\,
+  47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.
+ fussball.de/spiel/tsv-nieukerk-ii-sv-germania-wemb/-/spiel/031JH9AEG800000
+ 0VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps?
+ q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://ww
+ w.fussball.de/spieltag/kreisliga-b-gruppe-2-kreis-kleve-geldern-kreisliga-
+ b-herren-saison2627-niederrhein/-/spieldatum/2027-03-07/staffel/031JAMD8UG
+ 000009VS5489BUVVKNMR0J-G\nSpielübersicht der Webseite: https://tsv-nieuke
+ rk-9510.github.io/TSV9510Tools/index.html?team=tsv-h2
+URL:https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-germania-wemb/-/spiel/
+ 031JH9AEG8000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH22FOS000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20270307T143000Z
+DTSTART:20270307T143000Z
+DTEND:20270307T161500Z
+SUMMARY:Herren 1: H 1. FC Kleve 63/03 II
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk – 
+ 1. FC Kleve 63/03 II\nArt: Heimspiel\nAnstoß: Sonntag\, 7. März 2027\, 1
+ 5:30 Uhr\nWettbewerb: Kreisliga A\, 18. Spieltag\nSpielnummer: 220545141\n
+ Staffel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieuker
+ k\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\, 4
+ 7647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.fu
+ ssball.de/spiel/tsv-nieukerk-1-fc-kleve-63-03-ii/-/spiel/031JH22FOS000000V
+ S5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps?q=
+ Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.
+ fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren-sa
+ ison2627-niederrhein/-/spieldatum/2027-03-07/staffel/031B925F1400000AVS548
+ 9BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.git
+ hub.io/TSV9510Tools/index.html?team=tsv-h1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-1-fc-kleve-63-03-ii/-/spiel/
+ 031JH22FOS000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH9ACG0000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20270321T120000Z
+DTSTART:20270321T120000Z
+DTEND:20270321T134500Z
+SUMMARY:Herren 2: H SV BW Herongen
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: TSV Nieukerk I
+ I – SV BW Herongen\nArt: Heimspiel\nAnstoß: Sonntag\, 21. März 2027\, 
+ 13:00 Uhr\nWettbewerb: Kreisliga B\, 20. Spieltag\nSpielnummer: 220602155\
+ nStaffel-ID: 220602\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieuke
+ rk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\, 
+ 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.f
+ ussball.de/spiel/tsv-nieukerk-ii-sv-bw-herongen/-/spiel/031JH9ACG0000000VS
+ 5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps?q=A
+ m+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.f
+ ussball.de/spieltag/kreisliga-b-gruppe-2-kreis-kleve-geldern-kreisliga-b-h
+ erren-saison2627-niederrhein/-/spieldatum/2027-03-21/staffel/031JAMD8UG000
+ 009VS5489BUVVKNMR0J-G\nSpielübersicht der Webseite: https://tsv-nieukerk-
+ 9510.github.io/TSV9510Tools/index.html?team=tsv-h2
+URL:https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-bw-herongen/-/spiel/03
+ 1JH9ACG0000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH22E04000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20270321T143000Z
+DTSTART:20270321T143000Z
+DTEND:20270321T161500Z
+SUMMARY:Herren 1: H SG Kessel/Ho-Ha
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk – 
+ SG Kessel/Ho-Ha\nArt: Heimspiel\nAnstoß: Sonntag\, 21. März 2027\, 15:30
+  Uhr\nWettbewerb: Kreisliga A\, 20. Spieltag\nSpielnummer: 220545155\nStaf
+ fel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, 
+ Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647
+  Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www.fussba
+ ll.de/spiel/tsv-nieukerk-sg-kessel-ho-ha/-/spiel/031JH22E04000000VS5489BUV
+ VKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aerme
+ n+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball
+ .de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren-saison2627
+ -niederrhein/-/spieldatum/2027-03-21/staffel/031B925F1400000AVS5489BUVV628
+ VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/T
+ SV9510Tools/index.html?team=tsv-h1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-sg-kessel-ho-ha/-/spiel/031J
+ H22E04000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH22CV8000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20270411T133000Z
+DTSTART:20270411T133000Z
+DTEND:20270411T151500Z
+SUMMARY:Herren 1: H Alemannia Pfalzdorf II
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: TSV Nieukerk – 
+ Alemannia Pfalzdorf II\nArt: Heimspiel\nAnstoß: Sonntag\, 11. April 2027\
+ , 15:30 Uhr\nWettbewerb: Kreisliga A\, 22. Spieltag\nSpielnummer: 22054517
+ 6\nStaffel-ID: 220545\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieu
+ kerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\
+ , 47647 Kerken\nPlatzart: Kunstrasen\n\nSpiel auf FUSSBALL.DE: https://www
+ .fussball.de/spiel/tsv-nieukerk-alemannia-pfalzdorf-ii/-/spiel/031JH22CV80
+ 00000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/m
+ aps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https:
+ //www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-her
+ ren-saison2627-niederrhein/-/spieldatum/2027-04-11/staffel/031B925F1400000
+ AVS5489BUVV628VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-95
+ 10.github.io/TSV9510Tools/index.html?team=tsv-h1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-alemannia-pfalzdorf-ii/-/spi
+ el/031JH22CV8000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

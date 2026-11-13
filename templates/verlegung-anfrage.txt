@@ -1,0 +1,25 @@
+Betreff: Verlegungsanfrage – Spiel {{spielnummer}} – {{heim}} gegen {{gast}}
+
+Sehr geehrte Damen und Herren,
+
+wir möchten die folgende Begegnung verlegen und bitten um Zustimmung:
+
+Spielnummer:  {{spielnummer}}
+Spieltag:     {{spieltag}}
+Staffel:      {{wettbewerb}} (Staffel-ID {{staffelid}})
+Begegnung:    {{heim}} – {{gast}}
+Bisheriger Termin: {{datum}}, {{uhrzeit}} Uhr
+Spielstätte:  {{spielort}}
+
+Gewünschter neuer Termin: {{wunschtermin}}
+
+Grund: {{grund}}
+
+Sofern Einverständnis besteht, bitten wir um eine kurze Rückmeldung,
+damit die Verlegung im DFBnet eingetragen werden kann.
+
+Mit freundlichen Grüßen
+{{absender}}
+{{funktion}}
+{{verein}}
+{{kontakt}}
