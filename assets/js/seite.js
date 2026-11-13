@@ -19,7 +19,7 @@ window.Seite = (function () {
   "use strict";
 
   var NAVIGATION = [
-    { schluessel: "uebersicht", titel: "Spiele", datei: "index.html" },
+    { schluessel: "uebersicht", titel: "Spielübersicht", datei: "index.html" },
     { schluessel: "kalender", titel: "Kalender", datei: "kalender.html" },
     { schluessel: "training", titel: "Training", datei: "training.html" },
     { schluessel: "texte", titel: "Textbausteine", datei: "textgenerator.html" }
@@ -118,8 +118,7 @@ window.Seite = (function () {
     if (kopf) {
       kopf.innerHTML = '<div class="inhalt">'
         + '<p class="verein">' + text(verein) + "</p>"
-        + "<h1>" + text(punkt.titel === "Spiele" ? "Spielübersicht"
-          : punkt.titel) + "</h1>"
+        + "<h1>" + text(punkt.titel) + "</h1>"
         + '<p class="stand" id="stand">' + text(untertitel || "") + "</p>"
         + "</div>";
     }
@@ -158,12 +157,19 @@ window.Seite = (function () {
       return "";
     }
 
-    var zeilen = ["Saison " + daten.teams.season];
+    // "2627" -> "26/27"
+    var saison = String(daten.teams.season || "");
+
+    if (/^\d{4}$/.test(saison)) {
+      saison = saison.slice(0, 2) + "/" + saison.slice(2);
+    }
+
+    var zeilen = ["Saison " + saison];
 
     if (daten.spiele) {
       var zeitpunkt = new Date(daten.spiele.generated)
         .toLocaleString("de-DE", {
-          day: "2-digit", month: "2-digit",
+          day: "2-digit", month: "2-digit", year: "numeric",
           hour: "2-digit", minute: "2-digit"
         });
 
