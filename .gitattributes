@@ -1,0 +1,17 @@
+# Zeilenenden: Git darf die erzeugten Dateien nicht umschreiben.
+#
+# Kalenderdateien muessen laut RFC 5545 mit CRLF enden. Der Workflow
+# (Linux) und ein lokaler Lauf (Windows) sollen dieselben Bytes
+# erzeugen - sonst meldet Git bei jedem Lauf eine Aenderung an jeder
+# Zeile. "-text" heisst: nie konvertieren, genau so speichern.
+kalender/*.ics -text
+qr/*.svg       -text
+
+# JSON und Quelltext einheitlich mit LF
+data/*.json    text eol=lf
+*.py           text eol=lf
+*.js           text eol=lf
+*.html         text eol=lf
+*.css          text eol=lf
+*.md           text eol=lf
+*.yml          text eol=lf
