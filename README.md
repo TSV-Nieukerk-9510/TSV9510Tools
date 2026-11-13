@@ -51,6 +51,7 @@ und Fußzeile einbetten.
 | | Sportanlage | `sportanlage.html` (Texte und Fotos in `config/sportanlage.json`, Bilder in `assets/img/`) |
 | Tools | Kalender | `kalender.html` |
 | | Textvorlagen | `textgenerator.html` |
+| | Einstellungen | `einstellungen.html` (Katalog: `config/einstellungen.json`) |
 | FAQ | FAQ | `faq.html` (Inhalt: `config/faq.json`) |
 
 Die Menüeinträge stehen an **einer** Stelle: `NAVIGATION` oben in
@@ -127,7 +128,7 @@ Trainingszeiten und Ansprechpartner je Mannschaft, gepflegt von Hand in
 * **`stand_trainingszeiten`** — Datum der letzten Änderung der Zeiten
   (JJJJ-MM-TT); erscheint im Kopf der Trainingsseiten.
 * **`saisons`** — `sommer` (Kunstrasen KR und Naturrasen NR, Felder G/H/V)
-  und `winter` (nur KR, zusätzlich Drittel D). `ab` ist der erste Tag der
+  und `winter` (nur KR). `ab` ist der erste Tag der
   Jahreszeit; die Platzbelegung öffnet die gerade gültige.
 * **`orte`** — jede Trainingsstätte einmal als vollständiges Datenpaket:
   `name`, `abk` (Abkürzung, die in Klammern hinter dem Tag steht, z. B. `TSV`,
@@ -167,7 +168,7 @@ im Code fertig, aber vorerst abgeschaltet (`MIT_PLATZANSICHT` in
 `assets/js/platzbelegung.js`).
 
 Der Teil des Platzes kommt aus dem Code im Feld `platz` jeder Einheit
-(H1/H2 Hälften, D1–D3 Drittel nur im Winter, V1–V4 Viertel; V1 links oben,
+(H1/H2 Hälften, D1–D3 Drittel, V1–V4 Viertel; V1 links oben,
 V2 links unten, V3 rechts oben, V4 rechts unten). Es wird höchstens eine
 Hälfte eingetragen; ein ganzes Feld (G) meldet die Seite als
 Unstimmigkeit. Weitere Felder in der Config:
@@ -191,9 +192,20 @@ gerade gilt.
 
 ### FAQ
 
-`faq.html` zeigt häufige Fragen, nach Seiten gegliedert, mit Suche. Der
-Inhalt steht in `config/faq.json` (Gruppen mit Fragen und Antworten;
-`**fett**` und `[Text](seite.html)` sind erlaubt).
+`faq.html` zeigt häufige Fragen für Besucher, ohne Technik, nach Seiten
+gegliedert, mit Suche. Der Inhalt steht in `config/faq.json` (Gruppen mit
+Fragen und Antworten; `**fett**` und `[Text](seite.html)` sind erlaubt).
+Technische Fragen für Betreuer des Repositories stehen in
+[`docs/faq-technik.md`](docs/faq-technik.md) und sind auf der Webseite nicht
+verlinkt.
+
+### Einstellungen
+
+`einstellungen.html` (Tools) listet alle Werte, die über die Konfigurations-
+dateien geändert werden können, mit Beschreibung, Datei, aktuellem Wert und
+der Seite, auf die sie wirken. Die Seite ändert nichts, sie liest nur. Der
+Katalog steht in `config/einstellungen.json`; ein neuer einstellbarer Wert
+wird dort ergänzt (`pfad` zeigt per Punkt-Schreibweise auf den Wert).
 
 ### Textvorlagen
 

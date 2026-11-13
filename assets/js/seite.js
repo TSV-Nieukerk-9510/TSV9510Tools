@@ -37,7 +37,9 @@ window.Seite = (function () {
     { schluessel: "tools", titel: "Tools", datei: "kalender.html", kinder: [
       { schluessel: "kalender", titel: "Kalender", datei: "kalender.html" },
       { schluessel: "texte", titel: "Textvorlagen",
-        datei: "textgenerator.html" }
+        datei: "textgenerator.html" },
+      { schluessel: "einstellungen", titel: "Einstellungen",
+        datei: "einstellungen.html" }
     ] },
     { schluessel: "faq", titel: "FAQ", datei: "faq.html" }
   ];
@@ -68,7 +70,10 @@ window.Seite = (function () {
     spiele: "data/matches.json",
     mannschaften: "config/mannschaften.json",
     faq: "config/faq.json",
-    sportanlage: "config/sportanlage.json"
+    sportanlage: "config/sportanlage.json",
+    club: "config/club.json",
+    teamsmap: "config/teams.map.json",
+    einstellungen: "config/einstellungen.json"
   };
 
   // Offizieller Vereinsname (Kopfzeile, Titel, Anschrift)
@@ -263,13 +268,18 @@ window.Seite = (function () {
   /* Teile des Platzes. rect = [links, oben, rechts, unten] in Anteilen
    * von Laenge und Breite; Ueberschneidungen werden aus der Geometrie
    * berechnet. Kuerzel wie in der Konfiguration: G, H1-H2, D1-D3, V1-V4.
-   * V1 links oben, V2 links unten, V3 rechts oben, V4 rechts unten. */
+   * Koordinaten im liegenden Platz (links/rechts = Laengsrichtung); die
+   * Zeichnung dreht ihn (platzansicht.drehung "links") so, dass unten das
+   * Vereinsheim liegt. Dann gilt, hochkant gesehen:
+   *   Haelften:  H1 unten, H2 oben
+   *   Viertel:   V1 unten links, V2 unten rechts, V3 oben links, V4 oben rechts
+   *   Drittel:   D3 oben (volle Breite), D1 unten links, D2 unten rechts */
   var FELDER = {
     G:  { rect: [0, 0, 1, 1],         name: "ganzes Feld", art: "G" },
     H1: { rect: [0, 0, .5, 1],        name: "Hälfte 1", art: "H" },
     H2: { rect: [.5, 0, 1, 1],        name: "Hälfte 2", art: "H" },
-    D1: { rect: [0, 0, 1 / 3, 1],     name: "Drittel 1", art: "D" },
-    D2: { rect: [1 / 3, 0, 2 / 3, 1], name: "Drittel 2", art: "D" },
+    D1: { rect: [0, 0, 2 / 3, .5],    name: "Drittel 1", art: "D" },
+    D2: { rect: [0, .5, 2 / 3, 1],    name: "Drittel 2", art: "D" },
     D3: { rect: [2 / 3, 0, 1, 1],     name: "Drittel 3", art: "D" },
     V1: { rect: [0, 0, .5, .5],       name: "Viertel 1", art: "V" },
     V2: { rect: [0, .5, .5, 1],       name: "Viertel 2", art: "V" },

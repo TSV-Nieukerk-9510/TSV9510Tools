@@ -1255,3 +1255,17 @@ table.training tr.platzzeile td:first-child { padding-left: 0; }
   .tg-balken span { font-size: .6rem; }
   .tg-balken i { display: none; }
 }
+
+/* Skizze der Plaetze */
+.skizze-lage-rahmen { max-width: 28rem; margin: .5rem 0 1rem; color: var(--text, #1a2233); }
+.skizze-lage { width: 100%; height: auto; display: block; }
+.skizze-teile { width: 7.5rem; height: auto; display: block; margin: 0 auto .3rem; }
+.legende-reihe { gap: 1.2rem 1.8rem; }
+
+/* Seite Einstellungen */
+.einst-gruppe { margin-bottom: 1.6rem; scroll-margin-top: 1rem; }
+.einst-datei { margin: -.3rem 0 .4rem; font-size: .88rem; }
+.einst-tabelle { min-width: 36rem; }
+.einst-tabelle tbody th { white-space: normal; width: 45%; background: transparent; }
+.einst-pfad { display: block; font-weight: 400; font-size: .75rem; color: var(--leise); margin-top: .1rem; }
+.einst-text { display: block; font-weight: 400; color: var(--leise); margin-top: .2rem; }

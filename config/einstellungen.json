@@ -1,0 +1,344 @@
+{
+  "_hinweis": [
+    "Katalog fuer die Seite Tools > Einstellungen (einstellungen.html).",
+    "Jede Gruppe gehoert zu einer Datei ('datei'); 'quelle' ist der Name der Datenquelle in seite.js.",
+    "'pfad' zeigt auf den Wert in der Datei (Punkt-Schreibweise); die Seite liest den aktuellen Wert live daraus.",
+    "'*' im Pfad steht fuer 'jede Mannschaft'/'jeder Eintrag' und wird nur beschrieben, nicht angezeigt.",
+    "Neue einstellbare Werte hier ergaenzen, dann erscheinen sie auf der Seite."
+  ],
+  "gruppen": [
+    {
+      "titel": "Verein",
+      "datei": "config/club.json",
+      "quelle": "club",
+      "intro": "Grunddaten des Vereins. Meist einmalig eingestellt; wirken auf Spieldaten und Kalender.",
+      "eintraege": [
+        {
+          "pfad": "name",
+          "titel": "Vereinsname",
+          "beschreibung": "Offizieller Name, z. B. im Kalender.",
+          "wirkt": "Kalender"
+        },
+        {
+          "pfad": "short_name",
+          "titel": "Kurzname",
+          "beschreibung": "Kurzer Name für Kalendertitel.",
+          "wirkt": "Kalender"
+        },
+        {
+          "pfad": "season",
+          "titel": "Saison",
+          "beschreibung": "Saison bei FUSSBALL.DE, z. B. 2627. Zum Saisonwechsel anpassen.",
+          "wirkt": "Spielübersicht, Kalender"
+        },
+        {
+          "pfad": "match_duration_minutes",
+          "titel": "Standard-Spieldauer (Minuten)",
+          "beschreibung": "Länge eines Kalendertermins, wenn die Mannschaft keine eigene Spielzeit hat.",
+          "wirkt": "Kalender"
+        },
+        {
+          "pfad": "club_aliases",
+          "titel": "Eigene Namensbestandteile",
+          "beschreibung": "Daran wird eine eigene Mannschaft in einer Paarung erkannt, auch Spielgemeinschaften.",
+          "wirkt": "Spielübersicht, Kalender, Platzbelegung"
+        },
+        {
+          "pfad": "home_venues",
+          "titel": "Eigene Spielstätten",
+          "beschreibung": "Spiele an diesen Orten zählen als Spiele auf der eigenen Anlage.",
+          "wirkt": "Platzbelegung, Kalender „Heim“"
+        },
+        {
+          "pfad": "default_home_pitch",
+          "titel": "Angenommene Platzart",
+          "beschreibung": "Gilt für Heimspiele, wenn FUSSBALL.DE keine Platzart nennt. Auf der Seite mit Stern markiert.",
+          "wirkt": "Spielübersicht, Kalender"
+        },
+        {
+          "pfad": "base_url",
+          "titel": "Adresse der Seite",
+          "beschreibung": "Web-Adresse der Seite, nötig für Kalender-Abos und QR-Codes.",
+          "wirkt": "Kalender"
+        },
+        {
+          "pfad": "club_id",
+          "titel": "Vereins-ID",
+          "beschreibung": "ID bei FUSSBALL.DE. Nur ändern, wenn sich der Verein dort ändert.",
+          "wirkt": "Spielübersicht"
+        }
+      ]
+    },
+    {
+      "titel": "Mannschaften und Kalender",
+      "datei": "config/teams.map.json",
+      "quelle": "teamsmap",
+      "intro": "Eine Zeile je Mannschaft. Der Schlüssel „slug“ darf nach der Veröffentlichung nie geändert werden, sonst laufen Kalender-Abos ins Leere.",
+      "eintraege": [
+        {
+          "pfad": "teams.*.slug",
+          "titel": "Kennung (slug)",
+          "beschreibung": "Dauerhafte Kennung der Mannschaft.",
+          "wirkt": "Kalender-Adressen, Mannschaftsseiten, Trainingszeiten"
+        },
+        {
+          "pfad": "teams.*.short",
+          "titel": "Kurzname",
+          "beschreibung": "Anzeigename, z. B. „Herren 1“.",
+          "wirkt": "alle Seiten"
+        },
+        {
+          "pfad": "teams.*.group",
+          "titel": "Gruppe",
+          "beschreibung": "Zuordnung zu Senioren, Jugend usw.",
+          "wirkt": "Spielübersicht, Sammelkalender"
+        },
+        {
+          "pfad": "teams.*.order",
+          "titel": "Reihenfolge",
+          "beschreibung": "Sortierung in den Listen.",
+          "wirkt": "alle Seiten"
+        },
+        {
+          "pfad": "teams.*.spielzeit",
+          "titel": "Spielzeit (Minuten)",
+          "beschreibung": "Regelspielzeit inklusive Halbzeitpause. Bestimmt die Länge des Kalendertermins.",
+          "wirkt": "Kalender"
+        },
+        {
+          "pfad": "teams.*.anstoss",
+          "titel": "Übliche Anstoßzeit",
+          "beschreibung": "Wird genutzt, wenn FUSSBALL.DE noch keine Zeit nennt. Im Kalender mit ? gekennzeichnet.",
+          "wirkt": "Kalender"
+        }
+      ],
+      "tabelle": "teamsmap"
+    },
+    {
+      "titel": "Jahreszeiten und Plätze",
+      "datei": "config/mannschaften.json",
+      "quelle": "mannschaften",
+      "intro": "Wann Sommer und Winter gelten und welche Plätze und Platzteile dann nutzbar sind.",
+      "eintraege": [
+        {
+          "pfad": "saisons.sommer.ab",
+          "titel": "Sommer gilt ab",
+          "beschreibung": "Erster Tag der Sommerzeit. Die Platzbelegung öffnet automatisch die gerade gültige Jahreszeit.",
+          "wirkt": "Trainingszeiten, Platzbelegung"
+        },
+        {
+          "pfad": "saisons.sommer.plaetze",
+          "titel": "Sommer: nutzbare Plätze",
+          "beschreibung": "KR = Kunstrasen, NR = Naturrasen.",
+          "wirkt": "Platzbelegung"
+        },
+        {
+          "pfad": "saisons.sommer.felder",
+          "titel": "Sommer: erlaubte Platzteile",
+          "beschreibung": "H = Hälften, D = Drittel, V = Viertel.",
+          "wirkt": "Platzbelegung"
+        },
+        {
+          "pfad": "saisons.winter.ab",
+          "titel": "Winter gilt ab",
+          "beschreibung": "Erster Tag der Winterzeit.",
+          "wirkt": "Trainingszeiten, Platzbelegung"
+        },
+        {
+          "pfad": "saisons.winter.plaetze",
+          "titel": "Winter: nutzbare Plätze",
+          "beschreibung": "Ist der Naturrasen gesperrt, steht hier nur KR.",
+          "wirkt": "Platzbelegung"
+        },
+        {
+          "pfad": "saisons.winter.felder",
+          "titel": "Winter: erlaubte Platzteile",
+          "beschreibung": "H = Hälften, D = Drittel, V = Viertel.",
+          "wirkt": "Platzbelegung"
+        },
+        {
+          "pfad": "beispieldaten",
+          "titel": "Beispieldaten-Hinweis",
+          "beschreibung": "Je Jahreszeit true/false. Bei true erscheint der Hinweis, dass die Zeiten nur Beispiele sind.",
+          "wirkt": "Trainingszeiten, Platzbelegung"
+        },
+        {
+          "pfad": "stand_trainingszeiten",
+          "titel": "Stand der Trainingszeiten",
+          "beschreibung": "Datum der letzten Änderung (JJJJ-MM-TT). Nur bei inhaltlicher Änderung anpassen.",
+          "wirkt": "Trainingszeiten"
+        },
+        {
+          "pfad": "platzansicht.drehung",
+          "titel": "Drehung der Platzzeichnung",
+          "beschreibung": "„links“ = Hälfte 1 unten, passend zur Lage des Vereinsheims.",
+          "wirkt": "Platzbelegung"
+        }
+      ]
+    },
+    {
+      "titel": "Orte",
+      "datei": "config/mannschaften.json",
+      "quelle": "mannschaften",
+      "intro": "Alle Trainingsstätten. Jeder Ort steht einmal hier und wird in den Mannschaften nur per Schlüssel genannt.",
+      "eintraege": [
+        {
+          "pfad": "orte.*.name",
+          "titel": "Name",
+          "beschreibung": "Anzeigename des Ortes.",
+          "wirkt": "Trainingszeiten, Sportanlage"
+        },
+        {
+          "pfad": "orte.*.abk",
+          "titel": "Abkürzung",
+          "beschreibung": "Steht in Klammern hinter dem Wochentag, z. B. TSV oder FCA.",
+          "wirkt": "Trainingszeiten"
+        },
+        {
+          "pfad": "orte.*.strasse / plz / ort",
+          "titel": "Anschrift",
+          "beschreibung": "Daraus wird auch der Kartenlink gebaut.",
+          "wirkt": "Trainingszeiten, Sportanlage"
+        },
+        {
+          "pfad": "orte.*.karte",
+          "titel": "Eigener Kartenlink",
+          "beschreibung": "Optional, ersetzt den erzeugten Link.",
+          "wirkt": "Trainingszeiten, Sportanlage"
+        },
+        {
+          "pfad": "orte.*.kuerzel",
+          "titel": "Platzkürzel",
+          "beschreibung": "KR oder NR. Nur für eigene Plätze.",
+          "wirkt": "Platzbelegung"
+        },
+        {
+          "pfad": "orte.*.rasen",
+          "titel": "Rasenart",
+          "beschreibung": "Kunstrasen oder Naturrasen, zur Zuordnung der Spiele.",
+          "wirkt": "Spielübersicht"
+        }
+      ]
+    },
+    {
+      "titel": "Bereiche",
+      "datei": "config/mannschaften.json",
+      "quelle": "mannschaften",
+      "intro": "Gliederung der Trainingszeiten.",
+      "eintraege": [
+        {
+          "pfad": "bereiche",
+          "titel": "Bereiche und ihre Mannschaften",
+          "beschreibung": "Titel, optionaler Hinweis und Liste der Mannschaften je Bereich. Mannschaften ohne Bereich stehen unten unter „Weitere“.",
+          "wirkt": "Trainingszeiten, Platzbelegung"
+        }
+      ]
+    },
+    {
+      "titel": "Trainingszeiten je Mannschaft",
+      "datei": "config/mannschaften.json",
+      "quelle": "mannschaften",
+      "intro": "Je Mannschaft unter „mannschaften“ (nach Kennung).",
+      "eintraege": [
+        {
+          "pfad": "mannschaften.*.hauptort",
+          "titel": "Hauptort",
+          "beschreibung": "Normaler Trainingsort (Schlüssel aus „Orte“).",
+          "wirkt": "Trainingszeiten"
+        },
+        {
+          "pfad": "mannschaften.*.nebenort",
+          "titel": "Nebenort",
+          "beschreibung": "Optional, z. B. Aldekerk für die JSG.",
+          "wirkt": "Trainingszeiten"
+        },
+        {
+          "pfad": "mannschaften.*.training.sommer / winter",
+          "titel": "Trainingseinheiten",
+          "beschreibung": "Je Einheit: Tag, von, bis, Platz (z. B. KR-H1) oder Ort, optional Hinweis und „zusammen“.",
+          "wirkt": "Trainingszeiten, Platzbelegung"
+        },
+        {
+          "pfad": "mannschaften.*.hinweis",
+          "titel": "Hinweis",
+          "beschreibung": "Freier Hinweis zur Mannschaft.",
+          "wirkt": "Trainingszeiten"
+        },
+        {
+          "pfad": "mannschaften.*.kontakt",
+          "titel": "Ansprechpartner",
+          "beschreibung": "Rolle, Name, E-Mail, Telefon. Nur Funktionsadressen eintragen, die Datei ist öffentlich.",
+          "wirkt": "Trainingszeiten"
+        }
+      ],
+      "tabelle": "mannschaften"
+    },
+    {
+      "titel": "Weitere Gruppen",
+      "datei": "config/mannschaften.json",
+      "quelle": "mannschaften",
+      "intro": "Gruppen ohne eigene Mannschaftsseite, die unsere Plätze nutzen: Damen, Alte Herren, Ballgruppe, Gastvereine.",
+      "eintraege": [
+        {
+          "pfad": "weitere",
+          "titel": "Weitere Gruppen",
+          "beschreibung": "Name, Art (verein oder gast), optional Bereich und Kontakt sowie Trainingseinheiten je Jahreszeit.",
+          "wirkt": "Trainingszeiten, Platzbelegung"
+        }
+      ]
+    },
+    {
+      "titel": "Sportanlage",
+      "datei": "config/sportanlage.json",
+      "quelle": "sportanlage",
+      "intro": "Texte und Fotos der Seite Sportanlage. Leere Texte und Listen werden ausgeblendet.",
+      "eintraege": [
+        {
+          "pfad": "foto",
+          "titel": "Hauptfoto",
+          "beschreibung": "Luftaufnahme. Bilddatei in assets/img/ ablegen.",
+          "wirkt": "Sportanlage"
+        },
+        {
+          "pfad": "plaetze",
+          "titel": "Plätze",
+          "beschreibung": "Beschreibung und Foto je Platz.",
+          "wirkt": "Sportanlage"
+        },
+        {
+          "pfad": "ausstattung",
+          "titel": "Ausstattung",
+          "beschreibung": "Z. B. Vereinsheim, mit Text und Foto.",
+          "wirkt": "Sportanlage"
+        },
+        {
+          "pfad": "hinweise",
+          "titel": "Hinweise",
+          "beschreibung": "Weitere nützliche Hinweise.",
+          "wirkt": "Sportanlage"
+        }
+      ]
+    },
+    {
+      "titel": "FAQ",
+      "datei": "config/faq.json",
+      "quelle": "faq",
+      "intro": "Die Fragen und Antworten der Seite FAQ.",
+      "eintraege": [
+        {
+          "pfad": "gruppen",
+          "titel": "Gruppen mit Fragen",
+          "beschreibung": "Je Gruppe ein Titel, optional ein Verweis auf die Seite, und die Fragen mit Antworten.",
+          "wirkt": "FAQ"
+        }
+      ]
+    },
+    {
+      "titel": "Textvorlagen",
+      "datei": "templates/",
+      "quelle": null,
+      "intro": "Die Vorlagen sind einfache Textdateien im Ordner templates/. Jede Vorlage steht dort in einer eigenen Datei und ist in manifest.json aufgeführt. Anleitung: docs/textvorlagen.md.",
+      "eintraege": []
+    }
+  ]
+}
