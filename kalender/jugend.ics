@@ -207,35 +207,6 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:031SBS7JD0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
-DTSTAMP:20261114T163000Z
-DTSTART:20261114T163000Z
-DTEND:20261114T181500Z
-SUMMARY:A1: A SV Viktoria Goch
-LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
- 47647 Kerken
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
- ung: SV Viktoria Goch – JSG FC Aldekerk / TSV Nieukerk\nArt: Auswärtssp
- iel\nHinweis: Laut FUSSBALL.DE hat der Gegner Heimrecht\, der Spielort ist
-  aber unsere eigene Anlage.\nAnstoß: Samstag\, 14. November 2026\, 17:30 
- Uhr\nWettbewerb: Kreisliga A\, 8. Spieltag\nSpielnummer: 221773046\nStaffe
- l-ID: 221773\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am
-  Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647 K
- erken\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.D
- E: https://www.fussball.de/spiel/sv-viktoria-goch-jsg-aldekerk-nieukerk/-/
- spiel/031SBS7JD0000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https:
- //www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel un
- d Tabelle: https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-gelder
- n-a-junioren-kreisliga-a-a-junioren-saison2627-niederrhein/-/spieldatum/20
- 26-11-18/staffel/031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpielübersicht der W
- ebseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=
- jsg-a1
-URL:https://www.fussball.de/spiel/sv-viktoria-goch-jsg-aldekerk-nieukerk/-/
- spiel/031SBS7JD0000000VS5489BTVTPHHFPR
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:031SBS7JD0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
 DTSTAMP:20261118T183000Z
 DTSTART:20261118T183000Z
 DTEND:20261118T201500Z
@@ -1129,6 +1100,33 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:031SBS7N68000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270411T090000Z
+DTSTART:20270411T090000Z
+DTEND:20270411T104500Z
+SUMMARY:A1: A JSG Herongen / Broekhuysen / Wa-Wa
+LOCATION:Kunstrasenplatz\, SV Herongen Nebenplatz\, Louisenburg\, 47638 Str
+ aelen
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
+ ung: JSG Herongen / Broekhuysen / Wa-Wa – JSG FC Aldekerk / TSV Nieukerk
+ \nArt: Auswärtsspiel\nAnstoß: Sonntag\, 11. April 2027\, 11:00 Uhr\nWett
+ bewerb: Kreisliga A\, 16. Spieltag\nSpielnummer: 221773096\nStaffel-ID: 22
+ 1773\nSpielstätte: Kunstrasenplatz\, SV Herongen Nebenplatz\, Louisenburg
+ \, 47638 Straelen\nAnschrift: Louisenburg\, 47638 Straelen\nPlatzart: Kuns
+ trasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussba
+ ll.de/spiel/jsg-herongen-broekhuysen-wa-wa-jsg-aldekerk-nieukerk/-/spiel/0
+ 31SBS7N68000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.g
+ oogle.de/maps?q=Louisenburg%2C+47638+Straelen\nStaffel und Tabelle: https:
+ //www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-krei
+ sliga-a-a-junioren-saison2627-niederrhein/-/spieldatum/2027-04-11/staffel/
+ 031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://
+ tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-a1
+URL:https://www.fussball.de/spiel/jsg-herongen-broekhuysen-wa-wa-jsg-aldeke
+ rk-nieukerk/-/spiel/031SBS7N68000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:031SBMO1Q4000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
 DTSTAMP:20270411T090000Z
 DTSTART:20270411T090000Z
@@ -1178,6 +1176,33 @@ DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
  index.html?team=jsg-b1
 URL:https://www.fussball.de/spiel/jsg-issum-sevelen-jsg-nieukerk-aldekerk/-
  /spiel/031SBMO1M0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBMO17K000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270425T090000Z
+DTSTART:20270425T090000Z
+DTEND:20270425T103500Z
+SUMMARY:B1: H JSG SGE/SV Bedburg-Hau
+LOCATION:Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 K
+ erken
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Nieukerk / Aldekerk – JSG SGE/SV Bedburg-Hau\nArt: Heimspiel\nAnstoß:
+  Sonntag\, 25. April 2027\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 18. Spiel
+ tag\nSpielnummer: 221770107\nStaffel-ID: 221770\nSpielstätte: Rasenplatz\
+ , Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 Kerken\nAnschrift: K
+ empener Landstr.\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter: k. 
+ A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-nieukerk-al
+ dekerk-jsg-sge-sv-bedburg-hau/-/spiel/031SBMO17K000000VS5489BTVTPHHFPR\nSp
+ ortanlage in Google Maps: https://www.google.de/maps?q=Kempener+Landstr.%2
+ C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/krei
+ sliga-a-kreis-kleve-geldern-b-junioren-kreisliga-a-b-junioren-saison2627-n
+ iederrhein/-/spieldatum/2027-04-25/staffel/031RV62OCO000004VS5489BTVTPHHFP
+ R-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV
+ 9510Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-sge-sv-bedburg-
+ hau/-/spiel/031SBMO17K000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT

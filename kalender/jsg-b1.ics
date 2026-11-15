@@ -277,4 +277,31 @@ URL:https://www.fussball.de/spiel/jsg-issum-sevelen-jsg-nieukerk-aldekerk/-
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
+BEGIN:VEVENT
+UID:031SBMO17K000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270425T090000Z
+DTSTART:20270425T090000Z
+DTEND:20270425T103500Z
+SUMMARY:H JSG SGE/SV Bedburg-Hau
+LOCATION:Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 K
+ erken
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Nieukerk / Aldekerk – JSG SGE/SV Bedburg-Hau\nArt: Heimspiel\nAnstoß:
+  Sonntag\, 25. April 2027\, 11:00 Uhr\nWettbewerb: Kreisliga A\, 18. Spiel
+ tag\nSpielnummer: 221770107\nStaffel-ID: 221770\nSpielstätte: Rasenplatz\
+ , Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 Kerken\nAnschrift: K
+ empener Landstr.\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter: k. 
+ A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-nieukerk-al
+ dekerk-jsg-sge-sv-bedburg-hau/-/spiel/031SBMO17K000000VS5489BTVTPHHFPR\nSp
+ ortanlage in Google Maps: https://www.google.de/maps?q=Kempener+Landstr.%2
+ C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/krei
+ sliga-a-kreis-kleve-geldern-b-junioren-kreisliga-a-b-junioren-saison2627-n
+ iederrhein/-/spieldatum/2027-04-25/staffel/031RV62OCO000004VS5489BTVTPHHFP
+ R-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV
+ 9510Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-sge-sv-bedburg-
+ hau/-/spiel/031SBMO17K000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
 END:VCALENDAR
