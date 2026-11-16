@@ -529,6 +529,33 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:031SBJJN58000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261125T173000Z
+DTSTART:20261125T173000Z
+DTEND:20261125T185500Z
+SUMMARY:C2: H Kevelaerer SV III
+LOCATION:Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4764
+ 7 Kerken
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nBegegnung:
+  JSG Aldekerk / Nieukerk II – Kevelaerer SV III\nArt: Heimspiel\nAnstoß
+ : Mittwoch\, 25. November 2026\, 18:30 Uhr\nWettbewerb: Kreisliga B\, 8. S
+ pieltag\nSpielnummer: 221792037\nStaffel-ID: 221792\nSpielstätte: Rasenpl
+ atz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnsch
+ rift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsric
+ hter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-al
+ dekerk-nieukerk-ii-kevelaerer-sv-iii/-/spiel/031SBJJN58000000VS5489BTVTPHH
+ FPR\nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%
+ C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/
+ spieltag/kreisliga-b--vorrunde-gr-3-kreis-kleve-geldern-c-junioren-kreisli
+ ga-b-c-junioren-saison2627-niederrhein/-/spieldatum/2026-11-25/staffel/031
+ SBD22NG000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv
+ -nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-c2
+URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-kevelaerer-sv-ii
+ i/-/spiel/031SBJJN58000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:031JH99TI8000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
 DTSTAMP:20261127T190000Z
 DTSTART:20261127T190000Z
@@ -724,22 +751,22 @@ DTSTAMP:20261128T131500Z
 DTSTART:20261128T131500Z
 DTEND:20261128T144000Z
 SUMMARY:C2: H Kevelaerer SV III
-LOCATION:Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 K
- erken
+LOCATION:Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4764
+ 7 Kerken
 DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nBegegnung:
   JSG Aldekerk / Nieukerk II – Kevelaerer SV III\nArt: Heimspiel\nAnstoß
  : Samstag\, 28. November 2026\, 14:15 Uhr\nWettbewerb: Kreisliga B\, 8. Sp
  ieltag\nSpielnummer: 221792037\nStaffel-ID: 221792\nSpielstätte: Rasenpla
- tz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 Kerken\nAnschrift
- : Kempener Landstr.\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter: 
- k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldekerk
- -nieukerk-ii-kevelaerer-sv-iii/-/spiel/031SBJJN58000000VS5489BTVTPHHFPR\nS
- portanlage in Google Maps: https://www.google.de/maps?q=Kempener+Landstr.%
- 2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/kre
- isliga-b--vorrunde-gr-3-kreis-kleve-geldern-c-junioren-kreisliga-b-c-junio
- ren-saison2627-niederrhein/-/spieldatum/2026-11-28/staffel/031SBD22NG00000
- 4VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-95
- 10.github.io/TSV9510Tools/index.html?team=jsg-c2
+ tz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschr
+ ift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsrich
+ ter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-ald
+ ekerk-nieukerk-ii-kevelaerer-sv-iii/-/spiel/031SBJJN58000000VS5489BTVTPHHF
+ PR\nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C
+ 3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/s
+ pieltag/kreisliga-b--vorrunde-gr-3-kreis-kleve-geldern-c-junioren-kreislig
+ a-b-c-junioren-saison2627-niederrhein/-/spieldatum/2026-11-25/staffel/031S
+ BD22NG000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-
+ nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-c2
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-kevelaerer-sv-ii
  i/-/spiel/031SBJJN58000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
