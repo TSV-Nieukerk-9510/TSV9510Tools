@@ -1,1 +1,1507 @@
-{"generated": "", "season": "", "count": 0, "tables": {}}
+{
+  "generated": "2026-11-16T19:53:39+00:00",
+  "season": "2627",
+  "count": 8,
+  "tables": {
+    "tsv-h1": {
+      "columns": [
+        "Platz",
+        "Mannschaft",
+        "Spiele",
+        "S",
+        "U",
+        "N",
+        "Tore",
+        "Diff",
+        "Punkte"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1.",
+            "Uedemer SV",
+            "13",
+            "12",
+            "1",
+            "0",
+            "49 : 13",
+            "36",
+            "37"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "2.",
+            "SV Siegfried Materborn",
+            "13",
+            "10",
+            "1",
+            "2",
+            "48 : 16",
+            "32",
+            "31"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "3.",
+            "SV Straelen",
+            "13",
+            "8",
+            "0",
+            "5",
+            "43 : 24",
+            "19",
+            "24"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "4.",
+            "SV Grün-Weiß Vernum",
+            "13",
+            "8",
+            "0",
+            "5",
+            "35 : 29",
+            "6",
+            "24"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "5.",
+            "Viktoria Winnekendonk",
+            "13",
+            "7",
+            "0",
+            "6",
+            "32 : 27",
+            "5",
+            "21"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "6.",
+            "1. FC Kleve 63/03 II",
+            "13",
+            "6",
+            "2",
+            "5",
+            "29 : 19",
+            "10",
+            "20"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "7.",
+            "SV 1934 Veert",
+            "13",
+            "6",
+            "1",
+            "6",
+            "32 : 25",
+            "7",
+            "19"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "8.",
+            "SF Broekhuysen II",
+            "12",
+            "5",
+            "3",
+            "4",
+            "28 : 29",
+            "-1",
+            "18"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "9.",
+            "TSV Wachtendonk-Wankum",
+            "12",
+            "6",
+            "0",
+            "6",
+            "22 : 30",
+            "-8",
+            "18"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "SG Kessel/Ho-Ha",
+            "13",
+            "4",
+            "5",
+            "4",
+            "20 : 23",
+            "-3",
+            "17"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "11.",
+            "SV Walbeck",
+            "13",
+            "5",
+            "2",
+            "6",
+            "30 : 36",
+            "-6",
+            "17"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "12.",
+            "SV 19 Sevelen",
+            "13",
+            "5",
+            "1",
+            "7",
+            "27 : 34",
+            "-7",
+            "16"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "13.",
+            "SV Viktoria Goch II",
+            "13",
+            "5",
+            "1",
+            "7",
+            "19 : 28",
+            "-9",
+            "16"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "14.",
+            "BV Sturm Wissel",
+            "13",
+            "2",
+            "2",
+            "9",
+            "21 : 56",
+            "-35",
+            "8"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "15.",
+            "TSV Nieukerk",
+            "13",
+            "2",
+            "1",
+            "10",
+            "26 : 48",
+            "-22",
+            "7"
+          ],
+          "own": true
+        },
+        {
+          "cells": [
+            "16.",
+            "Alemannia Pfalzdorf II",
+            "13",
+            "2",
+            "0",
+            "11",
+            "23 : 47",
+            "-24",
+            "6"
+          ],
+          "own": false
+        }
+      ],
+      "source": "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIE0NA8000000VTVG0001VTR8C1K7"
+    },
+    "tsv-h2": {
+      "columns": [
+        "Platz",
+        "Mannschaft",
+        "Spiele",
+        "S",
+        "U",
+        "N",
+        "Tore",
+        "Diff",
+        "Punkte"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1.",
+            "SV Arminia Kapellen-Hamb",
+            "13",
+            "11",
+            "2",
+            "0",
+            "48 : 13",
+            "35",
+            "35"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "2.",
+            "SV 19 Sevelen II",
+            "13",
+            "10",
+            "2",
+            "1",
+            "55 : 15",
+            "40",
+            "32"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "3.",
+            "SV Issum",
+            "13",
+            "10",
+            "2",
+            "1",
+            "45 : 20",
+            "25",
+            "32"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "4.",
+            "SC Blau-Weiß Auwel-Holt",
+            "13",
+            "8",
+            "3",
+            "2",
+            "39 : 23",
+            "16",
+            "27"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "5.",
+            "SV BW Herongen",
+            "13",
+            "7",
+            "2",
+            "4",
+            "45 : 25",
+            "20",
+            "23"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "6.",
+            "SV BW Herongen II",
+            "13",
+            "7",
+            "2",
+            "4",
+            "43 : 31",
+            "12",
+            "23"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "7.",
+            "Kevelaerer SV II",
+            "13",
+            "7",
+            "2",
+            "4",
+            "36 : 26",
+            "10",
+            "23"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "8.",
+            "SV Germania Wemb",
+            "13",
+            "5",
+            "6",
+            "2",
+            "37 : 20",
+            "17",
+            "21"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "9.",
+            "Viktoria Winnekendonk II",
+            "13",
+            "6",
+            "2",
+            "5",
+            "30 : 28",
+            "2",
+            "20"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "SV Union Wetten",
+            "13",
+            "5",
+            "4",
+            "4",
+            "30 : 26",
+            "4",
+            "19"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "11.",
+            "DJK Twisteden II",
+            "13",
+            "4",
+            "3",
+            "6",
+            "28 : 30",
+            "-2",
+            "15"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "12.",
+            "FC Aldekerk 1928/52 II",
+            "13",
+            "3",
+            "0",
+            "10",
+            "27 : 46",
+            "-19",
+            "9"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "13.",
+            "SV 1913 Walbeck II",
+            "13",
+            "2",
+            "2",
+            "9",
+            "25 : 50",
+            "-25",
+            "8"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "14.",
+            "SV Grün-Weiß Vernum II",
+            "13",
+            "1",
+            "1",
+            "11",
+            "14 : 48",
+            "-34",
+            "4"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "15.",
+            "FC Aldekerk 1928/52 III",
+            "13",
+            "0",
+            "2",
+            "11",
+            "19 : 61",
+            "-42",
+            "2"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "16.",
+            "TSV Nieukerk II",
+            "13",
+            "0",
+            "1",
+            "12",
+            "17 : 76",
+            "-59",
+            "1"
+          ],
+          "own": true
+        }
+      ],
+      "source": "https://www.fussball.de/mannschaft/tsv-nieukerk-ii-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDJU5C000000VTVG0001VTR8C1K7"
+    },
+    "jsg-a1": {
+      "columns": [
+        "Platz",
+        "Mannschaft",
+        "Spiele",
+        "S",
+        "U",
+        "N",
+        "Tore",
+        "Diff",
+        "Punkte"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1.",
+            "SV Siegfried Materborn",
+            "8",
+            "6",
+            "1",
+            "1",
+            "27 : 16",
+            "11",
+            "19"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "2.",
+            "SV 1913 Walbeck",
+            "8",
+            "6",
+            "0",
+            "2",
+            "29 : 12",
+            "17",
+            "18"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "3.",
+            "SV Viktoria Goch",
+            "6",
+            "5",
+            "1",
+            "0",
+            "23 : 4",
+            "19",
+            "16"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "4.",
+            "JSG Herongen / Broekhuysen / Wa-Wa",
+            "8",
+            "4",
+            "1",
+            "3",
+            "33 : 25",
+            "8",
+            "13"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "5.",
+            "JSG FC Aldekerk / TSV Nieukerk",
+            "7",
+            "4",
+            "1",
+            "2",
+            "25 : 19",
+            "6",
+            "13"
+          ],
+          "own": true
+        },
+        {
+          "cells": [
+            "6.",
+            "JSG Vikt. Winnekendonk / TSV Weeze",
+            "7",
+            "3",
+            "1",
+            "3",
+            "25 : 19",
+            "6",
+            "10"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "7.",
+            "JSG Sevelen / Issum",
+            "8",
+            "3",
+            "1",
+            "4",
+            "25 : 24",
+            "1",
+            "10"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "8.",
+            "JSG 1.FC Kleve / Rindern II",
+            "8",
+            "3",
+            "1",
+            "4",
+            "20 : 19",
+            "1",
+            "10"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "9.",
+            "JSG SV/SGE Bedburg-Hau",
+            "6",
+            "2",
+            "1",
+            "3",
+            "14 : 18",
+            "-4",
+            "7"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "SSV 1953 Reichswalde",
+            "8",
+            "1",
+            "3",
+            "4",
+            "7 : 33",
+            "-26",
+            "6"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "11.",
+            "VfB Alemannia Pfalzdorf",
+            "8",
+            "1",
+            "1",
+            "6",
+            "13 : 34",
+            "-21",
+            "4"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "12.",
+            "Kevelaerer SV",
+            "8",
+            "0",
+            "2",
+            "6",
+            "7 : 25",
+            "-18",
+            "2"
+          ],
+          "own": false
+        }
+      ],
+      "source": "https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/011MIDHQDK000000VTVG0001VTR8C1K7"
+    },
+    "jsg-b1": {
+      "columns": [
+        "Platz",
+        "Mannschaft",
+        "Spiele",
+        "S",
+        "U",
+        "N",
+        "Tore",
+        "Diff",
+        "Punkte"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1.",
+            "SV 1913 Walbeck",
+            "8",
+            "6",
+            "2",
+            "0",
+            "34 : 15",
+            "19",
+            "20"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "2.",
+            "Kevelaerer SV",
+            "8",
+            "6",
+            "1",
+            "1",
+            "33 : 12",
+            "21",
+            "19"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "3.",
+            "JSG Uedem / Keppeln / Louisendorf",
+            "8",
+            "6",
+            "0",
+            "2",
+            "20 : 8",
+            "12",
+            "18"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "4.",
+            "JSG Issum / Sevelen",
+            "8",
+            "5",
+            "1",
+            "2",
+            "26 : 20",
+            "6",
+            "16"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "5.",
+            "BV Sturm Wissel",
+            "8",
+            "4",
+            "1",
+            "3",
+            "28 : 22",
+            "6",
+            "13"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "6.",
+            "SV 19 Straelen II",
+            "8",
+            "3",
+            "3",
+            "2",
+            "24 : 20",
+            "4",
+            "12"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "7.",
+            "JSG Nieukerk / Aldekerk",
+            "8",
+            "3",
+            "2",
+            "3",
+            "25 : 24",
+            "1",
+            "11"
+          ],
+          "own": true
+        },
+        {
+          "cells": [
+            "8.",
+            "TSV Weeze 10/19",
+            "7",
+            "2",
+            "2",
+            "3",
+            "13 : 16",
+            "-3",
+            "8"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "9.",
+            "JSG SGE/SV Bedburg-Hau",
+            "7",
+            "2",
+            "1",
+            "4",
+            "11 : 17",
+            "-6",
+            "7"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "SV 1926 Rindern",
+            "8",
+            "1",
+            "1",
+            "6",
+            "12 : 35",
+            "-23",
+            "4"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "11.",
+            "SV 1934 Veert",
+            "8",
+            "0",
+            "2",
+            "6",
+            "12 : 26",
+            "-14",
+            "2"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "12.",
+            "JSG Broekhuysen / Herongen / Wa-Wa",
+            "8",
+            "0",
+            "2",
+            "6",
+            "5 : 28",
+            "-23",
+            "2"
+          ],
+          "own": false
+        }
+      ],
+      "source": "https://www.fussball.de/mannschaft/jsg-nieukerk-aldekerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MI97ATG000000VTVG0001VTR8C1K7"
+    },
+    "jsg-c1": {
+      "columns": [
+        "Platz",
+        "Mannschaft",
+        "Spiele",
+        "S",
+        "U",
+        "N",
+        "Tore",
+        "Diff",
+        "Punkte"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1.",
+            "Alemannia Pfalzdorf",
+            "7",
+            "7",
+            "0",
+            "0",
+            "50 : 7",
+            "43",
+            "21"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "2.",
+            "SV Viktoria Goch",
+            "7",
+            "6",
+            "1",
+            "0",
+            "35 : 4",
+            "31",
+            "19"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "3.",
+            "JSG SV/SGE Bedburg-Hau",
+            "7",
+            "5",
+            "0",
+            "2",
+            "44 : 15",
+            "29",
+            "15"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "4.",
+            "JSG Ho-Ha / Kessel / Asperden",
+            "7",
+            "4",
+            "0",
+            "3",
+            "24 : 11",
+            "13",
+            "12"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "5.",
+            "JSG Aldekerk / Nieukerk",
+            "7",
+            "3",
+            "0",
+            "4",
+            "25 : 20",
+            "5",
+            "9"
+          ],
+          "own": true
+        },
+        {
+          "cells": [
+            "6.",
+            "BV Sturm Wissel",
+            "7",
+            "3",
+            "0",
+            "4",
+            "6 : 34",
+            "-28",
+            "9"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "7.",
+            "SV 19 Straelen II",
+            "7",
+            "2",
+            "2",
+            "3",
+            "12 : 13",
+            "-1",
+            "8"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "8.",
+            "JSG Herongen / Broekhuysen / Wa-Wa",
+            "7",
+            "2",
+            "1",
+            "4",
+            "18 : 13",
+            "5",
+            "7"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "9.",
+            "SV Siegfried Materborn",
+            "7",
+            "1",
+            "0",
+            "6",
+            "18 : 51",
+            "-33",
+            "3"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "SSV 1953 Reichswalde",
+            "7",
+            "0",
+            "0",
+            "7",
+            "3 : 67",
+            "-64",
+            "0"
+          ],
+          "own": false
+        }
+      ],
+      "source": "https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/011MICLMI0000000VTVG0001VTR8C1K7"
+    },
+    "jsg-c2": {
+      "columns": [
+        "Platz",
+        "Mannschaft",
+        "Spiele",
+        "S",
+        "U",
+        "N",
+        "Tore",
+        "Diff",
+        "Punkte"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1.",
+            "JSG Wetten / Kapellen",
+            "7",
+            "7",
+            "0",
+            "0",
+            "33 : 3",
+            "30",
+            "21"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "2.",
+            "SV 1913 Walbeck",
+            "7",
+            "6",
+            "0",
+            "1",
+            "45 : 2",
+            "43",
+            "18"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "3.",
+            "SV 1934 Veert II",
+            "7",
+            "4",
+            "1",
+            "2",
+            "13 : 11",
+            "2",
+            "13"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "4.",
+            "JSG Aldekerk / Nieukerk II",
+            "7",
+            "4",
+            "0",
+            "3",
+            "20 : 17",
+            "3",
+            "12"
+          ],
+          "own": true
+        },
+        {
+          "cells": [
+            "5.",
+            "Kevelaerer SV III",
+            "7",
+            "4",
+            "0",
+            "3",
+            "24 : 24",
+            "0",
+            "12"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "6.",
+            "JSG Herongen / Broekhuysen / Wa-Wa II",
+            "6",
+            "3",
+            "0",
+            "3",
+            "18 : 19",
+            "-1",
+            "9"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "7.",
+            "JSG GW Vernum / RW Geldern",
+            "7",
+            "2",
+            "0",
+            "5",
+            "17 : 26",
+            "-9",
+            "6"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "8.",
+            "JSG Issum / Sevelen II",
+            "6",
+            "1",
+            "1",
+            "4",
+            "10 : 26",
+            "-16",
+            "4"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "9.",
+            "TSV Weeze 10/19 II (9er)",
+            "7",
+            "1",
+            "0",
+            "6",
+            "9 : 29",
+            "-20",
+            "3"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "JSG Straelen / Auwel-Holt III",
+            "7",
+            "1",
+            "0",
+            "6",
+            "6 : 38",
+            "-32",
+            "3"
+          ],
+          "own": false
+        }
+      ],
+      "source": "https://www.fussball.de/mannschaft/jsg-aldekerk-nieukerk-ii-fc-aldekerk-28-52-niederrhein/-/saison/2627/team-id/0241K94L5S000000VS548984VS0FQV4H"
+    },
+    "tsv-d1": {
+      "columns": [
+        "Platz",
+        "Mannschaft",
+        "Spiele",
+        "S",
+        "U",
+        "N",
+        "Tore",
+        "Diff",
+        "Punkte"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1.",
+            "SV 19 Straelen II",
+            "7",
+            "7",
+            "0",
+            "0",
+            "63 : 2",
+            "61",
+            "21"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "2.",
+            "TSV Wa-Wa",
+            "7",
+            "4",
+            "2",
+            "1",
+            "33 : 17",
+            "16",
+            "14"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "3.",
+            "JSG GW Vernum / RW Geldern",
+            "7",
+            "4",
+            "2",
+            "1",
+            "17 : 12",
+            "5",
+            "14"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "4.",
+            "DJK Twisteden (7er)",
+            "7",
+            "4",
+            "1",
+            "2",
+            "33 : 16",
+            "17",
+            "13"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "5.",
+            "TSV Weeze 10/19",
+            "7",
+            "3",
+            "1",
+            "3",
+            "34 : 24",
+            "10",
+            "10"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "6.",
+            "JSG Herongen / Broekhuysen",
+            "7",
+            "3",
+            "1",
+            "3",
+            "23 : 21",
+            "2",
+            "10"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "7.",
+            "Vikt. Winnekendonk",
+            "7",
+            "2",
+            "2",
+            "3",
+            "24 : 20",
+            "4",
+            "8"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "8.",
+            "TSV Nieukerk",
+            "7",
+            "2",
+            "2",
+            "3",
+            "8 : 30",
+            "-22",
+            "8"
+          ],
+          "own": true
+        },
+        {
+          "cells": [
+            "9.",
+            "SV Union Wetten",
+            "7",
+            "0",
+            "1",
+            "6",
+            "8 : 34",
+            "-26",
+            "1"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "Kevelaerer SV II",
+            "7",
+            "0",
+            "0",
+            "7",
+            "0 : 67",
+            "-67",
+            "0"
+          ],
+          "own": false
+        }
+      ],
+      "source": "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/011MIDHQJ0000000VTVG0001VTR8C1K7"
+    },
+    "tsv-dm": {
+      "columns": [
+        "Platz",
+        "Mannschaft",
+        "Spiele",
+        "S",
+        "U",
+        "N",
+        "Tore",
+        "Diff",
+        "Punkte"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1.",
+            "Vikt. Winnekendonk",
+            "6",
+            "5",
+            "0",
+            "1",
+            "35 : 6",
+            "29",
+            "15"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "2.",
+            "Alemannia Pfalzdorf",
+            "6",
+            "4",
+            "0",
+            "2",
+            "24 : 5",
+            "19",
+            "12"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "3.",
+            "VFR SW Warbeyen",
+            "6",
+            "4",
+            "0",
+            "2",
+            "26 : 8",
+            "18",
+            "12"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "4.",
+            "SV Budberg",
+            "5",
+            "4",
+            "0",
+            "1",
+            "20 : 4",
+            "16",
+            "12"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "5.",
+            "GSV Moers",
+            "6",
+            "3",
+            "0",
+            "3",
+            "37 : 17",
+            "20",
+            "9"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "6.",
+            "SV Veert",
+            "6",
+            "3",
+            "0",
+            "3",
+            "11 : 16",
+            "-5",
+            "9"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "7.",
+            "JSG Walbeck / Auwel-Holt",
+            "5",
+            "1",
+            "1",
+            "3",
+            "12 : 32",
+            "-20",
+            "4"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "8.",
+            "TSV Nieukerk",
+            "5",
+            "0",
+            "1",
+            "4",
+            "5 : 33",
+            "-28",
+            "1"
+          ],
+          "own": true
+        },
+        {
+          "cells": [
+            "9.",
+            "Alemannia Pfalzdorf II",
+            "5",
+            "0",
+            "0",
+            "5",
+            "0 : 49",
+            "-49",
+            "0"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "JSG Veen/Birten o.W.",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0 : 0",
+            "0",
+            "0"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "TSV Wachtendonk-Wankum o.W.",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0 : 0",
+            "0",
+            "0"
+          ],
+          "own": false
+        },
+        {
+          "cells": [
+            "10.",
+            "VFR SW Warbeyen II zg.",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0 : 0",
+            "0",
+            "0"
+          ],
+          "own": false
+        }
+      ],
+      "source": "https://www.fussball.de/mannschaft/tsv-nieukerk-tsv-nieukerk-niederrhein/-/saison/2627/team-id/02TJRJT8D4000000VS5489BSVUALD4UK"
+    }
+  }
+}
