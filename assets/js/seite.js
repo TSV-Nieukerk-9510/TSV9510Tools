@@ -24,10 +24,12 @@ window.Seite = (function () {
   // lassen und in der waagerecht scrollenden Leiste abgeschnitten wuerden.
   // Ein Bereich mit "kinder" fuehrt beim Anklicken auf seine erste Seite.
   var NAVIGATION = [
-    { schluessel: "spiele", titel: "Spiele", datei: "index.html", kinder: [
-      { schluessel: "uebersicht", titel: "Spielübersicht",
+    { schluessel: "mannschaften", titel: "Mannschaften",
+      datei: "mannschaften.html" },
+    { schluessel: "spiele", titel: "Spielbetrieb", datei: "index.html", kinder: [
+      { schluessel: "uebersicht", titel: "Spielübersichten",
         datei: "index.html" },
-      { schluessel: "tabelle", titel: "Tabelle", datei: "tabelle.html" }
+      { schluessel: "tabelle", titel: "Tabellen", datei: "tabelle.html" }
     ] },
     { schluessel: "trainingsbereich", titel: "Training",
       datei: "training.html", kinder: [

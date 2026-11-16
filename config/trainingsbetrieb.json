@@ -100,7 +100,7 @@
         "sommer": false,
         "winter": false
     },
-    "stand_trainingszeiten": "2026-11-13",
+    "stand_trainingszeiten": "2026-11-16",
     "saisons": {
         "sommer": {
             "name": "Sommer",
@@ -228,10 +228,10 @@
                 ],
                 "winter": [
                     {
-                        "tag": "Mittwoch",
+                        "tag": "Dienstag",
                         "von": "19:30",
                         "bis": "21:00",
-                        "platz": "KR-D3"
+                        "platz": "KR-H2"
                     },
                     {
                         "tag": "Freitag",
@@ -273,7 +273,7 @@
                         "tag": "Dienstag",
                         "von": "19:30",
                         "bis": "21:00",
-                        "platz": "KR-H2"
+                        "platz": "KR-H1"
                     },
                     {
                         "tag": "Freitag",
@@ -313,14 +313,14 @@
                 "winter": [
                     {
                         "tag": "Dienstag",
-                        "von": "18:30",
-                        "bis": "20:00",
+                        "von": "18:00",
+                        "bis": "19:30",
                         "ort": "neben"
                     },
                     {
-                        "tag": "Donnerstag",
-                        "von": "18:30",
-                        "bis": "20:00",
+                        "tag": "Freitag",
+                        "von": "18:00",
+                        "bis": "19:30",
                         "platz": "KR-H1"
                     }
                 ]
@@ -357,7 +357,7 @@
                         "tag": "Freitag",
                         "von": "18:00",
                         "bis": "19:30",
-                        "platz": "KR-H1"
+                        "platz": "KR-H2"
                     }
                 ]
             },
@@ -371,9 +371,9 @@
                 "sommer": [
                     {
                         "tag": "Dienstag",
-                        "von": "18:00",
-                        "bis": "19:30",
-                        "platz": "KR-H2"
+                        "von": "18:30",
+                        "bis": "20:00",
+                        "platz": "KR-H1"
                     },
                     {
                         "tag": "Donnerstag",
@@ -385,16 +385,9 @@
                 "winter": [
                     {
                         "tag": "Dienstag",
-                        "von": "18:00",
-                        "bis": "19:30",
-                        "platz": "KR-D2"
-                    },
-                    {
-                        "tag": "Dienstag",
                         "von": "18:30",
-                        "bis": "19:30",
-                        "platz": "KR-D1",
-                        "hinweis": "Zusatz"
+                        "bis": "20:00",
+                        "platz": "KR-H1"
                     },
                     {
                         "tag": "Donnerstag",
@@ -462,10 +455,10 @@
                 ],
                 "winter": [
                     {
-                        "tag": "Dienstag",
+                        "tag": "Montag",
                         "von": "17:30",
                         "bis": "19:00",
-                        "platz": "KR-D3"
+                        "platz": "KR-V3"
                     },
                     {
                         "tag": "Donnerstag",
@@ -500,7 +493,7 @@
                         "tag": "Dienstag",
                         "von": "16:30",
                         "bis": "18:00",
-                        "platz": "KR-D2"
+                        "platz": "KR-H2"
                     },
                     {
                         "tag": "Donnerstag",
@@ -541,7 +534,7 @@
                         "tag": "Freitag",
                         "von": "17:00",
                         "bis": "18:30",
-                        "platz": "KR-H2"
+                        "platz": "KR-H1"
                     }
                 ]
             },
@@ -692,7 +685,7 @@
                         "tag": "Dienstag",
                         "von": "17:00",
                         "bis": "18:30",
-                        "platz": "KR-D1"
+                        "platz": "KR-H1"
                     }
                 ]
             },
@@ -717,7 +710,7 @@
                         "tag": "Dienstag",
                         "von": "17:00",
                         "bis": "18:30",
-                        "platz": "KR-D1",
+                        "platz": "KR-H1",
                         "zusammen": "tsv-dm"
                     }
                 ]
@@ -741,10 +734,10 @@
                 ],
                 "winter": [
                     {
-                        "tag": "Dienstag",
+                        "tag": "Montag",
                         "von": "19:30",
                         "bis": "21:00",
-                        "platz": "KR-H1"
+                        "platz": "KR-H2"
                     }
                 ]
             },

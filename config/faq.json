@@ -8,8 +8,33 @@
   ],
   "gruppen": [
     {
+      "id": "mannschaften",
+      "titel": "Mannschaften",
+      "seite": "mannschaften.html",
+      "fragen": [
+        {
+          "frage": "Was zeigt die Seite Mannschaften?",
+          "antwort": [
+            "Oben die Mannschaft wählen. Darunter steht alles zu dieser Mannschaft an einem Ort: **Trainingszeiten**, alle **nächsten Spiele**, die **Tabelle** und der **Kalender** zum Abonnieren."
+          ]
+        },
+        {
+          "frage": "Wie komme ich direkt zu meiner Mannschaft?",
+          "antwort": [
+            "Die Adresse der Seite merkt sich die gewählte Mannschaft. Wer sie als Lesezeichen speichert oder weitergibt, landet beim nächsten Mal direkt dort."
+          ]
+        },
+        {
+          "frage": "Warum fehlen bei Damen und Alten Herren Spiele und Tabelle?",
+          "antwort": [
+            "Für diese Gruppen gibt es keine Spiele bei FUSSBALL.DE. Die Seite zeigt dort nur die Trainingszeiten."
+          ]
+        }
+      ]
+    },
+    {
       "id": "spiele",
-      "titel": "Spielübersicht",
+      "titel": "Spielübersichten",
       "seite": "index.html",
       "fragen": [
         {
@@ -52,7 +77,7 @@
     },
     {
       "id": "tabelle",
-      "titel": "Tabelle",
+      "titel": "Tabellen",
       "seite": "tabelle.html",
       "fragen": [
         {
@@ -139,12 +164,6 @@
           "frage": "Wie lese ich die Angabe „Kunstrasen, Hälfte 1“?",
           "antwort": [
             "Das Training läuft auf diesem Teil des Platzes. Plätze werden in Hälften, Viertel oder Drittel geteilt. Wie das aussieht, zeigt die Grafik auf der Seite [Platzbelegung](platzbelegung.html)."
-          ]
-        },
-        {
-          "frage": "Warum fehlen bei manchen Mannschaften Ansprechpartner?",
-          "antwort": [
-            "Dort sind sie noch nicht eingetragen. Die Seite sagt das offen, statt etwas Falsches zu zeigen."
           ]
         }
       ]

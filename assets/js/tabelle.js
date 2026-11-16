@@ -9,21 +9,12 @@
   "use strict";
 
   var S = window.Seite;
+  var M = window.Mannschaftskarte;
   var text = S.text;
 
   var zustand = { team: "" };
   var tabellen = {};
   var teams = [];
-  var spiele = [];
-
-  function staffel(slug) {
-    for (var i = 0; i < spiele.length; i++) {
-      if (spiele[i].teamSlug === slug && spiele[i].competition) {
-        return spiele[i].competition;
-      }
-    }
-    return "";
-  }
 
   function auswahl() {
     return '<div class="segment tabelle-wahl" id="tabellenwahl">'
@@ -35,47 +26,11 @@
       }).join("") + "</div>";
   }
 
-  function tabelleHtml(slug) {
-    var t = tabellen[slug];
-    var team = S.team(slug);
-
-    if (!t) {
-      return '<p class="leise">Für diese Mannschaft gibt es keine '
-        + "Tabelle.</p>";
-    }
-
-    var spalten = t.columns || [];
-    var kopf = spalten.length
-      ? "<thead><tr>" + spalten.map(function (s, i) {
-        return '<th class="' + (i > 1 ? "zahl" : "") + '">' + text(s)
-          + "</th>";
-      }).join("") + "</tr></thead>" : "";
-
-    var zeilen = t.rows.map(function (z) {
-      return '<tr class="' + (z.own ? "eigen" : "") + '">'
-        + z.cells.map(function (c, i) {
-          return (i === 0 ? '<th scope="row">' : '<td class="'
-            + (i > 1 ? "zahl" : "") + '">') + text(c)
-            + (i === 0 ? "</th>" : "</td>");
-        }).join("") + "</tr>";
-    }).join("");
-
-    var liga = staffel(slug);
-
-    return "<h2>" + text(team ? team.name : slug) + "</h2>"
-      + (liga ? '<p class="leise">' + text(liga) + "</p>" : "")
-      + '<div class="wt-rahmen"><table class="wochentabelle liga">' + kopf
-      + "<tbody>" + zeilen + "</tbody></table></div>"
-      + (t.source ? '<p class="leise"><a href="' + text(t.source)
-        + '" target="_blank" rel="noopener">Tabelle bei FUSSBALL.DE</a></p>'
-        : "");
-  }
-
   function zeichne() {
     var ziel = document.getElementById("tabellenbereich");
 
     ziel.innerHTML = auswahl()
-      + '<div id="tabelleninhalt">' + tabelleHtml(zustand.team) + "</div>";
+      + '<div id="tabelleninhalt">' + M.tabelleHtml(zustand.team, true) + "</div>";
   }
 
   S.start({
@@ -85,7 +40,6 @@
       var ziel = document.getElementById("tabellenbereich");
 
       tabellen = (daten.tabellen && daten.tabellen.tables) || {};
-      spiele = (daten.spiele && daten.spiele.matches) || [];
       teams = S.aktiveTeams().filter(function (t) {
         return tabellen[t.slug];
       }).sort(function (a, b) {

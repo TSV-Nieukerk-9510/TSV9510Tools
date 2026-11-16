@@ -56,8 +56,9 @@ und Fußzeile einbetten.
 
 | Bereich | Seite | Datei |
 |---|---|---|
-| Spiele | Spielübersicht | `index.html` |
-| | Tabelle | `tabelle.html` |
+| Mannschaften | Mannschaften | `mannschaften.html` |
+| Spielbetrieb | Spielübersichten | `index.html` |
+| | Tabellen | `tabelle.html` |
 | Training | Trainingszeiten | `training.html` |
 | | Platzbelegung | `platzbelegung.html` |
 | Tools | Kalender | `kalender.html` |
@@ -69,7 +70,7 @@ Die Menüeinträge stehen an **einer** Stelle: `NAVIGATION` oben in
 `training.html` leitet nur noch auf die Sommerseite weiter und kann bei
 Gelegenheit gelöscht werden.
 
-### Spielübersicht
+### Spielübersichten
 
 Alle Spiele nach Spieltagen gruppiert. Die Seite beginnt immer beim
 nächsten Spieltag; bereits gespielte Begegnungen bleiben erhalten und
@@ -217,7 +218,17 @@ Staffel und Spielstätte bereits eingesetzt. Kopieren und selbst
 verschicken. Alle Vorlagen stehen in der einen Textdatei
 `config/vorlagen.txt`, siehe [`docs/textvorlagen.md`](docs/textvorlagen.md).
 
-### Tabelle
+### Mannschaften
+
+`mannschaften.html` (erster Reiter): oben eine Mannschaft wählen, darunter ein
+fester Aufbau: 1. Trainingszeiten, 2. Nächste Spiele (alle kommenden),
+3. Tabelle, 4. Kalender (Abo-Adresse und QR-Code). Die Seite nutzt dieselben
+Bausteine wie Trainingszeiten und Tabelle (`assets/js/mannschaftskarte.js`),
+zeigt also dieselbe Darstellung. Mit `?team=tsv-h1` ist eine Mannschaft
+vorgewählt. Damen, Alte Herren und andere Gruppen ohne Spiele bei
+FUSSBALL.DE zeigen nur die Trainingszeiten.
+
+### Tabellen
 
 `tabelle.html` zeigt die Ligatabelle je Mannschaft, geholt von FUSSBALL.DE
 (`scripts/fetch_tables.py`, Ergebnis `data/tables.json`). Die eigene

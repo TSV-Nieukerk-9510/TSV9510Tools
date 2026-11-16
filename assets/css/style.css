@@ -1276,3 +1276,11 @@ table.training tr.platzzeile td:first-child { padding-left: 0; }
 .wochentabelle.liga th.zahl, .wochentabelle.liga td.zahl { text-align: right; white-space: nowrap; }
 .wochentabelle.liga tbody th { width: 1%; text-align: center; }
 .wochentabelle.liga tr.eigen td, .wochentabelle.liga tr.eigen th { font-weight: 700; background: #fff6d6; }
+
+/* Seite Mannschaften */
+.mannschaftswahl { display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; margin-bottom: 1.2rem; }
+.wahl-name { display: block; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--leise); margin-bottom: .1rem; }
+.ma-name { margin: .3rem 0 .2rem; }
+.ma-abschnitt { margin: 1.4rem 0; }
+.ma-abschnitt > h2 { font-size: 1.15rem; margin: 0 0 .5rem; display: flex; align-items: center; gap: .5rem; }
+.ma-nr { display: inline-flex; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--navy); color: #fff; font-size: .85rem; align-items: center; justify-content: center; }
