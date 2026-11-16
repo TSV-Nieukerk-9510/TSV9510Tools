@@ -19,16 +19,16 @@ das Skript aus dem vorherigen Stand in `data/matches.json`.
 **Was bedeutet „Anstoßzeit offen“ und das Fragezeichen im Kalender?**
 Das Spiel hat bei FUSSBALL.DE noch keine Uhrzeit. Auf der Seite steht
 „offen“, im Kalender die übliche Zeit der Mannschaft (`anstoss` in
-`config/teams.map.json`), im Betreff mit `?` gekennzeichnet.
+`config/spielbetrieb.json`), im Betreff mit `?` gekennzeichnet.
 
 **Was ist `pitchAssumed` und der Stern bei der Platzart?**
 Viele Jugendspiele nennen keine Platzart. Bei Heimspielen gilt dann
-`default_home_pitch` aus `config/club.json`, im Datensatz als
+`default_home_pitch` aus `config/spielbetrieb.json`, im Datensatz als
 `pitchAssumed` markiert, auf der Seite als Stern.
 
 **Wie erkennt das System eigene Spiele und Heimspiele auf der eigenen Anlage?**
 Über `club_aliases` (Namensbestandteile, auch Spielgemeinschaften) und
-`home_venues` in `config/club.json`.
+`home_venues` in `config/spielbetrieb.json`.
 
 ## Kalender
 
@@ -39,8 +39,8 @@ Kalender erhalten.
 
 **Wie lang ist ein Termin?**
 `spielzeit` der Mannschaft (Regelspielzeit inklusive Halbzeitpause) aus
-`config/teams.map.json`, sonst `match_duration_minutes` aus
-`config/club.json`.
+`config/spielbetrieb.json`, sonst `match_duration_minutes` aus
+`config/spielbetrieb.json`.
 
 **Warum darf ein slug nie geändert werden?**
 Der `slug` bestimmt Dateinamen und öffentliche Adressen der Kalender-Abos.
@@ -49,7 +49,7 @@ jemand merkt.
 
 **Neue Mannschaft bei FUSSBALL.DE?**
 `fetch_teams.py` meldet jede unbekannte team-id und legt vorläufig einen slug
-aus dem Namen an. Dann in `config/teams.map.json` eintragen und festschreiben.
+aus dem Namen an. Dann in `config/spielbetrieb.json` eintragen und festschreiben.
 
 ## Einbetten
 
@@ -81,12 +81,12 @@ Die zweite trägt bei der Einheit `zusammen: "<slug der ersten>"` ein. Dann
 erscheint ein gemeinsamer Block ohne Doppelbelegung.
 
 **Wann gilt Sommer, wann Winter?**
-`saisons.sommer.ab` und `saisons.winter.ab` in `config/mannschaften.json`.
+`saisons.sommer.ab` und `saisons.winter.ab` in `config/trainingsbetrieb.json`.
 Die Platzbelegung öffnet die gerade gültige Jahreszeit. Sommer und Winter sind
 getrennte Objekte, auch Drittel können im Sommer vorkommen.
 
 **Wie drehe ich die Platzzeichnung?**
-`platzansicht.drehung` in `config/mannschaften.json`: `rechts` oder `links`.
+`platzansicht.drehung` in `config/trainingsbetrieb.json`: `rechts` oder `links`.
 Aktuell `links` (Hälfte 1 unten, Vereinsheim unten).
 
 **Platzsperren**
@@ -96,14 +96,13 @@ ist der Naturrasen über `saisons.winter.plaetze` gesperrt.
 ## Textvorlagen
 
 **Wie ändere ich eine Vorlage?**
-Es sind einfache Textdateien in `templates/`, aufgeführt in
-`templates/manifest.json`. Siehe `docs/textvorlagen.md`. Platzhalter wie
+Alle Vorlagen stehen in der einen Textdatei `config/vorlagen.txt`. Siehe `docs/textvorlagen.md`. Platzhalter wie
 `{{spielnummer}}` werden aus den Spieldaten gefüllt, unbekannte werden zu
 Eingabefeldern.
 
 ## Datenschutz
 
-**Was darf in `config/mannschaften.json` stehen?**
+**Was darf in `config/trainingsbetrieb.json` stehen?**
 Die Datei liegt in einem öffentlichen Repository. Nur Funktionsadressen des
 Vereins eintragen, keine privaten Mobilnummern oder Mailadressen ohne
 ausdrückliches Einverständnis. Bei Jugendmannschaften besonders zurückhaltend.

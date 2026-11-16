@@ -16,11 +16,12 @@ DATA_DIR = ROOT / "data"
 CALENDAR_DIR = ROOT / "kalender"
 QR_DIR = ROOT / "qr"
 
-CLUB_CONFIG = CONFIG_DIR / "club.json"
-TEAMS_MAP = CONFIG_DIR / "teams.map.json"
+# Eine Datei fuer den gesamten Spielbetrieb (Verein, Saison, Mannschaften).
+SPIELBETRIEB = CONFIG_DIR / "spielbetrieb.json"
 
 TEAMS_DATA = DATA_DIR / "teams.json"
 MATCHES_DATA = DATA_DIR / "matches.json"
+TABLES_DATA = DATA_DIR / "tables.json"
 
 # Deutschland: Winterzeit UTC+1, Sommerzeit UTC+2.
 BERLIN_WINTER = timezone(timedelta(hours=1))
@@ -51,12 +52,22 @@ def write_json(path, payload):
     print(f"geschrieben: {path.relative_to(ROOT)}")
 
 
+def load_spielbetrieb():
+    return read_json(SPIELBETRIEB)
+
+
 def load_club():
-    return read_json(CLUB_CONFIG)
+    """Vereinsdaten (Abschnitt 'verein' in config/spielbetrieb.json)."""
+    return load_spielbetrieb()["verein"]
 
 
 def load_teams_map():
-    return read_json(TEAMS_MAP)
+    """Mannschaften und Gruppen in der bisherigen Form."""
+    daten = load_spielbetrieb()
+    return {
+        "teams": daten.get("mannschaften", {}),
+        "groups": daten.get("gruppen", {}),
+    }
 
 
 def now_iso():

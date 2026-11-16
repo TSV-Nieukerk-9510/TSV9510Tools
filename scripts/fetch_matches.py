@@ -44,7 +44,7 @@ def resolve_pitch(raw, is_home, club):
     """Platzart bestimmen und offenlegen, ob sie angenommen wurde.
 
     Viele Jugendspiele nennen keine Platzart. Fuer ein Heimspiel nehmen
-    wir dann den Vorgabewert aus config/club.json an - aber nie
+    wir dann den Vorgabewert aus config/spielbetrieb.json an - aber nie
     stillschweigend: pitchAssumed macht die Annahme sichtbar, auf der
     Seite erscheint ein Stern. Bei Auswaertsspielen wird nichts
     angenommen; ueber fremde Anlagen koennen wir nichts wissen.

@@ -1,8 +1,10 @@
 {
     "_hinweis": [
+        "TRAININGSBETRIEB: alle Einstellungen rund um Trainingszeiten, Plaetze und Platzbelegung. Diese eine Datei steuert die Seiten Trainingszeiten und Platzbelegung.",
+        "",
         "Von Hand gepflegt: Orte, Trainingszeiten und Ansprechpartner je Mannschaft.",
         "",
-        "Der Schluessel ist der dauerhafte slug aus config/teams.map.json.",
+        "Der Schluessel ist der dauerhafte slug aus config/spielbetrieb.json.",
         "Er bleibt ueber Saisonwechsel hinweg gleich - diese Datei muss",
         "also nicht jedes Jahr neu zugeordnet werden, nur inhaltlich",
         "aktualisiert.",
@@ -30,7 +32,7 @@
         "(Kunstrasen KR und Naturrasen NR). 'winter' gilt, sobald der Naturrasen",
         "gesperrt ist: dann gibt es nur den Kunstrasen KR. 'ab' ist der erste Tag",
         "der Jahreszeit; die Platzbelegung oeffnet automatisch die gerade",
-        "gueltige. Im Winter sind zusaetzlich Drittel (D) moeglich.",
+        "gueltige. Welche Teile erlaubt sind, steht je Jahreszeit unter 'felder' (H, D, V).",
         "",
         "ORTE ('orte'): Jede Trainingsstaette steht einmal hier, als",
         "vollstaendiges Datenpaket:",
@@ -52,8 +54,8 @@
         "  tag, von, bis   Wochentag und Uhrzeit",
         "  platz           eigener Platz und Teil davon als Code PLATZ-TEIL:",
         "                  KR-G = Kunstrasen ganzes Feld, NR-H1 = Naturrasen Haelfte 1,",
-        "                  KR-D2 = Kunstrasen Drittel 2 (nur Winter), KR-V3 = Viertel 3.",
-        "                  Haelfte: H1 links, H2 rechts. Drittel: D1-D3 von links.",
+        "                  KR-D2 = Kunstrasen Drittel 2, KR-V3 = Viertel 3.",
+        "                  Hochkant gesehen, Vereinsheim unten: H1 unten, H2 oben; V1 unten links, V2 unten rechts, V3 oben links, V4 oben rechts; D3 oben (ganze Breite), D1 unten links, D2 unten rechts.",
         "                  Viertel: V1 links oben, V2 links unten, V3 rechts oben,",
         "                  V4 rechts unten. Ohne Teil (nur 'KR') = ganzes Feld.",
         "  ort             statt 'platz' fuer Training an anderen Orten:",
@@ -825,6 +827,6 @@
         }
     ],
     "platzansicht": {
-        "drehung": "rechts"
+        "drehung": "links"
     }
 }

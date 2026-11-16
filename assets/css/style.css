@@ -1269,3 +1269,10 @@ table.training tr.platzzeile td:first-child { padding-left: 0; }
 .einst-tabelle tbody th { white-space: normal; width: 45%; background: transparent; }
 .einst-pfad { display: block; font-weight: 400; font-size: .75rem; color: var(--leise); margin-top: .1rem; }
 .einst-text { display: block; font-weight: 400; color: var(--leise); margin-top: .2rem; }
+
+/* Seite Tabelle */
+.tabelle-wahl { margin-bottom: 1rem; }
+.wochentabelle.liga { min-width: 24rem; }
+.wochentabelle.liga th.zahl, .wochentabelle.liga td.zahl { text-align: right; white-space: nowrap; }
+.wochentabelle.liga tbody th { width: 1%; text-align: center; }
+.wochentabelle.liga tr.eigen td, .wochentabelle.liga tr.eigen th { font-weight: 700; background: #fff6d6; }

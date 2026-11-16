@@ -12,7 +12,7 @@
  * markiert und benannt.
  *
  * Quellen:
- *  - Training: config/mannschaften.json (von Hand): Saisons, Orte, Einheiten.
+ *  - Training: config/trainingsbetrieb.json (von Hand): Saisons, Orte, Einheiten.
  *    Eine Einheit nennt ihren Platz als Code, z. B. KR-H1 (Kunstrasen,
  *    Haelfte 1) oder NR-G (Naturrasen, ganzes Feld).
  *  - Spiele:   data/matches.json (FUSSBALL.DE), nur Spiele auf der
@@ -1223,31 +1223,44 @@
 
   /* --- Skizze: Lage der Plaetze und ihre Aufteilung ------------------- */
 
-  /* Spielfeld mit Linien, hochkant. Der Naturrasen bekommt eine Laufbahn. */
-  function skizzePlatz(x, y, w, h, kuerzel) {
-    var bahn = kuerzel === "NR" ? 16 : 0;
-    var fx = x + bahn;
-    var fy = y + bahn;
-    var fw = w - 2 * bahn;
-    var fh = h - 2 * bahn;
+  /* Stadionform: Rechteck mit halbelliptischer Auslauffläche hinter den Toren. */
+  function stadion(x, y, w, hs, ry) {
+    var rx = w / 2;
+
+    return "M" + x + " " + (y + ry) + " A" + rx + " " + ry + " 0 0 1 "
+      + (x + w) + " " + (y + ry) + " V" + (y + ry + hs) + " A" + rx + " "
+      + ry + " 0 0 1 " + x + " " + (y + ry + hs) + " Z";
+  }
+
+  /* Spielfeld hochkant. Der Naturrasen ist etwas groesser und hat eine
+   * Laufbahn; beide haben hinter den Toren eine Halbkreis-Auslauffläche. */
+  function skizzePlatz(x, y, kuerzel) {
+    var nr = kuerzel === "NR";
+    var w = nr ? 190 : 150;       // Breite inkl. Laufbahn
+    var hs = nr ? 190 : 160;      // Laenge des Spielfelds
+    var ry = nr ? 46 : 30;        // Tiefe der Auslauffläche
+    var bahn = nr ? 18 : 0;
+    var fw = w - 2 * bahn - (nr ? 14 : 20);
+    var fx = x + (w - fw) / 2;
+    var fy = y + ry;
+    var fh = hs;
     var l = 'fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.5"';
     var svg = "";
 
-    if (bahn) {
-      svg += '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="'
-        + h + '" rx="' + w / 2.4 + '" fill="#c2674a"/>';
+    if (nr) {
+      svg += '<path d="' + stadion(x, y, w, hs, ry) + '" fill="#c2674a"/>';
     }
+    svg += '<path d="' + stadion(x + bahn, y + bahn, w - 2 * bahn, hs,
+      ry - bahn) + '" fill="' + RASEN[kuerzel] + '"/>';
     svg += '<rect x="' + fx + '" y="' + fy + '" width="' + fw + '" height="'
-      + fh + '" rx="' + (bahn ? 8 : 0) + '" fill="' + RASEN[kuerzel] + '"/>'
-      + '<rect x="' + (fx + 6) + '" y="' + (fy + 6) + '" width="' + (fw - 12)
-      + '" height="' + (fh - 12) + '" ' + l + "/>"
-      + '<line x1="' + (fx + 6) + '" y1="' + (fy + fh / 2) + '" x2="'
-      + (fx + fw - 6) + '" y2="' + (fy + fh / 2) + '" ' + l + "/>"
+      + fh + '" ' + l + "/>"
+      + '<line x1="' + fx + '" y1="' + (fy + fh / 2) + '" x2="' + (fx + fw)
+      + '" y2="' + (fy + fh / 2) + '" ' + l + "/>"
       + '<circle cx="' + (fx + fw / 2) + '" cy="' + (fy + fh / 2)
       + '" r="14" ' + l + "/>"
-      + '<rect x="' + (fx + fw * .22) + '" y="' + (fy + 6) + '" width="'
+      + '<rect x="' + (fx + fw * .22) + '" y="' + fy + '" width="'
       + fw * .56 + '" height="' + fh * .13 + '" ' + l + "/>"
-      + '<rect x="' + (fx + fw * .22) + '" y="' + (fy + fh - 6 - fh * .13)
+      + '<rect x="' + (fx + fw * .22) + '" y="' + (fy + fh - fh * .13)
       + '" width="' + fw * .56 + '" height="' + fh * .13 + '" ' + l + "/>";
     return svg;
   }
@@ -1256,18 +1269,16 @@
   function skizzeLage() {
     var t = 'text-anchor="middle" font-size="13" fill="currentColor"';
 
-    return '<svg class="skizze-lage" viewBox="0 0 440 350" role="img" '
+    return '<svg class="skizze-lage" viewBox="0 0 420 330" role="img" '
       + 'aria-label="Lage von Naturrasen, Kunstrasen und Vereinsheim">'
-      + skizzePlatz(10, 10, 180, 270, "NR")
-      + skizzePlatz(255, 28, 175, 234, "KR")
-      + '<text x="100" y="304" ' + t + ">Naturrasen</text>"
-      + '<text x="100" y="322" ' + t + ' opacity=".7">Spielfeld 1</text>'
-      + '<text x="342" y="304" ' + t + ">Kunstrasen</text>"
-      + '<text x="342" y="322" ' + t + ' opacity=".7">Spielfeld 2</text>'
-      + '<rect x="195" y="292" width="55" height="38" rx="4" fill="#e9e3d8" '
+      + skizzePlatz(5, 8, "NR")
+      + skizzePlatz(255, 60, "KR")
+      + '<text x="100" y="312" ' + t + ">Naturrasen</text>"
+      + '<text x="330" y="312" ' + t + ">Kunstrasen</text>"
+      + '<rect x="203" y="252" width="44" height="34" rx="4" fill="#e9e3d8" '
       + 'stroke="#8b7d63" stroke-width="1.5"/>'
-      + '<text x="222.5" y="316" text-anchor="middle" font-size="14" '
-      + 'font-weight="700" fill="#5a4e38">VH</text></svg>';
+      + '<text x="225" y="273" text-anchor="middle" dominant-baseline="central" '
+      + 'font-size="14" font-weight="700" fill="#5a4e38">VH</text></svg>';
   }
 
   /* Aufteilung eines Platzes (gilt fuer Naturrasen und Kunstrasen gleich),
@@ -1315,7 +1326,7 @@
 
     return "<h2>Platzteile</h2>"
       + '<p class="leise">Die Aufteilung gilt für Naturrasen und '
-      + "Kunstrasen gleich. Unten liegt das Vereinsheim.</p>"
+      + "Kunstrasen gleich.</p>"
       + '<div class="skizze-lage-rahmen">' + skizzeLage() + "</div>"
       + '<div class="legende-reihe">' + arten.map(function (a) {
         var wo = namen.filter(function (k) {

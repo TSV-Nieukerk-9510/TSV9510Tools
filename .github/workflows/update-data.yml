@@ -42,6 +42,12 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
 
+      - name: Tabellen abrufen
+        run: python -u scripts/fetch_tables.py
+        continue-on-error: true
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
       - name: Kalender erzeugen
         run: python -u scripts/build_calendars.py
         env:

@@ -34,7 +34,7 @@ def slugify(text):
     """Erzeugt ein URL-taugliches Kuerzel aus einem Mannschaftsnamen.
 
     Nur fuer noch unbekannte Mannschaften. Dauerhafte Kuerzel stehen in
-    config/teams.map.json und werden dort von Hand festgeschrieben.
+    config/spielbetrieb.json und werden dort von Hand festgeschrieben.
     """
     text = clean_text(text).lower()
 

@@ -2,7 +2,7 @@
  * Trainingszeiten fuer Sommer und Winter, den naechsten drei Spielen
  * und den Ansprechpartnern.
  *
- * Die Zeiten stammen aus config/mannschaften.json und werden von Hand
+ * Die Zeiten stammen aus config/trainingsbetrieb.json und werden von Hand
  * gepflegt - FUSSBALL.DE kennt sie nicht. Die Spiele kommen von
  * FUSSBALL.DE (data/matches.json) und klappen wie in der Spielübersicht
  * auf. Fehlt etwas, sagt die Seite das offen, statt eine Luecke zu
@@ -264,7 +264,7 @@
 
       if (!daten.mannschaften) {
         html.push('<p class="warnung">Die Datei '
-          + "<code>config/mannschaften.json</code> fehlt. Ohne sie kann "
+          + "<code>config/trainingsbetrieb.json</code> fehlt. Ohne sie kann "
           + "diese Seite nichts anzeigen.</p>");
       }
 

@@ -1,0 +1,125 @@
+## VORLAGEN fuer den Textgenerator (Seite Tools > Textvorlagen).
+## Zeilen, die mit ## beginnen, sind Kommentare und werden nicht angezeigt.
+##
+## AUFBAU: Jede Vorlage beginnt mit einer Zeile  === Titel ===  (der Titel erscheint in der Auswahl).
+## Die erste Zeile darf mit  Betreff:  beginnen, das wird ein eigenes Feld mit Kopierknopf.
+## Alles darunter ist der Text bis zur naechsten  === ... ===  Zeile.
+##
+## PLATZHALTER stehen in doppelten geschweiften Klammern, z. B. {{spielnummer}}.
+## Bekannte Platzhalter werden aus dem Spiel gefuellt:
+##   spielnummer spieltag staffelid wettbewerb mannschaft heim gast gegner heimauswaerts
+##   datum uhrzeit spielort anlage adresse anfahrt schiedsrichter spielseite staffelseite verein
+## Jeder andere Platzhalter wird automatisch zu einem Eingabefeld. Die Beschriftung des
+## Feldes steht im Abschnitt  === felder ===  (Zeile:  name = Beschriftung). Fehlt sie,
+## wird der Name selbst angezeigt.
+##
+## Neue Vorlage: unten eine neue  === Titel ===  Zeile mit Text anfuegen.
+
+=== felder ===
+grund = Grund
+wunschtermin = Neuer Wunschtermin
+treffpunkt = Treffpunkt (Ort und Uhrzeit)
+absender = Dein Name
+funktion = Deine Funktion im Verein
+kontakt = Telefon oder E-Mail für Rückfragen
+
+=== Spielabsage ===
+Betreff: Spielabsage – Spiel {{spielnummer}} – {{heim}} gegen {{gast}}
+
+Sehr geehrte Damen und Herren,
+
+hiermit sagen wir die folgende Begegnung ab:
+
+Spielnummer:  {{spielnummer}}
+Spieltag:     {{spieltag}}
+Staffel:      {{wettbewerb}} (Staffel-ID {{staffelid}})
+Begegnung:    {{heim}} – {{gast}}
+Termin:       {{datum}}, {{uhrzeit}} Uhr
+Spielstätte:  {{spielort}}
+
+Grund der Absage: {{grund}}
+
+Wir bitten um Kenntnisnahme und um Mitteilung, wie mit der Neuansetzung
+verfahren werden soll.
+
+Für Rückfragen stehe ich gerne zur Verfügung.
+
+Mit freundlichen Grüßen
+{{absender}}
+{{funktion}}
+{{verein}}
+{{kontakt}}
+
+=== Verlegung anfragen ===
+Betreff: Verlegungsanfrage – Spiel {{spielnummer}} – {{heim}} gegen {{gast}}
+
+Sehr geehrte Damen und Herren,
+
+wir möchten die folgende Begegnung verlegen und bitten um Zustimmung:
+
+Spielnummer:  {{spielnummer}}
+Spieltag:     {{spieltag}}
+Staffel:      {{wettbewerb}} (Staffel-ID {{staffelid}})
+Begegnung:    {{heim}} – {{gast}}
+Bisheriger Termin: {{datum}}, {{uhrzeit}} Uhr
+Spielstätte:  {{spielort}}
+
+Gewünschter neuer Termin: {{wunschtermin}}
+
+Grund: {{grund}}
+
+Sofern Einverständnis besteht, bitten wir um eine kurze Rückmeldung,
+damit die Verlegung im DFBnet eingetragen werden kann.
+
+Mit freundlichen Grüßen
+{{absender}}
+{{funktion}}
+{{verein}}
+{{kontakt}}
+
+=== Verlegung bestätigen ===
+Betreff: Verlegung bestätigt – Spiel {{spielnummer}} – {{heim}} gegen {{gast}}
+
+Sehr geehrte Damen und Herren,
+
+der Verlegung der folgenden Begegnung stimmen wir zu:
+
+Spielnummer:  {{spielnummer}}
+Spieltag:     {{spieltag}}
+Staffel:      {{wettbewerb}} (Staffel-ID {{staffelid}})
+Begegnung:    {{heim}} – {{gast}}
+Bisheriger Termin: {{datum}}, {{uhrzeit}} Uhr
+
+Neuer Termin: {{wunschtermin}}
+Spielstätte:  {{spielort}}
+
+Wir bitten darum, die Änderung im DFBnet einzutragen.
+
+Mit freundlichen Grüßen
+{{absender}}
+{{funktion}}
+{{verein}}
+{{kontakt}}
+
+=== Spielinfo weitergeben ===
+Betreff: {{mannschaft}} – {{heim}} gegen {{gast}} am {{datum}}
+
+Hallo zusammen,
+
+hier die Angaben zum nächsten Spiel:
+
+{{heim}} – {{gast}}
+{{datum}} um {{uhrzeit}} Uhr
+{{spielort}}
+{{wettbewerb}}, {{spieltag}}
+
+Treffpunkt: {{treffpunkt}}
+
+Spielseite auf FUSSBALL.DE:
+{{spielseite}}
+
+Anfahrt:
+{{anfahrt}}
+
+Viele Grüße
+{{absender}}

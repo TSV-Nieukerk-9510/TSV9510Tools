@@ -1,7 +1,7 @@
 """Schritt 1: Mannschaften von fussball.de holen und nach data/teams.json schreiben.
 
 Die Liste von fussball.de wird mit den dauerhaften Kuerzeln aus
-config/teams.map.json zusammengefuehrt. Massgeblich ist immer die team-id,
+config/spielbetrieb.json zusammengefuehrt. Massgeblich ist immer die team-id,
 nie der Anzeigename - der kann sich jederzeit aendern.
 """
 
@@ -100,7 +100,7 @@ def main():
     if unmapped:
         print()
         print("ACHTUNG: unbekannte Mannschaften, Kuerzel nur vorlaeufig.")
-        print("Bitte in config/teams.map.json eintragen und festschreiben:")
+        print("Bitte in config/spielbetrieb.json eintragen und festschreiben:")
 
         for team in unmapped:
             print(f'  "{team["id"]}": '

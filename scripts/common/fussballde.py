@@ -317,3 +317,97 @@ def fetch_team_matchplan(team_id, with_details=True):
 
     print(f"  {len(matches)} Spiele")
     return matches
+
+
+# --- Tabellen ------------------------------------------------------------
+
+TABLE_ENDPOINT = BASE + "/ajax.team.table/-/mode/PAGE/team-id/{team_id}"
+
+STANDARD_SPALTEN = [
+    "Platz", "Mannschaft", "Spiele", "S", "U", "N", "Tore", "Diff", "Punkte",
+]
+
+
+def _find_table(soup):
+    """Die Ligatabelle in einer Seite oder einem Fragment finden."""
+    kandidaten = soup.select("#team-fixture-league-tables table")
+
+    if not kandidaten:
+        kandidaten = soup.select("table")
+
+    for tabelle in kandidaten:
+        kopf = clean_text(tabelle.get_text(" ", strip=True)).lower()
+
+        if "punkte" in kopf or "pkt" in kopf:
+            return tabelle
+
+    return None
+
+
+def parse_table(html):
+    """Zerlegt den HTML-Text in {'columns': [...], 'rows': [{'cells': [...]}]}.
+
+    Ohne Annahmen ueber einzelne CSS-Klassen: leere Spalten (Wappen) werden
+    entfernt, die Beschriftung kommt aus dem Tabellenkopf, sonst gilt die
+    Standardreihenfolge.
+    """
+    tabelle = _find_table(BeautifulSoup(html, "html.parser"))
+
+    if tabelle is None:
+        return None
+
+    zeilen = []
+
+    for tr in tabelle.select("tbody tr") or tabelle.select("tr")[1:]:
+        zellen = [clean_text(td.get_text(" ", strip=True))
+                  for td in tr.find_all(["td", "th"])]
+
+        if any(zellen):
+            zeilen.append(zellen)
+
+    if not zeilen:
+        return None
+
+    breite = max(len(z) for z in zeilen)
+    behalten = [i for i in range(breite)
+                if any(i < len(z) and z[i] for z in zeilen)]
+
+    kopf_zellen = [clean_text(th.get_text(" ", strip=True))
+                   for th in tabelle.select("thead th")]
+
+    if len(kopf_zellen) == breite:
+        spalten = [kopf_zellen[i] for i in behalten]
+    else:
+        spalten = []
+
+    rows = [{"cells": [z[i] if i < len(z) else "" for i in behalten]}
+            for z in zeilen]
+
+    if len(spalten) != len(behalten) or not all(spalten):
+        spalten = (list(STANDARD_SPALTEN)
+                   if len(behalten) == len(STANDARD_SPALTEN) else [])
+
+    return {"columns": spalten, "rows": rows}
+
+
+def fetch_team_table(team_id, team_url=""):
+    """Tabelle einer Mannschaft. Erst die Mannschaftsseite, dann der
+    schlanke Endpunkt. Gibt None zurueck, wenn keine Tabelle vorhanden ist
+    (z. B. Kinderfussball ohne Wertung)."""
+    quellen = [u for u in (team_url, TABLE_ENDPOINT.format(team_id=team_id)) if u]
+
+    for url in quellen:
+        print(f"Tabelle abrufen: {url}")
+
+        try:
+            ergebnis = parse_table(_get(url))
+        except Exception as error:
+            print(f"  nicht lesbar: {error}")
+            continue
+
+        if ergebnis:
+            ergebnis["source"] = url
+            print(f"  {len(ergebnis['rows'])} Zeilen")
+            return ergebnis
+
+    return None

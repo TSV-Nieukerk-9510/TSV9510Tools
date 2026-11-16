@@ -1,7 +1,7 @@
 /* Textgenerator: erzeugt aus einer Vorlage und den Spieldaten einen
  * fertigen E-Mail-Text zum Kopieren.
  *
- * Die Vorlagen liegen als einfache Textdateien unter templates/ und
+ * Alle Vorlagen stehen in einer Textdatei, config/vorlagen.txt, und
  * koennen dort ohne Programmierkenntnisse geaendert werden. Platzhalter
  * stehen in doppelten geschweiften Klammern: {{spielnummer}}.
  *
@@ -16,7 +16,6 @@ window.Textgenerator = (function () {
   var SPEICHER = "tsv9510.textgenerator";
 
   var manifest = null;
-  var vorlagen = {};
   var aktuell = null;
   var knoten = null;
 
@@ -99,40 +98,78 @@ window.Textgenerator = (function () {
 
   /* --- Laden ----------------------------------------------------- */
 
+  /* Alle Vorlagen stehen in einer Textdatei (config/vorlagen.txt):
+   * "=== Titel ===" beginnt eine Vorlage, "=== felder ===" enthaelt die
+   * Beschriftungen der Eingabefelder, "##" am Zeilenanfang ist Kommentar. */
+  function lesen(rohtext) {
+    var ergebnis = { felder: {}, vorlagen: [] };
+    var aktuellerTitel = null;
+    var zeilen = [];
+
+    function abschliessen() {
+      if (aktuellerTitel === null) {
+        return;
+      }
+
+      if (aktuellerTitel.toLowerCase() === "felder") {
+        zeilen.forEach(function (zeile) {
+          var teile = zeile.match(/^\s*([a-z0-9_]+)\s*=\s*(.+?)\s*$/i);
+
+          if (teile) {
+            ergebnis.felder[teile[1]] = teile[2];
+          }
+        });
+      } else {
+        ergebnis.vorlagen.push({
+          titel: aktuellerTitel,
+          rohtext: zeilen.join("\n").replace(/^\s*\n/, "").replace(/\s+$/, "")
+        });
+      }
+    }
+
+    rohtext.replace(/\r\n?/g, "\n").split("\n").forEach(function (zeile) {
+      if (/^##/.test(zeile)) {
+        return;
+      }
+
+      var kopf = zeile.match(/^===\s*(.+?)\s*===\s*$/);
+
+      if (kopf) {
+        abschliessen();
+        aktuellerTitel = kopf[1];
+        zeilen = [];
+      } else if (aktuellerTitel !== null) {
+        zeilen.push(zeile);
+      }
+    });
+
+    abschliessen();
+    return ergebnis;
+  }
+
   function ladeManifest() {
     if (manifest) {
       return Promise.resolve(manifest);
     }
 
-    return fetch("templates/manifest.json", { cache: "no-cache" })
+    return fetch("config/vorlagen.txt", { cache: "no-cache" })
       .then(function (antwort) {
         if (!antwort.ok) {
-          throw new Error("templates/manifest.json nicht gefunden");
-        }
-        return antwort.json();
-      })
-      .then(function (geladen) {
-        manifest = geladen;
-        return manifest;
-      });
-  }
-
-  function ladeVorlage(datei) {
-    if (vorlagen[datei]) {
-      return Promise.resolve(vorlagen[datei]);
-    }
-
-    return fetch("templates/" + datei, { cache: "no-cache" })
-      .then(function (antwort) {
-        if (!antwort.ok) {
-          throw new Error("Vorlage " + datei + " nicht gefunden");
+          throw new Error("config/vorlagen.txt nicht gefunden");
         }
         return antwort.text();
       })
       .then(function (inhalt) {
-        vorlagen[datei] = inhalt;
-        return inhalt;
+        manifest = lesen(inhalt);
+        return manifest;
       });
+  }
+
+  function ladeVorlage(nummer) {
+    var eintrag = manifest && manifest.vorlagen[Number(nummer)];
+
+    return eintrag ? Promise.resolve(eintrag.rohtext)
+      : Promise.reject(new Error("Vorlage nicht gefunden"));
   }
 
   /* --- Aufbau des Fensters --------------------------------------- */
@@ -330,8 +367,8 @@ window.Textgenerator = (function () {
     ladeManifest().then(function (geladen) {
       var auswahl = huelle.querySelector(".tg-vorlage");
 
-      auswahl.innerHTML = geladen.vorlagen.map(function (eintrag) {
-        return '<option value="' + text(eintrag.datei) + '">'
+      auswahl.innerHTML = geladen.vorlagen.map(function (eintrag, nr) {
+        return '<option value="' + nr + '">'
           + text(eintrag.titel) + "</option>";
       }).join("");
 

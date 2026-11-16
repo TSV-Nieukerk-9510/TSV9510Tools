@@ -14,7 +14,7 @@ Wer etwas Neues auf diese Daten aufsetzt, braucht nur dieses Dokument.
 2. **Der `slug` ist dauerhaft.** Er bestimmt Dateinamen und öffentliche
    URLs. Einmal veröffentlicht, wird er nie wieder geändert — sonst
    laufen bestehende Kalender-Abos still ins Leere. Festgelegt wird er
-   von Hand in `config/teams.map.json`.
+   von Hand in `config/spielbetrieb.json`.
 3. **Namen sind Anzeigetext, nie Schlüssel.** Nichts im Code darf sich
    auf einen Mannschaftsnamen verlassen.
 4. **Ein fehlgeschlagener Abruf löscht nichts.** Lässt sich eine
@@ -173,7 +173,7 @@ muss. Geplantes Format:
 
 Es gibt keine ganztägigen Spiele. Steht auf fussball.de noch keine Zeit
 (bei Jugendspielen häufig), setzt `fetch_matches.py` die übliche
-Anstoßzeit der Mannschaft (`anstoss` in `config/teams.map.json`) ein und
+Anstoßzeit der Mannschaft (`anstoss` in `config/spielbetrieb.json`) ein und
 setzt `timeAssumed: true`. Der Kalendereintrag trägt dann ein `?` vor
 dem Betreff und einen Hinweis ganz oben in der Beschreibung.
 
@@ -192,7 +192,7 @@ ein Kunstrasenplatz ist. Sie ist reine Gestaltung.
 Viele Jugendspiele nennen gar keine Platzart. Dann gilt:
 
 * **Heimspiel ohne Angabe** → `pitch` wird auf `default_home_pitch` aus
-  `config/club.json` gesetzt (derzeit `Kunstrasen`) und
+  `config/spielbetrieb.json` gesetzt (derzeit `Kunstrasen`) und
   `pitchAssumed: true` gesetzt. Auf der Seite erscheint ein `*`, in
   der Beschreibung des Kalenders derselbe Hinweis.
 * **Auswärtsspiel ohne Angabe** → `pitch` bleibt leer. Über fremde

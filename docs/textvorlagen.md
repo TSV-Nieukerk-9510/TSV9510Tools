@@ -5,24 +5,28 @@ Fenster, in dem aus einer Vorlage und den Spieldaten ein fertiger
 E-Mail-Text entsteht — zum Prüfen, Anpassen und Kopieren. Verschickt
 wird von Hand, aus dem eigenen Mailprogramm.
 
-Die Vorlagen liegen unter `templates/` als **einfache Textdateien** und
-lassen sich ohne Programmierkenntnisse ändern.
+Alle Vorlagen stehen in **einer Textdatei**: `config/vorlagen.txt`. Sie
+lässt sich ohne Programmierkenntnisse ändern.
 
 ## Eine Vorlage ändern
 
 Datei öffnen, Text ändern, speichern, committen. Fertig — die Seite lädt
-die Vorlage direkt, es ist kein weiterer Schritt nötig.
+die Datei direkt, es ist kein weiterer Schritt nötig.
 
 ## Eine Vorlage anlegen
 
-1. Neue Textdatei unter `templates/` anlegen, z. B. `platzsperre.txt`.
-2. In `templates/manifest.json` unter `vorlagen` eintragen:
+Am Ende der Datei eine neue Zeile `=== Platzsperre melden ===` anfügen
+und darunter den Text schreiben. Der Titel erscheint in der Auswahl.
 
-```json
-{ "datei": "platzsperre.txt", "titel": "Platzsperre melden" }
-```
+## Aufbau der Datei
 
-## Aufbau einer Vorlagendatei
+* `=== Titel ===` beginnt eine Vorlage. Der Text reicht bis zur nächsten
+  `===`-Zeile.
+* `=== felder ===` ist ein besonderer Abschnitt: Beschriftungen für
+  Eingabefelder, eine Zeile je Feld, `name = Beschriftung`.
+* Zeilen mit `##` am Anfang sind Kommentare.
+
+## Aufbau einer Vorlage
 
 Die **erste Zeile** darf mit `Betreff:` beginnen — dieser Teil wird auf
 der Seite als eigenes Feld mit eigenem Kopierknopf angezeigt. Alles
@@ -66,14 +70,14 @@ Alles in doppelten geschweiften Klammern wird ersetzt.
 | `{{schiedsrichter}}` | sofern schon angesetzt |
 | `{{spielseite}}` | Link zum Spiel auf FUSSBALL.DE |
 | `{{staffelseite}}` | Link zur Staffel |
-| `{{verein}}` | Vereinsname aus `config/club.json` |
+| `{{verein}}` | Vereinsname aus `config/spielbetrieb.json` |
 
 **Alles andere** wird auf der Seite automatisch zu einem Eingabefeld.
 Schreibst du `{{wetterlage}}` in eine Vorlage, erscheint dort ein Feld
 dafür — ohne dass am Programmcode etwas geändert werden muss.
 
-Die Beschriftung dieser Felder steht in `templates/manifest.json` unter
-`felder`. Fehlt ein Eintrag, wird der Platzhaltername selbst angezeigt.
+Die Beschriftung dieser Felder steht in `config/vorlagen.txt` im Abschnitt
+`=== felder ===`. Fehlt ein Eintrag, wird der Platzhaltername selbst angezeigt.
 
 Was der Benutzer in solche Felder tippt, merkt sich der Browser für das
 nächste Mal — Name, Funktion und Telefonnummer sind damit nur einmal

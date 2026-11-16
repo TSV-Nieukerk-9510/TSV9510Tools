@@ -24,24 +24,24 @@ window.Seite = (function () {
   // lassen und in der waagerecht scrollenden Leiste abgeschnitten wuerden.
   // Ein Bereich mit "kinder" fuehrt beim Anklicken auf seine erste Seite.
   var NAVIGATION = [
-    { schluessel: "uebersicht", titel: "Spielübersicht", datei: "index.html" },
-    { schluessel: "trainingsplan", titel: "Trainingsplan",
+    { schluessel: "spiele", titel: "Spiele", datei: "index.html", kinder: [
+      { schluessel: "uebersicht", titel: "Spielübersicht",
+        datei: "index.html" },
+      { schluessel: "tabelle", titel: "Tabelle", datei: "tabelle.html" }
+    ] },
+    { schluessel: "trainingsbereich", titel: "Training",
       datei: "training.html", kinder: [
         { schluessel: "training", titel: "Trainingszeiten",
           datei: "training.html" },
         { schluessel: "platzbelegung", titel: "Platzbelegung",
-          datei: "platzbelegung.html" },
-        { schluessel: "sportanlage", titel: "Sportanlage",
-          datei: "sportanlage.html" }
+          datei: "platzbelegung.html" }
       ] },
     { schluessel: "tools", titel: "Tools", datei: "kalender.html", kinder: [
       { schluessel: "kalender", titel: "Kalender", datei: "kalender.html" },
       { schluessel: "texte", titel: "Textvorlagen",
         datei: "textgenerator.html" },
-      { schluessel: "einstellungen", titel: "Einstellungen",
-        datei: "einstellungen.html" }
-    ] },
-    { schluessel: "faq", titel: "FAQ", datei: "faq.html" }
+      { schluessel: "faq", titel: "FAQ", datei: "faq.html" }
+    ] }
   ];
 
   /* Findet Bereich und (falls vorhanden) Unterseite zu einem Schluessel. */
@@ -68,12 +68,9 @@ window.Seite = (function () {
   var QUELLEN = {
     teams: "data/teams.json",
     spiele: "data/matches.json",
-    mannschaften: "config/mannschaften.json",
+    mannschaften: "config/trainingsbetrieb.json",
     faq: "config/faq.json",
-    sportanlage: "config/sportanlage.json",
-    club: "config/club.json",
-    teamsmap: "config/teams.map.json",
-    einstellungen: "config/einstellungen.json"
+    tabellen: "data/tables.json"
   };
 
   // Offizieller Vereinsname (Kopfzeile, Titel, Anschrift)
@@ -247,7 +244,7 @@ window.Seite = (function () {
       function (alles, zwei) { return zwei || ""; });
   }
 
-  /* Hinweis, solange config/mannschaften.json fuer die Jahreszeit
+  /* Hinweis, solange config/trainingsbetrieb.json fuer die Jahreszeit
    * Beispielzeiten enthaelt. "beispieldaten" ist true/false oder je
    * Jahreszeit {"sommer": false, "winter": true}. */
   function beispielHinweis(saison) {
@@ -522,7 +519,8 @@ window.Seite = (function () {
     var noetig = optionen.braucht || ["teams"];
 
     var auftraege = noetig.map(function (name) {
-      return laden(QUELLEN[name], name === "mannschaften" || name === "faq");
+      return laden(QUELLEN[name], name === "mannschaften" || name === "faq"
+        || name === "tabellen");
     });
 
     Promise.all(auftraege).then(function (ergebnisse) {

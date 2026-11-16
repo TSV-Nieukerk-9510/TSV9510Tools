@@ -28,14 +28,25 @@ beschrieben. Es ist der Vertrag für alles, was später darauf aufsetzt.
 
 | Pfad | Inhalt |
 |---|---|
-| `config/` | **von Hand gepflegt** — Vereinsdaten, Mannschaftskürzel, Trainingszeiten und Ansprechpartner |
-| `templates/` | **von Hand gepflegt** — Textvorlagen für die E-Mail-Vorschläge |
+| `config/` | **von Hand gepflegt** — genau vier Textdateien, siehe unten |
 | `scripts/` | Abruf und Erzeugung |
 | `data/` | **automatisch erzeugt** — die Schnittstelle |
 | `kalender/` | **automatisch erzeugt** — die `.ics`-Dateien |
 | `qr/` | **automatisch erzeugt** — ein QR-Code (SVG) je Kalender |
 | `assets/`, `*.html` | die Webseite |
 | `docs/` | Dokumentation |
+
+## Die vier Konfigurationsdateien
+
+Alles, was von Hand gepflegt wird, steht in `config/`, in vier Dateien. Jede
+ist oben selbst erklärt.
+
+| Datei | Wofür |
+|---|---|
+| `config/spielbetrieb.json` | Spielbetrieb: Vereins-ID, Saison, Vereinsnamen und eigene Spielstätten (`verein`), Mannschaften mit Kürzel, Gruppe, Spielzeit und Anstoßzeit (`mannschaften`), Tabellen-Einstellungen (`tabellen`) |
+| `config/trainingsbetrieb.json` | Trainingsbetrieb: Sommer/Winter, Plätze, Orte, Bereiche, Trainingszeiten je Mannschaft, weitere Gruppen, Ansprechpartner |
+| `config/faq.json` | Alle Themen der FAQ |
+| `config/vorlagen.txt` | Alle Vorlagen des Textgenerators (reine Textdatei) |
 
 ## Die Seiten
 
@@ -45,14 +56,13 @@ und Fußzeile einbetten.
 
 | Bereich | Seite | Datei |
 |---|---|---|
-| Spielübersicht | Spielübersicht | `index.html` |
-| Trainingsplan | Trainingszeiten | `training.html` |
+| Spiele | Spielübersicht | `index.html` |
+| | Tabelle | `tabelle.html` |
+| Training | Trainingszeiten | `training.html` |
 | | Platzbelegung | `platzbelegung.html` |
-| | Sportanlage | `sportanlage.html` (Texte und Fotos in `config/sportanlage.json`, Bilder in `assets/img/`) |
 | Tools | Kalender | `kalender.html` |
 | | Textvorlagen | `textgenerator.html` |
-| | Einstellungen | `einstellungen.html` (Katalog: `config/einstellungen.json`) |
-| FAQ | FAQ | `faq.html` (Inhalt: `config/faq.json`) |
+| | FAQ | `faq.html` |
 
 Die Menüeinträge stehen an **einer** Stelle: `NAVIGATION` oben in
 `assets/js/seite.js`. Dort wird auch eine neue Seite eingetragen.
@@ -101,7 +111,7 @@ Knöpfe. Die Erklärungen sind standardmäßig zugeklappt.
 
 * Der Termin beginnt zur **Anstoßzeit** und dauert die Regelspielzeit
   samt Halbzeitpause (`spielzeit` je Mannschaft in
-  `config/teams.map.json`).
+  `config/spielbetrieb.json`).
 * **Keine ganztägigen Einträge.** Steht noch keine Zeit fest, gilt die
   übliche Anstoßzeit der Mannschaft (`anstoss`). Der Betreff beginnt
   dann mit `?`, und die Beschreibung beginnt mit einem Hinweis.
@@ -121,7 +131,7 @@ herunterlädt, importiert einen Stand, der sich nicht mehr ändert.
 ### Trainingszeiten
 
 Trainingszeiten und Ansprechpartner je Mannschaft, gepflegt von Hand in
-`config/mannschaften.json`. Die Datei ist oben selbst erklärt; in Kürze:
+`config/trainingsbetrieb.json`. Die Datei ist oben selbst erklärt; in Kürze:
 
 * **`bereiche`** — Gliederung der Seite (Senioren, Leistungsbereich,
   Entwicklungsbereich, Mädchen) mit den Mannschaften je Bereich.
@@ -199,21 +209,25 @@ Technische Fragen für Betreuer des Repositories stehen in
 [`docs/faq-technik.md`](docs/faq-technik.md) und sind auf der Webseite nicht
 verlinkt.
 
-### Einstellungen
-
-`einstellungen.html` (Tools) listet alle Werte, die über die Konfigurations-
-dateien geändert werden können, mit Beschreibung, Datei, aktuellem Wert und
-der Seite, auf die sie wirken. Die Seite ändert nichts, sie liest nur. Der
-Katalog steht in `config/einstellungen.json`; ein neuer einstellbarer Wert
-wird dort ergänzt (`pfad` zeigt per Punkt-Schreibweise auf den Wert).
-
 ### Textvorlagen
 
 Auswahl von Mannschaft und Spiel, daraus entsteht ein fertiger Text zum
 Absagen, Verlegen oder Weitergeben eines Spiels — mit Spielnummer,
 Staffel und Spielstätte bereits eingesetzt. Kopieren und selbst
-verschicken. Die Vorlagen liegen als Textdateien unter `templates/` und
-sind dort frei änderbar, siehe [`docs/textvorlagen.md`](docs/textvorlagen.md).
+verschicken. Alle Vorlagen stehen in der einen Textdatei
+`config/vorlagen.txt`, siehe [`docs/textvorlagen.md`](docs/textvorlagen.md).
+
+### Tabelle
+
+`tabelle.html` zeigt die Ligatabelle je Mannschaft, geholt von FUSSBALL.DE
+(`scripts/fetch_tables.py`, Ergebnis `data/tables.json`). Die eigene
+Mannschaft ist hervorgehoben. Mannschaften ohne Wertung (Kinderfußball)
+stehen unter `tabellen.ausschluss` in `config/spielbetrieb.json`; mit
+`tabellen.aktiv: false` wird der Abruf abgeschaltet. Fällt ein Abruf aus,
+bleibt der letzte Stand stehen. Der Abruf ist ein eigener Schritt im
+Workflow mit `continue-on-error`, ein Fehler dort stoppt die übrigen
+Daten nicht. Sieht die Seite von FUSSBALL.DE anders aus, wird nur
+`parse_table` in `scripts/common/fussballde.py` angepasst.
 
 ## Ablauf
 
@@ -238,7 +252,7 @@ alle sechs Stunden. Er committet nur, wenn sich tatsächlich etwas
 geändert hat.
 
 **Die Adresse der QR-Codes** stammt aus `base_url` in
-`config/club.json`. Zieht die Seite um (eigene Domain), dort ändern und
+`config/spielbetrieb.json`. Zieht die Seite um (eigene Domain), dort ändern und
 den Workflow neu starten — die Codes entstehen neu. Bereits gedruckte
 Codes führen dann ins Leere.
 
@@ -290,7 +304,7 @@ Dann http://localhost:8000 im Browser öffnen.
 ## Eine neue Mannschaft ist dazugekommen
 
 `fetch_teams.py` erkennt sie selbst und meldet sie am Ende des Laufs mit
-einem Vorschlag. Dieser Eintrag gehört nach `config/teams.map.json` — mit
+einem Vorschlag. Dieser Eintrag gehört nach `config/spielbetrieb.json` — mit
 einem Kürzel, das dauerhaft so bleibt.
 
 Warum das wichtig ist: Dateinamen und damit alle Kalender-Abos hängen an
@@ -299,7 +313,7 @@ fussball.de umbenannt, läuft das Abo trotzdem weiter.
 
 ## Neue Saison
 
-In `config/club.json` die `season` hochsetzen (Format `2627` für die
+In `config/spielbetrieb.json` die `season` hochsetzen (Format `2627` für die
 Saison 2026/27) und den Workflow einmal von Hand starten.
 
 ## Hinweis

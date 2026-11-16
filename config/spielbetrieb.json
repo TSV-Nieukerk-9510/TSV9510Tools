@@ -1,0 +1,186 @@
+{
+  "_hinweis": [
+    "SPIELBETRIEB: alle Einstellungen rund um Spiele, Kalender und Tabellen.",
+    "Diese Datei lesen die Skripte (fussball.de-Abruf, Kalender, QR-Codes) und die Webseite.",
+    "",
+    "AUFBAU:",
+    "  verein       Vereins-ID, Saison, Namen, eigene Spielstaetten",
+    "  gruppen      Anzeigenamen der Mannschaftsgruppen",
+    "  tabellen     Einstellungen fuer die Seite Tabelle",
+    "  mannschaften Eine Eintragung je Mannschaft (Schluessel = team-id von fussball.de)",
+    "",
+    "Nach einem Saisonwechsel: 'season' unter 'verein' anpassen (z. B. 2728).",
+    "",
+    "MANNSCHAFTEN: Der Schluessel ist die team-id von fussball.de. Sie bleibt auch dann",
+    "gleich, wenn der Verein die Mannschaft auf fussball.de umbenennt.",
+    "WICHTIG: 'slug' bestimmt Dateinamen und oeffentliche URLs (Kalender, QR-Codes,",
+    "Mannschaftsseiten). Ein einmal veroeffentlichter slug darf NIE geaendert werden -",
+    "sonst laufen alle bestehenden Kalender-Abos ins Leere.",
+    "Neue Mannschaft? fetch_teams.py meldet jede unbekannte team-id. Dann hier eintragen.",
+    "  short      Anzeigename, group = Gruppe, order = Reihenfolge in den Listen",
+    "  spielzeit  Regelspielzeit in Minuten EINSCHLIESSLICH Halbzeitpause (Kalenderlaenge)",
+    "  anstoss    uebliche Anstosszeit, genutzt wenn fussball.de noch keine Zeit nennt"
+  ],
+  "verein": {
+    "club_id": "00ES8GN8UK0000ALVV0AG08LVUPGND5I",
+    "name": "TSV 95/10 Nieukerk e.V.",
+    "short_name": "TSV Nieukerk",
+    "season": "2627",
+    "timezone": "Europe/Berlin",
+    "base_url": "https://tsv-nieukerk-9510.github.io/TSV9510Tools",
+    "match_duration_minutes": 120,
+    "_hinweis_aliases": "Namensbestandteile, an denen eine eigene Mannschaft in einer Spielpaarung erkannt wird. Spielgemeinschaften mit aufnehmen.",
+    "club_aliases": [
+      "TSV Nieukerk",
+      "JSG Nieukerk",
+      "JSG Aldekerk / Nieukerk",
+      "JSG FC Aldekerk / TSV Nieukerk"
+    ],
+    "_hinweis_heimspielstaetten": "Wird genutzt, um Spiele auf eigener Anlage zu erkennen (Feld ownVenue) - die Grundlage fuer den Platzbelegungsplan.",
+    "home_venues": [
+      "Nieukerk"
+    ],
+    "_hinweis_platzart": "Viele Jugendspiele nennen keine Platzart. Fuer Heimspiele wird dann dieser Wert angenommen und im Datensatz als pitchAssumed markiert; auf der Seite erscheint ein Stern.",
+    "default_home_pitch": "Kunstrasen"
+  },
+  "gruppen": {
+    "senioren": "Senioren",
+    "jugend": "Junioren",
+    "maedchen": "Juniorinnen"
+  },
+  "tabellen": {
+    "_hinweis": "aktiv: false schaltet den Abruf der Tabellen ab. ausschluss: Mannschaften (slug) ohne Tabelle, z. B. Kinderfussball ohne Wertung.",
+    "aktiv": true,
+    "ausschluss": [
+      "tsv-e1",
+      "tsv-e2",
+      "tsv-f1",
+      "tsv-f2",
+      "tsv-g1",
+      "tsv-g2",
+      "tsv-em"
+    ]
+  },
+  "mannschaften": {
+    "011MIE0NA8000000VTVG0001VTR8C1K7": {
+      "slug": "tsv-h1",
+      "spielzeit": 105,
+      "anstoss": "15:00",
+      "short": "Herren 1",
+      "group": "senioren",
+      "order": 10
+    },
+    "011MIDJU5C000000VTVG0001VTR8C1K7": {
+      "slug": "tsv-h2",
+      "spielzeit": 105,
+      "anstoss": "13:00",
+      "short": "Herren 2",
+      "group": "senioren",
+      "order": 20
+    },
+    "011MIDHQDK000000VTVG0001VTR8C1K7": {
+      "slug": "jsg-a1",
+      "spielzeit": 105,
+      "anstoss": "15:00",
+      "short": "A1",
+      "group": "jugend",
+      "order": 110
+    },
+    "011MI97ATG000000VTVG0001VTR8C1K7": {
+      "slug": "jsg-b1",
+      "spielzeit": 95,
+      "anstoss": "14:00",
+      "short": "B1",
+      "group": "jugend",
+      "order": 120
+    },
+    "011MICLMI0000000VTVG0001VTR8C1K7": {
+      "slug": "jsg-c1",
+      "spielzeit": 85,
+      "anstoss": "13:00",
+      "short": "C1",
+      "group": "jugend",
+      "order": 130
+    },
+    "0241K94L5S000000VS548984VS0FQV4H": {
+      "slug": "jsg-c2",
+      "spielzeit": 85,
+      "anstoss": "13:00",
+      "short": "C2",
+      "group": "jugend",
+      "order": 140
+    },
+    "011MIDHQJ0000000VTVG0001VTR8C1K7": {
+      "slug": "tsv-d1",
+      "spielzeit": 70,
+      "anstoss": "11:00",
+      "short": "D1",
+      "group": "jugend",
+      "order": 150
+    },
+    "011MI9ICMK000000VTVG0001VTR8C1K7": {
+      "slug": "tsv-e1",
+      "spielzeit": 60,
+      "anstoss": "10:30",
+      "short": "E1",
+      "group": "jugend",
+      "order": 160
+    },
+    "031CHKTU0S000000VS5489BSVU7CJV8J": {
+      "slug": "tsv-e2",
+      "spielzeit": 60,
+      "anstoss": "10:30",
+      "short": "E2",
+      "group": "jugend",
+      "order": 170
+    },
+    "011MIE2UNG000000VTVG0001VTR8C1K7": {
+      "slug": "tsv-f1",
+      "spielzeit": 50,
+      "anstoss": "10:00",
+      "short": "F1",
+      "group": "jugend",
+      "order": 180
+    },
+    "011MIF8R08000000VTVG0001VTR8C1K7": {
+      "slug": "tsv-f2",
+      "spielzeit": 50,
+      "anstoss": "10:00",
+      "short": "F2",
+      "group": "jugend",
+      "order": 190
+    },
+    "02T9OB7IB8000000VS5489BRVTHNGU03": {
+      "slug": "tsv-g1",
+      "spielzeit": 40,
+      "anstoss": "10:00",
+      "short": "G1",
+      "group": "jugend",
+      "order": 200
+    },
+    "02TJROIV9O000000VS5489BSVUALD4UK": {
+      "slug": "tsv-g2",
+      "spielzeit": 40,
+      "anstoss": "10:00",
+      "short": "G2",
+      "group": "jugend",
+      "order": 210
+    },
+    "02TJRJT8D4000000VS5489BSVUALD4UK": {
+      "slug": "tsv-dm",
+      "spielzeit": 70,
+      "anstoss": "11:00",
+      "short": "D-Juniorinnen",
+      "group": "maedchen",
+      "order": 310
+    },
+    "02T9OPVD8O000000VS5489BRVTHNGU03": {
+      "slug": "tsv-em",
+      "spielzeit": 60,
+      "anstoss": "10:30",
+      "short": "E-Juniorinnen",
+      "group": "maedchen",
+      "order": 320
+    }
+  }
+}
