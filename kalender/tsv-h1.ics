@@ -269,4 +269,30 @@ URL:https://www.fussball.de/spiel/tsv-nieukerk-alemannia-pfalzdorf-ii/-/spi
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
+BEGIN:VEVENT
+UID:031JH22BG0000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20270418T133000Z
+DTSTART:20270418T133000Z
+DTEND:20270418T151500Z
+SUMMARY:A SV 19 Sevelen
+LOCATION:Kunstrasenplatz\, SV Sevelen Kunstrasen\, Koetherdyck 22\, 47661 I
+ ssum
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: SV 19 Sevelen –
+  TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Sonntag\, 18. April 2027\, 15
+ :30 Uhr\nWettbewerb: Kreisliga A\, 23. Spieltag\nSpielnummer: 220545177\nS
+ taffel-ID: 220545\nSpielstätte: Kunstrasenplatz\, SV Sevelen Kunstrasen\,
+  Koetherdyck 22\, 47661 Issum\nAnschrift: Koetherdyck 22\, 47661 Issum\nPl
+ atzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https:
+ //www.fussball.de/spiel/sv-19-sevelen-tsv-nieukerk/-/spiel/031JH22BG000000
+ 0VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.google.de/maps?
+ q=Koetherdyck+22%2C+47661+Issum\nStaffel und Tabelle: https://www.fussball
+ .de/spieltag/kreisliga-a-kreis-kleve-geldern-kreisliga-a-herren-saison2627
+ -niederrhein/-/spieldatum/2027-04-18/staffel/031B925F1400000AVS5489BUVV628
+ VP4-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/T
+ SV9510Tools/index.html?team=tsv-h1
+URL:https://www.fussball.de/spiel/sv-19-sevelen-tsv-nieukerk/-/spiel/031JH2
+ 2BG0000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
 END:VCALENDAR
