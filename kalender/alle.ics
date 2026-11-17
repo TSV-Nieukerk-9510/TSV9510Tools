@@ -285,6 +285,33 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:031SBMNT78000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261120T180000Z
+DTSTART:20261120T180000Z
+DTEND:20261120T193500Z
+SUMMARY:B1: H SV 1926 Rindern
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Nieukerk / Aldekerk – SV 1926 Rindern\nArt: Heimspiel\nAnstoß: Freita
+ g\, 20. November 2026\, 19:00 Uhr\nWettbewerb: Kreisliga A\, 9. Spieltag\n
+ Spielnummer: 221770051\nStaffel-ID: 221770\nSpielstätte: Kunstrasenplatz\
+ , Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift:
+  Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Kunstrasen\nSchiedsrichter:
+  k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-nieuker
+ k-aldekerk-sv-1926-rindern/-/spiel/031SBMNT78000000VS5489BTVTPHHFPR\nSport
+ anlage in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+1
+ 6%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/k
+ reisliga-a-kreis-kleve-geldern-b-junioren-kreisliga-a-b-junioren-saison262
+ 7-niederrhein/-/spieldatum/2026-11-20/staffel/031RV62OCO000004VS5489BTVTPH
+ HFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/
+ TSV9510Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-sv-1926-rindern/-/s
+ piel/031SBMNT78000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:032ICACLSO00000FVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
 DTSTAMP:20261121T084500Z
 DTSTART:20261121T084500Z
@@ -444,33 +471,6 @@ DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk
  ools/index.html?team=tsv-d1
 URL:https://www.fussball.de/spiel/tsv-nieukerk-spvgg-rheurdt-schaephuysen/-
  /spiel/032JDA9V6S000000VS5489BUVSGKI48U
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:031SBMNT78000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
-DTSTAMP:20261121T123000Z
-DTSTART:20261121T123000Z
-DTEND:20261121T140500Z
-SUMMARY:B1: A SV 1926 Rindern
-LOCATION:Kunstrasenplatz\, SV Rindern Nebenplatz\, Wasserburgallee 112\, 47
- 533 Kleve
-DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: SV
-  1926 Rindern – JSG Nieukerk / Aldekerk\nArt: Auswärtsspiel\nAnstoß: S
- amstag\, 21. November 2026\, 13:30 Uhr\nWettbewerb: Kreisliga A\, 9. Spiel
- tag\nSpielnummer: 221770051\nStaffel-ID: 221770\nSpielstätte: Kunstrasenp
- latz\, SV Rindern Nebenplatz\, Wasserburgallee 112\, 47533 Kleve\nAnschrif
- t: Wasserburgallee 112\, 47533 Kleve\nPlatzart: Kunstrasen\nSchiedsrichter
- : k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/sv-1926-ri
- ndern-jsg-nieukerk-aldekerk/-/spiel/031SBMNT78000000VS5489BTVTPHHFPR\nSpor
- tanlage in Google Maps: https://www.google.de/maps?q=Wasserburgallee+112%2
- C+47533+Kleve\nStaffel und Tabelle: https://www.fussball.de/spieltag/kreis
- liga-a-kreis-kleve-geldern-b-junioren-kreisliga-a-b-junioren-saison2627-ni
- ederrhein/-/spieldatum/2026-11-21/staffel/031RV62OCO000004VS5489BTVTPHHFPR
- -G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9
- 510Tools/index.html?team=jsg-b1
-URL:https://www.fussball.de/spiel/sv-1926-rindern-jsg-nieukerk-aldekerk/-/s
- piel/031SBMNT78000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -1200,15 +1200,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:031JH9AGI0000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
-DTSTAMP:20261213T120000Z
-DTSTART:20261213T120000Z
-DTEND:20261213T134500Z
+DTSTAMP:20261211T190000Z
+DTSTART:20261211T190000Z
+DTEND:20261211T204500Z
 SUMMARY:Herren 2: H SV 1913 Walbeck II
 LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
  47647 Kerken
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: TSV Nieukerk I
- I – SV 1913 Walbeck II\nArt: Heimspiel\nAnstoß: Sonntag\, 13. Dezember 
- 2026\, 13:00 Uhr\nWettbewerb: Kreisliga B\, 16. Spieltag\nSpielnummer: 220
+ I – SV 1913 Walbeck II\nArt: Heimspiel\nAnstoß: Freitag\, 11. Dezember 
+ 2026\, 20:00 Uhr\nWettbewerb: Kreisliga B\, 16. Spieltag\nSpielnummer: 220
  602127\nStaffel-ID: 220602\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV
   Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwe
  l 16\, 47647 Kerken\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel 
@@ -1217,7 +1217,7 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: TSV Nieukerk I
  ps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\n
  Staffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-b-gruppe-2
  -kreis-kleve-geldern-kreisliga-b-herren-saison2627-niederrhein/-/spieldatu
- m/2026-12-13/staffel/031JAMD8UG000009VS5489BUVVKNMR0J-G\nSpielübersicht d
+ m/2026-12-11/staffel/031JAMD8UG000009VS5489BUVVKNMR0J-G\nSpielübersicht d
  er Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?t
  eam=tsv-h2
 URL:https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-1913-walbeck-ii/-/spie

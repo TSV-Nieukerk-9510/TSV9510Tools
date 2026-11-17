@@ -168,15 +168,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:031JH9AGI0000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
-DTSTAMP:20261213T120000Z
-DTSTART:20261213T120000Z
-DTEND:20261213T134500Z
+DTSTAMP:20261211T190000Z
+DTSTART:20261211T190000Z
+DTEND:20261211T204500Z
 SUMMARY:Herren 2: H SV 1913 Walbeck II
 LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
  47647 Kerken
 DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: TSV Nieukerk I
- I – SV 1913 Walbeck II\nArt: Heimspiel\nAnstoß: Sonntag\, 13. Dezember 
- 2026\, 13:00 Uhr\nWettbewerb: Kreisliga B\, 16. Spieltag\nSpielnummer: 220
+ I – SV 1913 Walbeck II\nArt: Heimspiel\nAnstoß: Freitag\, 11. Dezember 
+ 2026\, 20:00 Uhr\nWettbewerb: Kreisliga B\, 16. Spieltag\nSpielnummer: 220
  602127\nStaffel-ID: 220602\nSpielstätte: Kunstrasenplatz\, Kunstrasen TSV
   Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aermen Düwe
  l 16\, 47647 Kerken\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel 
@@ -185,7 +185,7 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: TSV Nieukerk I
  ps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\n
  Staffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-b-gruppe-2
  -kreis-kleve-geldern-kreisliga-b-herren-saison2627-niederrhein/-/spieldatu
- m/2026-12-13/staffel/031JAMD8UG000009VS5489BUVVKNMR0J-G\nSpielübersicht d
+ m/2026-12-11/staffel/031JAMD8UG000009VS5489BUVVKNMR0J-G\nSpielübersicht d
  er Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?t
  eam=tsv-h2
 URL:https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-1913-walbeck-ii/-/spie
