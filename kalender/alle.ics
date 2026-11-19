@@ -334,14 +334,14 @@ UID:032I4CJEOS000007VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
 DTSTAMP:20261121T084500Z
 DTSTART:20261121T084500Z
 DTEND:20261121T093500Z
-SUMMARY:F1: A JSG GW Vernum / RW Geldern II - Kinderfestival
-DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: JSG GW Vernum
-  / RW Geldern II - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nA
- nstoß: Samstag\, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußbal
- l\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de
- /spieltag/tsv-nieukerk/-/staffel/032I4CJEOS000007VS5489BUVSGKI48U-G\nSpiel
- übersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/
- index.html?team=tsv-f1
+SUMMARY:F1: A FC Aldekerk II - Kinderfestival
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: FC Aldekerk I
+ I - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag
+ \, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nSchiedsricht
+ er: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-n
+ ieukerk/-/staffel/032I4CJEOS000007VS5489BUVSGKI48U-G\nSpielübersicht der 
+ Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team
+ =tsv-f1
 URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
  7VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
@@ -362,24 +362,6 @@ DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nBegegnung: SV Union W
  index.html?team=tsv-f2
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032ICACLSO00
  000GVS5489BUVSGKI48U-G
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:032IF0R7E8000002VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
-DTSTAMP:20261121T084500Z
-DTSTART:20261121T084500Z
-DTEND:20261121T092500Z
-SUMMARY:G1: A SV 19 Straelen - Kinderfestival
-DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: SV 19 Straele
- n - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag
- \, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nSchiedsricht
- er: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-n
- ieukerk/-/staffel/032IF0R7E8000002VS5489BUVSGKI48U-G\nSpielübersicht der 
- Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team
- =tsv-g1
-URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
- 2VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -634,24 +616,6 @@ DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nBegegnung: SV 19 Seve
  x.html?team=tsv-f2
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032ICACLSS00
  0002VS5489BUVSGKI48U-G
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:032IF0R7E8000006VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
-DTSTAMP:20261128T084500Z
-DTSTART:20261128T084500Z
-DTEND:20261128T092500Z
-SUMMARY:G1: H TSV Nieukerk
-DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
- - Kinderfestival – TSV Nieukerk\nArt: Heimspiel\nAnstoß: Samstag\, 28. 
- November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nPlatzart: Kunstrase
- n * (angenommen\, FUSSBALL.DE nennt keine Platzart)\nSchiedsrichter: k. A.
- \n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-
- /staffel/032IF0R7E8000006VS5489BUVSGKI48U-G\nSpielübersicht der Webseite:
-  https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-g1
-URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
- 6VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -952,24 +916,6 @@ DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk II\nBegegnung: TSV Nieuke
  am=tsv-f2
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032ICACLSS00
  0005VS5489BUVSGKI48U-G
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:032IF0R7E800000BVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
-DTSTAMP:20261205T084500Z
-DTSTART:20261205T084500Z
-DTEND:20261205T092500Z
-SUMMARY:G1: A Kevelaerer SV - Kinderfestival
-DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: Kevelaerer SV
-  - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag\
- , 5. Dezember 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nSchiedsrichter
- : k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nie
- ukerk/-/staffel/032IF0R7E800000BVS5489BUVSGKI48U-G\nSpielübersicht der We
- bseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=t
- sv-g1
-URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
- BVS5489BUVSGKI48U-G
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
