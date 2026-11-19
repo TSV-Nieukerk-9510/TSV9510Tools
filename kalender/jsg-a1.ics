@@ -280,4 +280,31 @@ URL:https://www.fussball.de/spiel/jsg-herongen-broekhuysen-wa-wa-jsg-aldeke
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
+BEGIN:VEVENT
+UID:031SBS7MR4000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270418T090000Z
+DTSTART:20270418T090000Z
+DTEND:20270418T104500Z
+SUMMARY:H JSG Sevelen / Issum
+LOCATION:Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4764
+ 7 Kerken
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
+ ung: JSG FC Aldekerk / TSV Nieukerk – JSG Sevelen / Issum\nArt: Heimspie
+ l\nAnstoß: Sonntag\, 18. April 2027\, 11:00 Uhr\nWettbewerb: Kreisliga A\
+ , 17. Spieltag\nSpielnummer: 221773102\nStaffel-ID: 221773\nSpielstätte: 
+ Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken
+ \nAnschrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\nSch
+ iedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel
+ /jsg-aldekerk-nieukerk-jsg-sevelen-issum/-/spiel/031SBS7MR4000000VS5489BTV
+ TPHHFPR\nSportanlage in Google Maps: https://www.google.de/maps?q=Am+Aerme
+ n+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball
+ .de/spieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-kreisliga-a-a-juni
+ oren-saison2627-niederrhein/-/spieldatum/2027-04-18/staffel/031RV8ICJS0000
+ 04VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9
+ 510.github.io/TSV9510Tools/index.html?team=jsg-a1
+URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-jsg-sevelen-issum/-
+ /spiel/031SBS7MR4000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
 END:VCALENDAR
