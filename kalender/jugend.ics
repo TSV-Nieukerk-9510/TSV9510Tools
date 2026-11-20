@@ -300,14 +300,14 @@ UID:032IF0R7E8000002VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
 DTSTAMP:20261121T084500Z
 DTSTART:20261121T084500Z
 DTEND:20261121T092500Z
-SUMMARY:G1: A SV 19 Straelen - Kinderfestival
-DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: SV 19 Straele
- n - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag
- \, 21. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nSchiedsricht
- er: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-n
- ieukerk/-/staffel/032IF0R7E8000002VS5489BUVSGKI48U-G\nSpielübersicht der 
- Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team
- =tsv-g1
+SUMMARY:G1: H TSV Nieukerk
+DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ - Kinderfestival – TSV Nieukerk\nArt: Heimspiel\nAnstoß: Samstag\, 21. 
+ November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nPlatzart: Kunstrase
+ n * (angenommen\, FUSSBALL.DE nennt keine Platzart)\nSchiedsrichter: k. A.
+ \n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-
+ /staffel/032IF0R7E8000002VS5489BUVSGKI48U-G\nSpielübersicht der Webseite:
+  https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-g1
 URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
  2VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
@@ -684,6 +684,24 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:032GI5UG9O000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261203T160000Z
+DTSTART:20261203T160000Z
+DTEND:20261203T170000Z
+SUMMARY:E1: A JSG Uedem / Keppeln / Louisendorf - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nBegegnung: JSG Uedem / K
+ eppeln / Louisendorf - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspie
+ l\nAnstoß: Donnerstag\, 3. Dezember 2026\, 17:00 Uhr\nWettbewerb: Kinderf
+ ußball\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussb
+ all.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9O000000VS5489BUVSGKI48U-G\
+ nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510
+ Tools/index.html?team=tsv-e1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9O00000
+ 0VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:032I4CJEOS00000CVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
 DTSTAMP:20261205T084500Z
 DTSTART:20261205T084500Z
@@ -735,24 +753,6 @@ DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: Kevelaerer SV
  sv-g1
 URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
  BVS5489BUVSGKI48U-G
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:032GI5UG9O000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
-DTSTAMP:20261205T101500Z
-DTSTART:20261205T101500Z
-DTEND:20261205T111500Z
-SUMMARY:E1: A JSG Uedem / Keppeln / Louisendorf - Kinderfestival
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nBegegnung: JSG Uedem / K
- eppeln / Louisendorf - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspie
- l\nAnstoß: Samstag\, 5. Dezember 2026\, 11:15 Uhr\nWettbewerb: Kinderfuß
- ball\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball
- .de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9O000000VS5489BUVSGKI48U-G\nSp
- ielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Too
- ls/index.html?team=tsv-e1
-URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9O00000
- 0VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
