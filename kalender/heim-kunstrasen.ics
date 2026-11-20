@@ -128,6 +128,24 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:032IF0R7E8000006VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261128T084500Z
+DTSTART:20261128T084500Z
+DTEND:20261128T092500Z
+SUMMARY:G1: H TSV Nieukerk
+DESCRIPTION:Mannschaft: G-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ - Kinderfestival – TSV Nieukerk\nArt: Heimspiel\nAnstoß: Samstag\, 28. 
+ November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nPlatzart: Kunstrase
+ n * (angenommen\, FUSSBALL.DE nennt keine Platzart)\nSchiedsrichter: k. A.
+ \n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-
+ /staffel/032IF0R7E8000006VS5489BUVSGKI48U-G\nSpielübersicht der Webseite:
+  https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-g1
+URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032IF0R7E800000
+ 6VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:032GI5UG9K000004VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
 DTSTAMP:20261128T101500Z
 DTSTART:20261128T101500Z
