@@ -304,4 +304,31 @@ URL:https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-sge-sv-bedburg-
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
+BEGIN:VEVENT
+UID:031SBMO0TG000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270502T090000Z
+DTSTART:20270502T090000Z
+DTEND:20270502T103500Z
+SUMMARY:A JSG Broekhuysen / Herongen / Wa-Wa
+LOCATION:Kunstrasenplatz\, SF Broekhuysen Kunstrasen\, Op den Bökel\, 4763
+ 8 Straelen
+DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
+ G Broekhuysen / Herongen / Wa-Wa – JSG Nieukerk / Aldekerk\nArt: Auswär
+ tsspiel\nAnstoß: Sonntag\, 2. Mai 2027\, 11:00 Uhr\nWettbewerb: Kreisliga
+  A\, 19. Spieltag\nSpielnummer: 221770114\nStaffel-ID: 221770\nSpielstätt
+ e: Kunstrasenplatz\, SF Broekhuysen Kunstrasen\, Op den Bökel\, 47638 Str
+ aelen\nAnschrift: Op den Bökel\, 47638 Straelen\nPlatzart: Kunstrasen\nSc
+ hiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spie
+ l/jsg-broekhuysen-herongen-wa-wa-jsg-nieukerk-aldekerk/-/spiel/031SBMO0TG0
+ 00000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.google.de/m
+ aps?q=Op+den+B%C3%B6kel%2C+47638+Straelen\nStaffel und Tabelle: https://ww
+ w.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-b-junioren-kreislig
+ a-a-b-junioren-saison2627-niederrhein/-/spieldatum/2027-05-02/staffel/031R
+ V62OCO000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-
+ nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-b1
+URL:https://www.fussball.de/spiel/jsg-broekhuysen-herongen-wa-wa-jsg-nieuke
+ rk-aldekerk/-/spiel/031SBMO0TG000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
 END:VCALENDAR

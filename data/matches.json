@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-20T20:25:19+00:00",
+  "generated": "2026-11-21T07:13:14+00:00",
   "season": "2627",
-  "count": 81,
+  "count": 82,
   "incomplete": false,
   "failedTeams": [],
   "matches": [
@@ -2839,6 +2839,41 @@
       "referee": "",
       "result": null,
       "url": "https://www.fussball.de/spiel/jsg-nieukerk-aldekerk-jsg-sge-sv-bedburg-hau/-/spiel/031SBMO17K000000VS5489BTVTPHHFPR"
+    },
+    {
+      "id": "031SBMO0TG000000VS5489BTVTPHHFPR",
+      "teamId": "011MI97ATG000000VTVG0001VTR8C1K7",
+      "teamSlug": "jsg-b1",
+      "teamName": "B-Junioren - JSG Nieukerk / Aldekerk",
+      "date": "2027-05-02",
+      "time": "11:00",
+      "startTime": "11:00",
+      "timeAssumed": false,
+      "start": "2027-05-02T11:00:00+02:00",
+      "duration": 95,
+      "matchNumber": "221770114",
+      "matchDay": "19",
+      "divisionId": "221770",
+      "divisionUrl": "https://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-b-junioren-kreisliga-a-b-junioren-saison2627-niederrhein/-/spieldatum/2027-05-02/staffel/031RV62OCO000004VS5489BTVTPHHFPR-G",
+      "competition": "Kreisliga A",
+      "home": "JSG Broekhuysen / Herongen / Wa-Wa",
+      "away": "JSG Nieukerk / Aldekerk",
+      "isHome": false,
+      "opponent": "JSG Broekhuysen / Herongen / Wa-Wa",
+      "homeTeamId": "011MIANO30000000VTVG0001VTR8C1K7",
+      "awayTeamId": "011MI97ATG000000VTVG0001VTR8C1K7",
+      "homeClubUrl": "https://www.fussball.de/verein/sportfreunde-broekhuysen-1959-niederrhein/-/id/00ES8GN8VS000017VV0AG08LVUPGND5I",
+      "awayClubUrl": "https://www.fussball.de/verein/tsv-nieukerk-niederrhein/-/id/00ES8GN8UK0000ALVV0AG08LVUPGND5I",
+      "venue": "Kunstrasenplatz, SF Broekhuysen Kunstrasen, Op den Bökel, 47638 Straelen",
+      "venueName": "Kunstrasenplatz, SF Broekhuysen Kunstrasen",
+      "address": "Op den Bökel, 47638 Straelen",
+      "mapsUrl": "https://www.google.de/maps?q=Op+den+B%C3%B6kel%2C+47638+Straelen",
+      "pitch": "Kunstrasen",
+      "pitchAssumed": false,
+      "ownVenue": false,
+      "referee": "",
+      "result": null,
+      "url": "https://www.fussball.de/spiel/jsg-broekhuysen-herongen-wa-wa-jsg-nieukerk-aldekerk/-/spiel/031SBMO0TG000000VS5489BTVTPHHFPR"
     }
   ]
 }
