@@ -476,33 +476,6 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:031SBS7J90000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
-DTSTAMP:20261121T150000Z
-DTSTART:20261121T150000Z
-DTEND:20261121T164500Z
-SUMMARY:A1: H JSG 1.FC Kleve / Rindern II
-LOCATION:Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4764
- 7 Kerken
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
- ung: JSG FC Aldekerk / TSV Nieukerk – JSG 1.FC Kleve / Rindern II\nArt: 
- Heimspiel\nAnstoß: Samstag\, 21. November 2026\, 16:00 Uhr\nWettbewerb: K
- reisliga A\, 9. Spieltag\nSpielnummer: 221773054\nStaffel-ID: 221773\nSpie
- lstätte: Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47
- 647 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Natur
- rasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussbal
- l.de/spiel/jsg-aldekerk-nieukerk-jsg-1fc-kleve-rindern-ii/-/spiel/031SBS7J
- 90000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.google.d
- e/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: htt
- ps://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-k
- reisliga-a-a-junioren-saison2627-niederrhein/-/spieldatum/2026-11-24/staff
- el/031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https
- ://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-a1
-URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-jsg-1fc-kleve-rinde
- rn-ii/-/spiel/031SBS7J90000000VS5489BTVTPHHFPR
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:031SBS7J90000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
 DTSTAMP:20261124T190000Z
 DTSTART:20261124T190000Z
 DTEND:20261124T204500Z
@@ -1939,6 +1912,33 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk\nBegegnung: SV 19 Sevelen –
  SV9510Tools/index.html?team=tsv-h1
 URL:https://www.fussball.de/spiel/sv-19-sevelen-tsv-nieukerk/-/spiel/031JH2
  2BG0000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBS7MGS000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20270425T090000Z
+DTSTART:20270425T090000Z
+DTEND:20270425T104500Z
+SUMMARY:A1: A JSG SV/SGE Bedburg-Hau
+LOCATION:Rasenplatz\, Sportanlage SV Bedburg-Hau\, Antoniterstr. 62\, 47551
+  Bedburg-Hau
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
+ ung: JSG SV/SGE Bedburg-Hau – JSG FC Aldekerk / TSV Nieukerk\nArt: Ausw
+ ärtsspiel\nAnstoß: Sonntag\, 25. April 2027\, 11:00 Uhr\nWettbewerb: Kre
+ isliga A\, 18. Spieltag\nSpielnummer: 221773108\nStaffel-ID: 221773\nSpiel
+ stätte: Rasenplatz\, Sportanlage SV Bedburg-Hau\, Antoniterstr. 62\, 4755
+ 1 Bedburg-Hau\nAnschrift: Antoniterstr. 62\, 47551 Bedburg-Hau\nPlatzart: 
+ Naturrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fu
+ ssball.de/spiel/jsg-sv-sge-bedburg-hau-jsg-aldekerk-nieukerk/-/spiel/031SB
+ S7MGS000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.googl
+ e.de/maps?q=Antoniterstr.+62%2C+47551+Bedburg-Hau\nStaffel und Tabelle: ht
+ tps://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-
+ kreisliga-a-a-junioren-saison2627-niederrhein/-/spieldatum/2027-04-25/staf
+ fel/031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: http
+ s://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-a1
+URL:https://www.fussball.de/spiel/jsg-sv-sge-bedburg-hau-jsg-aldekerk-nieuk
+ erk/-/spiel/031SBS7MGS000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
