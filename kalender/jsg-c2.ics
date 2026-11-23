@@ -117,4 +117,31 @@ URL:https://www.fussball.de/spiel/jsg-gw-vernum-rw-geldern-jsg-aldekerk-nie
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
+BEGIN:VEVENT
+UID:032PTRLKU4000000VS5489BTVSIO88SN@tsv-nieukerk-9510.github.io
+DTSTAMP:20270206T130000Z
+DTSTART:20270206T130000Z
+DTEND:20270206T142500Z
+SUMMARY:H JSG Kempen/Tönisberg C2
+LOCATION:Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 K
+ erken
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nBegegnung:
+  JSG Aldekerk / Nieukerk II – JSG Kempen/Tönisberg C2\nArt: Heimspiel\n
+ Anstoß: Samstag\, 6. Februar 2027\, 14:00 Uhr\nWettbewerb: Kreisfreundsch
+ aftsspiele\nSpielnummer: 250076064\nStaffel-ID: 250076\nSpielstätte: Rase
+ nplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 Kerken\nAnsch
+ rift: Kempener Landstr.\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsricht
+ er: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-alde
+ kerk-nieukerk-ii-jsg-kempen-toenisberg-c2/-/spiel/032PTRLKU4000000VS5489BT
+ VSIO88SN\nSportanlage in Google Maps: https://www.google.de/maps?q=Kempene
+ r+Landstr.%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/s
+ pieltag/fs-cj-k-fs-kle-1-kreis-kleve-geldern-c-junioren-kreis-fs-c-juniore
+ n-saison2627-niederrhein/-/spieldatum/2027-02-06/staffel/0316DJ2J20000000V
+ S5489BTVU7GTVLE-D\nSpielübersicht der Webseite: https://tsv-nieukerk-9510
+ .github.io/TSV9510Tools/index.html?team=jsg-c2
+URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-jsg-kempen-toeni
+ sberg-c2/-/spiel/032PTRLKU4000000VS5489BTVSIO88SN
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
 END:VCALENDAR
