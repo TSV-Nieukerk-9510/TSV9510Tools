@@ -554,22 +554,23 @@ DTSTAMP:20261128T120000Z
 DTSTART:20261128T120000Z
 DTEND:20261128T132500Z
 SUMMARY:C1: A BV Sturm Wissel
-LOCATION:Rasenplatz\, Sportanlage BV Sturm Wissel\, Anton-Heuken-Str. 10\, 
- 47546 Kalkar
+LOCATION:Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4764
+ 7 Kerken
 DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nBegegnung: BV
-  Sturm Wissel – JSG Aldekerk / Nieukerk\nArt: Auswärtsspiel\nAnstoß: S
- amstag\, 28. November 2026\, 13:00 Uhr\nWettbewerb: Kreisliga A\, 8. Spiel
- tag\nSpielnummer: 221785040\nStaffel-ID: 221785\nSpielstätte: Rasenplatz\
- , Sportanlage BV Sturm Wissel\, Anton-Heuken-Str. 10\, 47546 Kalkar\nAnsch
- rift: Anton-Heuken-Str. 10\, 47546 Kalkar\nPlatzart: Naturrasen\nSchiedsri
- chter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/bv-st
- urm-wissel-jsg-aldekerk-nieukerk/-/spiel/031SBDRVDS000000VS5489BTVTPHHFPR\
- nSportanlage in Google Maps: https://www.google.de/maps?q=Anton-Heuken-Str
- .+10%2C+47546+Kalkar\nStaffel und Tabelle: https://www.fussball.de/spielta
- g/kreisliga-a-kreis-kleve-geldern-c-junioren-kreisliga-a-c-junioren-saison
- 2627-niederrhein/-/spieldatum/2026-11-28/staffel/031SBC1K8K000004VS5489BTV
- TPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.
- io/TSV9510Tools/index.html?team=jsg-c1
+  Sturm Wissel – JSG Aldekerk / Nieukerk\nArt: Auswärtsspiel\nHinweis: L
+ aut FUSSBALL.DE hat der Gegner Heimrecht\, der Spielort ist aber unsere ei
+ gene Anlage.\nAnstoß: Samstag\, 28. November 2026\, 13:00 Uhr\nWettbewerb
+ : Kreisliga A\, 8. Spieltag\nSpielnummer: 221785040\nStaffel-ID: 221785\nS
+ pielstätte: Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\,
+  47647 Kerken\nAnschrift: Am Aermen Düwel 16\, 47647 Kerken\nPlatzart: Na
+ turrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fuss
+ ball.de/spiel/bv-sturm-wissel-jsg-aldekerk-nieukerk/-/spiel/031SBDRVDS0000
+ 00VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.google.de/maps
+ ?q=Am+Aermen+D%C3%BCwel+16%2C+47647+Kerken\nStaffel und Tabelle: https://w
+ ww.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-c-junioren-kreisli
+ ga-a-c-junioren-saison2627-niederrhein/-/spieldatum/2026-12-09/staffel/031
+ SBC1K8K000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv
+ -nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-c1
 URL:https://www.fussball.de/spiel/bv-sturm-wissel-jsg-aldekerk-nieukerk/-/s
  piel/031SBDRVDS000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
@@ -880,6 +881,33 @@ DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: Ke
  k-9510.github.io/TSV9510Tools/index.html?team=jsg-b1
 URL:https://www.fussball.de/spiel/kevelaerer-sv-jsg-nieukerk-aldekerk/-/spi
  el/031SBMNSJO000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SBDRVDS000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261209T173000Z
+DTSTART:20261209T173000Z
+DTEND:20261209T185500Z
+SUMMARY:C1: H BV Sturm Wissel
+LOCATION:Rasenplatz\, Sportanlage TSV Nieukerk\, Am Aermen Düwel 16\, 4764
+ 7 Kerken
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nBegegnung: JS
+ G Aldekerk / Nieukerk – BV Sturm Wissel\nArt: Heimspiel\nAnstoß: Mittwo
+ ch\, 9. Dezember 2026\, 18:30 Uhr\nWettbewerb: Kreisliga A\, 8. Spieltag\n
+ Spielnummer: 221785040\nStaffel-ID: 221785\nSpielstätte: Rasenplatz\, Spo
+ rtanlage TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am 
+ Aermen Düwel 16\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsrichter: k. 
+ A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-aldekerk-ni
+ eukerk-bv-sturm-wissel/-/spiel/031SBDRVDS000000VS5489BTVTPHHFPR\nSportanla
+ ge in Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C
+ +47647+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/kreis
+ liga-a-kreis-kleve-geldern-c-junioren-kreisliga-a-c-junioren-saison2627-ni
+ ederrhein/-/spieldatum/2026-12-09/staffel/031SBC1K8K000004VS5489BTVTPHHFPR
+ -G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9
+ 510Tools/index.html?team=jsg-c1
+URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-bv-sturm-wissel/-/s
+ piel/031SBDRVDS000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
