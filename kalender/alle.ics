@@ -1360,6 +1360,33 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:032QFD0I3C000000VS5489BTVSIO88SN@tsv-nieukerk-9510.github.io
+DTSTAMP:20270220T140000Z
+DTSTART:20270220T140000Z
+DTEND:20270220T152500Z
+SUMMARY:C2: H ASV Einigkeit Süchteln C3
+LOCATION:Rasenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 K
+ erken
+DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk II\nBegegnung:
+  JSG Aldekerk / Nieukerk II – ASV Einigkeit Süchteln C3\nArt: Heimspiel
+ \nAnstoß: Samstag\, 20. Februar 2027\, 15:00 Uhr\nWettbewerb: Kreisfreund
+ schaftsspiele\nSpielnummer: 250076066\nStaffel-ID: 250076\nSpielstätte: R
+ asenplatz\, Sportanlage FC Aldekerk\, Kempener Landstr.\, 47647 Kerken\nAn
+ schrift: Kempener Landstr.\, 47647 Kerken\nPlatzart: Naturrasen\nSchiedsri
+ chter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/jsg-a
+ ldekerk-nieukerk-ii-asv-einigkeit-suechteln-c3/-/spiel/032QFD0I3C000000VS5
+ 489BTVSIO88SN\nSportanlage in Google Maps: https://www.google.de/maps?q=Ke
+ mpener+Landstr.%2C+47647+Kerken\nStaffel und Tabelle: https://www.fussball
+ .de/spieltag/fs-cj-k-fs-kle-1-kreis-kleve-geldern-c-junioren-kreis-fs-c-ju
+ nioren-saison2627-niederrhein/-/spieldatum/2027-02-20/staffel/0316DJ2J2000
+ 0000VS5489BTVU7GTVLE-D\nSpielübersicht der Webseite: https://tsv-nieukerk
+ -9510.github.io/TSV9510Tools/index.html?team=jsg-c2
+URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-ii-asv-einigkeit-su
+ echteln-c3/-/spiel/032QFD0I3C000000VS5489BTVSIO88SN
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:031SBS7OJO000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
 DTSTAMP:20270221T100000Z
 DTSTART:20270221T100000Z
