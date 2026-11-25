@@ -82,9 +82,36 @@ DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk
  oogle Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+47647+
  Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-b-
  -aufstiegsrunde-gr-2-kreis-kleve-geldern-d-junioren-kreisliga-b-d-junioren
- -saison2627-niederrhein/-/spieldatum/2026-11-28/staffel/031SAV8VJ4000003VS
+ -saison2627-niederrhein/-/spieldatum/2026-12-03/staffel/031SAV8VJ4000003VS
  5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-9510.
  github.io/TSV9510Tools/index.html?team=tsv-d1
+URL:https://www.fussball.de/spiel/tsv-nieukerk-jsg-gw-vernum-rw-geldern/-/s
+ piel/031SB9QOU0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031SB9QOU0000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
+DTSTAMP:20261203T170000Z
+DTSTART:20261203T170000Z
+DTEND:20261203T181000Z
+SUMMARY:H JSG GW Vernum / RW Geldern
+LOCATION:Kunstrasenplatz\, Kunstrasen TSV Nieukerk\, Am Aermen Düwel 16\, 
+ 47647 Kerken
+DESCRIPTION:Mannschaft: D-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk 
+ – JSG GW Vernum / RW Geldern\nArt: Heimspiel\nAnstoß: Donnerstag\, 3. D
+ ezember 2026\, 18:00 Uhr\nWettbewerb: Kreisliga B\, 8. Spieltag\nSpielnumm
+ er: 221781038\nStaffel-ID: 221781\nSpielstätte: Kunstrasenplatz\, Kunstra
+ sen TSV Nieukerk\, Am Aermen Düwel 16\, 47647 Kerken\nAnschrift: Am Aerme
+ n Düwel 16\, 47647 Kerken\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\
+ nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/tsv-nieukerk-jsg-gw-
+ vernum-rw-geldern/-/spiel/031SB9QOU0000000VS5489BTVTPHHFPR\nSportanlage in
+  Google Maps: https://www.google.de/maps?q=Am+Aermen+D%C3%BCwel+16%2C+4764
+ 7+Kerken\nStaffel und Tabelle: https://www.fussball.de/spieltag/kreisliga-
+ b--aufstiegsrunde-gr-2-kreis-kleve-geldern-d-junioren-kreisliga-b-d-junior
+ en-saison2627-niederrhein/-/spieldatum/2026-12-03/staffel/031SAV8VJ4000003
+ VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: https://tsv-nieukerk-951
+ 0.github.io/TSV9510Tools/index.html?team=tsv-d1
 URL:https://www.fussball.de/spiel/tsv-nieukerk-jsg-gw-vernum-rw-geldern/-/s
  piel/031SB9QOU0000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
