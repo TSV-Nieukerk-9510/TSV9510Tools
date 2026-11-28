@@ -47,24 +47,6 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:032GI4RTSK000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
-DTSTAMP:20261128T101500Z
-DTSTART:20261128T101500Z
-DTEND:20261128T111500Z
-SUMMARY:A SV Issum II - Kinderfestival
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: SV Issum I
- I - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß: Sams
- tag\, 28. November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nSchiedsri
- chter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/ts
- v-nieukerk-ii/-/staffel/032GI4RTSK000000VS5489BUVSGKI48U-G\nSpielübersich
- t der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.htm
- l?team=tsv-e2
-URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSK00
- 0000VS5489BUVSGKI48U-G
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
 UID:032GI4RTSK000005VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
 DTSTAMP:20261205T101500Z
 DTSTART:20261205T101500Z
@@ -79,6 +61,24 @@ DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: JSG Herong
  ools/index.html?team=tsv-e2
 URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSK00
  0005VS5489BUVSGKI48U-G
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI4RTSK000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261212T101500Z
+DTSTART:20261212T101500Z
+DTEND:20261212T111500Z
+SUMMARY:A SV Issum II - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: SV Issum I
+ I - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß: Sams
+ tag\, 12. Dezember 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nSchiedsri
+ chter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/ts
+ v-nieukerk-ii/-/staffel/032GI4RTSK000000VS5489BUVSGKI48U-G\nSpielübersich
+ t der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.htm
+ l?team=tsv-e2
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSK00
+ 0000VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT

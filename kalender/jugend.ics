@@ -409,14 +409,13 @@ UID:032I4CJEOS00000BVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
 DTSTAMP:20261128T084500Z
 DTSTART:20261128T084500Z
 DTEND:20261128T093500Z
-SUMMARY:F1: A JSG GW Vernum / RW Geldern II - Kinderfestival
-DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: JSG GW Vernum
-  / RW Geldern II - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nA
- nstoß: Samstag\, 28. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußbal
- l\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de
- /spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000BVS5489BUVSGKI48U-G\nSpiel
- übersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/
- index.html?team=tsv-f1
+SUMMARY:F1: A Kinderfestival
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: Kinderfestiva
+ l – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag\, 28. November 2
+ 026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nSchiedsrichter: k. A.\n\nSpie
+ l auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel
+ /032I4CJEOS00000BVS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https:/
+ /tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-f1
 URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
  BVS5489BUVSGKI48U-G
 STATUS:CONFIRMED
@@ -472,24 +471,6 @@ DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk
   https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-e1
 URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9K00000
  4VS5489BUVSGKI48U-G
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:032GI4RTSK000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
-DTSTAMP:20261128T101500Z
-DTSTART:20261128T101500Z
-DTEND:20261128T111500Z
-SUMMARY:E2: A SV Issum II - Kinderfestival
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: SV Issum I
- I - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß: Sams
- tag\, 28. November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nSchiedsri
- chter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/ts
- v-nieukerk-ii/-/staffel/032GI4RTSK000000VS5489BUVSGKI48U-G\nSpielübersich
- t der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.htm
- l?team=tsv-e2
-URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSK00
- 0000VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -907,6 +888,24 @@ DESCRIPTION:Mannschaft: C-Junioren - JSG Aldekerk / Nieukerk\nBegegnung: JS
  510Tools/index.html?team=jsg-c1
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-bv-sturm-wissel/-/s
  piel/031SBDRVDS000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI4RTSK000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261212T101500Z
+DTSTART:20261212T101500Z
+DTEND:20261212T111500Z
+SUMMARY:E2: A SV Issum II - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: SV Issum I
+ I - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß: Sams
+ tag\, 12. Dezember 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nSchiedsri
+ chter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/ts
+ v-nieukerk-ii/-/staffel/032GI4RTSK000000VS5489BUVSGKI48U-G\nSpielübersich
+ t der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.htm
+ l?team=tsv-e2
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSK00
+ 0000VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT

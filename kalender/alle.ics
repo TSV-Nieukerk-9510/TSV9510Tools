@@ -552,14 +552,13 @@ UID:032I4CJEOS00000BVS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
 DTSTAMP:20261128T084500Z
 DTSTART:20261128T084500Z
 DTEND:20261128T093500Z
-SUMMARY:F1: A JSG GW Vernum / RW Geldern II - Kinderfestival
-DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: JSG GW Vernum
-  / RW Geldern II - Kinderfestival – TSV Nieukerk\nArt: Auswärtsspiel\nA
- nstoß: Samstag\, 28. November 2026\, 09:45 Uhr\nWettbewerb: Kinderfußbal
- l\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de
- /spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000BVS5489BUVSGKI48U-G\nSpiel
- übersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/
- index.html?team=tsv-f1
+SUMMARY:F1: A Kinderfestival
+DESCRIPTION:Mannschaft: F-Junioren - TSV Nieukerk\nBegegnung: Kinderfestiva
+ l – TSV Nieukerk\nArt: Auswärtsspiel\nAnstoß: Samstag\, 28. November 2
+ 026\, 09:45 Uhr\nWettbewerb: Kinderfußball\nSchiedsrichter: k. A.\n\nSpie
+ l auf FUSSBALL.DE: https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel
+ /032I4CJEOS00000BVS5489BUVSGKI48U-G\nSpielübersicht der Webseite: https:/
+ /tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-f1
 URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032I4CJEOS00000
  BVS5489BUVSGKI48U-G
 STATUS:CONFIRMED
@@ -615,24 +614,6 @@ DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk\nBegegnung: TSV Nieukerk
   https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-e1
 URL:https://www.fussball.de/spieltag/tsv-nieukerk/-/staffel/032GI5UG9K00000
  4VS5489BUVSGKI48U-G
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:032GI4RTSK000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
-DTSTAMP:20261128T101500Z
-DTSTART:20261128T101500Z
-DTEND:20261128T111500Z
-SUMMARY:E2: A SV Issum II - Kinderfestival
-DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: SV Issum I
- I - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß: Sams
- tag\, 28. November 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nSchiedsri
- chter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/ts
- v-nieukerk-ii/-/staffel/032GI4RTSK000000VS5489BUVSGKI48U-G\nSpielübersich
- t der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.htm
- l?team=tsv-e2
-URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSK00
- 0000VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -1222,6 +1203,24 @@ DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: TSV Nieukerk I
  eam=tsv-h2
 URL:https://www.fussball.de/spiel/tsv-nieukerk-ii-sv-1913-walbeck-ii/-/spie
  l/031JH9AGI0000000VS5489BUVVKNMR0J
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:032GI4RTSK000000VS5489BUVSGKI48U-G@tsv-nieukerk-9510.github.io
+DTSTAMP:20261212T101500Z
+DTSTART:20261212T101500Z
+DTEND:20261212T111500Z
+SUMMARY:E2: A SV Issum II - Kinderfestival
+DESCRIPTION:Mannschaft: E-Junioren - TSV Nieukerk II\nBegegnung: SV Issum I
+ I - Kinderfestival – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß: Sams
+ tag\, 12. Dezember 2026\, 11:15 Uhr\nWettbewerb: Kinderfußball\nSchiedsri
+ chter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spieltag/ts
+ v-nieukerk-ii/-/staffel/032GI4RTSK000000VS5489BUVSGKI48U-G\nSpielübersich
+ t der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools/index.htm
+ l?team=tsv-e2
+URL:https://www.fussball.de/spieltag/tsv-nieukerk-ii/-/staffel/032GI4RTSK00
+ 0000VS5489BUVSGKI48U-G
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -2021,6 +2020,32 @@ DESCRIPTION:Mannschaft: B-Junioren - JSG Nieukerk / Aldekerk\nBegegnung: JS
  index.html?team=jsg-b1
 URL:https://www.fussball.de/spiel/jsg-issum-sevelen-jsg-nieukerk-aldekerk/-
  /spiel/031SBMO1M0000000VS5489BTVTPHHFPR
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:031JH9AA24000000VS5489BUVVKNMR0J@tsv-nieukerk-9510.github.io
+DTSTAMP:20270418T110000Z
+DTSTART:20270418T110000Z
+DTEND:20270418T124500Z
+SUMMARY:Herren 2: A SV 19 Sevelen II
+LOCATION:Kunstrasenplatz\, SV Sevelen Kunstrasen\, Koetherdyck 22\, 47661 I
+ ssum
+DESCRIPTION:Mannschaft: Herren - TSV Nieukerk II\nBegegnung: SV 19 Sevelen 
+ II – TSV Nieukerk II\nArt: Auswärtsspiel\nAnstoß: Sonntag\, 18. April 
+ 2027\, 13:00 Uhr\nWettbewerb: Kreisliga B\, 23. Spieltag\nSpielnummer: 220
+ 602177\nStaffel-ID: 220602\nSpielstätte: Kunstrasenplatz\, SV Sevelen Kun
+ strasen\, Koetherdyck 22\, 47661 Issum\nAnschrift: Koetherdyck 22\, 47661 
+ Issum\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.D
+ E: https://www.fussball.de/spiel/sv-19-sevelen-ii-tsv-nieukerk-ii/-/spiel/
+ 031JH9AA24000000VS5489BUVVKNMR0J\nSportanlage in Google Maps: https://www.
+ google.de/maps?q=Koetherdyck+22%2C+47661+Issum\nStaffel und Tabelle: https
+ ://www.fussball.de/spieltag/kreisliga-b-gruppe-2-kreis-kleve-geldern-kreis
+ liga-b-herren-saison2627-niederrhein/-/spieldatum/2027-04-18/staffel/031JA
+ MD8UG000009VS5489BUVVKNMR0J-G\nSpielübersicht der Webseite: https://tsv-n
+ ieukerk-9510.github.io/TSV9510Tools/index.html?team=tsv-h2
+URL:https://www.fussball.de/spiel/sv-19-sevelen-ii-tsv-nieukerk-ii/-/spiel/
+ 031JH9AA24000000VS5489BUVVKNMR0J
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
