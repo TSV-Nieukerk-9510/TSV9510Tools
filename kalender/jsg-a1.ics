@@ -145,6 +145,33 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:032RDMGQM0000000VS5489BTVSC8UI28@tsv-nieukerk-9510.github.io
+DTSTAMP:20270124T100000Z
+DTSTART:20270124T100000Z
+DTEND:20270124T114500Z
+SUMMARY:A SV Sonsbeck I
+LOCATION:Kunstrasenplatz\, Nebenplatz SV Sonsbeck\, Parkstr. 8\, 47665 Sons
+ beck
+DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
+ ung: SV Sonsbeck I – JSG Aldekerk / Nieukerk\nArt: Auswärtsspiel\nAnsto
+ ß: Sonntag\, 24. Januar 2027\, 11:00 Uhr\nWettbewerb: Landesfreundschafts
+ spiele\nSpielnummer: 250008328\nStaffel-ID: 250008\nSpielstätte: Kunstras
+ enplatz\, Nebenplatz SV Sonsbeck\, Parkstr. 8\, 47665 Sonsbeck\nAnschrift:
+  Parkstr. 8\, 47665 Sonsbeck\nPlatzart: Kunstrasen\nSchiedsrichter: k. A.\
+ n\nSpiel auf FUSSBALL.DE: https://www.fussball.de/spiel/sv-sonsbeck-i-jsg-
+ aldekerk-nieukerk/-/spiel/032RDMGQM0000000VS5489BTVSC8UI28\nSportanlage in
+  Google Maps: https://www.google.de/maps?q=Parkstr.+8%2C+47665+Sonsbeck\nS
+ taffel und Tabelle: https://www.fussball.de/spieltag/freundschaftsspiel-b-
+ junioren-niederrhein-b-junioren-landes-fs-b-junioren-saison2627-niederrhei
+ n/-/spieldatum/2027-01-24/staffel/030U6CJSBK000000VS5489BTVT51B5B5-D\nSpie
+ lübersicht der Webseite: https://tsv-nieukerk-9510.github.io/TSV9510Tools
+ /index.html?team=jsg-a1
+URL:https://www.fussball.de/spiel/sv-sonsbeck-i-jsg-aldekerk-nieukerk/-/spi
+ el/032RDMGQM0000000VS5489BTVSC8UI28
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:031SBS7OJO000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
 DTSTAMP:20270221T100000Z
 DTSTART:20270221T100000Z
@@ -304,33 +331,6 @@ DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
  510.github.io/TSV9510Tools/index.html?team=jsg-a1
 URL:https://www.fussball.de/spiel/jsg-aldekerk-nieukerk-jsg-sevelen-issum/-
  /spiel/031SBS7MR4000000VS5489BTVTPHHFPR
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:031SBS7MGS000000VS5489BTVTPHHFPR@tsv-nieukerk-9510.github.io
-DTSTAMP:20270425T090000Z
-DTSTART:20270425T090000Z
-DTEND:20270425T104500Z
-SUMMARY:A JSG SV/SGE Bedburg-Hau
-LOCATION:Rasenplatz\, Sportanlage SV Bedburg-Hau\, Antoniterstr. 62\, 47551
-  Bedburg-Hau
-DESCRIPTION:Mannschaft: A-Junioren - JSG FC Aldekerk / TSV Nieukerk\nBegegn
- ung: JSG SV/SGE Bedburg-Hau – JSG FC Aldekerk / TSV Nieukerk\nArt: Ausw
- ärtsspiel\nAnstoß: Sonntag\, 25. April 2027\, 11:00 Uhr\nWettbewerb: Kre
- isliga A\, 18. Spieltag\nSpielnummer: 221773108\nStaffel-ID: 221773\nSpiel
- stätte: Rasenplatz\, Sportanlage SV Bedburg-Hau\, Antoniterstr. 62\, 4755
- 1 Bedburg-Hau\nAnschrift: Antoniterstr. 62\, 47551 Bedburg-Hau\nPlatzart: 
- Naturrasen\nSchiedsrichter: k. A.\n\nSpiel auf FUSSBALL.DE: https://www.fu
- ssball.de/spiel/jsg-sv-sge-bedburg-hau-jsg-aldekerk-nieukerk/-/spiel/031SB
- S7MGS000000VS5489BTVTPHHFPR\nSportanlage in Google Maps: https://www.googl
- e.de/maps?q=Antoniterstr.+62%2C+47551+Bedburg-Hau\nStaffel und Tabelle: ht
- tps://www.fussball.de/spieltag/kreisliga-a-kreis-kleve-geldern-a-junioren-
- kreisliga-a-a-junioren-saison2627-niederrhein/-/spieldatum/2027-04-25/staf
- fel/031RV8ICJS000004VS5489BTVTPHHFPR-G\nSpielübersicht der Webseite: http
- s://tsv-nieukerk-9510.github.io/TSV9510Tools/index.html?team=jsg-a1
-URL:https://www.fussball.de/spiel/jsg-sv-sge-bedburg-hau-jsg-aldekerk-nieuk
- erk/-/spiel/031SBS7MGS000000VS5489BTVTPHHFPR
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
